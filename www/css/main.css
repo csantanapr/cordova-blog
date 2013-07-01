@@ -5,6 +5,7 @@
 /*****************************************************************************/
 
 /* Global Reset */
+/* Cordova settings
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +29,8 @@ p { margin: 1em 0; }
 a         { color: #00a; }
 a:hover   { color: #000; }
 a:visited { color: #a0a; }
+
+*/
 
 table {
   font-size: inherit;
