@@ -1,0 +1,6 @@
+name: Cordova
+pygments: true
+source:      www
+destination: public
+
+

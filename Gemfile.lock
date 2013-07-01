@@ -1,0 +1,16 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    json (1.8.0)
+    libv8 (3.11.8.17)
+    mustache (0.99.4)
+    rake (10.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  json
+  libv8 (~> 3.11.8.3)
+  mustache
+  rake
