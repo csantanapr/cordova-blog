@@ -6,11 +6,11 @@ require 'ftools'
 require 'fileutils'
 
 class TemplateIndex < Mustache
-  self.template_file = File.dirname( __FILE__ ) + '/../www/template.html'
+  self.template_file = File.dirname( __FILE__ ) + '/../www/_template-index.html'
 end
 
 class TemplateArtwork < Mustache
-  self.template_file = File.dirname( __FILE__ ) + '/../www/artwork.html'
+  self.template_file = File.dirname( __FILE__ ) + '/../www/_template-artwork.html'
 end
 
 tempIndex = TemplateIndex.new
@@ -73,7 +73,7 @@ end
 
 
 # LessCSS
-system( "lessc www/master.less > " + pub_directory + "/master.css" )
+system( "lessc www/css/_master.less > " + pub_directory + "/css/master.css" )
 
 # remove unnecessary files
 delete_files = ['/template.html', '/js/less-1.1.5.min.js', 'master.less']

@@ -5,7 +5,11 @@
 <meta name = "format-detection" content = "telephone=no">
 <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
 <title>Apache Cordova</title>
-<link rel="stylesheet" type="text/css" href="css/master.css">
+<!-- localstart -->
+<link rel="stylesheet/less" type="text/css" href="css/_master.less">
+<script src="js/less-1.1.5.min.js" type="text/javascript"></script>
+<!-- localend -->
+<!-- publicstart <link rel="stylesheet" type="text/css" href="css/master.css"> publicend -->
 <script src="js/smooth.pack.js" type="text/javascript"></script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -96,17 +100,17 @@
         <div class="list-container">
             <ul class="list quick-links">
                 <li class="corner"></li>
-                <li><a href="index.html#about">About Cordova<span></span></a></li><li><a href="http://projects.apache.org/projects/cordova.html">Apache Project Page<span></span></a></li><li><a href="http://www.apache.org/licenses/LICENSE-2.0">License<span></span></a></li><li><a href="artwork.html">Artwork<span></span></a></li>
+                {{#links_general}}<li><a href="{{url}}">{{title}}<span></span></a></li>{{/links_general}}
             </ul>
 
             <ul class="list quick-links">
                 <li class="corner"></li>
-                <li><a href="index.html#download">Download<span></span></a></li><li><a href="https://git-wip-us.apache.org/repos/asf">Source Code<span></span></a></li><li><a href="http://cordova.apache.org/docs/en/2.9.0/">Documentation<span></span></a></li><li><a href="index.html#mailing-list">Mailing List<span></span></a></li><li><a href="https://issues.apache.org/jira/browse/CB">Issue Tracker<span></span></a></li><li><a href="http://wiki.apache.org/cordova/">Wiki<span></span></a></li>
+                {{#links_dev}}<li><a href="{{url}}">{{title}}<span></span></a></li>{{/links_dev}}
             </ul>
 
             <ul class="list quick-links last">
                 <li class="corner"></li>
-                <li><a href="http://www.apache.org/">About ASF<span></span></a></li><li><a href="http://www.apache.org/foundation/thanks.html">Thanks<span></span></a></li><li><a href="http://www.apache.org/foundation/sponsorship.html">Become a Sponsor<span></span></a></li><li><a href="http://www.apache.org/security/">Security<span></span></a></li>
+                {{#links_asf}}<li><a href="{{url}}">{{title}}<span></span></a></li>{{/links_asf}}
             </ul>
 
             <div class="clear"></div>
