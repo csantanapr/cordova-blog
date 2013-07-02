@@ -121,7 +121,7 @@
         },
         {
             "title": "Artwork",
-            "url": "artwork.html"
+            "url": "/artwork.html"
         }
         ],
         "dev": [
