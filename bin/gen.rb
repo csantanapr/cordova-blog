@@ -13,8 +13,13 @@ class TemplateArtwork < Mustache
   self.template_file = File.dirname( __FILE__ ) + '/../www/_template-artwork.html'
 end
 
+class TemplateLinks < Mustache
+  self.template_file = File.dirname( __FILE__ ) + '/../www/_template-links.html'
+end
+
 tempIndex = TemplateIndex.new
 tempArt = TemplateArtwork.new
+tempLinks = TemplateLinks.new
 json_file = File.dirname( __FILE__ ) + '/config.json';
 data = JSON.parse( IO.read( json_file ) )
 
@@ -45,16 +50,12 @@ tempIndex[:repo_other][0]['first'] = true
 
 # quicklinks / sitemap
 sitemap = data['sitemap']
-tempIndex[:links_general] = tempArt[:links_general] = sitemap['general']
-tempIndex[:links_dev] = tempArt[:links_dev] = sitemap['dev']
-tempIndex[:links_asf] = tempArt[:links_asf] = sitemap['asf']
+tempIndex[:links_general] = tempArt[:links_general] = tempLinks[:links_general] = sitemap['general']
+tempIndex[:links_dev] = tempArt[:links_dev] = tempLinks[:links_dev] = sitemap['dev']
+tempIndex[:links_asf] = tempArt[:links_asf] = tempLinks[:links_asf] = sitemap['asf']
 
-# Generate site
-
-pub_directory = 'public'
-
-# Build Blog First using jekyll it blows up the public directory
-system( "jekyll build" )
+# Generate site from www into public
+pub_directory = 'www'
 
 
 # generating index.html
@@ -71,15 +72,19 @@ File.open( pub_directory + '/artwork.html', 'w' ) do | file |
     file.puts tempArt.render( file_data )
 end
 
+# generating _includes/links.html
+File.open( pub_directory + '/_includes/links.html', 'w' ) do | file |
+    file_data = tempLinks.render( data )
+    file.puts tempLinks.render( file_data )
+end
+
 
 # LessCSS
 system( "lessc www/css/_master.less > " + pub_directory + "/css/master.css" )
 
-# remove unnecessary files
-delete_files = ['/template.html', '/js/less-1.1.5.min.js', 'master.less']
-for i in delete_files
-    File.delete( pub_directory+i ) unless !File.exists?( pub_directory+i )
-end
+
+# Build Blog First using jekyll it blows up the public directory
+system( "jekyll build" )
 
 
 
