@@ -49,8 +49,8 @@ How to update GitHub Pages
 
     # Add and commit changes to master branch
 
-    # Move www to root
-    $ git mv www .
+    # Record changes www to root
+    $ cp -rf www/* .
 
     # Stage changes
     $ git add .
