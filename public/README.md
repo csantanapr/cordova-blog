@@ -34,6 +34,7 @@ How to compile the site
     # compile the site.
     $ rake build
 
+    # Test
     # the site is generated in `public/` with an index.html file that
     # can be opened as a local file in your browser.
     $ open public/index.html
@@ -42,10 +43,17 @@ How to compile the site
 How to update GitHub Pages
 ----------------------
 
+    # Switch to master branch
+
     # Make changes in www, compile site, and test
 
+    # Add and commit changes to master branch
+
+    # Record changes www to root
+    $ cp -rf www/* .
+
     # Stage changes
-    $ git add www
+    $ git add .
 
     # Stash changes
     $ git stash
@@ -58,6 +66,9 @@ How to update GitHub Pages
 
     # Stage changes into branch
     $ git add .
+
+    # Stage changes into branch
+    $ git commit -m "My new post added"
 
     # Commit changes to gh-pages
     $ git push origin gh-pages
