@@ -1,7 +1,6 @@
 name: Cordova
 source:      www
 destination: public
-url: '/'
 #GitHub Pages defaults
 safe: true
 lsi: false
