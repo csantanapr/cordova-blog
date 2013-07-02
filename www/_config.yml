@@ -1,2 +1,5 @@
-name: Your New Jekyll Site
+name: Cordova
+#GitHub Pages defaults
+safe: true
+lsi: false
 pygments: true
