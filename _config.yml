@@ -1,6 +1,9 @@
 name: Cordova
-pygments: true
 source:      www
 destination: public
+#GitHub Pages defaults
+safe: true
+lsi: false
+pygments: true
 
 
