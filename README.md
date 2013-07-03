@@ -5,11 +5,8 @@ Cordova Website
 Dependencies
 ------------
 
-- Mustache for Ruby
-- LessCSS
-- JSON
 - See `Gemfile` for more details, and below on how to install these.
-- JekyLL
+- Jekyll
 
 Get the source code
 -------------------
