@@ -1,6 +1,6 @@
 ---
 layout: cordova
-title: Apache Cordova Blog
+title: Apache Cordova
 ---
 
 <div class="grid leadin">
@@ -12,10 +12,12 @@ title: Apache Cordova Blog
             <li><h1>applications using <strong>HTML</strong>, <strong>CSS</strong></h1></li>
             <li><h1>and <strong>JavaScript</strong></h1></li>
         </ul>
+        {{^no_download}}
 
         <div class="button-container">
-            <a class="button" onclick="_gaq.push(['_trackEvent', 'Download', '2.9.0'])" href="https://www.apache.org/dist/cordova/">DOWNLOAD<label>Cordova Ver 2.9.0</label></a>
+            <a class="button" onclick="_gaq.push(['_trackEvent', 'Download', '{{latest_version}}'])" href="{{download_link}}">DOWNLOAD<label>Cordova Ver {{latest_version}}</label></a>
         </div>
+        {{/no_download}}
     </div>
 </div>
 
@@ -27,7 +29,7 @@ title: Apache Cordova Blog
     <p>And because these JavaScript APIs are consistent across multiple device platforms and built on web standards, the app should be portable to other device platforms with minimal to no changes.</p>
     <p>Apps using Cordova are still packaged as apps using the platform SDKs, and can be made available for installation from each device's app store.</p>
     <p>Cordova provides a set of uniform JavaScript libraries that can be invoked, with device-specific native backing code for those JavaScript libraries. Cordova is available for the following platforms: iOS, Android, Blackberry, Windows Phone, Palm WebOS, Bada, and Symbian.</p>
-    <p>If you want to use Cordova in your mobile application, take a look at our <a href="http://cordova.apache.org/docs/en/2.9.0/">documentation</a>. It includes Getting Started guides, the JavaScript APIs reference and examples, instructions on Upgrading from previous versions of Cordova, how to write your own Cordova plugin, and more. The selector in the top-right corner of the documentation will let you pick different Cordova versions and language translations.</p>
+    <p>If you want to use Cordova in your mobile application, take a look at our <a href="http://cordova.apache.org/docs/en/{{latest_version}}/">documentation</a>. It includes Getting Started guides, the JavaScript APIs reference and examples, instructions on Upgrading from previous versions of Cordova, how to write your own Cordova plugin, and more. The selector in the top-right corner of the documentation will let you pick different Cordova versions and language translations.</p>
     <p>Apache Cordova graduated in October 2012 as a top level project within the Apache Software Foundation (ASF). Through the ASF, future Cordova development will ensure open stewardship of the project. It will always remain free and open source under the Apache License, Version 2.0.
 </p>
 </div>
@@ -49,10 +51,10 @@ title: Apache Cordova Blog
     <div class="wrap">
         <div class="corner"></div>
         <ul class="list platforms-list">
-            <li class="first">Android<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-android.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-android"></a></li><li >Bada<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-bada.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-bada"></a></li><li >Blackberry<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-blackberry.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-blackberry"></a></li><li >iOS<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-ios.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-ios"></a></li><li >Mac OS X<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-osx.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-osx"></a></li><li >QT<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-qt.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-qt"></a></li><li >Tizen<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-tizen.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-tizen"></a></li><li >WebOS<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-webos.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-webos"></a></li><li >Windows (desktop)<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-windows.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-windows"></a></li><li >Windows Phone 7<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-wp7.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-wp7"></a></li><li >Windows Phone 8<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-wp8.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-wp8"></a></li>
+            {{#repo_platforms}}<li {{#first}}class="first"{{/first}}>{{name}}<a class="link-apache" href="{{apache}}"></a><a class="link-github" href="{{github}}"></a></li>{{/repo_platforms}}
         </ul>
         <ul class="list platforms-list second">
-            <li class="first">Cordova Docs<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-docs.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-docs"></a></li><li >Cordova JS (JavaScript API)<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-js.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-js"></a></li><li >Cordova CLI<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-cli.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-cli"></a></li><li >Cordova Mobile Spec (Test Suite)<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-mobile-spec.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-mobile-spec"></a></li><li >Weinre (Web Inspector Remote)<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-weinre.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-weinre"></a></li><li >Cordova Hello World (Sample App)<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-app-hello-world.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-app-hello-world"></a></li><li >Cordova Coho (Release Tool)<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-coho.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-coho"></a></li>
+            {{#repo_other}}<li {{#first}}class="first"{{/first}}>{{name}}<a class="link-apache" href="{{apache}}"></a><a class="link-github" href="{{github}}"></a></li>{{/repo_other}}
         </ul>
     </div>
 </div>
@@ -117,15 +119,12 @@ title: Apache Cordova Blog
     <p>By downloading, you agree to the <a href="#">terms of service</a>.</p>
     <p>Older versions can be downloaded from the <a href="http://archive.apache.org/dist/cordova/">archive</a>.</p>
     <div class="button-container">
-        <a class="button" onclick="_gaq.push(['_trackEvent', 'Download', '2.9.0'])" href="https://www.apache.org/dist/cordova/">DOWNLOAD<label>Cordova Ver 2.9.0</label></a>
-    </div>
-</div>
-
-<div class="grid">
-    <div class="wrap">
-        <div class="corner"></div>
-        <br/>
-        <br/>
+        {{^no_download}}
+        <a class="button" onclick="_gaq.push(['_trackEvent', 'Download', '{{latest_version}}'])" href="{{download_link}}">DOWNLOAD<label>Cordova Ver {{latest_version}}</label></a>
+        {{/no_download}}
+        {{#no_download}}
+        <div class="button">Coming Soon<label></label></div>
+        {{/no_download}}
     </div>
 </div>
 
