@@ -13,12 +13,24 @@ Get the source code
 
 How to add a post to the Cordova Blog
 -----------------------
-    # Add Markdown pr Textile file into www/_posts/YEAR-MONTH-DAY-title.MARKUP
-    # For example:
-    # 2011-12-31-new-years-eve-is-awesome.md
-    # 2012-09-12-how-to-write-a-blog.textile
+    # Add Markdown or Textile file into www/_posts/YEAR-MONTH-DAY-title.MARKUP
+      For example:
+      2011-12-31-new-years-eve-is-awesome.md
+      2012-09-12-how-to-write-a-blog.textile
+    $ echo "my new blog post" > www/_posts/2013-12-31-cordova-is-awesome.md
 
-How to compile the site
+    # Switch to gh-pages branch
+    $ git checkout gh-pages
+
+    # Preview Blog Post
+    $ jekyll serve --baseurl ''
+
+    # Add and commit
+    $ git commit -a -m "My new blog post"
+
+
+
+How to build the site
 -----------------------
 
     # change to the cordova website directory.
@@ -31,13 +43,12 @@ How to compile the site
     # only the first time or when the Gemfile is updated.
     $ sudo bundle install
 
-    # compile the site.
-    $ rake build
+    # build and serve the site.
+    $ jekyll serve --baseurl ''
 
     # Test
-    # the site is generated in `public/` with an index.html file that
-    # can be opened as a local file in your browser.
-    $ open public/index.html
+    # the site is generated in `_site/`
+    # can be preview with http://localhost:4000/
 
 
 How to update GitHub Pages
@@ -46,29 +57,22 @@ How to update GitHub Pages
     # Switch to master branch
 
     # Make changes in www, compile site, and test
+    $ rake build
 
     # Add and commit changes to master branch
 
-    # Record changes www to root
-    $ cp -rf www/* .
-
-    # Stage changes
-    $ git add .
-
-    # Stash changes
-    $ git stash
+    # Record changes www to tmp
+    $ cp -r www/* ../wwwtmp/
 
     # Switch to gh-pages
     $ git checkout gh-pages
 
-    # Apply saved stash
-    $ git stash apply
+    # Copy in recorded changes
+    $ cp -r ../wwwtpm/* .
 
-    # Stage changes into branch
-    $ git add .
 
-    # Stage changes into branch
-    $ git commit -m "My new post added"
+    # Add and commit
+    $ git commit -a -m "My new post added"
 
     # Commit changes to gh-pages
     $ git push origin gh-pages
