@@ -17,17 +17,32 @@
         <div class="list-container">
             <ul class="list quick-links">
                 <li class="corner"></li>
-                <li><a href="{{ site.baseurl }}/index.html#about">About Cordova<span></span></a></li><li><a href="http://projects.apache.org/projects/cordova.html">Apache Project Page<span></span></a></li><li><a href="http://www.apache.org/licenses/LICENSE-2.0">License<span></span></a></li><li><a href="{{ site.baseurl }}/artwork.html">Artwork<span></span></a></li>
+                <li><a href="{{ site.baseurl }}{{ site.sitemap.about.url }}">{{ site.sitemap.about.title }}<span></span></a></li>
+
+                {% for links in site.sitemap.general %}
+                <li><a href="{{ links.url }}">{{ links.title }}<span></span></a></li>
+                {% endfor %}
+
+                <li><a href="{{ site.baseurl }}{{ site.sitemap.artwork.url }}">{{ site.sitemap.artwork.title }}<span></span></a></li>
             </ul>
 
             <ul class="list quick-links">
                 <li class="corner"></li>
-                <li><a href="{{ site.baseurl }}/index.html#download">Download<span></span></a></li><li><a href="https://git-wip-us.apache.org/repos/asf">Source Code<span></span></a></li><li><a href="http://cordova.apache.org/docs/en/2.9.0/">Documentation<span></span></a></li><li><a href="{{ site.baseurl }}/index.html#mailing-list">Mailing List<span></span></a></li><li><a href="https://issues.apache.org/jira/browse/CB">Issue Tracker<span></span></a></li><li><a href="http://wiki.apache.org/cordova/">Wiki<span></span></a></li>
+                <li><a href="{{ site.baseurl }}{{ site.sitemap.download.url }}">{{ site.sitemap.download.title }}<span></span></a></li>
+                <li><a href="{{ site.sitemap.docs.url }}">{{ site.sitemap.docs.title }}<span></span></a></li>
+
+                {% for links in site.sitemap.dev %}
+                <li><a href="{{ links.url }}">{{ links.title }}<span></span></a></li>
+                {% endfor %}
+
+                <li><a href="{{ site.baseurl }}{{ site.sitemap.mailing-list.url }}">{{ site.sitemap.mailing-list.title }}<span></span></a></li>
             </ul>
 
             <ul class="list quick-links last">
                 <li class="corner"></li>
-                <li><a href="http://www.apache.org/">About ASF<span></span></a></li><li><a href="http://www.apache.org/foundation/thanks.html">Thanks<span></span></a></li><li><a href="http://www.apache.org/foundation/sponsorship.html">Become a Sponsor<span></span></a></li><li><a href="http://www.apache.org/security/">Security<span></span></a></li>
+                {% for links in site.sitemap.asf %}
+                <li><a href="{{ links.url }}">{{ links.title }}<span></span></a></li>
+                {% endfor %}
             </ul>
 
             <div class="clear"></div>

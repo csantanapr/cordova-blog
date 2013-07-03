@@ -1,90 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name = "format-detection" content = "telephone=no">
-<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-<title>Apache Cordova</title>
-<link rel="stylesheet" type="text/css" href="css/master.css">
-<script src="js/smooth.pack.js" type="text/javascript"></script>
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-94271-30']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-  function submitJiraSearchForm() {
-    var queryTemplate1 = '(summary ~ "%1" OR description ~ "%1" OR comment ~ "%1") AND ';
-    var queryTemplate2 = 'project = CB AND resolution = Unresolved %2ORDER BY created';
-    var componentKeywords = [
-        /\b(ios|iphone|ipad|ipod)\b/ig, 'iOS',
-        /\b(android)\b/ig, 'Android',
-        /\b(blackberry|rim|bb.?|bb10|webworks)\b/ig, 'BlackBerry',
-        /\b(webos)\b/ig, 'webOS',
-        /\b(wp7|windows phone)\b/ig, 'WP7',
-        /\b(wp8|windows phone)\b/ig, 'WP8'
-        ];
-    var query = document.getElementById('jira-search-box').value;
-    // Check for some platform keywords:
-    var components = [];
-    for (var i = 0; i < componentKeywords.length; i += 2) {
-        if (query.match(componentKeywords[i])) {
-            query = query.replace(componentKeywords[i], '');
-            components.push(componentKeywords[i + 1]);
-        }
-    }
-    var componentsQuery = '';
-    if (components.length) {
-        // Add in components that apply to all platforms.
-        components.push('Docs', 'mobile-spec', 'CordovaJS');
-        componentsQuery = 'AND component in (' + components.join(', ') + ') ';
-    }
-    // Remove quotes since we are adding them in.
-    query = query.replace(/"/g, '');
-    var tokens = query.split(/\s+/);
-    query = '';
-    for (var i = 0; i < tokens.length; ++i) {
-        if (tokens[i]) {
-            query += queryTemplate1.replace(/%1/g, tokens[i]);
-        }
-    }
-    query += queryTemplate2.replace('%2', componentsQuery)
-    window.open('https://issues.apache.org/jira/secure/IssueNavigator.jspa?mode=show&reset=true&navType=simple&jqlQuery=' + encodeURIComponent(query), '_newtab' + new Date);
-  }
-</script>
-</head>
-<body>
-<a class="scroll-point pt-top" name="top"></div>
-<div id="header">
-    <div class="wrap">
-        <a class="logo" href="#top"></a>
-        <div class="menu">
-            <a href="#about">About</a>
-            <a href="#contribute">Contribute</a>
-            <a href="#mailing-list">Mailing List</a>
-            <a href="#download">Download</a>
-            <a href="#links">Quick Links</a>
-            <a href="blog">Blog</a>
-        </div>
-        <form class="menu-dropdown">
-            <select onchange="location = this.options[this.selectedIndex].value;">
-                <option value="#about">About</option>
-                <option value="#contribute">Contribute</option>
-                <option value="#mailing-list">Mailing List</option>
-                <option value="#download">Download</option>
-                <option value="#links">Quick Links</option>
-                <option value="blog">Blog</option>
-            </select>
-        </form>
-    </div>
-    <div class="shadow"></div>
-</div>
-<div class="header-placeholder"></div>
+---
+layout: cordova
+title: Apache Cordova
+---
 
 <div class="grid leadin">
     <div class="wrap">
@@ -95,9 +12,10 @@
             <li><h1>applications using <strong>HTML</strong>, <strong>CSS</strong></h1></li>
             <li><h1>and <strong>JavaScript</strong></h1></li>
         </ul>
-
         <div class="button-container">
-            <a class="button" onclick="_gaq.push(['_trackEvent', 'Download', '2.9.0'])" href="https://www.apache.org/dist/cordova/">DOWNLOAD<label>Cordova Ver 2.9.0</label></a>
+
+            <a class="button" onclick="_gaq.push(['_trackEvent', 'Download', '{{site.releases.version}}'])" href="{{site.releases.file}}">DOWNLOAD<label>Cordova Ver {{site.releases.version}}</label></a>
+
         </div>
     </div>
 </div>
@@ -110,7 +28,7 @@
     <p>And because these JavaScript APIs are consistent across multiple device platforms and built on web standards, the app should be portable to other device platforms with minimal to no changes.</p>
     <p>Apps using Cordova are still packaged as apps using the platform SDKs, and can be made available for installation from each device's app store.</p>
     <p>Cordova provides a set of uniform JavaScript libraries that can be invoked, with device-specific native backing code for those JavaScript libraries. Cordova is available for the following platforms: iOS, Android, Blackberry, Windows Phone, Palm WebOS, Bada, and Symbian.</p>
-    <p>If you want to use Cordova in your mobile application, take a look at our <a href="http://cordova.apache.org/docs/en/2.9.0/">documentation</a>. It includes Getting Started guides, the JavaScript APIs reference and examples, instructions on Upgrading from previous versions of Cordova, how to write your own Cordova plugin, and more. The selector in the top-right corner of the documentation will let you pick different Cordova versions and language translations.</p>
+    <p>If you want to use Cordova in your mobile application, take a look at our <a href="{{site.sitemap.docs.url}}">documentation</a>. It includes Getting Started guides, the JavaScript APIs reference and examples, instructions on Upgrading from previous versions of Cordova, how to write your own Cordova plugin, and more. The selector in the top-right corner of the documentation will let you pick different Cordova versions and language translations.</p>
     <p>Apache Cordova graduated in October 2012 as a top level project within the Apache Software Foundation (ASF). Through the ASF, future Cordova development will ensure open stewardship of the project. It will always remain free and open source under the Apache License, Version 2.0.
 </p>
 </div>
@@ -132,10 +50,19 @@
     <div class="wrap">
         <div class="corner"></div>
         <ul class="list platforms-list">
-            <li class="first">Android<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-android.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-android"></a></li><li >Bada<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-bada.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-bada"></a></li><li >Blackberry<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-blackberry.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-blackberry"></a></li><li >iOS<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-ios.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-ios"></a></li><li >Mac OS X<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-osx.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-osx"></a></li><li >QT<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-qt.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-qt"></a></li><li >Tizen<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-tizen.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-tizen"></a></li><li >WebOS<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-webos.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-webos"></a></li><li >Windows (desktop)<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-windows.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-windows"></a></li><li >Windows Phone 7<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-wp7.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-wp7"></a></li><li >Windows Phone 8<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-wp8.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-wp8"></a></li>
+
+            {% for repo in site.repos.platforms %}
+                <li class="{{repo.css}}">{{repo.name}}<a class="link-apache" href="{{repo.apache}}"></a><a class="link-github" href="{{repo.github}}"></a></li>
+            {% endfor %}
+
+
         </ul>
         <ul class="list platforms-list second">
-            <li class="first">Cordova Docs<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-docs.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-docs"></a></li><li >Cordova JS (JavaScript API)<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-js.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-js"></a></li><li >Cordova CLI<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-cli.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-cli"></a></li><li >Cordova Mobile Spec (Test Suite)<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-mobile-spec.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-mobile-spec"></a></li><li >Weinre (Web Inspector Remote)<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-weinre.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-weinre"></a></li><li >Cordova Hello World (Sample App)<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-app-hello-world.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-app-hello-world"></a></li><li >Cordova Coho (Release Tool)<a class="link-apache" href="https://git-wip-us.apache.org/repos/asf?p=cordova-coho.git;a=summary"></a><a class="link-github" href="https://github.com/apache/cordova-coho"></a></li>
+
+            {% for repo in site.repos.other %}
+                <li class="{{repo.css}}">{{repo.name}}<a class="link-apache" href="{{repo.apache}}"></a><a class="link-github" href="{{repo.github}}"></a></li>
+            {% endfor %}
+
         </ul>
     </div>
 </div>
@@ -200,60 +127,9 @@
     <p>By downloading, you agree to the <a href="#">terms of service</a>.</p>
     <p>Older versions can be downloaded from the <a href="http://archive.apache.org/dist/cordova/">archive</a>.</p>
     <div class="button-container">
-        <a class="button" onclick="_gaq.push(['_trackEvent', 'Download', '2.9.0'])" href="https://www.apache.org/dist/cordova/">DOWNLOAD<label>Cordova Ver 2.9.0</label></a>
+
+        <a class="button" onclick="_gaq.push(['_trackEvent', 'Download', '{{site.releases.version}}'])" href="{{site.releases.file}}">DOWNLOAD<label>Cordova Ver {{site.releases.version}}</label></a>
+
     </div>
 </div>
 
-<div class="grid">
-    <div class="wrap">
-        <div class="corner"></div>
-        <br/>
-        <br/>
-    </div>
-</div>
-
-<a class="scroll-point" name="links"></a>
-<hr/>
-
-<div class="wrap quick-links-pane">
-    <h2 class="icon icon-quick-links">Quick Links</h2>
-    <br/>
-    <ul class="quick-links-header">
-        <li>General</li>
-        <li>Development</li>
-        <li class="last">Apache Software Foundation</li>
-    </ul>
-    <div class="clear"></div>
-</div>
-
-<div class="grid">
-    <div class="wrap">
-        <div class="list-container">
-            <ul class="list quick-links">
-                <li class="corner"></li>
-                <li><a href="index.html#about">About Cordova<span></span></a></li><li><a href="http://projects.apache.org/projects/cordova.html">Apache Project Page<span></span></a></li><li><a href="http://www.apache.org/licenses/LICENSE-2.0">License<span></span></a></li><li><a href="artwork.html">Artwork<span></span></a></li>
-            </ul>
-
-            <ul class="list quick-links">
-                <li class="corner"></li>
-                <li><a href="index.html#download">Download<span></span></a></li><li><a href="https://git-wip-us.apache.org/repos/asf">Source Code<span></span></a></li><li><a href="http://cordova.apache.org/docs/en/2.9.0/">Documentation<span></span></a></li><li><a href="index.html#mailing-list">Mailing List<span></span></a></li><li><a href="https://issues.apache.org/jira/browse/CB">Issue Tracker<span></span></a></li><li><a href="http://wiki.apache.org/cordova/">Wiki<span></span></a></li>
-            </ul>
-
-            <ul class="list quick-links last">
-                <li class="corner"></li>
-                <li><a href="http://www.apache.org/">About ASF<span></span></a></li><li><a href="http://www.apache.org/foundation/thanks.html">Thanks<span></span></a></li><li><a href="http://www.apache.org/foundation/sponsorship.html">Become a Sponsor<span></span></a></li><li><a href="http://www.apache.org/security/">Security<span></span></a></li>
-            </ul>
-
-            <div class="clear"></div>
-        </div>
-    </div>
-</div>
-
-<div id="footer">
-    <p>Copyright © 2012 The Apache Software Foundation, Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.<br/>
-    Apache and the Apache feather logos are trademarks of The Apache Software Foundation.</p>
-    <a class="closing" href="#top"></a>
-</div>
-
-</body>
-</html>
