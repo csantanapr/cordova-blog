@@ -83,3 +83,10 @@ How to deploy the website
 
 - the website is automatically updated on each commit.
 - the website should update within seconds.
+
+Things you should know
+----------------------
+
+- `_config.yml` contains information for: download & archives, quick links, and list of repos
+- the site can be tested by running `public` locally using http://localhost. This is handy for modifying css
+
