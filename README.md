@@ -5,8 +5,8 @@ Cordova Website
 Dependencies
 ------------
 
-- See `Gemfile` for more details, and below on how to install these.
 - Jekyll
+- See `Gemfile` for more details, and below on how to install.
 
 Get the source code
 -------------------
@@ -47,7 +47,7 @@ How to update the docs
     $ cp -r /path/to/cordova-docs/public/ /path/to/cordova-website/public/docs
 
     # update the "Documentation" URL on the site to point to the latest version of the docs
-    $ vi bin/config.json
+    $ vi _config.yml
         search for "Documentation"
         change the version number in the URL to the latest (likely what you added above)
 
