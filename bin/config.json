@@ -109,7 +109,7 @@
         "general": [
         {
             "title": "About Cordova",
-            "url": "index.html#about"
+            "url": "\\{\\{ site.baseurl \\}\\}/index.html#about"
         },
         {
             "title": "Apache Project Page",
@@ -121,13 +121,13 @@
         },
         {
             "title": "Artwork",
-            "url": "/artwork.html"
+            "url": "{{ site.baseurl }}/artwork.html"
         }
         ],
         "dev": [
         {
             "title": "Download",
-            "url": "index.html#download"
+            "url": "{{ site.baseurl }}/index.html#download"
         },
         {
             "title": "Source Code",
@@ -139,7 +139,7 @@
         },
         {
             "title": "Mailing List",
-            "url": "index.html#mailing-list"
+            "url": "{{ site.baseurl }}/index.html#mailing-list"
         },
         {
             "title": "Issue Tracker",

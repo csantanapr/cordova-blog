@@ -19,6 +19,9 @@
                 <li class="corner"></li>
                 {{#links_general}}<li><a href="{{url}}">{{title}}<span></span></a></li>{{/links_general}}
             </ul>
+            {% for links in site.general %}
+               <li><a href="{{links.url}}">{{links.title}}<span></span></a></li>
+            {% endfor %}
 
             <ul class="list quick-links">
                 <li class="corner"></li>

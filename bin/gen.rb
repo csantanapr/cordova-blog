@@ -72,12 +72,6 @@ File.open( pub_directory + '/artwork.html', 'w' ) do | file |
     file.puts tempArt.render( file_data )
 end
 
-# generating _includes/links.html
-File.open( pub_directory + '/_includes/links.html', 'w' ) do | file |
-    file_data = tempLinks.render( data )
-    file.puts tempLinks.render( file_data )
-end
-
 
 # LessCSS
 system( "lessc www/css/_master.less > " + pub_directory + "/css/master.css" )

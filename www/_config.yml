@@ -4,3 +4,70 @@ baseurl: 'http://csantanapr.github.io/cordova-blog'
 safe: true
 lsi: false
 pygments: true
+
+#From old config.json
+"sitemap": {
+        "about": {
+            "title": "About Cordova",
+            "url": "/index.html#about"
+        },
+        "artwork": {
+            "title": "Artwork",
+            "url": "/artwork.html"
+        },
+        "download": {
+            "title": "Download",
+            "url": "/index.html#download"
+        },
+        "mailing-list": {
+            "title": "Mailing List",
+            "url": "/index.html#mailing-list"
+        },
+        "general": [
+        {
+            "title": "Apache Project Page",
+            "url": "http://projects.apache.org/projects/cordova.html"
+        },
+        {
+            "title": "License",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+        ],
+        "dev": [
+        {
+            "title": "Source Code",
+            "url": "https://git-wip-us.apache.org/repos/asf"
+        },
+        {
+            "title": "Documentation",
+            "url": "http://cordova.apache.org/docs/en/2.9.0/"
+        },
+        {
+            "title": "Issue Tracker",
+            "url": "https://issues.apache.org/jira/browse/CB"
+        },
+        {
+            "title": "Wiki",
+            "url": "http://wiki.apache.org/cordova/"
+        }
+        ],
+        "asf": [
+        {
+            "title": "About ASF",
+            "url": "http://www.apache.org/"
+        },
+        {
+            "title": "Thanks",
+            "url": "http://www.apache.org/foundation/thanks.html"
+        },
+        {
+            "title": "Become a Sponsor",
+            "url": "http://www.apache.org/foundation/sponsorship.html"
+        },
+        {
+            "title": "Security",
+            "url": "http://www.apache.org/security/"
+        }
+        ]
+}
+
