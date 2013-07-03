@@ -58,13 +58,6 @@ tempIndex[:links_asf] = tempArt[:links_asf] = tempLinks[:links_asf] = sitemap['a
 pub_directory = 'www'
 
 
-# generating index.html
-File.open( pub_directory + '/index.html', 'w' ) do | file |
-    file_data = tempIndex.render( data )
-    file_data = file_data.gsub( /(\r|\n)<\![\s-]{0,5}localstart[^*]+?localend[\s-]{0,5}>|<!--\spublicstart[^<]+|\spublicend[^*]+?-->/, '' )
-    file.puts tempIndex.render( file_data )
-end
-
 # generating artwork.html
 File.open( pub_directory + '/artwork.html', 'w' ) do | file |
     file_data = tempArt.render( data )
