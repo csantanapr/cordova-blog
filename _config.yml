@@ -1,4 +1,5 @@
 name: Cordova
+baseurl: ''
 source:      www
 destination: public
 #GitHub Pages defaults

@@ -1,5 +1,5 @@
 name: Cordova
-url: 'http://csantanapr.github.io/cordova-blog'
+baseurl: 'http://csantanapr.github.io/cordova-blog'
 #GitHub Pages defaults
 safe: true
 lsi: false

@@ -194,7 +194,7 @@ hr {
   -webkit-transition: background 0.25s linear;
   -moz-transition: background 0.25s linear;
   transition: background 0.25s linear;
-  padding: 16px;
+  padding: 8px;
   margin: 0 8px;
   line-height: 55px;
 }
@@ -243,7 +243,7 @@ hr {
   bottom: 0;
 }
 /*---------------------------------------------------
-	Layout - Contribution, Mailing List, 
+	Layout - Contribution, Mailing List,
 	Download and Quick Links
 ---------------------------------------------------*/
 .container-box {
