@@ -32,6 +32,23 @@ title: Apache Cordova
     <p>Apache Cordova graduated in October 2012 as a top level project within the Apache Software Foundation (ASF). Through the ASF, future Cordova development will ensure open stewardship of the project. It will always remain free and open source under the Apache License, Version 2.0.
 </p>
 </div>
+<a class="scroll-point" name="news"></a>
+<hr/>
+
+<div class="wrap">
+    <h2>News</h2>
+<ul class="posts">
+  {% for post in site.posts limit 4 %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    {{post.excerpt}}
+  {% endfor %}
+</ul>
+{% if  site.posts.size > 4 %}
+<p>
+<a href="{{ site.baseurl }}/blog">See all entries</a>
+</p>
+{% endif %}
+
 <a class="scroll-point" name="contribute"></a>
 <hr/>
 

@@ -8,8 +8,10 @@ pub_directory = 'www'
 system( "lessc www/css/_master.less > " + pub_directory + "/css/master.css" )
 
 
-# Build Blog First using jekyll it blows up the public directory
-system( "jekyll build" )
+puts "Server running at http://localhost:4000/'"
+system( "jekyll serve -w" )
+
+
 
 
 
