@@ -3,12 +3,10 @@
 <channel>
         <title>Apache Cordova</title>
         <description>Apache Cordova - Apache Cordova is a set of device APIs that allow a web mobile app developer to access native device function from JavaScript.</description>
-        <link>/rss.xml</link>
-        <link></link>
-        <atom:link href="/rss.xml" rel="self" type="application/rss+xml" />
-<link rel="alternate" type="application/rss+xml" title="Apache Cordova" href="/rss.xml"/>
-        <lastBuildDate>2013-07-08T11:08:21-04:00</lastBuildDate>
-        <pubDate>2013-07-08T11:08:21-04:00</pubDate>
+        <atom:link href="http://cordova.apache.org/rss.xml" rel="self" type="application/rss+xml" />
+        <link>http://cordova.apache.org/rss.xml</link>
+        <lastBuildDate>Mon, 08 Jul 2013 11:32:08 -0400</lastBuildDate>
+        <pubDate>Mon, 08 Jul 2013 11:32:08 -0400</pubDate>
         <ttl>1800</ttl>
 
 
@@ -24,9 +22,9 @@
 &lt;span class='c1'&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Check out the &lt;a href='http://jekyllrb.com'&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href='https://github.com/mojombo/jekyll'&gt;Jekyll&amp;#8217;s GitHub repo&lt;/a&gt;.&lt;/p&gt;</description>
-                <link>/blog/2013/07/01/welcome-to-jekyll.html</link>
-                <guid>/blog/2013/07/01/welcome-to-jekyll</guid>
-                <pubDate>2013-07-01T16:01:14-04:00</pubDate>
+                <link>http://cordova.apache.org/blog/2013/07/01/welcome-to-jekyll.html</link>
+                <guid>http://cordova.apache.org/blog/2013/07/01/welcome-to-jekyll</guid>
+                <pubDate>Mon, 01 Jul 2013 16:01:14 -0400</pubDate>
         </item>
 
 
