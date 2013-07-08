@@ -16,7 +16,7 @@ title : RSS Feed
         <image>
             <url>{{ site.baseurl }}{{ site.rss_logo }}</url>
             <title>{{ site.name }}</title>
-            <link>{{ site.baseurl }}</link>
+            <link>{{ site.baseurl }}{{ site.rss_path }}</link>
             <width>128</width>
             <height>128</height>
             <description>{{ site.description }}</description>
