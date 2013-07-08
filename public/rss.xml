@@ -5,9 +5,17 @@
         <description>Apache Cordova - Apache Cordova is a set of device APIs that allow a web mobile app developer to access native device function from JavaScript.</description>
         <atom:link href="http://cordova.apache.org/rss.xml" rel="self" type="application/rss+xml" />
         <link>http://cordova.apache.org/rss.xml</link>
-        <lastBuildDate>Mon, 08 Jul 2013 11:32:08 -0400</lastBuildDate>
-        <pubDate>Mon, 08 Jul 2013 11:32:08 -0400</pubDate>
+        <lastBuildDate>Mon, 08 Jul 2013 12:20:18 -0400</lastBuildDate>
+        <pubDate>Mon, 08 Jul 2013 12:20:18 -0400</pubDate>
         <ttl>1800</ttl>
+        <image>
+            <url>http://cordova.apache.org</url>
+            <title>Apache Cordova</title>
+            <link>http://cordova.apache.org</link>
+            <width>128</width>
+            <height>128</height>
+            <description>Apache Cordova is a set of device APIs that allow a web mobile app developer to access native device function from JavaScript.</description>
+        </image>
 
 
         <item>
