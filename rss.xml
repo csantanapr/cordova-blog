@@ -13,6 +13,14 @@ title : RSS Feed
         <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
         <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <ttl>1800</ttl>
+        <image>
+            <url>{{ site.baseurl }}{{ site.rss_logo }}</url>
+            <title>{{ site.name }}</title>
+            <link>{{ site.baseurl }}</link>
+            <width>128</width>
+            <height>128</height>
+            <description>{{ site.description }}</description>
+        </image>
 
 {% for post in site.posts %}
         <item>

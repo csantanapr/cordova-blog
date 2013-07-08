@@ -1,9 +1,8 @@
 baseurl: http://csantanapr.github.io/cordova-blog
 name: Apache Cordova
 description: Apache Cordova is a set of device APIs that allow a web mobile app developer to access native device function from JavaScript.
-source:      www
-destination: public
 rss_path: /rss.xml
+rss_logo: /images/cordova_128.png
 #GitHub Pages defaults
 safe: true
 lsi: false
