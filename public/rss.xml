@@ -5,8 +5,8 @@
         <description>Apache Cordova - Apache Cordova is a set of device APIs that allow a web mobile app developer to access native device function from JavaScript.</description>
         <atom:link href="http://cordova.apache.org/rss.xml" rel="self" type="application/rss+xml" />
         <link>http://cordova.apache.org/rss.xml</link>
-        <lastBuildDate>Mon, 08 Jul 2013 12:45:10 -0400</lastBuildDate>
-        <pubDate>Mon, 08 Jul 2013 12:45:10 -0400</pubDate>
+        <lastBuildDate>Mon, 08 Jul 2013 13:43:24 -0400</lastBuildDate>
+        <pubDate>Mon, 08 Jul 2013 13:43:24 -0400</pubDate>
         <ttl>1800</ttl>
         <image>
             <url>http://cordova.apache.org</url>
@@ -32,7 +32,7 @@
 &lt;p&gt;Check out the &lt;a href='http://jekyllrb.com'&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href='https://github.com/mojombo/jekyll'&gt;Jekyll&amp;#8217;s GitHub repo&lt;/a&gt;.&lt;/p&gt;</description>
                 <link>http://cordova.apache.org/blog/2013/07/01/welcome-to-jekyll.html</link>
                 <guid>http://cordova.apache.org/blog/2013/07/01/welcome-to-jekyll</guid>
-                <pubDate>Mon, 01 Jul 2013 16:01:14 -0400</pubDate>
+                <pubDate>Mon, 01 Jul 2013 00:00:00 -0400</pubDate>
         </item>
 
 

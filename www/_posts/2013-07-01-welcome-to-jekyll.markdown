@@ -1,7 +1,9 @@
 ---
 layout: post
+author:
+    name: Jekyll Team
+    url: https://twitter.com/jekyllrb
 title:  "Welcome to Jekyll!"
-date:   2013-07-01 16:01:14
 categories: blog
 tags: jekyll
 ---
