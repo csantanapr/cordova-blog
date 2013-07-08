@@ -42,8 +42,9 @@ title: Apache Cordova
   {% for post in site.posts limit 4 %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     {{post.excerpt}}
+    <a href="{{ site.baseurl }}{{ post.url }}">Read More...</a>
   {% endfor %}
-  <a href="{{ site.baseurl }}{{ post.url }}">Read More...</a>
+
 </ul>
 {% if  site.posts.size > 4 %}
 <p>
