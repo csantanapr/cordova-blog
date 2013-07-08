@@ -4,7 +4,7 @@ author:
     name: Carlos Santana
     url: https://twitter.com/csantanapr
 title:  "Apache Cordova has a blog"
-date:   2013-07-08 15:32:04
+date:   2013-07-08 15:45:04 -5
 categories: blog
 tags: news
 ---
