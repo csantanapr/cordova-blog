@@ -31,8 +31,8 @@ How to compile the site
     $ rake build
 
     # the site is generated in `public/` with an index.html file that
-    # can be opened as a local file in your browser.
-    $ open public/index.html
+    # can be opened using:
+    $ www/serve.rb
 
 
 How to update the docs
@@ -64,10 +64,3 @@ How to deploy the website
 - the website is automatically updated on each commit.
 - the website should update within seconds.
 
-
-Things you should know
-----------------------
-
-- `bin/config.json` + `www/template.html` + Mustache outputs `index.html`
-- `bin/config.json` contains information for: download & archives, quick links, and list of repos
-- the site can be tested by running `www` locally. This is handy for modifying css
