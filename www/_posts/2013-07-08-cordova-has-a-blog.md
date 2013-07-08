@@ -10,7 +10,9 @@ tags: news
 
 Cordova Blog
 ---
-Cordova has a Blog too, we establish this blog to share the latest information, interesting articles, and news about the project including release notes. With a major release [3.0](https://issues.apache.org/jira/browse/CB/fixforversion/12322491) just around the corner (July 19, 2013) we know that a lot of developers will want to know what's the latest with Cordova and will also want to share what cool stuff others are doing with Cordova. You can [subscribe](http://cordova.apache.org/rss.xml) using RSS
+Cordova has a Blog too, we establish this blog to share the latest information, interesting articles, and news about the project including release notes. With a major release [3.0](https://issues.apache.org/jira/browse/CB/fixforversion/12322491) just around the corner (July 19, 2013) we know that a lot of developers will want to know what's the latest with Cordova and will also want to share what cool stuff others are doing with Cordova.
+
+[Subscribe]({{ site.baseurl }}{{ site.rss_path }}) using RSS
 
 Contribute to the Blog
 ---

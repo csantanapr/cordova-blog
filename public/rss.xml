@@ -5,8 +5,8 @@
         <description>Apache Cordova - Apache Cordova is a set of device APIs that allow a web mobile app developer to access native device function from JavaScript.</description>
         <atom:link href="http://cordova.apache.org/rss.xml" rel="self" type="application/rss+xml" />
         <link>http://cordova.apache.org/rss.xml</link>
-        <lastBuildDate>Mon, 08 Jul 2013 14:57:31 -0400</lastBuildDate>
-        <pubDate>Mon, 08 Jul 2013 14:57:31 -0400</pubDate>
+        <lastBuildDate>Mon, 08 Jul 2013 15:18:18 -0400</lastBuildDate>
+        <pubDate>Mon, 08 Jul 2013 15:18:18 -0400</pubDate>
         <ttl>1800</ttl>
         <image>
             <url>http://cordova.apache.org</url>
@@ -22,7 +22,9 @@
                 <title>Apache Cordova has a blog</title>
                 <description>&lt;h2 id='cordova_blog'&gt;Cordova Blog&lt;/h2&gt;
 
-&lt;p&gt;Cordova has a Blog too, we establish this blog to share the latest information, interesting articles, and news about the project including release notes. With a major release &lt;a href='https://issues.apache.org/jira/browse/CB/fixforversion/12322491'&gt;3.0&lt;/a&gt; just around the corner (July 19, 2013) we know that a lot of developers will want to know what&amp;#8217;s the latest with Cordova and will also want to share what cool stuff others are doing with Cordova. You can &lt;a href='http://cordova.apache.org/rss.xml'&gt;subscribe&lt;/a&gt; using RSS&lt;/p&gt;
+&lt;p&gt;Cordova has a Blog too, we establish this blog to share the latest information, interesting articles, and news about the project including release notes. With a major release &lt;a href='https://issues.apache.org/jira/browse/CB/fixforversion/12322491'&gt;3.0&lt;/a&gt; just around the corner (July 19, 2013) we know that a lot of developers will want to know what&amp;#8217;s the latest with Cordova and will also want to share what cool stuff others are doing with Cordova.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://cordova.apache.org/rss.xml'&gt;Subscribe&lt;/a&gt; using RSS&lt;/p&gt;
 
 &lt;h2 id='contribute_to_the_blog'&gt;Contribute to the Blog&lt;/h2&gt;
 
