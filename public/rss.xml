@@ -5,8 +5,8 @@
         <description>Apache Cordova - Apache Cordova is a set of device APIs that allow a web mobile app developer to access native device function from JavaScript.</description>
         <atom:link href="http://cordova.apache.org/rss.xml" rel="self" type="application/rss+xml" />
         <link>http://cordova.apache.org/rss.xml</link>
-        <lastBuildDate>Mon, 08 Jul 2013 15:44:47 -0400</lastBuildDate>
-        <pubDate>Mon, 08 Jul 2013 15:44:47 -0400</pubDate>
+        <lastBuildDate>Mon, 08 Jul 2013 15:49:47 -0400</lastBuildDate>
+        <pubDate>Mon, 08 Jul 2013 15:49:47 -0400</pubDate>
         <ttl>1800</ttl>
         <image>
             <url>http://cordova.apache.org</url>
@@ -32,7 +32,7 @@
 
 &lt;h2 id='legal_mumbo_jumbo'&gt;Legal mumbo jumbo&lt;/h2&gt;
 
-&lt;p&gt;Please follow blogging best practices, do not offend anyone and obey copyright law. You will need to have signed off on the Apache CLA in order for content to be accepted. For more information, refer to: http://www.apache.org/licenses/#clas&lt;/p&gt;
+&lt;p&gt;Please follow blogging best practices, do not offend anyone and obey copyright law. You will need to have signed off on the Apache CLA in order for content to be accepted. For more information, refer to: &lt;a href='http://www.apache.org/licenses/#clas'&gt;http://www.apache.org/licenses/#clas&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id='geek_warning'&gt;Geek warning&lt;/h2&gt;
 
@@ -41,7 +41,7 @@
 &lt;ol&gt;
 &lt;li&gt;Fork the repo &lt;a href='https://github.com/csantanapr/cordova-blog'&gt;cordova-blog&lt;/a&gt; on GitHub&lt;/li&gt;
 
-&lt;li&gt;Add the markdown file in the &lt;code&gt;www/_post/2013-12-31-my-cordova-blog-post.md&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add the markdown file in the &lt;code&gt;www/_posts/2013-12-31-my-cordova-blog-post.md&lt;/code&gt;&lt;/li&gt;
 
 &lt;li&gt;Execute the Jekyll build and server &lt;code&gt;./serve&lt;/code&gt; or &lt;code&gt;jekyll serve --watch --baseurl &amp;#39;&amp;#39;&lt;/code&gt;&lt;/li&gt;
 
