@@ -22,12 +22,12 @@ The Cordova Blog will be hosting blog posts submitted using [JIRA](https://issue
 Legal mumbo jumbo
 ---
 Please follow blogging best practices, do not offend anyone and obey copyright law.
-You will need to have signed off on the Apache CLA in order for content to be accepted. For more information, refer to: http://www.apache.org/licenses/#clas
+You will need to have signed off on the Apache CLA in order for content to be accepted. For more information, refer to: [http://www.apache.org/licenses/#clas](http://www.apache.org/licenses/#clas)
 
 Geek warning
 ---
 If you want to preview your blog post we us Jekyll:
 1. Fork the repo [cordova-blog](https://github.com/csantanapr/cordova-blog) on GitHub
-2. Add the markdown file in the `www/_post/2013-12-31-my-cordova-blog-post.md`
+2. Add the markdown file in the `www/_posts/2013-12-31-my-cordova-blog-post.md`
 3. Execute the Jekyll build and server `./serve` or `jekyll serve --watch --baseurl ''`
 4. Open the Browser [http://localhost:4000/](http://localhost:4000/)
