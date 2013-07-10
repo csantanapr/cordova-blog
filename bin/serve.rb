@@ -9,7 +9,7 @@ system( "lessc www/css/_master.less > " + pub_directory + "/css/master.css" )
 
 
 puts "Server running at http://localhost:4000/'"
-system( "jekyll serve -w" )
+system( "jekyll serve --watch --baseurl ''" )
 
 
 
