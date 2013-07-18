@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="English" value="en">
+<option value="edge">edge</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0rc1">2.7.0rc1</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0rc1">2.6.0rc1</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0rc1">2.5.0rc1</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0rc1">2.4.0rc1</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0rc2">2.3.0rc2</option>
+<option value="2.3.0rc1">2.3.0rc1</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0rc2">2.2.0rc2</option>
+<option value="2.2.0rc1">2.2.0rc1</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0rc2">2.1.0rc2</option>
+<option value="2.1.0rc1">2.1.0rc1</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0rc1">2.0.0rc1</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0rc1">1.9.0rc1</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0rc1">1.8.0rc1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0rc1">1.7.0rc1</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0rc1">1.6.0rc1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0rc1">1.5.0rc1</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="Japanese" value="jp">
+<option value="2.2.0">2.2.0</option>
+<option selected value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="kr"><option value="2.0.0">2.0.0</option></optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>ドメインホワイトリストガイド</h1>
+            <small><select><option value="%25E3%2583%2589%25E3%2583%25A1%25E3%2582%25A4%25E3%2583%25B3%25E3%2583%259B%25E3%2583%25AF%25E3%2582%25A4%25E3%2583%2588%25E3%2583%25AA%25E3%2582%25B9%25E3%2583%2588%25E3%2582%25AC%25E3%2582%25A4%25E3%2583%2589">ドメインホワイトリストガイド</option>
+<option value="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_">      - 概要</option>
+<option value="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_">      - 仕様</option>
+<option value="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_">      - シンタックス</option>
+<option value="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_android">      - Android</option>
+<option value="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_bada">      - Bada</option>
+<option value="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_blackberry">      - BlackBerry</option>
+<option value="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_ios">      - iOS</option>
+<option value="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_symbian">      - Symbian</option>
+<option value="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_webos">      - webOS</option>
+<option value="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_windows_phone">      - Windows Phone</option>
+<option value="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_tizen">      - Tizen</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>API リファレンス</h1>
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a></li>
+<li><a href="cordova_camera_camera.md.html#Camera">Camera</a></li>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_compass_compass.md.html#Compass">Compass</a></li>
+<li><a href="cordova_connection_connection.md.html#Connection">Connection</a></li>
+<li><a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a></li>
+<li><a href="cordova_device_device.md.html#Device">Device</a></li>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_file_file.md.html#File">File</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a></li>
+<li><a href="cordova_media_media.md.html#Media">Media</a></li>
+<li><a href="cordova_notification_notification.md.html#Notification">Notification</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+</ul>
+<h1>Guides</h1>
+<ul>
+<li><a href="guide_getting-started_index.md.html#%E5%85%A5%E9%96%80%E3%82%AC%E3%82%A4%E3%83%89">入門ガイド</a></li>
+<li><a href="guide_command-line_index.md.html#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E4%BD%BF%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89">コマンドライン使用ガイド</a></li>
+<li><a href="guide_upgrading_index.md.html#%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89">アップグレードガイド</a></li>
+<li><a href="guide_plugin-development_index.md.html#%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E9%96%8B%E7%99%BA%E3%82%AC%E3%82%A4%E3%83%89">プラグイン開発ガイド</a></li>
+<li><a href="guide_whitelist_index.md.html#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89">ドメインホワイトリストガイド</a></li>
+<li><a href="guide_cordova-webview_index.md.html#WebView%20%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF">WebView の埋め込み</a></li>
+<li><a href="_index.html">索引</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89">ドメインホワイトリストガイド</a></h1>
+
+<h2>
+<a name="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_">概要</a>
+</h2>
+
+<p>Apache Cordova のドメインホワイトリストは、 <code>http://google.com</code> などの外部ドメインへのアクセスを制御するセキュリティモデルです。デフォルトのセキュリティポリシーは全てのネットワークアクセスをブロックします。アプリケーション開発者は、特定のネットワークのドメインやサブドメインへのアクセスを宣言して許可できます。</p>
+
+<h2>
+<a name="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_">仕様</a>
+</h2>
+
+<p>ドメインホワイトリストは <a class="external" href="http://www.w3.org/TR/widgets-access/">W3C Widget Access</a> の仕様に基づいています。 Widget Access 仕様の中で、 <code>&lt;access&gt;</code> 要素はネットワークドメインへのアクセス許可を指定するために使われています。将来、 Apache Cordova はホワイトリスト実装のプラットフォームの W3C Widget Access 仕様書。しかしながら、現在は各プラットフォームは各々のドメインホワイトリストを実装する必要があります。</p>
+
+<h2>
+<a name="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_">シンタックス</a>
+</h2>
+
+<p><a class="external" href="http://google.com">google.com</a> へのアクセス:</p>
+
+<pre class="prettyprint"><code>http://google.com
+</code></pre>
+
+<p><a class="external" href="https://google.com">google.com</a> へのセキュアアクセス (<code>https://</code>):</p>
+
+<pre class="prettyprint"><code>https://google.com
+</code></pre>
+
+<p><a class="external" href="http://maps.google.com">maps.google.com</a> サブドメインへのアクセス:</p>
+
+<pre class="prettyprint"><code>http://maps.google.com
+</code></pre>
+
+<p><a class="external" href="http://google.com">google.com</a> のすべてのサブドメインへのアクセス (例: <a class="external" href="http://mail.google.com">mail.google.com</a> 及び <a class="external" href="http://docs.google.com">docs.google.com</a>):</p>
+
+<pre class="prettyprint"><code>http://*.google.com
+</code></pre>
+
+<p>すべてのドメインへのアクセス (例: <a class="external" href="http://google.com">google.com</a> 及び <a class="external" href="http://developer.mozilla.org">developer.mozilla.org</a>):</p>
+
+<pre class="prettyprint"><code>*
+</code></pre>
+
+<h2>
+<a name="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_android">Android</a>
+</h2>
+
+<h3>詳細</h3>
+
+<p>ホワイトリストのルールは <code>res/xml/config.xml</code> で見つけることができ、 <code>&lt;access origin="..." /&gt;</code> 要素によって宣言できます。</p>
+
+<p>Android はホワイトリストのシンタックスをフルサポートしています。</p>
+
+<h3>シンタックス</h3>
+
+<p><a class="external" href="http://google.com">google.com</a> へのアクセス:</p>
+
+<pre class="prettyprint"><code>&lt;access origin="http://google.com" /&gt;
+</code></pre>
+
+<h2>
+<a name="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_bada">Bada</a>
+</h2>
+
+<p>ドメインホワイトリストは Bada ではサポートされていません。デフォルトとして、全てのドメインにアクセス可能です。</p>
+
+<h2>
+<a name="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_blackberry">BlackBerry</a>
+</h2>
+
+<h3>詳細</h3>
+
+<p>ホワイトリストのルールは <code>www/config.xml</code> で見つけることができ、 <code>&lt;access uri="..." /&gt;</code> 要素によって宣言できます。</p>
+
+<p>詳細については、 <a class="external" href="https://developer.blackberry.com/html5/documentation/ww_developing/Access_element_834677_11.html">BlackBerry WebWorks Access Element documentation</a> を参照してください。</p>
+
+<h3>シンタックス</h3>
+
+<p><a class="external" href="http://google.com">google.com</a> へのアクセス:</p>
+
+<pre class="prettyprint"><code>&lt;access uri="http://google.com" subdomains="false" /&gt;
+</code></pre>
+
+<p><a class="external" href="http://maps.google.com">maps.google.com</a> へのアクセス:</p>
+
+<pre class="prettyprint"><code>&lt;access uri="http://maps.google.com" subdomains="false" /&gt;
+</code></pre>
+
+<p><a class="external" href="http://google.com">google.com</a> のすべてのサブドメインへのアクセス:</p>
+
+<pre class="prettyprint"><code>&lt;access uri="http://google.com" subdomains="true" /&gt;
+</code></pre>
+
+<p><code>file://</code> プロトコルを含むすべてのドメインへのアクセス:</p>
+
+<pre class="prettyprint"><code>&lt;access uri="*" subdomains="true" /&gt;
+</code></pre>
+
+<h2>
+<a name="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_ios">iOS</a>
+</h2>
+
+<h3>詳細</h3>
+
+<ol>
+<li>
+<code>Cordova.plist</code> を開きます
+<ul>
+<li>Xcode 内では <code>AppName/Supporting Files/Cordova.plist</code> で見つけられます</li>
+<li>ディレクトリ内では <code>AppName/Cordova.plist</code> で見つけられます</li>
+</ul>
+</li>
+<li>
+<code>ExternalHosts</code> キー配下に新しい文字列を追加します
+<ul>
+<li>XML の直接編集を避けるため、 Xcode を使用することを勧めます</li>
+</ul>
+</li>
+</ol>
+<h3>シンタックス</h3>
+
+<p><a class="external" href="http://google.com">google.com</a> のアクセス及び <a class="external" href="https://google.com">google.com</a> へのセキュアアクセス (<code>https://</code>):</p>
+
+<pre class="prettyprint"><code>google.com
+</code></pre>
+
+<p><a class="external" href="http://maps.google.com">maps.google.com</a> サブドメインへのアクセス:</p>
+
+<pre class="prettyprint"><code>maps.google.com
+</code></pre>
+
+<p><a class="external" href="http://google.com">google.com</a> のすべてのサブドメインへのアクセス (例: <a class="external" href="http://mail.google.com">mail.google.com</a> 及び <a class="external" href="http://docs.google.com">docs.google.com</a>):</p>
+
+<pre class="prettyprint"><code>*.google.com
+</code></pre>
+
+<p>すべてのドメインへのアクセス (例: <a class="external" href="http://google.com">google.com</a> 及び <a class="external" href="http://developer.mozilla.org">developer.mozilla.org</a>):</p>
+
+<pre class="prettyprint"><code>*
+</code></pre>
+
+<p>iOS のワイルドカード (<code>*</code>) は <a class="external" href="http://www.w3.org/TR/widgets-access/">W3C Widget Access</a> の仕様より柔軟です。</p>
+
+<p>すべてのサブドメインへ及び TLD (<code>.com</code>, <code>.net</code> など) へのアクセス:</p>
+
+<pre class="prettyprint"><code>*.google.*
+</code></pre>
+
+<h2>
+<a name="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_symbian">Symbian</a>
+</h2>
+
+<p>ドメインホワイトリストは Symbian ではサポートされていません。デフォルトとして、全てのドメインにアクセス可能です。</p>
+
+<h2>
+<a name="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_webos">webOS</a>
+</h2>
+
+<p>ドメインホワイトリストは webOS ではサポートされていません。デフォルトとして、全てのドメインにアクセス可能です。</p>
+
+<h2>
+<a name="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_windows_phone">Windows Phone</a>
+</h2>
+
+<p>ドメインホワイトリストは Windows Phone ではサポートされていません。デフォルトとして、全てのドメインにアクセス可能です。</p>
+
+<h2>
+<a name="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89_tizen">Tizen</a>
+</h2>
+
+<h3>詳細</h3>
+
+<p>ドメインホワイトリストのルールはアプリケーションのルートディレクトリにある <code>config.xml</code> で見つけることができます。
+これらは、 <code>&lt;access origin="..." /&gt;</code> 要素によって宣言されています。
+詳細については、 <a class="external" href="https://developer.tizen.org/help/topic/org.tizen.help.gs/Creating%20a%20Project.html?path=0_1_1_4#8814682_CreatingaProject-AccessingExternalNetworkResources">Tizen Accessing External Network Resources documentation</a> を参照してください。</p>
+
+<h3>シンタックス</h3>
+
+<p><a class="external" href="http://google.com">google.com</a> のアクセス:</p>
+
+<pre class="prettyprint"><code>&lt;access origin="http://google.com" subdomains="false" /&gt;
+</code></pre>
+
+<p><a class="external" href="https://google.com">google.com</a> へのセキュアアクセス (<code>https://</code>):</p>
+
+<pre class="prettyprint"><code>&lt;access origin="https://google.com" subdomains="false" /&gt;
+</code></pre>
+
+<p><a class="external" href="http://google.com">google.com</a> のすべてのサブドメインへのアクセス:</p>
+
+<pre class="prettyprint"><code>&lt;access origin="http://google.com" subdomains="true" /&gt;
+</code></pre>
+
+<p><code>file://</code> プロトコルを含むすべてのドメインへのアクセス:</p>
+
+<pre class="prettyprint"><code>&lt;access origin="*" subdomains="true" /&gt;
+</code></pre>
+
+            </div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

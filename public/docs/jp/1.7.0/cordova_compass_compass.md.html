@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="English" value="en">
+<option value="edge">edge</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0rc1">2.7.0rc1</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0rc1">2.6.0rc1</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0rc1">2.5.0rc1</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0rc1">2.4.0rc1</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0rc2">2.3.0rc2</option>
+<option value="2.3.0rc1">2.3.0rc1</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0rc2">2.2.0rc2</option>
+<option value="2.2.0rc1">2.2.0rc1</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0rc2">2.1.0rc2</option>
+<option value="2.1.0rc1">2.1.0rc1</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0rc1">2.0.0rc1</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0rc1">1.9.0rc1</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0rc1">1.8.0rc1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0rc1">1.7.0rc1</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0rc1">1.6.0rc1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0rc1">1.5.0rc1</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="Japanese" value="jp">
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option selected value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="kr"><option value="2.0.0">2.0.0</option></optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Compass</h1>
+            <small><select><option value="Compass">Compass</option>
+<option value="Compass_">      - メソッド</option>
+<option value="Compass_">      - 引数</option>
+<option value="compass.getCurrentHeading">compass.getCurrentHeading</option>
+<option value="compass.getCurrentHeading_">      - 概要</option>
+<option value="compass.getCurrentHeading_">      - サポートされているプラットフォーム</option>
+<option value="compass.getCurrentHeading_">      - 使用例</option>
+<option value="compass.getCurrentHeading_">      - 詳細な使用例</option>
+<option value="compass.watchHeading">compass.watchHeading</option>
+<option value="compass.watchHeading_">      - 概要</option>
+<option value="compass.watchHeading_">      - サポートされているプラットフォーム</option>
+<option value="compass.watchHeading_">      - 使用例</option>
+<option value="compass.watchHeading_">      - 詳細な使用例</option>
+<option value="compass.watchHeading_ios">      - iOS に関する注意点</option>
+<option value="compass.clearWatch">compass.clearWatch</option>
+<option value="compass.clearWatch_">      - サポートされているプラットフォーム</option>
+<option value="compass.clearWatch_">      - 使用例</option>
+<option value="compass.clearWatch_">      - 詳細な使用例</option>
+<option value="compass.watchHeadingFilter">compass.watchHeadingFilter</option>
+<option value="compass.clearWatchFilter">compass.clearWatchFilter</option>
+<option value="compassSuccess">compassSuccess</option>
+<option value="compassSuccess_">      - パラメーター</option>
+<option value="compassSuccess_">      - 使用例</option>
+<option value="compassError">compassError</option>
+<option value="compassError_">      - 使用例</option>
+<option value="compassOptions">compassOptions</option>
+<option value="compassOptions_">      - オプション</option>
+<option value="compassOptions_android">      - Android に関する注意点</option>
+<option value="compassOptions_windows_phone_7">      - Windows Phone 7 に関する注意点</option>
+<option value="compassOptions_bada">      - Bada に関する注意点</option>
+<option value="compassHeading">compassHeading</option>
+<option value="compassHeading_">      - プロパティー</option>
+<option value="compassHeading_">      - 概要</option>
+<option value="compassHeading_android">      - Android に関する注意点</option>
+<option value="compassHeading_ios">      - iOS に関する注意点</option>
+<option value="CompassError">CompassError</option>
+<option value="CompassError_">      - プロパティー</option>
+<option value="CompassError_">      - 定数</option>
+<option value="CompassError_">      - 概要</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>API リファレンス</h1>
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a></li>
+<li><a href="cordova_camera_camera.md.html#Camera">Camera</a></li>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_compass_compass.md.html#Compass">Compass</a></li>
+<li><a href="cordova_connection_connection.md.html#Connection">Connection</a></li>
+<li><a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a></li>
+<li><a href="cordova_device_device.md.html#Device">Device</a></li>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_file_file.md.html#File">File</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a></li>
+<li><a href="cordova_media_media.md.html#Media">Media</a></li>
+<li><a href="cordova_notification_notification.md.html#Notification">Notification</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+</ul>
+<h1>Guides</h1>
+<ul>
+<li><a href="guide_getting-started_index.md.html#%E5%85%A5%E9%96%80%E3%82%AC%E3%82%A4%E3%83%89">入門ガイド</a></li>
+<li><a href="_index.html">索引</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Compass">Compass</a></h1>
+
+<blockquote>
+  <p>デバイスの向いている方向に関する情報を取得します。</p>
+</blockquote>
+
+<h2>
+<a name="Compass_">メソッド</a>
+</h2>
+
+<ul>
+<li><a href="cordova_compass_compass.md.html#compass.getCurrentHeading">compass.getCurrentHeading</a></li>
+<li><a href="cordova_compass_compass.md.html#compass.watchHeading">compass.watchHeading</a></li>
+<li><a href="cordova_compass_compass.md.html#compass.clearWatch">compass.clearWatch</a></li>
+<li>
+<a href="cordova_compass_compass.md.html#compass.watchHeadingFilter">compass.watchHeadingFilter</a>    (廃止)</li>
+<li>
+<a href="cordova_compass_compass.md.html#compass.clearWatchFilter">compass.clearWatchFilter</a>      (廃止)</li>
+</ul>
+<h2>
+<a name="Compass_">引数</a>
+</h2>
+
+<ul>
+<li><a href="cordova_compass_compass.md.html#compassSuccess">compassSuccess</a></li>
+<li><a href="cordova_compass_compass.md.html#compassError">compassError</a></li>
+<li><a href="cordova_compass_compass.md.html#compassOptions">compassOptions</a></li>
+<li><a href="cordova_compass_compass.md.html#compassHeading">compassHeading</a></li>
+</ul>
+<hr>
+<h1><a name="compass.getCurrentHeading">compass.getCurrentHeading</a></h1>
+
+<p>現在のコンパスの向きを取得します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_compass_compass.md.html#compass.getCurrentHeading">compass.getCurrentHeading</a>(<a href="cordova_compass_compass.md.html#compassSuccess">compassSuccess</a>, <a href="cordova_compass_compass.md.html#compassError">compassError</a>, <a href="cordova_compass_compass.md.html#compassOptions">compassOptions</a>);
+</code></pre>
+
+<h2>
+<a name="compass.getCurrentHeading_">概要</a>
+</h2>
+
+<p>コンパスはデバイスが向いている方向を感知するセンサーです。コンパスはその方角を0から359.99の範囲で計測します。</p>
+
+<p>コンパスの向き情報は、 <a href="cordova_compass_compass.md.html#compassSuccess">compassSuccess</a> コールバック関数の CompassHeading オブジェクトを通じて返されます。</p>
+
+<h2>
+<a name="compass.getCurrentHeading_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>iPhone</li>
+<li>Windows Phone 7 ( Mango ) ハードウェア内で有効な場合</li>
+<li>Bada 1.2 &amp; 2.x</li>
+</ul>
+<h2>
+<a name="compass.getCurrentHeading_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>function onSuccess(heading) {
+    alert('現在の方位: ' + heading.magneticHeading);
+};
+
+function onError(error) {
+    alert('コンパスのエラーが発生しました: ' + error.code);
+};
+
+navigator.<a href="cordova_compass_compass.md.html#compass.getCurrentHeading">compass.getCurrentHeading</a>(onSuccess, onError);
+</code></pre>
+
+<h2>
+<a name="compass.getCurrentHeading_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;コンパスの使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        navigator.<a href="cordova_compass_compass.md.html#compass.getCurrentHeading">compass.getCurrentHeading</a>(onSuccess, onError);
+    }
+
+    // onSuccess: 現在の方位を取得
+    //
+    function onSuccess(heading) {
+        alert('現在の方位: ' + heading.magneticHeading);
+    }
+
+    // onError: 方位の取得に失敗
+    //
+    function onError(<a href="cordova_compass_compass.md.html#compassError">compassError</a>) {
+        alert('コンパスのエラーが発生しました: ' + <a href="cordova_compass_compass.md.html#compassError">compassError</a>.code);
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;使用例&lt;/h1&gt;
+    &lt;p&gt;getCurrentHeading&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="compass.watchHeading">compass.watchHeading</a></h1>
+
+<p>コンパス方位を一定の時間間隔で取得します。</p>
+
+<pre class="prettyprint"><code>var watchID = navigator.<a href="cordova_compass_compass.md.html#compass.watchHeading">compass.watchHeading</a>(<a href="cordova_compass_compass.md.html#compassSuccess">compassSuccess</a>, <a href="cordova_compass_compass.md.html#compassError">compassError</a>, [<a href="cordova_compass_compass.md.html#compassOptions">compassOptions</a>]);
+</code></pre>
+
+<h2>
+<a name="compass.watchHeading_">概要</a>
+</h2>
+
+<p>コンパスはデバイスが向いている方向を感知するセンサーです。コンパスはその方角を0から359.99の範囲で計測します。</p>
+
+<p><code><a href="cordova_compass_compass.md.html#compass.watchHeading">compass.watchHeading</a></code> 関数は一定の時間間隔でデバイスの現在の方位を取得します。方位情報が取得されるごとに <code>headingSuccess</code> コールバック関数が実行されます。時間間隔は <code><a href="cordova_compass_compass.md.html#compassOptions">compassOptions</a></code> オブジェクトの <code>frequency</code> パラメーターを通じてミリ秒単位で指定します。</p>
+
+<p>本関数の戻り値である watch ID は、コンパスの監視間隔への参照を表します。 <code><a href="cordova_compass_compass.md.html#compass.clearWatch">compass.clearWatch</a></code> 関数に watch ID を渡すことで、監視を停止できます。</p>
+
+<h2>
+<a name="compass.watchHeading_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>iPhone</li>
+<li>Windows Phone 7 ( Mango ) ハードウェア内で有効な場合</li>
+<li>Bada 1.2 &amp; 2.x</li>
+</ul>
+<h2>
+<a name="compass.watchHeading_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>function onSuccess(heading) {
+    var element = document.getElementById('heading');
+    element.innerHTML = '方位: ' + heading.magneticHeading;
+};
+
+function onError(<a href="cordova_compass_compass.md.html#compassError">compassError</a>) {
+        alert('コンパスのエラーが発生しました: ' + <a href="cordova_compass_compass.md.html#compassError">compassError</a>.code);
+};
+
+var options = { frequency: 3000 };  // 3秒ごとに更新
+
+var watchID = navigator.<a href="cordova_compass_compass.md.html#compass.watchHeading">compass.watchHeading</a>(onSuccess, onError, options);
+</code></pre>
+
+<h2>
+<a name="compass.watchHeading_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;コンパスの使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // watch ID が現在の `watchHeading` を参照
+    var watchID = null;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        startWatch();
+    }
+
+    // コンパスの監視を開始
+    //
+    function startWatch() {
+
+        // コンパスを3秒ごとに更新
+        var options = { frequency: 3000 };
+
+        watchID = navigator.<a href="cordova_compass_compass.md.html#compass.watchHeading">compass.watchHeading</a>(onSuccess, onError, options);
+    }
+
+    // コンパスの監視を停止
+    //
+    function stopWatch() {
+        if (watchID) {
+            navigator.<a href="cordova_compass_compass.md.html#compass.clearWatch">compass.clearWatch</a>(watchID);
+            watchID = null;
+        }
+    }
+
+    // onSuccess: 現在の方位を取得
+    //
+    function onSuccess(heading) {
+        var element = document.getElementById('heading');
+        element.innerHTML = '方位: ' + heading.magneticHeading;
+    }
+
+    // onError: 方位の取得に失敗
+    //
+    function onError(<a href="cordova_compass_compass.md.html#compassError">compassError</a>) {
+        alert('コンパスのエラーが発生しました: ' + <a href="cordova_compass_compass.md.html#compassError">compassError</a>.code);
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="heading"&gt;方位を待機...&lt;/div&gt;
+    &lt;button onclick="startWatch();"&gt;監視開始&lt;/button&gt;
+    &lt;button onclick="stopWatch();"&gt;監視中止&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="compass.watchHeading_ios">iOS に関する注意点</a>
+</h2>
+
+<p>iOS では、指定された角度分だけデバイスの現在の方位が変更されたとき、 <code><a href="cordova_compass_compass.md.html#compass.watchHeading">compass.watchHeading</a></code> でそのデバイスの現在の向きを取得することもできます。方位が指定された角度以上で変更されるたび、 <code>headingSuccess</code> コールバック関数が呼び出されます。角度は、 <code><a href="cordova_compass_compass.md.html#compassOptions">compassOptions</a></code> オブジェクトの <code>filter</code> パラメーターで指定します。 <code><a href="cordova_compass_compass.md.html#compass.clearWatch">compass.clearWatch</a></code> に <code>watch ID</code> を渡すことで、通常と同じように監視を停止できます。この機能は、1.6で廃止になった iOS 限定の watchHeadingFilter 関数と clearWatchFilter 関数に置き換わるものです。</p>
+
+<p>iOS では、一度に一つの watchHeading のみが有効です。もし filter を用いて watchHeading が使用されている場合、 getCurrentHeading 関数または watchHeading 関数は既に存在している filter の値を、方位の角度変化量の指定に使用します。 iOS では、時間による監視より、 filter を用いた方位変化量による監視の方が効果的です。</p>
+
+<hr>
+<h1><a name="compass.clearWatch">compass.clearWatch</a></h1>
+
+<p>watch ID パラメーターによって参照されるコンパスの監視を停止します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_compass_compass.md.html#compass.clearWatch">compass.clearWatch</a>(watchID);
+</code></pre>
+
+<ul>
+<li>
+<strong>watchID</strong>: <code><a href="cordova_compass_compass.md.html#compass.watchHeading">compass.watchHeading</a></code> によって返される ID。</li>
+</ul>
+<h2>
+<a name="compass.clearWatch_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>iPhone</li>
+<li>Windows Phone 7 ( Mango ) ハードウェア内で有効な場合</li>
+<li>Bada 1.2 &amp; 2.x</li>
+</ul>
+<h2>
+<a name="compass.clearWatch_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>var watchID = navigator.<a href="cordova_compass_compass.md.html#compass.watchHeading">compass.watchHeading</a>(onSuccess, onError, options);
+
+// ... 後に続く ...
+
+navigator.<a href="cordova_compass_compass.md.html#compass.clearWatch">compass.clearWatch</a>(watchID);
+</code></pre>
+
+<h2>
+<a name="compass.clearWatch_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;<a href="cordova_compass_compass.md.html#Compass">Compass</a> Example&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // watch ID が現在の `watchHeading` を参照
+    var watchID = null;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        startWatch();
+    }
+
+    // コンパスの監視を開始
+    //
+    function startWatch() {
+
+        // コンパスを3秒ごとに更新
+        var options = { frequency: 3000 };
+
+        watchID = navigator.<a href="cordova_compass_compass.md.html#compass.watchHeading">compass.watchHeading</a>(onSuccess, onError, options);
+    }
+
+    // コンパスの監視を停止
+    //
+    function stopWatch() {
+        if (watchID) {
+            navigator.<a href="cordova_compass_compass.md.html#compass.clearWatch">compass.clearWatch</a>(watchID);
+            watchID = null;
+        }
+    }
+
+    // onSuccess: 現在の方位を取得
+    //
+    function onSuccess(heading) {
+        var element = document.getElementById('heading');
+        element.innerHTML = '方位: ' + heading.magneticHeading;
+    }
+
+    // onError: 方位の取得に失敗
+    //
+    function onError(<a href="cordova_compass_compass.md.html#compassError">compassError</a>) {
+        alert('コンパスのエラーが発生しました: ' + <a href="cordova_compass_compass.md.html#compassError">compassError</a>.code);
+    }
+
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="heading"&gt;方位を待機...&lt;/div&gt;
+    &lt;button onclick="startWatch();"&gt;監視開始&lt;/button&gt;
+    &lt;button onclick="stopWatch();"&gt;監視中止&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="compass.watchHeadingFilter">compass.watchHeadingFilter</a></h1>
+
+<p>1.6以降はサポートされていません。同等の機能として、 <code><a href="cordova_compass_compass.md.html#compass.watchHeading">compass.watchHeading</a></code> を参照してください。</p>
+
+<hr>
+<h1><a name="compass.clearWatchFilter">compass.clearWatchFilter</a></h1>
+
+<p>1.6以降はサポートされていません。 <code><a href="cordova_compass_compass.md.html#compass.clearWatch">compass.clearWatch</a></code> を参照してください。</p>
+
+<hr>
+<h1><a name="compassSuccess">compassSuccess</a></h1>
+
+<p>コンパス方位の取得に成功したときに、 <a href="cordova_compass_compass.md.html#compassHeading">compassHeading</a> オブジェクトを用いてコンパス方位情報を提供するコールバック関数です。</p>
+
+<pre class="prettyprint"><code>function(heading) {
+    // 任意のコード
+}
+</code></pre>
+
+<h2>
+<a name="compassSuccess_">パラメーター</a>
+</h2>
+
+<ul>
+<li>
+<strong>heading:</strong> 方位情報。 <em>(<a href="cordova_compass_compass.md.html#compassHeading">compassHeading</a>)</em>
+</li>
+</ul>
+<h2>
+<a name="compassSuccess_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>function onSuccess(heading) {
+    alert('現在の方位: ' + heading.magneticHeading);
+};
+</code></pre>
+
+<hr>
+<h1><a name="compassError">compassError</a></h1>
+
+<p>コンパス方位の取得に失敗したときに呼び出されるコールバック関数です。</p>
+
+<h2>
+<a name="compassError_">使用例</a>
+</h2>
+
+<p>function(<a href="cordova_compass_compass.md.html#CompassError">CompassError</a>) {
+    // エラー処理
+}</p>
+
+<hr>
+<h1><a name="compassOptions">compassOptions</a></h1>
+
+<p>コンパス取得の設定をカスタマイズするためのパラメーターを表します。</p>
+
+<h2>
+<a name="compassOptions_">オプション</a>
+</h2>
+
+<ul>
+<li>
+<strong>frequency:</strong> コンパスの向きを取得する頻度をミリ秒で表します。 <em>(Number)</em> (デフォルト: 100)</li>
+<li>
+<strong>filter:</strong> watchHeading の成功時のコールバック関数を初期化する際に必要な、角度の変化量を表します。 <em>(Number)</em>
+</li>
+</ul>
+<h2>
+<a name="compassOptions_android">Android に関する注意点</a>
+</h2>
+
+<ul>
+<li>filter はサポートされていません。</li>
+</ul>
+<h2>
+<a name="compassOptions_windows_phone_7">Windows Phone 7 に関する注意点</a>
+</h2>
+
+<ul>
+<li>filter はサポートされていません。</li>
+</ul>
+<h2>
+<a name="compassOptions_bada">Bada に関する注意点</a>
+</h2>
+
+<ul>
+<li>filter はサポートされていません。</li>
+</ul>
+<hr>
+<h1><a name="compassHeading">compassHeading</a></h1>
+
+<p>エラーが起きた場合、 <code><a href="cordova_compass_compass.md.html#compassSuccess">compassSuccess</a></code> コールバック関数には <code>CompassHeading</code> オブジェクトが返されます。</p>
+
+<h2>
+<a name="compassHeading_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>magneticHeading:</strong> ある瞬間のコンパス方位を磁北を基準に0から359.99の範囲で表します。 <em>(Number)</em>
+</li>
+<li>
+<strong>trueHeading:</strong> ある瞬間のコンパス方位を真北を基準に0から359.99の範囲で表します。負の値は、 trueHeading の値が定まっていないことを示しています。 <em>(Number)</em>
+</li>
+<li>
+<strong>headingAccuracy:</strong> magneticHeading の値と trueHeading の値との角度の差、偏角を表します。 <em>(Number)</em>
+</li>
+<li>
+<strong>timestamp:</strong> コンパス方位を取得した時間を表します。 <em>(milliseconds)</em>
+</li>
+</ul>
+<h2>
+<a name="compassHeading_">概要</a>
+</h2>
+
+<p><code>CompassHeading</code> オブジェクトは、 <code><a href="cordova_compass_compass.md.html#compassSuccess">compassSuccess</a></code> コールバック関数を通じてユーザーに返されます。</p>
+
+<h2>
+<a name="compassHeading_android">Android に関する注意点</a>
+</h2>
+
+<ul>
+<li>trueHeading はサポートされていません。 trueHeading には magneticHeading と同じ値が代入されます。</li>
+<li>このため、 Android では trueHeading と magneticHeading に差が無いので、 headingAccuracy は常に0となります。</li>
+</ul>
+<h2>
+<a name="compassHeading_ios">iOS に関する注意点</a>
+</h2>
+
+<ul>
+<li>trueHeading は、位置情報サービスが <code>navigator.geolocation.watchLocation()</code> によって稼動している場合にのみ返されます。</li>
+<li>iOS 4より上位のデバイスでは、もしデバイスが横方向などに回転していて、アプリがそれをサポートしていれば、 magneticHeading の値は現在のデバイスの向きに対応して返されます。</li>
+</ul>
+<hr>
+<h1><a name="CompassError">CompassError</a></h1>
+
+<p>エラーが起きた場合、 <code><a href="cordova_compass_compass.md.html#compassError">compassError</a></code> コールバック関数には <code><a href="cordova_compass_compass.md.html#CompassError">CompassError</a></code> オブジェクトが返されます。</p>
+
+<h2>
+<a name="CompassError_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>code:</strong> 事前に定義された以下のエラーコードのうちの1つを表します</li>
+</ul>
+<h2>
+<a name="CompassError_">定数</a>
+</h2>
+
+<ul>
+<li><code><a href="cordova_compass_compass.md.html#CompassError">CompassError</a>.COMPASS_INTERNAL_ERR</code></li>
+<li><code><a href="cordova_compass_compass.md.html#CompassError">CompassError</a>.COMPASS_NOT_SUPPORTED</code></li>
+</ul>
+<h2>
+<a name="CompassError_">概要</a>
+</h2>
+
+<p>エラーが起きた場合、 <code><a href="cordova_compass_compass.md.html#compassError">compassError</a></code> コールバック関数には <code><a href="cordova_compass_compass.md.html#CompassError">CompassError</a></code> オブジェクトが返されます。</p>
+
+            </div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

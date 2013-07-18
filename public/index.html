@@ -95,19 +95,23 @@
 <hr/>
 
 <div class="wrap">
-<h2>News</h2>
-    <h3><a href="http://cordova.apache.org/rss.xml">Subscribe using RSS</a></h3>
-<ul class="posts">
+  <h2>News <a href="/rss.xml" style="font-size:12pt; margin-left:10px">Subscribe</a></h2>
+  <ul class="posts">
+    
+      <li><span>19 Jul 2013</span> &raquo; <a href="http://cordova.apache.org/blog/2013/07/19/cordova-3.0.0.html">Apache Cordova 3.0 is out</a>
+      <h2 id='cordova_300_is_out'>Cordova 3.0.0 is out</h2>
+
+<p>Cordova has a CLI now</p>
+      <a href="http://cordova.apache.org/blog/2013/07/19/cordova-3.0.0.html">Read More...</a>
+    
+      <li><span>11 Jul 2013</span> &raquo; <a href="http://cordova.apache.org/blog/2013/07/11/cordova-has-a-blog.html">Apache Cordova Gets an Official Blog</a>
+      <p>Cordova now has a Blog! Look here to stay up-to-date with what&#8217;s happening with the project. There is a major release <a href='https://issues.apache.org/jira/browse/CB/fixforversion/12322491'>3.0</a> just around the corner (July 19, 2013), and we are really excited about it!</p>
+      <a href="http://cordova.apache.org/blog/2013/07/11/cordova-has-a-blog.html">Read More...</a>
+    
+
+  </ul>
   
-    <li><span>08 Jul 2013</span> &raquo; <a href="http://cordova.apache.org/blog/2013/07/08/cordova-has-a-blog.html">Apache Cordova has a blog</a>
-    <h2 id='cordova_blog'>Cordova Blog</h2>
-
-<p>Cordova has a Blog too, we establish this blog to share the latest information, interesting articles, and news about the project including release notes. With a major release <a href='https://issues.apache.org/jira/browse/CB/fixforversion/12322491'>3.0</a> just around the corner (July 19, 2013) we know that a lot of developers will want to know what&#8217;s the latest with Cordova and will also want to share what cool stuff others are doing with Cordova.</p>
-    <a href="http://cordova.apache.org/blog/2013/07/08/cordova-has-a-blog.html">Read More...</a>
-  
-
-</ul>
-
+</div>
 
 <a class="scroll-point" name="contribute"></a>
 <hr/>
@@ -242,6 +246,54 @@
     </div>
 </div>
 
+<div class="grid">
+    <div class="wrap download-pane">
+        <div class="corner"></div>
+        <br>
+        <br>
+    </div>
+</div>
+
+<script>
+  function submitJiraSearchForm() {
+    var queryTemplate1 = '(summary ~ "%1" OR description ~ "%1" OR comment ~ "%1") AND ';
+    var queryTemplate2 = 'project = CB AND resolution = Unresolved %2ORDER BY created';
+    var componentKeywords = [
+        /\b(ios|iphone|ipad|ipod)\b/ig, 'iOS',
+        /\b(android)\b/ig, 'Android',
+        /\b(blackberry|rim|bb.?|bb10|webworks)\b/ig, 'BlackBerry',
+        /\b(webos)\b/ig, 'webOS',
+        /\b(wp7|windows phone)\b/ig, 'WP7',
+        /\b(wp8|windows phone)\b/ig, 'WP8'
+        ];
+    var query = document.getElementById('jira-search-box').value;
+    // Check for some platform keywords:
+    var components = [];
+    for (var i = 0; i < componentKeywords.length; i += 2) {
+        if (query.match(componentKeywords[i])) {
+            query = query.replace(componentKeywords[i], '');
+            components.push(componentKeywords[i + 1]);
+        }
+    }
+    var componentsQuery = '';
+    if (components.length) {
+        // Add in components that apply to all platforms.
+        components.push('Docs', 'mobile-spec', 'CordovaJS');
+        componentsQuery = 'AND component in (' + components.join(', ') + ') ';
+    }
+    // Remove quotes since we are adding them in.
+    query = query.replace(/"/g, '');
+    var tokens = query.split(/\s+/);
+    query = '';
+    for (var i = 0; i < tokens.length; ++i) {
+        if (tokens[i]) {
+            query += queryTemplate1.replace(/%1/g, tokens[i]);
+        }
+    }
+    query += queryTemplate2.replace('%2', componentsQuery)
+    window.open('https://issues.apache.org/jira/secure/IssueNavigator.jspa?mode=show&reset=true&navType=simple&jqlQuery=' + encodeURIComponent(query), '_newtab' + new Date);
+  }
+</script>
 
 
 

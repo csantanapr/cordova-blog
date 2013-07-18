@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="English" value="en">
+<option value="edge">edge</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0rc1">2.7.0rc1</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0rc1">2.6.0rc1</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0rc1">2.5.0rc1</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0rc1">2.4.0rc1</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0rc2">2.3.0rc2</option>
+<option value="2.3.0rc1">2.3.0rc1</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0rc2">2.2.0rc2</option>
+<option value="2.2.0rc1">2.2.0rc1</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0rc2">2.1.0rc2</option>
+<option value="2.1.0rc1">2.1.0rc1</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0rc1">2.0.0rc1</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0rc1">1.9.0rc1</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0rc1">1.8.0rc1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0rc1">1.7.0rc1</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0rc1">1.6.0rc1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0rc1">1.5.0rc1</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="Japanese" value="jp">
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option selected value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="kr"><option value="2.0.0">2.0.0</option></optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Geolocation</h1>
+            <small><select><option value="Geolocation">Geolocation</option>
+<option value="Geolocation_">      - メソッド</option>
+<option value="Geolocation_">      - 引数</option>
+<option value="Geolocation_">      - オブジェクト (読み取り専用)</option>
+<option value="geolocation.getCurrentPosition">geolocation.getCurrentPosition</option>
+<option value="geolocation.getCurrentPosition_">      - パラメーター</option>
+<option value="geolocation.getCurrentPosition_">      - 概要</option>
+<option value="geolocation.getCurrentPosition_">      - サポートされているプラットフォーム</option>
+<option value="geolocation.getCurrentPosition_">      - 使用例</option>
+<option value="geolocation.getCurrentPosition_">      - 詳細な使用例</option>
+<option value="geolocation.watchPosition">geolocation.watchPosition</option>
+<option value="geolocation.watchPosition_">      - パラメーター</option>
+<option value="geolocation.watchPosition_">      - 返り値</option>
+<option value="geolocation.watchPosition_">      - 概要</option>
+<option value="geolocation.watchPosition_">      - サポートされているプラットフォーム</option>
+<option value="geolocation.watchPosition_">      - 使用例</option>
+<option value="geolocation.watchPosition_">      - 詳細な使用例</option>
+<option value="geolocation.clearWatch">geolocation.clearWatch</option>
+<option value="geolocation.clearWatch_">      - パラメーター</option>
+<option value="geolocation.clearWatch_">      - 概要</option>
+<option value="geolocation.clearWatch_">      - サポートされているプラットフォーム</option>
+<option value="geolocation.clearWatch_">      - 使用例</option>
+<option value="geolocation.clearWatch_">      - 詳細な使用例</option>
+<option value="Coordinates">Coordinates</option>
+<option value="Coordinates_">      - プロパティー</option>
+<option value="Coordinates_">      - 概要</option>
+<option value="Coordinates_">      - サポートされているプラットフォーム</option>
+<option value="Coordinates_">      - 使用例</option>
+<option value="Coordinates_">      - 詳細な使用例</option>
+<option value="Coordinates_android">      - Android に関する注意点</option>
+<option value="Position">Position</option>
+<option value="Position_">      - プロパティー</option>
+<option value="Position_">      - 概要</option>
+<option value="Position_">      - サポートされているプラットフォーム</option>
+<option value="Position_">      - 使用例</option>
+<option value="Position_">      - 詳細な使用例</option>
+<option value="Position_iphone">      - iPhone に関する注意点</option>
+<option value="PositionError">PositionError</option>
+<option value="PositionError_">      - プロパティー</option>
+<option value="PositionError_">      - 定数</option>
+<option value="PositionError_">      - 概要</option>
+<option value="geolocationSuccess">geolocationSuccess</option>
+<option value="geolocationSuccess_">      - パラメーター</option>
+<option value="geolocationSuccess_">      - 使用例</option>
+<option value="geolocationError">geolocationError</option>
+<option value="geolocationError_">      - パラメーター</option>
+<option value="geolocationOptions">geolocationOptions</option>
+<option value="geolocationOptions_">      - オプション</option>
+<option value="geolocationOptions_android">      - Android に関する注意点</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>API リファレンス</h1>
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a></li>
+<li><a href="cordova_camera_camera.md.html#Camera">Camera</a></li>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_compass_compass.md.html#Compass">Compass</a></li>
+<li><a href="cordova_connection_connection.md.html#Connection">Connection</a></li>
+<li><a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a></li>
+<li><a href="cordova_device_device.md.html#Device">Device</a></li>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_file_file.md.html#File">File</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a></li>
+<li><a href="cordova_media_media.md.html#Media">Media</a></li>
+<li><a href="cordova_notification_notification.md.html#Notification">Notification</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+</ul>
+<h1>Guides</h1>
+<ul>
+<li><a href="guide_getting-started_index.md.html#%E5%85%A5%E9%96%80%E3%82%AC%E3%82%A4%E3%83%89">入門ガイド</a></li>
+<li><a href="_index.html">索引</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Geolocation">Geolocation</a></h1>
+
+<blockquote>
+  <p><code>geolocation</code> オブジェクトはデバイスの GPS センサーへのアクセスを提供します。</p>
+</blockquote>
+
+<p><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a> は緯度や経度といったデバイスの位置情報を提供します。主に Global Positioning System (GPS) から位置情報を取得しますが、 IP アドレスや RFID, WiFi, Bluetooh, MAC アドレス, 基地局 ID などのソースからも現在位置を推測します。ただしこの API がデバイスの正確な位置を特定する保証はありません。</p>
+
+<p>この API は <a class="external" href="http://dev.w3.org/geo/api/spec-source.html">W3C Geo location API Specification</a> をベースとしています。いくつかのデバイスではすでにこの機能の実装を提供しています。 これらについては、 Cordova の実装ではなくビルトインのサポートが実行されます。位置情報のサポートがされてないデバイスについては、Cordovaの実装によってW3Cの仕様に沿った機能が提供されます。</p>
+
+<h2>
+<a name="Geolocation_">メソッド</a>
+</h2>
+
+<ul>
+<li><a href="cordova_geolocation_geolocation.md.html#geolocation.getCurrentPosition">geolocation.getCurrentPosition</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#geolocation.watchPosition">geolocation.watchPosition</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#geolocation.clearWatch">geolocation.clearWatch</a></li>
+</ul>
+<h2>
+<a name="Geolocation_">引数</a>
+</h2>
+
+<ul>
+<li><a href="cordova_geolocation_geolocation.md.html#geolocationSuccess">geolocationSuccess</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#geolocationError">geolocationError</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#geolocationOptions">geolocationOptions</a></li>
+</ul>
+<h2>
+<a name="Geolocation_">オブジェクト (読み取り専用)</a>
+</h2>
+
+<ul>
+<li><a href="cordova_geolocation_geolocation.md.html#Position">Position</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#PositionError">PositionError</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Coordinates">Coordinates</a></li>
+</ul>
+<hr>
+<h1><a name="geolocation.getCurrentPosition">geolocation.getCurrentPosition</a></h1>
+
+<p>デバイスの現在位置を <code><a href="cordova_geolocation_geolocation.md.html#Position">Position</a></code> オブジェクトとして返します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_geolocation_geolocation.md.html#geolocation.getCurrentPosition">geolocation.getCurrentPosition</a>(<a href="cordova_geolocation_geolocation.md.html#geolocationSuccess">geolocationSuccess</a>,
+                                         [<a href="cordova_geolocation_geolocation.md.html#geolocationError">geolocationError</a>],
+                                         [<a href="cordova_geolocation_geolocation.md.html#geolocationOptions">geolocationOptions</a>]);
+</code></pre>
+
+<h2>
+<a name="geolocation.getCurrentPosition_">パラメーター</a>
+</h2>
+
+<ul>
+<li>
+<strong><a href="cordova_geolocation_geolocation.md.html#geolocationSuccess">geolocationSuccess</a></strong>: 現在位置情報の取得成功時に呼ばれるコールバック関数を表します</li>
+<li>
+<strong><a href="cordova_geolocation_geolocation.md.html#geolocationError">geolocationError</a></strong>: (オプション) エラー発生時に呼ばれるコールバック関数を表します</li>
+<li>
+<strong><a href="cordova_geolocation_geolocation.md.html#geolocationOptions">geolocationOptions</a></strong>: (オプション) 位置情報取得のオプションを表します</li>
+</ul>
+<h2>
+<a name="geolocation.getCurrentPosition_">概要</a>
+</h2>
+
+<p><code><a href="cordova_geolocation_geolocation.md.html#geolocation.getCurrentPosition">geolocation.getCurrentPosition</a></code> 関数は非同期関数です。 <code><a href="cordova_geolocation_geolocation.md.html#geolocationSuccess">geolocationSuccess</a></code> コールバック関数に、<code><a href="cordova_geolocation_geolocation.md.html#Position">Position</a></code> オブジェクトをパラメーターとしてデバイスの現在位置を返します。エラーが発生した場合、 <code><a href="cordova_geolocation_geolocation.md.html#PositionError">PositionError</a></code> オブジェクトとともに <code><a href="cordova_geolocation_geolocation.md.html#geolocationError">geolocationError</a></code> コールバック関数が呼び出されます。</p>
+
+<h2>
+<a name="geolocation.getCurrentPosition_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+<li>Windows Phone 7 (Mango)</li>
+<li>Bada 1.2 &amp; 2.x</li>
+</ul>
+<h2>
+<a name="geolocation.getCurrentPosition_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// 成功時のコールバック関数
+// このメソッドは GPS の現在座標を保持する
+// `<a href="cordova_geolocation_geolocation.md.html#Position">Position</a>` オブジェクトを引数とする
+//
+var onSuccess = function(position) {
+    alert('緯度: '              + position.coords.latitude      + '\n' +
+          '経度: '              + position.coords.longitude     + '\n' +
+          '高度: '              + position.coords.altitude      + '\n' +
+          '位置精度: '          + position.coords.accuracy      + '\n' +
+          '高度精度: '          + position.coords.altitudeAccuracy + '\n' +
+          '方位: '              + position.coords.heading       + '\n' +
+          '速度: '              + position.coords.speed         + '\n' +
+          'タイムスタンプ: '    + new Date(position.timestamp) + '\n');
+};
+
+// エラー時のコールバック関数は <a href="cordova_geolocation_geolocation.md.html#PositionError">PositionError</a> オブジェクトを受けとる
+//
+function onError(error) {
+    alert('コード: '        + error.code    + '\n' +
+          'メッセージ: '    + error.message + '\n');
+}
+
+navigator.<a href="cordova_geolocation_geolocation.md.html#geolocation.getCurrentPosition">geolocation.getCurrentPosition</a>(onSuccess, onError);
+</code></pre>
+
+<h2>
+<a name="geolocation.getCurrentPosition_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;デバイスプロパティーの使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        navigator.<a href="cordova_geolocation_geolocation.md.html#geolocation.getCurrentPosition">geolocation.getCurrentPosition</a>(onSuccess, onError);
+    }
+
+    // onSuccess <a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a>
+    //
+    function onSuccess(position) {
+        var element = document.getElementById('geolocation');
+        element.innerHTML = '緯度: '            + position.coords.latitude      + '&lt;br /&gt;' +
+                            '経度: '            + position.coords.longitude     + '&lt;br /&gt;' +
+                            '高度: '            + position.coords.altitude      + '&lt;br /&gt;' +
+                            '位置精度: '        + position.coords.accuracy      + '&lt;br /&gt;' +
+                            '高度精度: '        + position.coords.altitudeAccuracy + '&lt;br /&gt;' +
+                            '方位: '            + position.coords.heading       + '&lt;br /&gt;' +
+                            '速度: '            + position.coords.speed         + '&lt;br /&gt;' +
+                            'タイムスタンプ: '  + new Date(position.timestamp)  + '&lt;br /&gt;';
+    }
+
+    // エラー時のコールバック関数は <a href="cordova_geolocation_geolocation.md.html#PositionError">PositionError</a> オブジェクトを受けとる
+    //
+    function onError(error) {
+        alert('コード: '        + error.code    + '\n' +
+              'メッセージ: '    + error.message + '\n');
+    }
+
+    &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;p id="geolocation"&gt;位置情報を取得中...&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="geolocation.watchPosition">geolocation.watchPosition</a></h1>
+
+<p>デバイスの現在の位置情報の変化を監視します。</p>
+
+<pre class="prettyprint"><code>var watchId = navigator.<a href="cordova_geolocation_geolocation.md.html#geolocation.watchPosition">geolocation.watchPosition</a>(<a href="cordova_geolocation_geolocation.md.html#geolocationSuccess">geolocationSuccess</a>,
+                                                  [<a href="cordova_geolocation_geolocation.md.html#geolocationError">geolocationError</a>],
+                                                  [<a href="cordova_geolocation_geolocation.md.html#geolocationOptions">geolocationOptions</a>]);
+</code></pre>
+
+<h2>
+<a name="geolocation.watchPosition_">パラメーター</a>
+</h2>
+
+<ul>
+<li>
+<strong><a href="cordova_geolocation_geolocation.md.html#geolocationSuccess">geolocationSuccess</a></strong>: 現在位置情報の取得成功時に呼ばれるコールバック関数を表します</li>
+<li>
+<strong><a href="cordova_geolocation_geolocation.md.html#geolocationError">geolocationError</a></strong>: (オプション) エラー発生時に呼ばれるコールバック関数を表します</li>
+<li>
+<strong><a href="cordova_geolocation_geolocation.md.html#geolocationOptions">geolocationOptions</a></strong>: (オプション) 位置情報取得のオプションを表します</li>
+</ul>
+<h2>
+<a name="geolocation.watchPosition_">返り値</a>
+</h2>
+
+<ul>
+<li>
+<strong>String</strong>: 位置変化を参照する watch ID を返します。 watch ID は <code><a href="cordova_geolocation_geolocation.md.html#geolocation.clearWatch">geolocation.clearWatch</a></code> に渡すことで位置変化の監視を中止することができます。</li>
+</ul>
+<h2>
+<a name="geolocation.watchPosition_">概要</a>
+</h2>
+
+<p><code><a href="cordova_geolocation_geolocation.md.html#geolocation.watchPosition">geolocation.watchPosition</a></code> 関数は非同期関数です。位置情報に変化があった場合に、デバイスの現在位置を返します。デバイスが新しい位置情報を取得したとき、 <code><a href="cordova_geolocation_geolocation.md.html#Position">Position</a></code> オブジェクトとともに <code><a href="cordova_geolocation_geolocation.md.html#geolocationSuccess">geolocationSuccess</a></code> コールバック関数が呼び出されます。エラーが発生した場合、 <code><a href="cordova_geolocation_geolocation.md.html#PositionError">PositionError</a></code> オブジェクトとともに <code><a href="cordova_geolocation_geolocation.md.html#geolocationError">geolocationError</a></code> コールバック関数が呼び出されます。</p>
+
+<h2>
+<a name="geolocation.watchPosition_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+<li>Windows Phone 7 (Mango)</li>
+<li>Bada 1.2 &amp; 2.x</li>
+</ul>
+<h2>
+<a name="geolocation.watchPosition_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// 成功時のコールバック関数
+// このメソッドは GPS の現在座標を保持する
+// `<a href="cordova_geolocation_geolocation.md.html#Position">Position</a>` オブジェクトを引数とする
+//
+function onSuccess(position) {
+    var element = document.getElementById('geolocation');
+    element.innerHTML = '緯度: ' + position.coords.latitude     + '&lt;br /&gt;' +
+                        '経度: ' + position.coords.longitude    + '&lt;br /&gt;' +
+                        '&lt;hr /&gt;' + element.innerHTML;
+}
+
+// エラー時のコールバック関数は <a href="cordova_geolocation_geolocation.md.html#PositionError">PositionError</a> オブジェクトを受けとる
+//
+function onError(error) {
+    alert('コード: '        + error.code    + '\n' +
+          'メッセージ: '    + error.message + '\n');
+}
+
+// 3秒ごとに位置情報を取得する設定 (オプション)
+//
+var watchID = navigator.<a href="cordova_geolocation_geolocation.md.html#geolocation.watchPosition">geolocation.watchPosition</a>(onSuccess, onError, { frequency: 3000 });
+</code></pre>
+
+<h2>
+<a name="geolocation.watchPosition_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;デバイスプロパティーの使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    var watchID = null;
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        // 3秒ごとに更新
+        var options = { frequency: 3000 };
+        watchID = navigator.<a href="cordova_geolocation_geolocation.md.html#geolocation.watchPosition">geolocation.watchPosition</a>(onSuccess, onError, options);
+    }
+
+    // onSuccess <a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a>
+    //
+    function onSuccess(position) {
+        var element = document.getElementById('geolocation');
+        element.innerHTML = '緯度: ' + position.coords.latitude     + '&lt;br /&gt;' +
+                            '経度: ' + position.coords.longitude    + '&lt;br /&gt;' +
+                            '&lt;hr /&gt;' + element.innerHTML;
+    }
+
+    // エラー時のコールバック関数は <a href="cordova_geolocation_geolocation.md.html#PositionError">PositionError</a> オブジェクトを受けとる
+    //
+    function onError(error) {
+        alert('コード: '        + error.code    + '\n' +
+              'メッセージ: '    + error.message + '\n');
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p id="geolocation"&gt;位置情報を監視中...&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="geolocation.clearWatch">geolocation.clearWatch</a></h1>
+
+<p>watch ID パラメーターによって参照されるデバイスの位置情報の監視を停止します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_geolocation_geolocation.md.html#geolocation.clearWatch">geolocation.clearWatch</a>(watchID);
+</code></pre>
+
+<h2>
+<a name="geolocation.clearWatch_">パラメーター</a>
+</h2>
+
+<ul>
+<li>
+<strong>watchID:</strong> <code>watchPosition</code> 関数での監視を停止したい watchID を表します (String)</li>
+</ul>
+<h2>
+<a name="geolocation.clearWatch_">概要</a>
+</h2>
+
+<p><code><a href="cordova_geolocation_geolocation.md.html#geolocation.clearWatch">geolocation.clearWatch</a></code> 関数は、 <code>watchID</code> によって参照される <code><a href="cordova_geolocation_geolocation.md.html#geolocation.watchPosition">geolocation.watchPosition</a></code> 関数を停止させるによって、位置情報の監視を停止します。</p>
+
+<h2>
+<a name="geolocation.clearWatch_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+<li>Windows Phone 7 (Mango)</li>
+<li>Bada 1.2 &amp; 2.x</li>
+</ul>
+<h2>
+<a name="geolocation.clearWatch_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// 3秒ごとに位置情報を取得する設定 (オプション)
+//
+var watchID = navigator.<a href="cordova_geolocation_geolocation.md.html#geolocation.watchPosition">geolocation.watchPosition</a>(onSuccess, onError, { frequency: 3000 });
+
+// ... 後に続く ...
+
+navigator.<a href="cordova_geolocation_geolocation.md.html#geolocation.clearWatch">geolocation.clearWatch</a>(watchID);
+</code></pre>
+
+<h2>
+<a name="geolocation.clearWatch_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;デバイスプロパティーの使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    var watchID = null;
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        // 3秒ごとに更新
+        var options = { frequency: 3000 };
+        watchID = navigator.<a href="cordova_geolocation_geolocation.md.html#geolocation.watchPosition">geolocation.watchPosition</a>(onSuccess, onError, options);
+    }
+
+    // onSuccess <a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a>
+    //
+    function onSuccess(position) {
+        var element = document.getElementById('geolocation');
+        element.innerHTML = '緯度: ' + position.coords.latitude     + '&lt;br /&gt;' +
+                            '経度: ' + position.coords.longitude    + '&lt;br /&gt;' +
+                            '&lt;hr /&gt;' + element.innerHTML;
+    }
+
+    // 先に開始された監視を停止する
+    //
+    function clearWatch() {
+        if (watchID != null) {
+            navigator.<a href="cordova_geolocation_geolocation.md.html#geolocation.clearWatch">geolocation.clearWatch</a>(watchID);
+            watchID = null;
+        }
+    }
+
+    // エラー時のコールバック関数は <a href="cordova_geolocation_geolocation.md.html#PositionError">PositionError</a> オブジェクトを受けとる
+    //
+    function onError(error) {
+        alert('コード: '        + error.code    + '\n' +
+              'メッセージ: '    + error.message + '\n');
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p id="geolocation"&gt;位置情報を監視中...&lt;/p&gt;
+    &lt;button onclick="clearWatch();"&gt;監視の停止&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="Coordinates">Coordinates</a></h1>
+
+<p>位置情報で使用される座標を格納します。</p>
+
+<h2>
+<a name="Coordinates_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>latitude</strong>: 緯度を数値で表します <em>(Number)</em>
+</li>
+<li>
+<strong>longitude</strong>: 経度を数値で表します <em>(Number)</em>
+</li>
+<li>
+<strong>altitude</strong>: 海抜からの高度をメートル単位で表します <em>(Number)</em>
+</li>
+<li>
+<strong>accuracy</strong>: 位置の精度をメートル単位で表します <em>(Number)</em>
+</li>
+<li>
+<strong>altitudeAccuracy</strong>: 高度の精度をメートル単位で表します <em>(Number)</em>
+</li>
+<li>
+<strong>heading</strong>: 北から時計回りでのデバイスの方位を角度で表します <em>(Number)</em>
+</li>
+<li>
+<strong>speed</strong>: 現在のデバイスのスピードをメートル/秒で表します <em>(Number)</em>
+</li>
+</ul>
+<h2>
+<a name="Coordinates_">概要</a>
+</h2>
+
+<p><code><a href="cordova_geolocation_geolocation.md.html#Coordinates">Coordinates</a></code> オブジェクトは <code><a href="cordova_geolocation_geolocation.md.html#Position">Position</a></code> オブジェクトのプロパティーとして作成されます。 <code><a href="cordova_geolocation_geolocation.md.html#Position">Position</a></code> オブジェクトはコールバック関数を通してユーザーに返されます。</p>
+
+<h2>
+<a name="Coordinates_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+<li>Windows Phone 7 (Mango)</li>
+<li>Bada 1.2 &amp; 2.x</li>
+</ul>
+<h2>
+<a name="Coordinates_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// 成功時のコールバック関数
+//
+var onSuccess = function(position) {
+    alert('緯度: '              + position.coords.latitude          + '\n' +
+          '経度: '              + position.coords.longitude         + '\n' +
+          '高度: '              + position.coords.altitude          + '\n' +
+          '位置精度: '          + position.coords.accuracy          + '\n' +
+          '高度精度: '          + position.coords.altitudeAccuracy  + '\n' +
+          '方位: '              + position.coords.heading           + '\n' +
+          '速度: '              + position.coords.speed             + '\n' +
+          'タイムスタンプ: '    + new Date(position.timestamp)      + '\n');
+};
+
+// エラー時のコールバック関数
+//
+var onError = function() {
+    alert('エラーが発生しました。');
+};
+
+navigator.<a href="cordova_geolocation_geolocation.md.html#geolocation.getCurrentPosition">geolocation.getCurrentPosition</a>(onSuccess, onError);
+</code></pre>
+
+<h2>
+<a name="Coordinates_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;位置情報の使用例&lt;/title&gt;
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordovaの読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova準備完了
+    //
+    function onDeviceReady() {
+        navigator.<a href="cordova_geolocation_geolocation.md.html#geolocation.getCurrentPosition">geolocation.getCurrentPosition</a>(onSuccess, onError);
+    }
+
+    // `<a href="cordova_geolocation_geolocation.md.html#Position">Position</a>` プロパティーを表示
+    //
+    function onSuccess(position) {
+        var div = document.getElementById('myDiv');
+
+        div.innerHTML = '緯度: '        + position.coords.latitude      + '&lt;br/&gt;' +
+                        '経度: '        + position.coords.longitude     + '&lt;br/&gt;' +
+                        '高度: '        + position.coords.altitude      + '&lt;br/&gt;' +
+                        '位置精度: '    + position.coords.accuracy      + '&lt;br/&gt;' +
+                        '高度精度: '    + position.coords.altitudeAccuracy + '&lt;br/&gt;' +
+                        '方位: '        + position.coords.heading       + '&lt;br/&gt;' +
+                        '速度: '        + position.coords.speed         + '&lt;br/&gt;';
+    }
+
+    // エラー発生時に警告を表示
+    //
+    function onError() {
+        alert('エラーが発生しました。');
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="myDiv"&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="Coordinates_android">Android に関する注意点</a>
+</h2>
+
+<p>このプロパティーは Android ではサポートされておらず、常に null を返します。</p>
+
+<hr>
+<h1><a name="Position">Position</a></h1>
+
+<p>geolocation API によって作成された位置情報 (<code><a href="cordova_geolocation_geolocation.md.html#Position">Position</a></code>) を扱うオブジェクトです。</p>
+
+<h2>
+<a name="Position_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>coords:</strong> 地理座標を表します <em>(<a href="cordova_geolocation_geolocation.md.html#Coordinates">Coordinates</a>)</em>
+</li>
+<li>
+<strong>timestamp:</strong> ミリ秒単位のタイムスタンプ値を表します <em>(DOMTimeStamp)</em>
+</li>
+</ul>
+<h2>
+<a name="Position_">概要</a>
+</h2>
+
+<p><code><a href="cordova_geolocation_geolocation.md.html#Position">Position</a></code> オブジェクトは Cordova によって作られ、コールバック関数を通してユーザーに返されます。</p>
+
+<h2>
+<a name="Position_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+<li>Windows Phone 7 (Mango)</li>
+<li>Bada 1.2 &amp; 2.x</li>
+</ul>
+<h2>
+<a name="Position_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// 成功時のコールバック関数
+//
+var onSuccess = function(position) {
+    alert('緯度: '              + position.coords.latitude          + '\n' +
+          '経度: '              + position.coords.longitude         + '\n' +
+          '高度: '              + position.coords.altitude          + '\n' +
+          '位置精度: '          + position.coords.accuracy          + '\n' +
+          '高度精度: '          + position.coords.altitudeAccuracy  + '\n' +
+          '方位: '              + position.coords.heading           + '\n' +
+          '速度: '              + position.coords.speed             + '\n' +
+          'タイムスタンプ: '    + new Date(position.timestamp)      + '\n');
+};
+
+// エラー時のコールバック関数は <a href="cordova_geolocation_geolocation.md.html#PositionError">PositionError</a> オブジェクトを受けとる
+//
+function onError(error) {
+    alert('コード: '        + error.code    + '\n' +
+          'メッセージ: '    + error.message + '\n');
+}
+
+navigator.<a href="cordova_geolocation_geolocation.md.html#geolocation.getCurrentPosition">geolocation.getCurrentPosition</a>(onSuccess, onError);
+</code></pre>
+
+<h2>
+<a name="Position_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;デバイスプロパティーの使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        navigator.<a href="cordova_geolocation_geolocation.md.html#geolocation.getCurrentPosition">geolocation.getCurrentPosition</a>(onSuccess, onError);
+    }
+
+    // onSuccess <a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a>
+    //
+    function onSuccess(position) {
+        var element = document.getElementById('geolocation');
+        element.innerHTML = '緯度: '            + position.coords.latitude      + '&lt;br /&gt;' +
+                            '経度: '            + position.coords.longitude     + '&lt;br /&gt;' +
+                            '高度: '            + position.coords.altitude      + '&lt;br /&gt;' +
+                            '位置精度: '        + position.coords.accuracy      + '&lt;br /&gt;' +
+                            '高度精度: '        + position.coords.altitudeAccuracy + '&lt;br /&gt;' +
+                            '方位: '            + position.coords.heading       + '&lt;br /&gt;' +
+                            '速度: '            + position.coords.speed         + '&lt;br /&gt;' +
+                            'タイムスタンプ: '  + new Date(position.timestamp)  + '&lt;br /&gt;';
+    }
+
+    // エラー時のコールバック関数は <a href="cordova_geolocation_geolocation.md.html#PositionError">PositionError</a> オブジェクトを受けとる
+    //
+    function onError(error) {
+        alert('コード: '        + error.code    + '\n' +
+              'メッセージ: '    + error.message + '\n');
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p id="geolocation"&gt;位置情報を取得中...&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="Position_iphone">iPhone に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>timestamp:</strong> ミリ秒ではなく、秒が使用されています。</li>
+</ul>
+<p>対処法としては、1000倍することにより手動でマイクロ秒にすることが考えられます。</p>
+
+<pre class="prettyprint"><code>var onSuccess = function(position) {
+    alert('緯度: '              + position.coords.latitude      + '\n' +
+          '経度: '              + position.coords.longitude     + '\n' +
+          'タイムスタンプ: '    + new Date(position.timestamp * 1000) + '\n');
+};
+</code></pre>
+
+<hr>
+<h1><a name="PositionError">PositionError</a></h1>
+
+<p><code><a href="cordova_geolocation_geolocation.md.html#PositionError">PositionError</a></code> オブジェクトは、エラーが発生したときに <a href="cordova_geolocation_geolocation.md.html#geolocationError">geolocationError</a> コールバック関数に渡されます。</p>
+
+<h2>
+<a name="PositionError_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>code:</strong> 事前に定義された以下のエラーコードのうちの1つを表します</li>
+<li>
+<strong>message:</strong> エラーの内容を表すエラーメッセージを表します</li>
+</ul>
+<h2>
+<a name="PositionError_">定数</a>
+</h2>
+
+<ul>
+<li><code><a href="cordova_geolocation_geolocation.md.html#PositionError">PositionError</a>.PERMISSION_DENIED</code></li>
+<li><code><a href="cordova_geolocation_geolocation.md.html#PositionError">PositionError</a>.POSITION_UNAVAILABLE</code></li>
+<li><code><a href="cordova_geolocation_geolocation.md.html#PositionError">PositionError</a>.TIMEOUT</code></li>
+</ul>
+<h2>
+<a name="PositionError_">概要</a>
+</h2>
+
+<p><code><a href="cordova_geolocation_geolocation.md.html#PositionError">PositionError</a></code> オブジェクトは、位置情報取得に関するエラーが発生したときに <code><a href="cordova_geolocation_geolocation.md.html#geolocationError">geolocationError</a></code> コールバック関数を通してユーザーに返されます。</p>
+
+<hr>
+<h1><a name="geolocationSuccess">geolocationSuccess</a></h1>
+
+<p>位置情報取得に成功したときに呼び出されるコールバック関数です。</p>
+
+<pre class="prettyprint"><code>function(position) {
+    // 任意のコード
+}
+</code></pre>
+
+<h2>
+<a name="geolocationSuccess_">パラメーター</a>
+</h2>
+
+<ul>
+<li>
+<strong>position:</strong> デバイスによって返される位置情報を表します (<code><a href="cordova_geolocation_geolocation.md.html#Position">Position</a></code>)</li>
+</ul>
+<h2>
+<a name="geolocationSuccess_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>function <a href="cordova_geolocation_geolocation.md.html#geolocationSuccess">geolocationSuccess</a>(position) {
+    alert('緯度: '              + position.coords.latitude          + '\n' +
+          '経度: '              + position.coords.longitude         + '\n' +
+          '高度: '              + position.coords.altitude          + '\n' +
+          '位置精度: '          + position.coords.accuracy          + '\n' +
+          '高度精度: '          + position.coords.altitudeAccuracy  + '\n' +
+          '方位: '              + position.coords.heading           + '\n' +
+          '速度: '              + position.coords.speed             + '\n' +
+          'タイムスタンプ: '    + new Date(position.timestamp)      + '\n');
+}
+</code></pre>
+
+<hr>
+<h1><a name="geolocationError">geolocationError</a></h1>
+
+<p>位置情報取得関数にエラーが発生したときに呼び出されるコールバック関数です。</p>
+
+<pre class="prettyprint"><code>function(error) {
+    // エラー処理
+}
+</code></pre>
+
+<h2>
+<a name="geolocationError_">パラメーター</a>
+</h2>
+
+<ul>
+<li>
+<strong>error:</strong> デバイスから返されるエラーを表します (<code><a href="cordova_geolocation_geolocation.md.html#PositionError">PositionError</a></code>)</li>
+</ul>
+<hr>
+<h1><a name="geolocationOptions">geolocationOptions</a></h1>
+
+<p>位置情報取得の設定をカスタマイズするためのパラメーターを表します。</p>
+
+<pre class="prettyprint"><code>{ maximumAge: 3000, timeout: 5000, enableHighAccuracy: true };
+</code></pre>
+
+<h2>
+<a name="geolocationOptions_">オプション</a>
+</h2>
+
+<ul>
+<li>
+<strong>frequency:</strong> 位置情報を取得する頻度をミリ秒で表します。 このオプションは W3C の仕様に含まれておらず、将来的には実装が廃止されます。 maximumAge を代わりに使用してください。 <em>(Number)</em> (デフォルト: 10000)</li>
+<li>
+<strong>enableHighAccuracy:</strong> より精度の高い位置情報を取得するためのヒントを提供するかどうかを表します <em>(Boolean)</em>
+</li>
+<li>
+<strong>timeout:</strong> <code><a href="cordova_geolocation_geolocation.md.html#geolocation.getCurrentPosition">geolocation.getCurrentPosition</a></code> または <code><a href="cordova_geolocation_geolocation.md.html#geolocation.watchPosition">geolocation.watchPosition</a></code> 関数が呼び出されたときに、それぞれに対応する <code><a href="cordova_geolocation_geolocation.md.html#geolocationSuccess">geolocationSuccess</a></code> コールバック関数が呼ばれるまでの最大経過時間をミリ秒単位で表します <em>(Number)</em>
+</li>
+<li>
+<strong>maximumAge:</strong> キャッシュされた位置情報の取得を許容する最大時間をミリ秒単位で表します <em>(Number)</em>
+</li>
+</ul>
+<h2>
+<a name="geolocationOptions_android">Android に関する注意点</a>
+</h2>
+
+<p>Android 2.x のシミュレーターは enableHighAccuracy オプションが true にセットしない限り位置情報の取得結果を通知しません。</p>
+
+<pre class="prettyprint"><code>{ enableHighAccuracy: true }
+</code></pre>
+
+            </div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

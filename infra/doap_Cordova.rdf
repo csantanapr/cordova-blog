@@ -44,6 +44,11 @@
     <release>
        <Version>
            <name>Latest Stable</name>
+           <created>2013-06-26</created>
+           <revision>2.9</revision>
+       </Version>
+       <Version>
+           <name>Legacy</name>
            <created>2013-06-07</created>
            <revision>2.8</revision>
        </Version>

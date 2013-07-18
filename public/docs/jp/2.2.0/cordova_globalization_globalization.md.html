@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="English" value="en">
+<option value="edge">edge</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0rc1">2.7.0rc1</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0rc1">2.6.0rc1</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0rc1">2.5.0rc1</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0rc1">2.4.0rc1</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0rc2">2.3.0rc2</option>
+<option value="2.3.0rc1">2.3.0rc1</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0rc2">2.2.0rc2</option>
+<option value="2.2.0rc1">2.2.0rc1</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0rc2">2.1.0rc2</option>
+<option value="2.1.0rc1">2.1.0rc1</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0rc1">2.0.0rc1</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0rc1">1.9.0rc1</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0rc1">1.8.0rc1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0rc1">1.7.0rc1</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0rc1">1.6.0rc1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0rc1">1.5.0rc1</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="Japanese" value="jp">
+<option selected value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="kr"><option value="2.0.0">2.0.0</option></optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Globalization</h1>
+            <small><select><option value="Globalization">Globalization</option>
+<option value="Globalization_">      - オブジェクト</option>
+<option value="Globalization_">      - メソッド</option>
+<option value="Globalization_">      - スコープ</option>
+<option value="Globalization_">      - パーミッション</option>
+<option value="globalization.getPreferredLanguage">globalization.getPreferredLanguage</option>
+<option value="globalization.getPreferredLanguage_">      - 概要</option>
+<option value="globalization.getPreferredLanguage_">      - サポートされているプラットフォーム</option>
+<option value="globalization.getPreferredLanguage_">      - 使用例</option>
+<option value="globalization.getPreferredLanguage_">      - 詳細な使用例</option>
+<option value="globalization.getLocaleName">globalization.getLocaleName</option>
+<option value="globalization.getLocaleName_">      - 概要</option>
+<option value="globalization.getLocaleName_">      - サポートされているプラットフォーム</option>
+<option value="globalization.getLocaleName_">      - 使用例</option>
+<option value="globalization.getLocaleName_">      - 詳細な使用例</option>
+<option value="globalization.dateToString">globalization.dateToString</option>
+<option value="globalization.dateToString_">      - 概要</option>
+<option value="globalization.dateToString_">      - サポートされているプラットフォーム</option>
+<option value="globalization.dateToString_">      - 使用例</option>
+<option value="globalization.dateToString_">      - 詳細な使用例</option>
+<option value="globalization.stringToDate">globalization.stringToDate</option>
+<option value="globalization.stringToDate_">      - 概要</option>
+<option value="globalization.stringToDate_">      - サポートされているプラットフォーム</option>
+<option value="globalization.stringToDate_">      - 使用例</option>
+<option value="globalization.stringToDate_">      - 詳細な使用例</option>
+<option value="globalization.getDatePattern">globalization.getDatePattern</option>
+<option value="globalization.getDatePattern_">      - 概要</option>
+<option value="globalization.getDatePattern_">      - サポートされているプラットフォーム</option>
+<option value="globalization.getDatePattern_">      - 使用例</option>
+<option value="globalization.getDatePattern_">      - 詳細な使用例</option>
+<option value="globalization.getDateNames">globalization.getDateNames</option>
+<option value="globalization.getDateNames_">      - 概要</option>
+<option value="globalization.getDateNames_">      - サポートされているプラットフォーム</option>
+<option value="globalization.getDateNames_">      - 使用例</option>
+<option value="globalization.getDateNames_">      - 詳細な使用例</option>
+<option value="globalization.isDayLightSavingsTime">globalization.isDayLightSavingsTime</option>
+<option value="globalization.isDayLightSavingsTime_">      - 概要</option>
+<option value="globalization.isDayLightSavingsTime_">      - サポートされているプラットフォーム</option>
+<option value="globalization.isDayLightSavingsTime_">      - 使用例</option>
+<option value="globalization.isDayLightSavingsTime_">      - 詳細な使用例</option>
+<option value="globalization.getFirstDayOfWeek">globalization.getFirstDayOfWeek</option>
+<option value="globalization.getFirstDayOfWeek_">      - 概要</option>
+<option value="globalization.getFirstDayOfWeek_">      - サポートされているプラットフォーム</option>
+<option value="globalization.getFirstDayOfWeek_">      - 使用例</option>
+<option value="globalization.getFirstDayOfWeek_">      - 詳細な使用例</option>
+<option value="globalization.numberToString">globalization.numberToString</option>
+<option value="globalization.numberToString_">      - 概要</option>
+<option value="globalization.numberToString_">      - サポートされているプラットフォーム</option>
+<option value="globalization.numberToString_">      - 使用例</option>
+<option value="globalization.numberToString_">      - 詳細な使用例</option>
+<option value="globalization.stringToNumber">globalization.stringToNumber</option>
+<option value="globalization.stringToNumber_">      - 概要</option>
+<option value="globalization.stringToNumber_">      - サポートされているプラットフォーム</option>
+<option value="globalization.stringToNumber_">      - 使用例</option>
+<option value="globalization.stringToNumber_">      - 詳細な使用例</option>
+<option value="globalization.getNumberPattern">globalization.getNumberPattern</option>
+<option value="globalization.getNumberPattern_">      - 概要</option>
+<option value="globalization.getNumberPattern_">      - サポートされているプラットフォーム</option>
+<option value="globalization.getNumberPattern_">      - 使用例</option>
+<option value="globalization.getNumberPattern_">      - 詳細な使用例</option>
+<option value="globalization.getCurrencyPattern">globalization.getCurrencyPattern</option>
+<option value="globalization.getCurrencyPattern_">      - 概要</option>
+<option value="globalization.getCurrencyPattern_">      - サポートされているプラットフォーム</option>
+<option value="globalization.getCurrencyPattern_">      - 使用例</option>
+<option value="globalization.getCurrencyPattern_">      - 詳細な使用例</option>
+<option value="GlobalizationError">GlobalizationError</option>
+<option value="GlobalizationError_">      - プロパティー</option>
+<option value="GlobalizationError_">      - 概要</option>
+<option value="GlobalizationError_">      - サポートされているプラットフォーム</option>
+<option value="GlobalizationError_">      - 使用例</option>
+<option value="GlobalizationError_">      - 詳細な使用例</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>API リファレンス</h1>
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a></li>
+<li><a href="cordova_camera_camera.md.html#Camera">Camera</a></li>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_compass_compass.md.html#Compass">Compass</a></li>
+<li><a href="cordova_connection_connection.md.html#Connection">Connection</a></li>
+<li><a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a></li>
+<li><a href="cordova_device_device.md.html#Device">Device</a></li>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_file_file.md.html#File">File</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a></li>
+<li><a href="cordova_globalization_globalization.md.html#Globalization">Globalization</a></li>
+<li><a href="cordova_media_media.md.html#Media">Media</a></li>
+<li><a href="cordova_notification_notification.md.html#Notification">Notification</a></li>
+<li><a href="cordova_splashscreen_splashscreen.md.html#Splashscreen">Splashscreen</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+</ul>
+<h1>Guides</h1>
+<ul>
+<li><a href="guide_getting-started_index.md.html#%E5%85%A5%E9%96%80%E3%82%AC%E3%82%A4%E3%83%89">入門ガイド</a></li>
+<li><a href="guide_command-line_index.md.html#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E4%BD%BF%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89">コマンドライン使用ガイド</a></li>
+<li><a href="guide_upgrading_index.md.html#%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89">アップグレードガイド</a></li>
+<li><a href="guide_project-settings_index.md.html#%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E8%A8%AD%E5%AE%9A">プロジェクトの設定</a></li>
+<li><a href="guide_plugin-development_index.md.html#%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E9%96%8B%E7%99%BA%E3%82%AC%E3%82%A4%E3%83%89">プラグイン開発ガイド</a></li>
+<li><a href="guide_whitelist_index.md.html#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89">ドメインホワイトリストガイド</a></li>
+<li><a href="guide_cordova-webview_index.md.html#WebView%20%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF">WebView の埋め込み</a></li>
+<li><a href="_index.html">索引</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Globalization">Globalization</a></h1>
+
+<blockquote>
+  <p><code>globalization</code> オブジェクトはユーザーのロケールとタイムゾーンの情報を取得し、固有の操作を実行します。</p>
+</blockquote>
+
+<h2>
+<a name="Globalization_">オブジェクト</a>
+</h2>
+
+<ul>
+<li><a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a></li>
+</ul>
+<h2>
+<a name="Globalization_">メソッド</a>
+</h2>
+
+<ul>
+<li><a href="cordova_globalization_globalization.md.html#globalization.getPreferredLanguage">globalization.getPreferredLanguage</a></li>
+<li><a href="cordova_globalization_globalization.md.html#globalization.getLocaleName">globalization.getLocaleName</a></li>
+<li><a href="cordova_globalization_globalization.md.html#globalization.dateToString">globalization.dateToString</a></li>
+<li><a href="cordova_globalization_globalization.md.html#globalization.stringToDate">globalization.stringToDate</a></li>
+<li><a href="cordova_globalization_globalization.md.html#globalization.getDatePattern">globalization.getDatePattern</a></li>
+<li><a href="cordova_globalization_globalization.md.html#globalization.getDateNames">globalization.getDateNames</a></li>
+<li><a href="cordova_globalization_globalization.md.html#globalization.isDayLightSavingsTime">globalization.isDayLightSavingsTime</a></li>
+<li><a href="cordova_globalization_globalization.md.html#globalization.getFirstDayOfWeek">globalization.getFirstDayOfWeek</a></li>
+<li><a href="cordova_globalization_globalization.md.html#globalization.numberToString">globalization.numberToString</a></li>
+<li><a href="cordova_globalization_globalization.md.html#globalization.stringToNumber">globalization.stringToNumber</a></li>
+<li><a href="cordova_globalization_globalization.md.html#globalization.getNumberPattern">globalization.getNumberPattern</a></li>
+<li><a href="cordova_globalization_globalization.md.html#globalization.getCurrencyPattern">globalization.getCurrencyPattern</a></li>
+</ul>
+<h2>
+<a name="Globalization_">スコープ</a>
+</h2>
+
+<p>この <code>globalization</code> オブジェクトはobject is a child of the <code>navigator</code> オブジェクトの子で、そのためグローバルスコープを持っています。</p>
+
+<pre class="prettyprint"><code>// グローバル globalization オブジェクト
+var globalization = navigator.globalization;
+</code></pre>
+
+<h2>
+<a name="Globalization_">パーミッション</a>
+</h2>
+
+<h3>Android</h3>
+
+<h4>app/res/xml/config.xml</h4>
+
+<pre class="prettyprint"><code>&lt;plugin name="<a href="cordova_globalization_globalization.md.html#Globalization">Globalization</a>" value="org.apache.cordova.<a href="cordova_globalization_globalization.md.html#Globalization">Globalization</a>" /&gt;
+</code></pre>
+
+<hr>
+<h1><a name="globalization.getPreferredLanguage">globalization.getPreferredLanguage</a></h1>
+
+<p>クライアントの現在の言語の識別文字列を取得します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_globalization_globalization.md.html#globalization.getPreferredLanguage">globalization.getPreferredLanguage</a>(successCB, errorCB);
+</code></pre>
+
+<h2>
+<a name="globalization.getPreferredLanguage_">概要</a>
+</h2>
+
+<p>successCB コールバック関数に、プロパティーオブジェクトをパラメーターとして言語の識別文字列を返します。このオブジェクトは文字列の <code>value</code> プロパティーを持っています。</p>
+
+<p>もし言語の取得中にエラーが発生した場合、 errorCB コールバックが <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a> オブジェクトをパラメーターとして呼び出されます。このエラーに対するエラーコードは <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a>.UNKNOWN_ERROR です。</p>
+
+<h2>
+<a name="globalization.getPreferredLanguage_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+</ul>
+<h2>
+<a name="globalization.getPreferredLanguage_">使用例</a>
+</h2>
+
+<p>ブラウザーのロケールが en_US に設定された場合、次のコードは "language: English" という文字列をポップアップダイアログに表示します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_globalization_globalization.md.html#globalization.getPreferredLanguage">globalization.getPreferredLanguage</a>(
+  function (language) {alert('language: ' + language.value + '\n');},
+  function () {alert('Error getting language\n');}
+);
+</code></pre>
+
+<h2>
+<a name="globalization.getPreferredLanguage_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova&lt;/title&gt;
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    function checkLanguage() {
+      navigator.<a href="cordova_globalization_globalization.md.html#globalization.getPreferredLanguage">globalization.getPreferredLanguage</a>(
+        function (language) {alert('language: ' + language.value + '\n');},
+        function () {alert('Error getting language\n');}
+      );
+    }
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button onclick="checkLanguage()"&gt;クリックして言語を表示&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="globalization.getLocaleName">globalization.getLocaleName</a></h1>
+
+<p>クライアントの現在のロケールの設定の識別文字列を取得します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_globalization_globalization.md.html#globalization.getLocaleName">globalization.getLocaleName</a>(successCB, errorCB);
+</code></pre>
+
+<h2>
+<a name="globalization.getLocaleName_">概要</a>
+</h2>
+
+<p>successCB コールバック関数に、プロパティーオブジェクトをパラメーターとしてロケールの識別文字列を返します。このオブジェクトは文字列の <code>value</code> プロパティーを持っています。</p>
+
+<p>もしロケールの取得中にエラーが発生した場合、 errorCB コールバックが <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a> オブジェクトをパラメーターとして呼び出されます。このエラーに対するエラーコードは <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a>.UNKNOWN_ERROR です。</p>
+
+<h2>
+<a name="globalization.getLocaleName_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+</ul>
+<h2>
+<a name="globalization.getLocaleName_">使用例</a>
+</h2>
+
+<p>ブラウザーのロケールが en_US に設定された場合、次のコードは "locale: en_US" という文字列をポップアップダイアログに表示します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_globalization_globalization.md.html#globalization.getLocaleName">globalization.getLocaleName</a>(
+  function (locale) {alert('locale: ' + locale.value + '\n');},
+  function () {alert('Error getting locale\n');}
+);
+</code></pre>
+
+<h2>
+<a name="globalization.getLocaleName_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova&lt;/title&gt;
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    function checkLocale() {
+      navigator.<a href="cordova_globalization_globalization.md.html#globalization.getLocaleName">globalization.getLocaleName</a>(
+        function (locale) {alert('locale: ' + locale.value + '\n');},
+        function () {alert('Error getting locale\n');}
+      );
+    }
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button onclick="checkLocale()"&gt;クリックしてロケールを表示&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="globalization.dateToString">globalization.dateToString</a></h1>
+
+<p>クライアントのロケールとタイムゾーンを元にフォーマットされた日時を文字列で返します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_globalization_globalization.md.html#globalization.dateToString">globalization.dateToString</a>(date, successCB, errorCB, options);
+</code></pre>
+
+<h2>
+<a name="globalization.dateToString_">概要</a>
+</h2>
+
+<p>successCB コールバック関数に、プロパティーオブジェクトをパラメーターとしてフォーマットされた日時を渡します。このオブジェクトは文字列の <code>value</code> プロパティーを持っています。</p>
+
+<p>引数の <code>date</code> パラメーターは <code>Date</code> 型である必要があります。</p>
+
+<p>もし日時のフォーマット中にエラーが発生した場合、 errorCB コールバックが <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a> オブジェクトをパラメーターとして呼び出されます。このエラーに対するエラーコードは <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a>.FORMATTING_ERROR です。</p>
+
+<p><code>options.formatLength</code> には 'short', 'medium', 'long', または 'full' が指定出来ます。
+<code>options.selector</code> には 'date', 'time' または 'date and time' が指定出来ます。</p>
+
+<p>デフォルトのオプションは <code>{formatLength:'short', selector:'date and time'}</code> です。
+この <code>options</code> パラメーターはオプション (任意) です。</p>
+
+<h2>
+<a name="globalization.dateToString_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+</ul>
+<h2>
+<a name="globalization.dateToString_">使用例</a>
+</h2>
+
+<p>ブラウザーのロケールが en_US に設定されている場合、次のコードはデフォルトのオプションを使用して "date: 9/25/2012 4:21PM" といったような文字列をポップアップダイアログに表示します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_globalization_globalization.md.html#globalization.dateToString">globalization.dateToString</a>(
+  new Date(),
+  function (date) {alert('date:' + date.value + '\n');},
+  function () {alert('Error getting dateString\n');},
+  {formatLength:'short', selector:'date and time'}
+);
+</code></pre>
+
+<h2>
+<a name="globalization.dateToString_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova&lt;/title&gt;
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    function checkDateString() {
+      navigator.<a href="cordova_globalization_globalization.md.html#globalization.dateToString">globalization.dateToString</a>(
+        new Date(),
+        function (date) {alert('date: ' + date.value + '\n');},
+        function () {alert('Error getting dateString\n');,
+        {formatLength:'short', selector:'date and time'}}
+      );
+    }
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button onclick="checkDateString()"&gt;クリックして日時を表示&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="globalization.stringToDate">globalization.stringToDate</a></h1>
+
+<p>クライアントのユーザー設定とカレンダーを元に、
+タイムゾーンを使って文字列を日付に変換し、
+対応する日付オブジェクトを返します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_globalization_globalization.md.html#globalization.stringToDate">globalization.stringToDate</a>(dateString, successCB, errorCB, options);
+</code></pre>
+
+<h2>
+<a name="globalization.stringToDate_">概要</a>
+</h2>
+
+<p>プロパティーオブジェクトをパラメーターとして日付を成功コールバックに返します。このオブジェクトは以下のプロパティーを持っています:</p>
+
+<ul>
+<li>year {Number}: 4桁の年を表します</li>
+<li>month {Number}: (0 - 11) の月を表します</li>
+<li>day {Number}: (1 - 31) の日を表します</li>
+<li>hour {Number}: (0 - 23) の時を表します</li>
+<li>minute {Number}: (0 - 59) の分を表します</li>
+<li>second {Number}: (0 - 59) の秒を表します</li>
+<li>millisecond {Number}: (0 - 999) のミリ秒を表します。すべてのプラットフォームで有効というわけではありません</li>
+</ul>
+<p>引数の <code>dateString</code> パラメーターは <code>String</code> 型である必要があります。</p>
+
+<p><code>options.formatLength</code> には 'short', 'medium', 'long', または 'full' が指定出来ます。
+<code>options.selector</code> には 'date', 'time' または 'date and time' が指定出来ます。</p>
+
+<p>デフォルトのオプションは <code>{formatLength:'short', selector:'date and time'}</code> です。
+この options パラメーターはオプション (任意) です。</p>
+
+<p>もし変換中にエラーが発生した場合、 errorCB コールバックが <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a> オブジェクトをパラメーターとして呼び出されます。このエラーに対するエラーコードは <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a>.PARSING_ERROR です。</p>
+
+<h2>
+<a name="globalization.stringToDate_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+</ul>
+<h2>
+<a name="globalization.stringToDate_">使用例</a>
+</h2>
+
+<p>ブラウザーのロケールが en_US に設定されている場合、次のコードは "month:8 day:25 year:2012" といったような文字列をポップアップダイアログに表示します。月として返る数値は文字列より 1 少ないので気をつけてください。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_globalization_globalization.md.html#globalization.stringToDate">globalization.stringToDate</a>(
+  '9/25/2012',
+  function (date) {alert('month:' + date.month +
+                         ' day:' + date.day + 
+                         ' year:' + date.year + '\n');},
+  function () {alert('Error getting date\n');},
+  {selector:'date'}
+);
+</code></pre>
+
+<h2>
+<a name="globalization.stringToDate_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova&lt;/title&gt;
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    function checkStringDate() {
+      navigator.<a href="cordova_globalization_globalization.md.html#globalization.stringToDate">globalization.stringToDate</a>(
+        '9/25/2012',
+        function (date) {alert('month:' + date.month +
+                               ' day:' + date.day + 
+                               ' year:' + date.year + '\n');},
+        function () {alert('Error getting date\n');},
+        {selector:'date'}
+      );
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button onclick="checkStringDate()"&gt;クリックして日付を変換&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="globalization.getDatePattern">globalization.getDatePattern</a></h1>
+
+<p>クライアントのユーザー設定を元に、日時のフォーマットと変換のためのパターン文字列を返します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_globalization_globalization.md.html#globalization.getDatePattern">globalization.getDatePattern</a>(successCB, errorCB, options);
+</code></pre>
+
+<h2>
+<a name="globalization.getDatePattern_">概要</a>
+</h2>
+
+<p>successCB コールバック関数に、プロパティーオブジェクトをパラメーターとしてパターンを返します。このオブジェクトは以下のプロパティーを持っています:</p>
+
+<ul>
+<li>pattern {String}: 日時のフォーマットと変換のための日付および時間のパターンを表します。このパターンは Unicode Technical Standard #35 に従っています。 <a class="external" href="http://unicode.org/reports/tr35/tr35-4.html">http://unicode.org/reports/tr35/tr35-4.html</a>
+</li>
+<li>timezone {String}: クライアントのタイムゾーンの省略名を表します。</li>
+<li>utc_offset {Number}: クライアントのタイムゾーンと協定世界時との現在の差を秒で表します。</li>
+<li>dst_offset {Number}: 現在のサマータイム (デイライトセービングタイム) のオフセットを秒で表します。</li>
+</ul>
+<p>もしパターン取得中にエラーが発生した場合、 errorCB コールバックが <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a> オブジェクトをパラメーターとして呼び出されます。このエラーに対するエラーコードは <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a>.PATTERN_ERROR です。</p>
+
+<p><code>options.formatLength</code> には 'short', 'medium', 'long', または 'full' が指定出来ます。
+<code>options.selector</code> には 'date', 'time' または 'date and time' が指定出来ます。</p>
+
+<p>デフォルトのオプションは <code>{formatLength:'short', selector:'date and time'}</code> です。
+この options パラメーターはオプション (任意) です。</p>
+
+<h2>
+<a name="globalization.getDatePattern_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+</ul>
+<h2>
+<a name="globalization.getDatePattern_">使用例</a>
+</h2>
+
+<p>ブラウザーのロケールが en_US に設定されている場合、次のコードは "pattern: M/d/yyyy h:mm a" といったような文字列をポップアップダイアログに表示します。</p>
+
+<pre class="prettyprint"><code>function checkDatePattern() {
+  navigator.<a href="cordova_globalization_globalization.md.html#globalization.getDatePattern">globalization.getDatePattern</a>(
+    function (date) {alert('pattern: ' + date.pattern + '\n');},
+    function () {alert('Error getting pattern\n');},
+    {formatLength:'short', selector:'date and time'}
+  );
+}
+</code></pre>
+
+<h2>
+<a name="globalization.getDatePattern_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova&lt;/title&gt;
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    function checkDatePattern() {
+      navigator.<a href="cordova_globalization_globalization.md.html#globalization.getDatePattern">globalization.getDatePattern</a>(
+        function (date) {alert('pattern: ' + date.pattern + '\n');},
+        function () {alert('Error getting pattern\n');},
+        {formatLength:'short', selector:'date and time'}
+      );
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button onclick="checkDatePattern()"&gt;クリックしてパターンを表示&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="globalization.getDateNames">globalization.getDateNames</a></h1>
+
+<p>クライアントのユーザー設定とカレンダーを元に、月と曜日の名前の配列を返します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_globalization_globalization.md.html#globalization.getDateNames">globalization.getDateNames</a>(successCB, errorCB, options);
+</code></pre>
+
+<h2>
+<a name="globalization.getDateNames_">概要</a>
+</h2>
+
+<p>successCB コールバック関数に、プロパティーオブジェクトをパラメーターとして名前の配列を返します。このオブジェクトは文字列配列の <code>value</code> プロパティーを持っています。この文字列配列は、オプションで何が選択されたかによって、最初の月もしくは最初の曜日の名前から始まります。</p>
+
+<p>もし名前の取得中にエラーが発生した場合、 errorCB コールバックが <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a> オブジェクトをパラメーターとして呼び出されます。このエラーに対するエラーコードは <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a>.UNKNOWN_ERROR です。</p>
+
+<p><code>options.type</code> には 'narrow' または 'wide' が指定出来ます。
+<code>options.item</code> には 'months' または 'days' が指定出来ます。</p>
+
+<p>デフォルトのオプションは <code>{type:'wide', item:'months'}</code> です。
+この <code>options</code> パラメーターはオプション (任意) です。</p>
+
+<h2>
+<a name="globalization.getDateNames_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+</ul>
+<h2>
+<a name="globalization.getDateNames_">使用例</a>
+</h2>
+
+<p>ブラウザーのロケールが en_US に設定されている場合、次のコードは 12 個のポップアップダイアログを次々と表示します。それぞれのポップアップダイアログには、 "month: January" といったような文字列が表示されます。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_globalization_globalization.md.html#globalization.getDateNames">globalization.getDateNames</a>(
+  function (names) {
+    for (var i=0; i&lt;names.value.length; i++) {
+      alert('month: ' + names.value[i] + '\n');
+    }
+  },
+  function () {alert('Error getting names\n');},
+  {type:'wide', item:'months'}
+);
+</code></pre>
+
+<h2>
+<a name="globalization.getDateNames_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova&lt;/title&gt;
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    function checkDateNames() {
+      navigator.<a href="cordova_globalization_globalization.md.html#globalization.getDateNames">globalization.getDateNames</a>(
+        function (names) {
+          for (var i=0; i&lt;names.value.length; i++) {
+            alert('month: ' + names.value[i] + '\n');
+          }
+        },
+        function () {alert('Error getting names\n');},
+        {type:'wide', item:'months'}
+      );
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button onclick="checkDateNames()"&gt;クリックして月の名前を表示&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="globalization.isDayLightSavingsTime">globalization.isDayLightSavingsTime</a></h1>
+
+<p>クライアントのタイムゾーンとカレンダーを元に、夏時間が与えられた日付で有効かどうかを返します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_globalization_globalization.md.html#globalization.isDayLightSavingsTime">globalization.isDayLightSavingsTime</a>(date, successCB, errorCB);
+</code></pre>
+
+<h2>
+<a name="globalization.isDayLightSavingsTime_">概要</a>
+</h2>
+
+<p>successCB コールバック関数に、プロパティーオブジェクトをパラメーターとして夏時間かどうかを返します。このオブジェクトは Boolean の <code>dst</code> プロパティーを持っています。 'true' は夏時間が現在有効であること、 'false' はそうでないことを表します。</p>
+
+<p>引数の <code>date</code> パラメーターは <code>Date</code> 型である必要があります。</p>
+
+<p>もし日付の読み取り中にエラーが発生した場合、 errorCB コールバックが呼び出されます。このエラーに対するエラーコードは <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a>.UNKNOWN_ERROR です。</p>
+
+<h2>
+<a name="globalization.isDayLightSavingsTime_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+</ul>
+<h2>
+<a name="globalization.isDayLightSavingsTime_">使用例</a>
+</h2>
+
+<p>ブラウザーが DST が有効なタイムゾーンで、夏の場合、次のコードは "dst: true" といったような文字列をポップアップダイアログに表示します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_globalization_globalization.md.html#globalization.isDayLightSavingsTime">globalization.isDayLightSavingsTime</a>(
+  new Date(),
+  function (date) {alert('dst: ' + date.dst + '\n');},
+  function () {alert('Error getting names\n');}
+);
+</code></pre>
+
+<h2>
+<a name="globalization.isDayLightSavingsTime_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova&lt;/title&gt;
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    function checkDayLightSavings() {
+      navigator.<a href="cordova_globalization_globalization.md.html#globalization.isDayLightSavingsTime">globalization.isDayLightSavingsTime</a>(
+        new Date(),
+        function (date) {alert('dst: ' + date.dst + '\n');},
+        function () {alert('Error getting names\n');}
+      );
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button onclick="checkDayLightSavings()"&gt;クリックして夏時間かどうかを表示&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="globalization.getFirstDayOfWeek">globalization.getFirstDayOfWeek</a></h1>
+
+<p>クライアントのユーザー設定とカレンダーを元に、週の最初の曜日を返します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_globalization_globalization.md.html#globalization.getFirstDayOfWeek">globalization.getFirstDayOfWeek</a>(successCB, errorCB);
+</code></pre>
+
+<h2>
+<a name="globalization.getFirstDayOfWeek_">概要</a>
+</h2>
+
+<p>週の曜日は 1 から始まり、 1 は日曜日を表します。 successCB コールバック関数に、プロパティーオブジェクトをパラメーターとして曜日を返します。このオブジェクトは数字の <code>value</code> プロパティーを持っています。</p>
+
+<p>もし曜日の取得中にエラーが発生した場合、 errorCB コールバックが <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a> オブジェクトをパラメーターとして呼び出されます。このエラーに対するエラーコードは <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a>.UNKNOWN_ERROR です。</p>
+
+<h2>
+<a name="globalization.getFirstDayOfWeek_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+</ul>
+<h2>
+<a name="globalization.getFirstDayOfWeek_">使用例</a>
+</h2>
+
+<p>ブラウザーのロケールが en_US に設定されている場合、次のコードは "day: 1" といったような文字列をポップアップダイアログに表示します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_globalization_globalization.md.html#globalization.getFirstDayOfWeek">globalization.getFirstDayOfWeek</a>(
+  function (day) {alert('day: ' + day.value + '\n');},
+  function () {alert('Error getting day\n');}
+);
+</code></pre>
+
+<h2>
+<a name="globalization.getFirstDayOfWeek_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova&lt;/title&gt;
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    function checkFirstDay() {
+      navigator.<a href="cordova_globalization_globalization.md.html#globalization.getFirstDayOfWeek">globalization.getFirstDayOfWeek</a>(
+        function (day) {alert('day: ' + day.value + '\n');},
+        function () {alert('Error getting day\n');}
+      );
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button onclick="checkFirstDay()"&gt;クリックして週の最初の曜日を表示&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="globalization.numberToString">globalization.numberToString</a></h1>
+
+<p>クライアントのユーザー設定を元にフォーマットされた数字を文字列で返します。
+Returns a number formatted as a string according to the client's user preferences.</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_globalization_globalization.md.html#globalization.numberToString">globalization.numberToString</a>(number, successCB, errorCB, options);
+</code></pre>
+
+<h2>
+<a name="globalization.numberToString_">概要</a>
+</h2>
+
+<p>successCB コールバック関数に、プロパティーオブジェクトをパラメーターとしてフォーマットされた数字を渡します。このオブジェクトは文字列の <code>value</code> プロパティーを持っています。</p>
+
+<p>もし数字のフォーマット中にエラーが発生した場合、 errorCB コールバックが <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a> オブジェクトをパラメーターとして呼び出されます。このエラーに対するエラーコードは <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a>.FORMATTING_ERROR です。</p>
+
+<p><code>options.type</code> には 'decimal', 'percent', または 'currency' が指定出来ます。デフォルトのオプションは <code>{type:'decimal'}</code> です。この <code>options</code> パラメーターはオプション (任意) です。</p>
+
+<h2>
+<a name="globalization.numberToString_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+</ul>
+<h2>
+<a name="globalization.numberToString_">使用例</a>
+</h2>
+
+<p>ブラウザーのロケールが en_US に設定されている場合、次のコードは "number: 3.142" といったような文字列をポップアップダイアログに表示します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_globalization_globalization.md.html#globalization.numberToString">globalization.numberToString</a>(
+  3.1415926,
+  function (number) {alert('number: ' + number.value + '\n');},
+  function () {alert('Error getting number\n');},
+  {type:'decimal'}
+);
+</code></pre>
+
+<h2>
+<a name="globalization.numberToString_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova&lt;/title&gt;
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    function checkNumber() {
+      navigator.<a href="cordova_globalization_globalization.md.html#globalization.numberToString">globalization.numberToString</a>(
+        3.1415926,
+        function (number) {alert('number: ' + number.value + '\n');},
+        function () {alert('Error getting number\n');},
+        {type:'decimal'}
+      );
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button onclick="checkNumber()"&gt;クリックして数字を表示&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="globalization.stringToNumber">globalization.stringToNumber</a></h1>
+
+<p>クライアントのユーザー設定を元に文字列を数字に変換し、対応する数字を返します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_globalization_globalization.md.html#globalization.stringToNumber">globalization.stringToNumber</a>(string, successCB, errorCB, options);
+</code></pre>
+
+<h2>
+<a name="globalization.stringToNumber_">概要</a>
+</h2>
+
+<p>プロパティーオブジェクトをパラメーターとして数字を successCB コールバック関数に返します。このオブジェクトは数字の <code>value</code> プロパティーを持っています。</p>
+
+<p>もし数字の変換中にエラーが発生した場合、 errorCB コールバックが <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a> オブジェクトをパラメーターとして呼び出されます。このエラーに対するエラーコードは <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a>.PARSING_ERROR です。</p>
+
+<p><code>options.type</code> には 'decimal', 'percent', または 'currency' が指定出来ます。
+デフォルトのオプションは <code>{type:'decimal'}</code> です。この <code>options</code> パラメーターはオプション (任意) です。</p>
+
+<h2>
+<a name="globalization.stringToNumber_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+</ul>
+<h2>
+<a name="globalization.stringToNumber_">使用例</a>
+</h2>
+
+<p>ブラウザーのロケールが en_US に設定されている場合、次のコードは "number: 1234.56" といったような文字列をポップアップダイアログに表示します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_globalization_globalization.md.html#globalization.stringToNumber">globalization.stringToNumber</a>(
+  '1234.56',
+  function (number) {alert('number: ' + number.value + '\n');},
+  function () {alert('Error getting number\n');},
+  {type:'decimal'}
+);
+</code></pre>
+
+<h2>
+<a name="globalization.stringToNumber_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova&lt;/title&gt;
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    function checkNumber() {
+      navigator.<a href="cordova_globalization_globalization.md.html#globalization.stringToNumber">globalization.stringToNumber</a>(
+        '1234.56',
+        function (number) {alert('number: ' + number.value + '\n');},
+        function () {alert('Error getting number\n');},
+        {type:'decimal'}
+      );
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button onclick="checkNumber()"&gt;クリックして数字を変換&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="globalization.getNumberPattern">globalization.getNumberPattern</a></h1>
+
+<p>クライアントのユーザー設定を元に、数字のフォーマットと変換のためのパターン文字列を返します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_globalization_globalization.md.html#globalization.getNumberPattern">globalization.getNumberPattern</a>(successCB, errorCB, options);
+</code></pre>
+
+<h2>
+<a name="globalization.getNumberPattern_">概要</a>
+</h2>
+
+<p>successCB コールバック関数に、プロパティーオブジェクトをパラメーターとしてパターンを返します。このオブジェクトは以下のプロパティーを持っています:</p>
+
+<ul>
+<li>pattern {String}: 数字のフォーマットと変換のためのパターンを表します。このパターンは Unicode Technical Standard #35 に従っています。 <a class="external" href="http://unicode.org/reports/tr35/tr35-4.html">http://unicode.org/reports/tr35/tr35-4.html</a>
+</li>
+<li>symbol {String}: フォーマットおよび変換時に使うパーセントや通貨といったシンボルを表します。</li>
+<li>fraction {Number}: フォーマットおよび変換時に使う小数の桁数を表します。</li>
+<li>rounding {Number}: フォーマットおよび変換時に使う丸めの単位を表します。</li>
+<li>positive {String}: フォーマットおよび変換時に使う正の数のための記号を表します。</li>
+<li>negative: {String}: フォーマットおよび変換時に使う負の数のための記号を表します。</li>
+<li>decimal: {String}: フォーマットおよび変換時に使う小数の記号を表します。</li>
+<li>grouping: {String}: フォーマットおよび変換時に使うグルーピング時の記号を表します。</li>
+</ul>
+<p>もしパターン取得中にエラーが発生した場合、 errorCB コールバックが <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a> オブジェクトをパラメーターとして呼び出されます。このエラーに対するエラーコードは <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a>.PATTERN_ERROR です。</p>
+
+<p><code>options.type</code> には 'decimal', 'percent', または 'currency' が指定出来ます。
+デフォルトのオプションは <code>{type:'decimal'}</code> です。この <code>options</code> パラメーターはオプション (任意) です。</p>
+
+<h2>
+<a name="globalization.getNumberPattern_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+</ul>
+<h2>
+<a name="globalization.getNumberPattern_">使用例</a>
+</h2>
+
+<p>ブラウザーのロケールが en_US に設定されている場合、以下のような文字列をポップアップダイアログに表示します:</p>
+
+<pre class="prettyprint"><code>pattern: #,##0.###
+symbol: .
+fraction: 0
+rounding: 0
+positive: 
+negative: -
+decimal: .
+grouping: ,
+
+
+
+navigator.<a href="cordova_globalization_globalization.md.html#globalization.getNumberPattern">globalization.getNumberPattern</a>(
+  function (pattern) {alert('pattern: ' + pattern.pattern + '\n' +
+                            'symbol: ' + pattern.symbol + '\n' +
+                            'fraction: ' + pattern.fraction + '\n' +
+                            'rounding: ' + pattern.rounding + '\n' +
+                            'positive: ' + pattern.positive + '\n' +
+                            'negative: ' + pattern.negative + '\n' +
+                            'decimal: ' + pattern.decimal + '\n' +
+                            'grouping: ' + pattern.grouping);},
+  function () {alert('Error getting pattern\n');},
+  {type:'decimal'}
+);
+</code></pre>
+
+<h2>
+<a name="globalization.getNumberPattern_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova&lt;/title&gt;
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    function checkPattern() {
+      navigator.<a href="cordova_globalization_globalization.md.html#globalization.getNumberPattern">globalization.getNumberPattern</a>(
+        function (pattern) {alert('pattern: ' + pattern.pattern + '\n' +
+                                  'symbol: ' + pattern.symbol + '\n' +
+                                  'fraction: ' + pattern.fraction + '\n' +
+                                  'rounding: ' + pattern.rounding + '\n' +
+                                  'positive: ' + pattern.positive + '\n' +
+                                  'negative: ' + pattern.negative + '\n' +
+                                  'decimal: ' + pattern.decimal + '\n' +
+                                  'grouping: ' + pattern.grouping);},
+        function () {alert('Error getting pattern\n');},
+        {type:'decimal'}
+      );
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button onclick="checkPattern()"&gt;クリックしてパターンを表示&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="globalization.getCurrencyPattern">globalization.getCurrencyPattern</a></h1>
+
+<p>クライアントのユーザー設定と ISO 4217 通貨コードを元に、通貨の値のフォーマットと変換のためのパターン文字列を返します。</p>
+
+<pre class="prettyprint"><code> navigator.<a href="cordova_globalization_globalization.md.html#globalization.getCurrencyPattern">globalization.getCurrencyPattern</a>(currencyCode, successCB, errorCB);
+</code></pre>
+
+<h2>
+<a name="globalization.getCurrencyPattern_">概要</a>
+</h2>
+
+<p>successCB コールバック関数に、プロパティーオブジェクトをパラメーターとしてパターンを返します。このオブジェクトは以下のプロパティーを持っています:</p>
+
+<ul>
+<li>pattern {String}: 通貨の値のフォーマットと変換のためのパターンを表します。このパターンは Unicode Technical Standard #35 に従っています。 <a class="external" href="http://unicode.org/reports/tr35/tr35-4.html">http://unicode.org/reports/tr35/tr35-4.html</a>
+</li>
+<li>code {String}: パターンのための The ISO 4217 の通貨コードを表します。</li>
+<li>fraction {Number}: フォーマットおよび変換時に使う小数の桁数を表します。</li>
+<li>rounding {Number}: フォーマットおよび変換時に使う丸めの単位を表します。</li>
+<li>decimal: {String}: フォーマットおよび変換時に使う小数の記号を表します。</li>
+<li>grouping: {String}: フォーマットおよび変換時に使うグルーピング時の記号を表します。</li>
+</ul>
+<p>引数の <code>currencyCode</code> パラメーターは、例えば 'USD' などの、 ISO 4217 通貨コードのうちの1つである必要があります。</p>
+
+<p>もしパターン取得中にエラーが発生した場合、 errorCB コールバックが <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a> オブジェクトをパラメーターとして呼び出されます。このエラーに対するエラーコードは <a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a>.FORMATTING_ERROR です。</p>
+
+<h2>
+<a name="globalization.getCurrencyPattern_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+</ul>
+<h2>
+<a name="globalization.getCurrencyPattern_">使用例</a>
+</h2>
+
+<p>ブラウザーのロケールが en_US に設定され、通貨には US ドルが選択された場合、以下のような文字列をポップアップダイアログに表示します:</p>
+
+<pre class="prettyprint"><code>pattern: $#,##0.##;($#,##0.##)
+code: USD
+fraction: 2
+rounding: 0
+decimal: .
+grouping: ,
+
+
+
+navigator.<a href="cordova_globalization_globalization.md.html#globalization.getCurrencyPattern">globalization.getCurrencyPattern</a>(
+  'USD',
+  function (pattern) {alert('pattern: ' + pattern.pattern + '\n' +
+                            'code: ' + pattern.code + '\n' +
+                            'fraction: ' + pattern.fraction + '\n' +
+                            'rounding: ' + pattern.rounding + '\n' +
+                            'decimal: ' + pattern.decimal + '\n' +
+                            'grouping: ' + pattern.grouping);},
+  function () {alert('Error getting pattern\n');}
+);
+</code></pre>
+
+<h2>
+<a name="globalization.getCurrencyPattern_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova&lt;/title&gt;
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    function checkPattern() {
+      navigator.<a href="cordova_globalization_globalization.md.html#globalization.getCurrencyPattern">globalization.getCurrencyPattern</a>(
+        'USD',
+        function (pattern) {alert('pattern: ' + pattern.pattern + '\n' +
+                                  'code: ' + pattern.code + '\n' +
+                                  'fraction: ' + pattern.fraction + '\n' +
+                                  'rounding: ' + pattern.rounding + '\n' +
+                                  'decimal: ' + pattern.decimal + '\n' +
+                                  'grouping: ' + pattern.grouping);},
+        function () {alert('Error getting pattern\n');}
+      );
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button onclick="checkPattern()"&gt;クリックしてパターンを表示&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="GlobalizationError">GlobalizationError</a></h1>
+
+<p><a href="cordova_globalization_globalization.md.html#Globalization">Globalization</a> API からのエラーを表すオブジェクトです。</p>
+
+<h2>
+<a name="GlobalizationError_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>code:</strong>  以下のエラータイプを表すコードのうちの1つを表します (<code>Number</code>)
+<ul>
+<li>
+<a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a>.UNKNOWN_ERROR: 0</li>
+<li>
+<a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a>.FORMATTING_ERROR: 1</li>
+<li>
+<a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a>.PARSING_ERROR: 2</li>
+<li>
+<a href="cordova_globalization_globalization.md.html#GlobalizationError">GlobalizationError</a>.PATTERN_ERROR: 3</li>
+</ul>
+</li>
+<li>
+<strong>message:</strong>  エラーの内容を表すエラーメッセージを表します (<code>String</code>)</li>
+</ul>
+<h2>
+<a name="GlobalizationError_">概要</a>
+</h2>
+
+<p>このオブジェクトは Cordova によって作られ、エラー発生時にコールバック関数に渡されます。</p>
+
+<h2>
+<a name="GlobalizationError_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+</ul>
+<h2>
+<a name="GlobalizationError_">使用例</a>
+</h2>
+
+<p>以下のエラーコールバックが呼び出されるとき、 "code: 3" と "message: " といったような文字列とともにポップアップダイアログが表示されます。</p>
+
+<pre class="prettyprint"><code>function errorCB(error) {
+    alert('code: ' + error.code + '\n' +
+          'message: ' + error.message + '\n');
+};
+</code></pre>
+
+<h2>
+<a name="GlobalizationError_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova&lt;/title&gt;
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    function successCB(date) {
+      alert('month:' + date.month +
+            ' day:' + date.day +
+            ' year:' + date.year + '\n');
+    }
+
+    function errorCB(error) {
+      alert('code: ' + error.code + '\n' +
+            'message: ' + error.message + '\n');
+    };
+
+    function checkError() {
+      navigator.<a href="cordova_globalization_globalization.md.html#globalization.stringToDate">globalization.stringToDate</a>(
+        'notADate',
+        successCB,
+        errorCB,
+        {selector:'foobar'}
+      );
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button onclick="checkError()"&gt;クリックしてエラーを発生&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+            </div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

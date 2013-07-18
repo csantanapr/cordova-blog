@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="English" value="en">
+<option value="edge">edge</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0rc1">2.7.0rc1</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0rc1">2.6.0rc1</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0rc1">2.5.0rc1</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0rc1">2.4.0rc1</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0rc2">2.3.0rc2</option>
+<option value="2.3.0rc1">2.3.0rc1</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0rc2">2.2.0rc2</option>
+<option value="2.2.0rc1">2.2.0rc1</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0rc2">2.1.0rc2</option>
+<option value="2.1.0rc1">2.1.0rc1</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0rc1">2.0.0rc1</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0rc1">1.9.0rc1</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0rc1">1.8.0rc1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0rc1">1.7.0rc1</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0rc1">1.6.0rc1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0rc1">1.5.0rc1</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="Japanese" value="jp">
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option selected value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="kr"><option value="2.0.0">2.0.0</option></optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Contacts</h1>
+            <small><select><option value="Contacts">Contacts</option>
+<option value="Contacts_">      - メソッド</option>
+<option value="Contacts_">      - 引数</option>
+<option value="Contacts_">      - オブジェクト</option>
+<option value="Contacts_">      - パーミッション</option>
+<option value="contacts.create">contacts.create</option>
+<option value="contacts.create_">      - 概要</option>
+<option value="contacts.create_">      - サポートされているプラットフォーム</option>
+<option value="contacts.create_">      - 使用例</option>
+<option value="contacts.create_">      - 詳細な使用例</option>
+<option value="contacts.find">contacts.find</option>
+<option value="contacts.find_">      - 概要</option>
+<option value="contacts.find_">      - パラメーター</option>
+<option value="contacts.find_">      - サポートされているプラットフォーム</option>
+<option value="contacts.find_">      - 使用例</option>
+<option value="contacts.find_">      - 詳細な使用例</option>
+<option value="Contact">Contact</option>
+<option value="Contact_">      - プロパティー</option>
+<option value="Contact_">      - メソッド</option>
+<option value="Contact_">      - 詳細</option>
+<option value="Contact_">      - サポートされているプラットフォーム</option>
+<option value="Contact_">      - 保存する例</option>
+<option value="Contact_">      - コピーを行う例</option>
+<option value="Contact_">      - 削除を行う例</option>
+<option value="Contact_">      - 詳細な使用例</option>
+<option value="Contact_android_2_x">      - Android 2.X に関する注意点</option>
+<option value="Contact_android_1_x">      - Android 1.X に関する注意点</option>
+<option value="Contact_blackberry_webworks_os_5_0_and_higher">      - BlackBerry WebWorks (OS 5.0 and higher) に関する注意点</option>
+<option value="Contact_ios">      - iOS に関する注意点</option>
+<option value="Contact_bada">      - Bada に関する注意点</option>
+<option value="ContactAddress">ContactAddress</option>
+<option value="ContactAddress_">      - プロパティー</option>
+<option value="ContactAddress_">      - 詳細</option>
+<option value="ContactAddress_">      - サポートされているプラットフォーム</option>
+<option value="ContactAddress_">      - 使用例</option>
+<option value="ContactAddress_">      - 詳細な使用例</option>
+<option value="ContactAddress_android_2_x">      - Android 2.X に関する注意点</option>
+<option value="ContactAddress_android_1_x">      - Android 1.X に関する注意点</option>
+<option value="ContactAddress_blackberry_webworks_os_5_0_and_higher">      - BlackBerry WebWorks (OS 5.0 and higher) に関する注意点</option>
+<option value="ContactAddress_ios">      - iOS に関する注意点</option>
+<option value="ContactAddress_bada">      - Bada に関する注意点</option>
+<option value="ContactField">ContactField</option>
+<option value="ContactField_">      - プロパティー</option>
+<option value="ContactField_">      - 詳細</option>
+<option value="ContactField_">      - サポートされているプラットフォーム</option>
+<option value="ContactField_">      - 使用例</option>
+<option value="ContactField_">      - 詳細な使用例</option>
+<option value="ContactField_android">      - Android に関する注意点</option>
+<option value="ContactField_blackberry_webworks_os_5_0_and_higher">      - BlackBerry WebWorks (OS 5.0 and higher) に関する注意点</option>
+<option value="ContactField_ios">      - iOS に関する注意点</option>
+<option value="ContactField_bada">      - Bada に関する注意点</option>
+<option value="ContactFindOptions">ContactFindOptions</option>
+<option value="ContactFindOptions_">      - プロパティー</option>
+<option value="ContactFindOptions_">      - サポートされているプラットフォーム</option>
+<option value="ContactFindOptions_">      - 使用例</option>
+<option value="ContactFindOptions_">      - 詳細な使用例</option>
+<option value="ContactFindOptions_bada">      - Bada に関する注意点</option>
+<option value="ContactName">ContactName</option>
+<option value="ContactName_">      - プロパティー</option>
+<option value="ContactName_">      - 詳細</option>
+<option value="ContactName_">      - サポートされているプラットフォーム</option>
+<option value="ContactName_">      - 使用例</option>
+<option value="ContactName_">      - 詳細な使用例</option>
+<option value="ContactName_android">      - Android に関する注意点</option>
+<option value="ContactName_blackberry_webworks_os_5_0_and_higher">      - BlackBerry WebWorks (OS 5.0 and higher) に関する注意点</option>
+<option value="ContactName_ios">      - iOS に関する注意点</option>
+<option value="ContactName_bada">      - Bada に関する注意点</option>
+<option value="ContactOrganization">ContactOrganization</option>
+<option value="ContactOrganization_">      - プロパティー</option>
+<option value="ContactOrganization_">      - 詳細</option>
+<option value="ContactOrganization_">      - サポートされているプラットフォーム</option>
+<option value="ContactOrganization_">      - 使用例</option>
+<option value="ContactOrganization_">      - 詳細な使用例</option>
+<option value="ContactOrganization_android_2_x">      - Android 2.X に関する注意点</option>
+<option value="ContactOrganization_android_1_x">      - Android 1.X に関する注意点</option>
+<option value="ContactOrganization_blackberry_webworks_os_5_0_and_higher">      - BlackBerry WebWorks (OS 5.0 and higher) に関する注意点</option>
+<option value="ContactOrganization_ios">      - iOS に関する注意点</option>
+<option value="ContactOrganization_bada_2_0">      - Bada 2.0 に関する注意点</option>
+<option value="ContactError">ContactError</option>
+<option value="ContactError_">      - プロパティー</option>
+<option value="ContactError_">      - 定数</option>
+<option value="ContactError_">      - 概要</option>
+<option value="contactSuccess">contactSuccess</option>
+<option value="contactSuccess_">      - パラメーター</option>
+<option value="contactSuccess_">      - 使用例</option>
+<option value="contactError">contactError</option>
+<option value="contactFields">contactFields</option>
+<option value="contactFindOptions">contactFindOptions</option>
+<option value="contactFindOptions_">      - オプション</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>API リファレンス</h1>
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a></li>
+<li><a href="cordova_camera_camera.md.html#Camera">Camera</a></li>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_compass_compass.md.html#Compass">Compass</a></li>
+<li><a href="cordova_connection_connection.md.html#Connection">Connection</a></li>
+<li><a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a></li>
+<li><a href="cordova_device_device.md.html#Device">Device</a></li>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_file_file.md.html#File">File</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a></li>
+<li><a href="cordova_media_media.md.html#Media">Media</a></li>
+<li><a href="cordova_notification_notification.md.html#Notification">Notification</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+</ul>
+<h1>Guides</h1>
+<ul>
+<li><a href="guide_getting-started_index.md.html#%E5%85%A5%E9%96%80%E3%82%AC%E3%82%A4%E3%83%89">入門ガイド</a></li>
+<li><a href="guide_command-line_index.md.html#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E4%BD%BF%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89">コマンドライン使用ガイド</a></li>
+<li><a href="guide_upgrading_index.md.html#%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89">アップグレードガイド</a></li>
+<li><a href="guide_plugin-development_index.md.html#%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E9%96%8B%E7%99%BA%E3%82%AC%E3%82%A4%E3%83%89">プラグイン開発ガイド</a></li>
+<li><a href="guide_whitelist_index.md.html#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89">ドメインホワイトリストガイド</a></li>
+<li><a href="guide_cordova-webview_index.md.html#WebView%20%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF">WebView の埋め込み</a></li>
+<li><a href="_index.html">索引</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Contacts">Contacts</a></h1>
+
+<blockquote>
+  <p><code>contacts</code> オブジェクトを通じて、デバイスの連絡先データベースにアクセスできます。</p>
+</blockquote>
+
+<h2>
+<a name="Contacts_">メソッド</a>
+</h2>
+
+<ul>
+<li><a href="cordova_contacts_contacts.md.html#contacts.create">contacts.create</a></li>
+<li><a href="cordova_contacts_contacts.md.html#contacts.find">contacts.find</a></li>
+</ul>
+<h2>
+<a name="Contacts_">引数</a>
+</h2>
+
+<ul>
+<li><a href="cordova_contacts_contacts.md.html#contactFields">contactFields</a></li>
+<li><a href="cordova_contacts_contacts.md.html#contactSuccess">contactSuccess</a></li>
+<li><a href="cordova_contacts_contacts.md.html#contactError">contactError</a></li>
+<li><a href="cordova_contacts_contacts.md.html#contactFindOptions">contactFindOptions</a></li>
+</ul>
+<h2>
+<a name="Contacts_">オブジェクト</a>
+</h2>
+
+<ul>
+<li><a href="cordova_contacts_contacts.md.html#Contact">Contact</a></li>
+<li><a href="cordova_contacts_contacts.md.html#ContactName">ContactName</a></li>
+<li><a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a></li>
+<li><a href="cordova_contacts_contacts.md.html#ContactAddress">ContactAddress</a></li>
+<li><a href="cordova_contacts_contacts.md.html#ContactOrganization">ContactOrganization</a></li>
+<li><a href="cordova_contacts_contacts.md.html#ContactFindOptions">ContactFindOptions</a></li>
+<li><a href="cordova_contacts_contacts.md.html#ContactError">ContactError</a></li>
+</ul>
+<h2>
+<a name="Contacts_">パーミッション</a>
+</h2>
+
+<h3>Android</h3>
+
+<h4>app/res/xml/plugins.xml</h4>
+
+<pre class="prettyprint"><code>&lt;plugin name="<a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a>" value="org.apache.cordova.ContactManager" /&gt;
+</code></pre>
+
+<h4>app/AndroidManifest.xml</h4>
+
+<pre class="prettyprint"><code>&lt;uses-permission android:name="android.permission.GET_ACCOUNTS" /&gt;
+&lt;uses-permission android:name="android.permission.READ_CONTACTS" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_CONTACTS" /&gt;
+</code></pre>
+
+<h3>Bada</h3>
+
+<h4>manifest.xml</h4>
+
+<pre class="prettyprint"><code>&lt;Privilege&gt;
+    &lt;Name&gt;ADDRESSBOOK&lt;/Name&gt;
+&lt;/Privilege&gt;
+</code></pre>
+
+<h3>BlackBerry WebWorks</h3>
+
+<h4>www/plugins.xml</h4>
+
+<pre class="prettyprint"><code>&lt;plugin name="<a href="cordova_contacts_contacts.md.html#Contact">Contact</a>" value="org.apache.cordova.pim.<a href="cordova_contacts_contacts.md.html#Contact">Contact</a>" /&gt;
+</code></pre>
+
+<h4>www/config.xml</h4>
+
+<pre class="prettyprint"><code>&lt;feature id="blackberry.find"        required="true" version="1.0.0.0" /&gt;
+&lt;feature id="blackberry.identity"    required="true" version="1.0.0.0" /&gt;
+&lt;feature id="blackberry.pim.Address" required="true" version="1.0.0.0" /&gt;
+&lt;feature id="blackberry.pim.<a href="cordova_contacts_contacts.md.html#Contact">Contact</a>" required="true" version="1.0.0.0" /&gt;
+</code></pre>
+
+<h3>iOS</h3>
+
+<h4>App/Supporting Files/Cordova.plist</h4>
+
+<pre class="prettyprint"><code>&lt;key&gt;Plugins&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;<a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a>&lt;/key&gt;
+    &lt;string&gt;CDVContacts&lt;/string&gt;
+&lt;/dict&gt;
+</code></pre>
+
+<h3>webOS</h3>
+
+<pre class="prettyprint"><code>パーミッションの設定は必要ありません。
+</code></pre>
+
+<h3>Windows Phone</h3>
+
+<h4>Properties/WPAppManifest.xml</h4>
+
+<pre class="prettyprint"><code>&lt;Capabilities&gt;
+    &lt;Capability Name="ID_CAP_CONTACTS" /&gt;
+&lt;/Capabilities&gt;
+</code></pre>
+
+<p>参照: <a class="external" href="http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx">Application Manifest for Windows Phone</a></p>
+
+<hr>
+<h1><a name="contacts.create">contacts.create</a></h1>
+
+<p>新しい <a href="cordova_contacts_contacts.md.html#Contact">Contact</a> オブジェクトを作成します。</p>
+
+<pre class="prettyprint"><code>var contact = navigator.<a href="cordova_contacts_contacts.md.html#contacts.create">contacts.create</a>(properties);
+</code></pre>
+
+<h2>
+<a name="contacts.create_">概要</a>
+</h2>
+
+<p><a href="cordova_contacts_contacts.md.html#contacts.create">contacts.create</a> 関数は、新しい <code><a href="cordova_contacts_contacts.md.html#Contact">Contact</a></code> オブジェクトを同期的に作成します。</p>
+
+<p>この関数で作成した <a href="cordova_contacts_contacts.md.html#Contact">Contact</a> オブジェクトは、デバイスの連絡先データベースには残りません。 <a href="cordova_contacts_contacts.md.html#Contact">Contact</a> オブジェクトをデバイスに保存するには、 <code><a href="cordova_contacts_contacts.md.html#Contact">Contact</a>.save</code> 関数を使用します。</p>
+
+<h2>
+<a name="contacts.create_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Bada 1.2 &amp; 2.0</li>
+</ul>
+<h2>
+<a name="contacts.create_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>var myContact = navigator.<a href="cordova_contacts_contacts.md.html#contacts.create">contacts.create</a>({"displayName": "Test User"});
+</code></pre>
+
+<h2>
+<a name="contacts.create_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;<a href="cordova_contacts_contacts.md.html#Contact">Contact</a> の使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        var myContact = navigator.<a href="cordova_contacts_contacts.md.html#contacts.create">contacts.create</a>({"displayName": "Test User"});
+        myContact.note = "この連絡先のメモ";
+        console.log("連絡先, " + myContact.displayName + ", メモ: " + myContact.note);
+    }
+
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;使用例&lt;/h1&gt;
+    &lt;p&gt;連絡先を作成します&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="contacts.find">contacts.find</a></h1>
+
+<p>デバイスの連絡先データベースに問い合わせを行い、 <code><a href="cordova_contacts_contacts.md.html#Contact">Contact</a></code> オブジェクトを取得します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_contacts_contacts.md.html#contacts.find">contacts.find</a>(<a href="cordova_contacts_contacts.md.html#contactFields">contactFields</a>, <a href="cordova_contacts_contacts.md.html#contactSuccess">contactSuccess</a>, <a href="cordova_contacts_contacts.md.html#contactError">contactError</a>, <a href="cordova_contacts_contacts.md.html#contactFindOptions">contactFindOptions</a>);
+</code></pre>
+
+<h2>
+<a name="contacts.find_">概要</a>
+</h2>
+
+<p><a href="cordova_contacts_contacts.md.html#contacts.find">contacts.find</a> 関数は、デバイスの連絡先データベースに問い合わせを行い、 <code><a href="cordova_contacts_contacts.md.html#Contact">Contact</a></code> オブジェクトの配列を返す非同期関数です。 作成されたオブジェクトは <strong><a href="cordova_contacts_contacts.md.html#contactSuccess">contactSuccess</a></strong> に従って <code><a href="cordova_contacts_contacts.md.html#contactSuccess">contactSuccess</a></code> コールバック関数に送られます。</p>
+
+<p>このメソッドを使用する際は <strong><a href="cordova_contacts_contacts.md.html#contactFields">contactFields</a></strong> パラメーターに検索フィールドを指定します。 <strong><a href="cordova_contacts_contacts.md.html#contactFields">contactFields</a></strong> パラメーターに渡したフィールドだけが、 <code><a href="cordova_contacts_contacts.md.html#Contact">Contact</a></code> オブジェクトのプロパティーとして <strong><a href="cordova_contacts_contacts.md.html#contactSuccess">contactSuccess</a></strong> コールバック関数に渡されます。 <strong><a href="cordova_contacts_contacts.md.html#contactFields">contactFields</a></strong> パラメーターが空の場合は、 <code>id</code> プロパティーのみを持つ <code><a href="cordova_contacts_contacts.md.html#Contact">Contact</a></code> オブジェクト配列が作成されます。 <strong><a href="cordova_contacts_contacts.md.html#contactFields">contactFields</a></strong> の値が["*"]の場合は、全ての連絡先フィールドが返されます。</p>
+
+<p>連絡先データベースの問い合わせの際には、 <strong><a href="cordova_contacts_contacts.md.html#contactFindOptions">contactFindOptions</a>.filter</strong> を用いて検索条件を絞ることが出来ます。このオプションが指定されていた場合、大文字小文字の区別なく、部分一致方式により <strong><a href="cordova_contacts_contacts.md.html#contactFields">contactFields</a></strong> パラメーターに指定されたフィールドの検索が行われます。いずれかのフィールドにマッチした内容があった場合、その連絡先情報が返されます。</p>
+
+<h2>
+<a name="contacts.find_">パラメーター</a>
+</h2>
+
+<ul>
+<li>
+<strong><a href="cordova_contacts_contacts.md.html#contactFields">contactFields</a>:</strong> 検索条件に格納されるフィールドを指定します。このパラメーターに定義されたフィールドのみが <code><a href="cordova_contacts_contacts.md.html#Contact">Contact</a></code> オブジェクトにセットされます。 <em>(DOMString[])</em> [必須]</li>
+<li>
+<strong><a href="cordova_contacts_contacts.md.html#contactSuccess">contactSuccess</a>:</strong> 連絡先データベースへの問い合わせに成功した場合に呼び出されるコールバック関数を指定します [必須]</li>
+<li>
+<strong><a href="cordova_contacts_contacts.md.html#contactError">contactError</a>:</strong> エラーコールバック関数を指定します。連絡先データベースへの問い合わせに失敗した場合に呼び出されます [任意]</li>
+<li>
+<strong><a href="cordova_contacts_contacts.md.html#contactFindOptions">contactFindOptions</a>:</strong> 連絡先情報に絞り込み検索を行うための検索オプションを指定します [任意]</li>
+</ul>
+<h2>
+<a name="contacts.find_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Bada 1.2 &amp; 2.0</li>
+</ul>
+<h2>
+<a name="contacts.find_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>function onSuccess(contacts) {
+    alert(contacts.length + '  件の連絡先が見つかりました。');
+};
+
+function onError(<a href="cordova_contacts_contacts.md.html#contactError">contactError</a>) {
+    alert('エラーが発生しました。');
+};
+
+// Bob という名前が含まれる全ての連絡先を取得
+var options = new <a href="cordova_contacts_contacts.md.html#ContactFindOptions">ContactFindOptions</a>();
+options.filter="Bob";
+var fields = ["displayName", "name"];
+navigator.<a href="cordova_contacts_contacts.md.html#contacts.find">contacts.find</a>(fields, onSuccess, onError, options);
+</code></pre>
+
+<h2>
+<a name="contacts.find_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;<a href="cordova_contacts_contacts.md.html#Contact">Contact</a> の使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        // Bob という名前が含まれる全ての連絡先を取得
+        var options = new <a href="cordova_contacts_contacts.md.html#ContactFindOptions">ContactFindOptions</a>();
+        options.filter="Bob";
+        var fields = ["displayName", "name"];
+        navigator.<a href="cordova_contacts_contacts.md.html#contacts.find">contacts.find</a>(fields, onSuccess, onError, options);
+    }
+
+    // onSuccess: 連絡先の取得に成功した場合
+    //
+    function onSuccess(contacts) {
+        for (var i=0; i&lt;contacts.length; i++) {
+            console.log("表示名 = " + contacts[i].displayName);
+        }
+    }
+
+    // onError: 連絡先の取得に失敗した場合
+    //
+    function onError(<a href="cordova_contacts_contacts.md.html#contactError">contactError</a>) {
+        alert('エラーが発生しました。');
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;使用例&lt;/h1&gt;
+    &lt;p&gt;連絡先の検索&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="Contact">Contact</a></h1>
+
+<p>連絡先に格納された情報を表します。</p>
+
+<h2>
+<a name="Contact_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>id:</strong> 固定のIDを表します <em>(DOMString)</em>
+</li>
+<li>
+<strong>displayName:</strong> 連絡先の名称を表します <em>(DOMString)</em>
+</li>
+<li>
+<strong>name:</strong> 個人名に関するオブジェクトを表します <em>(<a href="cordova_contacts_contacts.md.html#ContactName">ContactName</a>)</em>
+</li>
+<li>
+<strong>nickname:</strong> ニックネームを表します <em>(DOMString)</em>
+</li>
+<li>
+<strong>phoneNumbers:</strong> 連絡先のすべての電話番号の配列を表します <em>(<a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a>[])</em>
+</li>
+<li>
+<strong>emails:</strong> 連絡先のすべてのメールアドレスの配列を表します <em>(<a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a>[])</em>
+</li>
+<li>
+<strong>addresses:</strong> 連絡先のすべての住所の配列を表します <em>(<a href="cordova_contacts_contacts.md.html#ContactAddress">ContactAddress</a>[])</em>
+</li>
+<li>
+<strong>ims:</strong> 連絡先のすべてのIMアドレスの配列を表します <em>(<a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a>[])</em>
+</li>
+<li>
+<strong>organizations:</strong> 連絡先のすべての組織名の配列を表します <em>(<a href="cordova_contacts_contacts.md.html#ContactOrganization">ContactOrganization</a>[])</em>
+</li>
+<li>
+<strong>birthday:</strong> 連絡先の誕生日を表します <em>(Date)</em>
+</li>
+<li>
+<strong>note:</strong> 連絡先のメモを表します <em>(DOMString)</em>
+</li>
+<li>
+<strong>photos:</strong> 連絡先の写真の配列を表します <em>(<a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a>[])</em>
+</li>
+<li>
+<strong>categories:</strong> 連絡先のユーザー定義カテゴリーの配列を表します <em>(<a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a>[])</em>
+</li>
+<li>
+<strong>urls:</strong> 連絡先に関連したURLの配列を表します <em>(<a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a>[])</em>
+</li>
+</ul>
+<h2>
+<a name="Contact_">メソッド</a>
+</h2>
+
+<ul>
+<li>
+<strong>clone</strong>: オブジェクトのディープコピーを行い、新しい <a href="cordova_contacts_contacts.md.html#Contact">Contact</a> オブジェクトを作成して返します。 id プロパティーは <code>null</code> に設定されます。</li>
+<li>
+<strong>remove</strong>: オブジェクトを連絡先データベースから削除します。 削除が失敗した場合は <code><a href="cordova_contacts_contacts.md.html#ContactError">ContactError</a></code> を伴ったエラーコールバック関数が呼び出されます。</li>
+<li>
+<strong>save</strong>: 新しい連絡先を連絡先データベースに保存します。 <strong>id</strong> が既に登録されている場合は連絡先データベースを上書きします。</li>
+</ul>
+<h2>
+<a name="Contact_">詳細</a>
+</h2>
+
+<p><code><a href="cordova_contacts_contacts.md.html#Contact">Contact</a></code> オブジェクトはユーザーの連絡先を格納します。 連絡先はデバイスの連絡先データベースから作成したり、保存したり、削除することが可能です。 <code><a href="cordova_contacts_contacts.md.html#contacts.find">contacts.find</a></code> 関数を呼ぶことで、連絡先データベースから連絡先を取得することも出来ます。</p>
+
+<p><em>注意: プラットフォームによっては、いくつかのフィールドがサポートされていない場合があります。プラットフォームごとの注意点に詳細を記載しています。</em></p>
+
+<h2>
+<a name="Contact_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Bada 1.2 &amp; 2.0</li>
+</ul>
+<h2>
+<a name="Contact_">保存する例</a>
+</h2>
+
+<pre class="prettyprint"><code>function onSuccess(contact) {
+    alert("保存に成功しました。");
+};
+
+function onError(<a href="cordova_contacts_contacts.md.html#contactError">contactError</a>) {
+    alert("エラー = " + <a href="cordova_contacts_contacts.md.html#contactError">contactError</a>.code);
+};
+
+// 新しい連絡先オブジェクトを作成
+var contact = navigator.<a href="cordova_contacts_contacts.md.html#contacts.create">contacts.create</a>();
+contact.displayName = "Plumber";
+contact.nickname = "Plumber";       // すべてのデバイスに対応するため、両方の項目をセット
+
+// その他のフィールドを作成
+var name = new <a href="cordova_contacts_contacts.md.html#ContactName">ContactName</a>();
+name.givenName = "Jane";
+name.familyName = "Doe";
+contact.name = name;
+
+// デバイスに保存
+contact.save(onSuccess,onError);
+</code></pre>
+
+<h2>
+<a name="Contact_">コピーを行う例</a>
+</h2>
+
+<pre class="prettyprint"><code>// 連絡先オブジェクトをコピー
+var clone = contact.clone();
+clone.name.givenName = "John";
+console.log("元の名前 = " + contact.name.givenName);
+console.log("クローンの名前 = " + clone.name.givenName);
+</code></pre>
+
+<h2>
+<a name="Contact_">削除を行う例</a>
+</h2>
+
+<pre class="prettyprint"><code>function onSuccess() {
+    alert("削除に成功しました。");
+};
+
+function onError(<a href="cordova_contacts_contacts.md.html#contactError">contactError</a>) {
+    alert("エラー = " + <a href="cordova_contacts_contacts.md.html#contactError">contactError</a>.code);
+};
+
+// デバイスから連絡先を削除
+contact.remove(onSuccess,onError);
+</code></pre>
+
+<h2>
+<a name="Contact_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;<a href="cordova_contacts_contacts.md.html#Contact">Contact</a> の使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        // 作成
+        var contact = navigator.<a href="cordova_contacts_contacts.md.html#contacts.create">contacts.create</a>();
+        contact.displayName = "Plumber";
+        contact.nickname = "Plumber";       // すべてのデバイスに対応するため、両方の項目をセット
+        var name = new <a href="cordova_contacts_contacts.md.html#ContactName">ContactName</a>();
+        name.givenName = "Jane";
+        name.familyName = "Doe";
+        contact.name = name;
+
+        // 保存
+        contact.save(onSaveSuccess,onSaveError);
+
+        // クローンを作成
+        var clone = contact.clone();
+        clone.name.givenName = "John";
+        console.log("元の名前 = " + contact.name.givenName);
+        console.log("クローンの名前 = " + clone.name.givenName);
+
+        // 削除
+        contact.remove(onRemoveSuccess,onRemoveError);
+    }
+
+    // onSaveSuccess: 連絡先の取得に成功した場合
+    //
+    function onSaveSuccess(contact) {
+        alert("保存に成功しました。");
+    }
+
+    // onSaveError: 連絡先の取得に失敗した場合
+    //
+    function onSaveError(<a href="cordova_contacts_contacts.md.html#contactError">contactError</a>) {
+        alert("エラー = " + <a href="cordova_contacts_contacts.md.html#contactError">contactError</a>.code);
+    }
+
+    // onRemoveSuccess: 連絡先の取得に成功した場合
+    //
+    function onRemoveSuccess(contacts) {
+        alert("削除に成功しました。");
+    }
+
+    // onRemoveError: 連絡先の取得に失敗した場合
+    //
+    function onRemoveError(<a href="cordova_contacts_contacts.md.html#contactError">contactError</a>) {
+        alert("エラー = " + <a href="cordova_contacts_contacts.md.html#contactError">contactError</a>.code);
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;使用例&lt;/h1&gt;
+    &lt;p&gt;連絡先の検索&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="Contact_android_2_x">Android 2.X に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>categories:</strong> このプロパティーは Android 2.X ではサポートされておらず、常に <code>null</code> を返します。</li>
+</ul>
+<h2>
+<a name="Contact_android_1_x">Android 1.X に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>name:</strong> このプロパティーは Android 1.X ではサポートされておらず、常に <code>null</code> を返します。</li>
+<li>
+<strong>nickname:</strong> このプロパティーは Android 1.X ではサポートされておらず、常に <code>null</code> を返します。</li>
+<li>
+<strong>birthday:</strong> このプロパティーは Android 1.X ではサポートされておらず、常に <code>null</code> を返します。</li>
+<li>
+<strong>photos:</strong> このプロパティーは Android 1.X ではサポートされておらず、常に <code>null</code> を返します。</li>
+<li>
+<strong>categories:</strong> このプロパティーは Android 1.X ではサポートされておらず、常に <code>null</code> を返します。</li>
+<li>
+<strong>urls:</strong> このプロパティーは Android 1.X ではサポートされておらず、常に <code>null</code> を返します。</li>
+</ul>
+<h2>
+<a name="Contact_blackberry_webworks_os_5_0_and_higher">BlackBerry WebWorks (OS 5.0 and higher) に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>id:</strong> サポートされています。 連絡先が保存されたときに、デバイスによって割り当てられます。</li>
+<li>
+<strong>displayName:</strong> サポートされています。 BlackBerry では <strong>user1</strong> フィールドとして保存されます。</li>
+<li>
+<strong>nickname:</strong> このプロパティーはサポートされておらず、常に <code>null</code> を返します。.</li>
+<li>
+<strong>phoneNumbers:</strong> 部分的にサポートされています。 BlackBerry では、電話番号はもし <em>type</em> が 'home' の場合は <strong>homePhone1</strong>と <strong>homePhone2</strong> に、 <em>type</em> が 'work' の場合は <strong>workPhone1</strong> と <strong>workPhone2</strong> に、 <em>type</em> が 'mobile' の場合は <strong>mobilePhone</strong> に、 <em>type</em> が 'fax' の場合は <strong>faxPhone</strong> に、 <em>type</em> が 'pager' の場合は <strong>pagerPhone</strong> に、それ以外の場合は <strong>otherPhone</strong> に保存されます。</li>
+<li>
+<strong>emails:</strong> 部分的にサポートされています。 BlackBerry では、最初の3メールアドレスが <strong>email1</strong>, <strong>email2</strong>, <strong>email3</strong> フィールドに保存されます。</li>
+<li>
+<strong>addresses:</strong> 部分的にサポートされています。 BlackBerry では、最初の2つの住所が <strong>homeAddress</strong> と <strong>workAddress</strong> フィールドに保存されます。</li>
+<li>
+<strong>ims:</strong> このプロパティーはサポートされておらず、常に <code>null</code> を返します。</li>
+<li>
+<strong>organizations:</strong> 部分的にサポートされています。 BlackBerry では、最初の組織の名前とタイトルが <strong>company</strong> と <strong>title</strong> フィールドに保存されます。</li>
+<li>
+<strong>photos:</strong> 部分的にサポートされています。 サムネイルサイズの写真のみサポートされています。 連絡先に写真を登録する場合、 Base64 エンコードされたイメージか、イメージの場所を指定する URL を渡します。 写真は BlackBerry の連絡先データベースに保存される前に縮小されます。 連絡先写真は Base64 エンコードされたイメージとして返されます。</li>
+<li>
+<strong>categories:</strong> 部分的にサポートされています。 'Business' と 'Personal' カテゴリーのみサポートされています。</li>
+<li>
+<strong>urls:</strong> 部分的にサポートされています。 BlackBerry では、最初の URL が <strong>webpage</strong> フィールドに保存されます。</li>
+</ul>
+<h2>
+<a name="Contact_ios">iOS に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>displayName:</strong> このプロパティーは iOS ではサポートされておらず、 <a href="cordova_contacts_contacts.md.html#ContactName">ContactName</a> が指定されていない場合限り <code>null</code> を返します。 もし <a href="cordova_contacts_contacts.md.html#ContactName">ContactName</a> が指定されていない場合、合成された名前、 <strong>nickname</strong> 、または "" が <strong>displayName</strong> として返されます。</li>
+<li>
+<strong>birthday:</strong> 入力として、このプロパティーは JavaScript の Date オブジェクトとして指定する必要があります。 JavaScript の Date オブジェクトとして返されます。</li>
+<li>
+<strong>photos:</strong>  取得した写真はアプリの一時ディレクトリに保存され、写真への <a href="cordova_file_file.md.html#File">File</a> URL が返されます。一時ディレクトリの中身はアプリを終了する際に削除されます。</li>
+<li>
+<strong>categories:</strong> このプロパティーはサポートされておらず、常に <code>null</code> を返します。</li>
+</ul>
+<h2>
+<a name="Contact_bada">Bada に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>displayName:</strong> このプロパティーはサポートされていません。</li>
+<li>
+<strong>birthday:</strong> このプロパティーはサポートされていません。</li>
+<li>
+<strong>photos:</strong> このプロパティーは写真へのURL1つを格納したリストです。</li>
+<li>
+<strong>categories:</strong> このプロパティーはサポートされていません。</li>
+<li>
+<strong>ims:</strong> このプロパティーはサポートされていません。</li>
+</ul>
+<hr>
+<h1><a name="ContactAddress">ContactAddress</a></h1>
+
+<p><code><a href="cordova_contacts_contacts.md.html#Contact">Contact</a></code> オブジェクトの住所プロパティーを表します。</p>
+
+<h2>
+<a name="ContactAddress_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>pref:</strong> <code><a href="cordova_contacts_contacts.md.html#ContactAddress">ContactAddress</a></code> がユーザーの推奨値を含むかどうかを表します。含む場合、 <code>true</code> がセットされます <em>(boolean)</em>
+</li>
+<li>
+<strong>type:</strong> フィールドのタイプを表します (例: 'home') <em>(DOMString)</em>
+</li>
+<li>
+<strong>formatted:</strong> 住所全体を表します <em>(DOMString)</em>
+</li>
+<li>
+<strong>streetAddress:</strong> 番地を表します <em>(DOMString)</em>
+</li>
+<li>
+<strong>locality:</strong> 都市名を表します <em>(DOMString)</em>
+</li>
+<li>
+<strong>region:</strong> 地域名を表します <em>(DOMString)</em>
+</li>
+<li>
+<strong>postalCode:</strong> 郵便番号を表します <em>(DOMString)</em>
+</li>
+<li>
+<strong>country:</strong> 国を表します <em>(DOMString)</em>
+</li>
+</ul>
+<h2>
+<a name="ContactAddress_">詳細</a>
+</h2>
+
+<p><code><a href="cordova_contacts_contacts.md.html#ContactAddress">ContactAddress</a></code> オブジェクトは連絡先の住所に関するプロパティーを表します。 <code><a href="cordova_contacts_contacts.md.html#Contact">Contact</a></code> オブジェクトは、複数の住所が格納された <code><a href="cordova_contacts_contacts.md.html#ContactAddress">ContactAddress</a>[]</code> 配列を保持しています。</p>
+
+<h2>
+<a name="ContactAddress_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Bada 1.2 &amp; 2.0</li>
+</ul>
+<h2>
+<a name="ContactAddress_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// すべての連絡先の住所情報を取得し、表示します
+function onSuccess(contacts) {
+    for (var i=0; i&lt;contacts.length; i++) {
+        for (var j=0; j&lt;contacts[i].addresses.length; j++) {
+            alert("推奨値: " + contacts[i].addresses[j].pref + "\n" +
+                    "タイプ: " + contacts[i].addresses[j].type + "\n" +
+                    "住所: " + contacts[i].addresses[j].formatted + "\n" +
+                    "番地: " + contacts[i].addresses[j].streetAddress + "\n" +
+                    "都市名: " + contacts[i].addresses[j].locality + "\n" +
+                    "地域名: " + contacts[i].addresses[j].region + "\n" +
+                    "郵便番号: " + contacts[i].addresses[j].postalCode + "\n" +
+                    "国名: " + contacts[i].addresses[j].country);
+        }
+    }
+};
+
+function onError(<a href="cordova_contacts_contacts.md.html#contactError">contactError</a>) {
+    alert('エラーが発生しました。');
+};
+
+// 連絡先を検索します
+var options = new <a href="cordova_contacts_contacts.md.html#ContactFindOptions">ContactFindOptions</a>();
+options.filter="";
+var filter = ["displayName","addresses"];
+navigator.<a href="cordova_contacts_contacts.md.html#contacts.find">contacts.find</a>(filter, onSuccess, onError, options);
+</code></pre>
+
+<h2>
+<a name="ContactAddress_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;<a href="cordova_contacts_contacts.md.html#Contact">Contact</a> の使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        // find all contacts
+        var options = new <a href="cordova_contacts_contacts.md.html#ContactFindOptions">ContactFindOptions</a>();
+        options.filter="";
+        var filter = ["displayName","addresses"];
+        navigator.<a href="cordova_contacts_contacts.md.html#contacts.find">contacts.find</a>(filter, onSuccess, onError, options);
+    }
+
+    // onSuccess: 連絡先の取得に成功した場合
+    //
+    function onSuccess(contacts) {
+        // すべての連絡先の住所情報を取得し、表示します
+        for (var i=0; i&lt;contacts.length; i++) {
+            for (var j=0; j&lt;contacts[i].addresses.length; j++) {
+                alert("推奨値: " + contacts[i].addresses[j].pref + "\n" +
+                        "タイプ: " + contacts[i].addresses[j].type + "\n" +
+                        "住所: " + contacts[i].addresses[j].formatted + "\n" +
+                        "番地: " + contacts[i].addresses[j].streetAddress + "\n" +
+                        "都市名: " + contacts[i].addresses[j].locality + "\n" +
+                        "地域名: " + contacts[i].addresses[j].region + "\n" +
+                        "郵便番号: " + contacts[i].addresses[j].postalCode + "\n" +
+                        "国名: " + contacts[i].addresses[j].country);
+            }
+        }
+    };
+
+    // onError: 連絡先の取得に失敗した場合
+    //
+    function onError(<a href="cordova_contacts_contacts.md.html#contactError">contactError</a>) {
+        alert('エラーが発生しました。');
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;使用例&lt;/h1&gt;
+    &lt;p&gt;連絡先の検索&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="ContactAddress_android_2_x">Android 2.X に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>pref:</strong> このプロパティーは Android 2.X ではサポートされておらず、常に <code>false</code> を返します。</li>
+</ul>
+<h2>
+<a name="ContactAddress_android_1_x">Android 1.X に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>pref:</strong> このプロパティーは Android 1.X ではサポートされておらず、常に <code>false</code> を返します。</li>
+<li>
+<strong>type:</strong> このプロパティーは Android 1.X ではサポートされておらず、常に <code>null</code> を返します。</li>
+<li>
+<strong>streetAddress:</strong> このプロパティーは Android 1.X ではサポートされておらず、常に <code>null</code> を返します。</li>
+<li>
+<strong>locality:</strong> このプロパティーは Android 1.X ではサポートされておらず、常に <code>null</code> を返します。</li>
+<li>
+<strong>region:</strong> このプロパティーは Android 1.X ではサポートされておらず、常に <code>null</code> を返します。</li>
+<li>
+<strong>postalCode:</strong> このプロパティーは Android 1.X ではサポートされておらず、常に <code>null</code> を返します。</li>
+<li>
+<strong>country:</strong> このプロパティーは Android 1.X ではサポートされておらず、常に <code>null</code> を返します。</li>
+</ul>
+<h2>
+<a name="ContactAddress_blackberry_webworks_os_5_0_and_higher">BlackBerry WebWorks (OS 5.0 and higher) に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>pref:</strong> このプロパティーは BlackBerry ではサポートされておらず、常に <code>false</code> を返します。</li>
+<li>
+<strong>type:</strong> 部分的にサポートされています。 一つの連絡先につき、一つずつの "Work" と "Home" タイプの住所が保存できます。</li>
+<li>
+<strong>formatted:</strong> 部分的にサポートされています。 BlackBerry のアドレスフィールドの連結を返します。</li>
+<li>
+<strong>streetAddress:</strong> サポートされています。 BlackBerry の <strong>address1</strong> と <strong>address2</strong> アドレスフィールドの連結を返します。</li>
+<li>
+<strong>locality:</strong> サポートされています。 BlackBerry の <strong>city</strong> アドレスフィールドに保存されます。</li>
+<li>
+<strong>region:</strong> サポートされています。 BlackBerry の <strong>stateProvince</strong> アドレスフィールドに保存されます。</li>
+<li>
+<strong>postalCode:</strong> サポートされています。 BlackBerry の <strong>zipPostal</strong> アドレスフィールドに保存されます。</li>
+<li>
+<strong>country:</strong> サポートされています。</li>
+</ul>
+<h2>
+<a name="ContactAddress_ios">iOS に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>pref:</strong> このプロパティーは iOS ではサポートされておらず、常に <code>false</code> を返します。</li>
+<li>
+<strong>formatted:</strong> サポートされていません。</li>
+</ul>
+<h2>
+<a name="ContactAddress_bada">Bada に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>formatted:</strong> このプロパティーはサポートされていません。</li>
+<li>
+<strong>type:</strong> WORK か HOME かのいずれかである必要があります。</li>
+</ul>
+<hr>
+<h1><a name="ContactField">ContactField</a></h1>
+
+<p><code><a href="cordova_contacts_contacts.md.html#Contact">Contact</a></code> オブジェクトで使用される汎用フィールドに用いられます。 <code><a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a></code> オブジェクトとして格納されるデータとしては、メールアドレスや電話番号などが挙げられます。</p>
+
+<h2>
+<a name="ContactField_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>type:</strong> フィールドのタイプを表します (例: 'home') <em>(DOMString)</em>
+</li>
+<li>
+<strong>value:</strong> フィールド値を表します (例: 電話番号、メールアドレス) <em>(DOMString)</em>
+</li>
+<li>
+<strong>pref:</strong> <code><a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a></code> がユーザーの推奨値を含むかどうかを表します。含む場合、 <code>true</code> がセットされます <em>(boolean)</em>
+</li>
+</ul>
+<h2>
+<a name="ContactField_">詳細</a>
+</h2>
+
+<p><code><a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a></code> オブジェクトは、連絡先の各フィールドを汎用的に格納するためのコンポーネントです。各 <code><a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a></code> オブジェクトは、 value プロパティ、 type プロパティ、 pref プロパティーを持っています。 <code><a href="cordova_contacts_contacts.md.html#Contact">Contact</a></code> オブジェクトは電話番号やメールアドレスなどといった複数のプロパティーを <code><a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a>[]</code> 配列に保存しています。</p>
+
+<p>多くの場合 <code><a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a></code> オブジェクトの <strong>type</strong> 属性に定義済みの値は存在しません。例えば、電話番号について <strong>type</strong> 属性の値として 'home', 'work', 'mobile', 'iPhone' など、デバイスのプラットフォームに応じて異なった値が格納されます。ただし <code><a href="cordova_contacts_contacts.md.html#Contact">Contact</a></code> の <strong>photos</strong> フィールドに限り、 <strong>type</strong> 属性には画像フォーマットが格納されます。 Cordova は <strong>value</strong> 属性が画像への URL を含む場合、 <strong>type: 'url'</strong> を返します。 <strong>value</strong> 属性が Base64 形式の画像を含む場合、 <strong>type: 'base64'</strong> を返します。</p>
+
+<h2>
+<a name="ContactField_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Bada 1.2 &amp; 2.0</li>
+</ul>
+<h2>
+<a name="ContactField_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// 新しい連絡先を作成
+var contact = navigator.<a href="cordova_contacts_contacts.md.html#contacts.create">contacts.create</a>();
+
+// 連絡先の電話番号を <a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a>[] に格納
+var phoneNumbers = [];
+phoneNumbers[0] = new <a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a>('work', '212-555-1234', false);
+phoneNumbers[1] = new <a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a>('mobile', '917-555-5432', true); // 推奨された電話番号
+phoneNumbers[2] = new <a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a>('home', '203-555-7890', false);
+contact.phoneNumbers = phoneNumbers;
+
+// 連絡先を保存
+contact.save();
+</code></pre>
+
+<h2>
+<a name="ContactField_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;<a href="cordova_contacts_contacts.md.html#Contact">Contact</a> の使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        // 新しい連絡先を作成
+        var contact = navigator.<a href="cordova_contacts_contacts.md.html#contacts.create">contacts.create</a>();
+
+        // 連絡先の電話番号を <a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a>[] に格納
+        var phoneNumbers = [];
+        phoneNumbers[0] = new <a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a>('work', '212-555-1234', false);
+        phoneNumbers[1] = new <a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a>('mobile', '917-555-5432', true); // 推奨された電話番号
+        phoneNumbers[2] = new <a href="cordova_contacts_contacts.md.html#ContactField">ContactField</a>('home', '203-555-7890', false);
+        contact.phoneNumbers = phoneNumbers;
+
+        // 連絡先を保存
+        contact.save();
+
+        // 連絡先を検索し、名前と電話番号を表示
+        var options = new <a href="cordova_contacts_contacts.md.html#ContactFindOptions">ContactFindOptions</a>();
+        options.filter="";
+        filter = ["displayName","phoneNumbers"];
+        navigator.<a href="cordova_contacts_contacts.md.html#contacts.find">contacts.find</a>(filter, onSuccess, onError, options);
+    }
+
+    // onSuccess: 連絡先の取得に成功した場合
+    //
+    function onSuccess(contacts) {
+        for (var i=0; i&lt;contacts.length; i++) {
+            // 電話番号を表示
+            for (var j=0; j&lt;contacts[i].phoneNumbers.length; j++) {
+                alert("タイプ: " + contacts[i].phoneNumbers[j].type + "\n" +
+                        "値: "  + contacts[i].phoneNumbers[j].value + "\n" +
+                        "Preferred: "  + contacts[i].phoneNumbers[j].pref);
+            }
+        }
+    };
+    // onError: 連絡先の取得に失敗した場合
+    //
+    function onError(<a href="cordova_contacts_contacts.md.html#contactError">contactError</a>) {
+        alert('エラーが発生しました。');
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;使用例&lt;/h1&gt;
+    &lt;p&gt;連絡先の検索&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="ContactField_android">Android に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>pref:</strong> このプロパティーは Android ではサポートされておらず、常に <code>false</code> を返します。</li>
+</ul>
+<h2>
+<a name="ContactField_blackberry_webworks_os_5_0_and_higher">BlackBerry WebWorks (OS 5.0 and higher) に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>type:</strong> 部分的にサポートされています。電話番号に使われます。</li>
+<li>
+<strong>value:</strong> サポートされています。</li>
+<li>
+<strong>pref:</strong> このプロパティーはサポートされておらず、常に <code>false</code> を返します。</li>
+</ul>
+<h2>
+<a name="ContactField_ios">iOS に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>pref:</strong> このプロパティーは iOS ではサポートされておらず、常に <code>false</code> を返します。</li>
+</ul>
+<h2>
+<a name="ContactField_bada">Bada に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>type:</strong> メールアドレス または 住所 フィールドの場合、プロパティーは次のいずれかである必要があります: "WORK", "HOME"。電話フィールドの場合、プロパティーは次のいずれかである必要があります: "WORK", "HOME", "VOICE", "FAX", "MSG", "CELL", "PAGER", "BBS", "MODEM", "CAR", "ISDN","VIDEO", "PCS"。</li>
+</ul>
+<hr>
+<h1><a name="ContactFindOptions">ContactFindOptions</a></h1>
+
+<p><code><a href="cordova_contacts_contacts.md.html#contacts.find">contacts.find</a></code> 関数の検索結果を絞るために使用するプロパティーを表します。</p>
+
+<h2>
+<a name="ContactFindOptions_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>filter:</strong> 絞り込み検索用の文字列を指定します <em>(DOMString)</em> (デフォルト: "")</li>
+<li>
+<strong>multiple:</strong> 検索時に複数の連絡先を返すかどうかを指定します <em>(Boolean)</em> (デフォルト: false)</li>
+</ul>
+<h2>
+<a name="ContactFindOptions_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Bada 1.2 &amp; 2.0</li>
+</ul>
+<h2>
+<a name="ContactFindOptions_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// 呼び出し成功
+function onSuccess(contacts) {
+    for (var i=0; i&lt;contacts.length; i++) {
+        alert(contacts[i].displayName);
+    }
+};
+
+// 呼び出し失敗
+function onError(<a href="cordova_contacts_contacts.md.html#contactError">contactError</a>) {
+    alert('エラーが発生しました。');
+};
+
+// 検索条件を指定
+var options = new <a href="cordova_contacts_contacts.md.html#ContactFindOptions">ContactFindOptions</a>();
+options.filter="";          // 空のサーチは全ての連絡先を返す
+options.multiple=true;      // 複数の結果を返す
+filter = ["displayName"];   // contact.displayName フィールドを返す
+
+// 連絡先を検索します
+navigator.<a href="cordova_contacts_contacts.md.html#contacts.find">contacts.find</a>(filter, onSuccess, onError, options);
+</code></pre>
+
+<h2>
+<a name="ContactFindOptions_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;<a href="cordova_contacts_contacts.md.html#Contact">Contact</a> の使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        // 検索条件を指定
+        var options = new <a href="cordova_contacts_contacts.md.html#ContactFindOptions">ContactFindOptions</a>();
+        options.filter="";          // 空のサーチは全ての連絡先を返す
+        options.multiple=true;      // 複数の結果を返す
+        filter = ["displayName"];   // contact.displayName フィールドを返す
+
+        // 連絡先を検索します
+        navigator.<a href="cordova_contacts_contacts.md.html#contacts.find">contacts.find</a>(filter, onSuccess, onError, options);
+    }
+
+    // onSuccess: 連絡先の取得に成功した場合
+    //
+    function onSuccess(contacts) {
+        for (var i=0; i&lt;contacts.length; i++) {
+            alert(contacts[i].displayName);
+        }
+    };
+
+    // onError: 連絡先の取得に失敗した場合
+    //
+    function onError(<a href="cordova_contacts_contacts.md.html#contactError">contactError</a>) {
+        alert('エラーが発生しました。');
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;使用例&lt;/h1&gt;
+    &lt;p&gt;連絡先の検索&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="ContactFindOptions_bada">Bada に関する注意点</a>
+</h2>
+
+<p><strong>filter:</strong> このプロパティーには次の値のみ適用できます: "firstName", "lastName", "nickname", "phoneNumber", "email", "address"</p>
+
+<hr>
+<h1><a name="ContactName">ContactName</a></h1>
+
+<p><code><a href="cordova_contacts_contacts.md.html#Contact">Contact</a></code> オブジェクトの名前プロパティーを表します。</p>
+
+<h2>
+<a name="ContactName_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>formatted:</strong> 連絡先のフルネームを表します <em>(DOMString)</em>
+</li>
+<li>
+<strong>familyName:</strong> 連絡先の姓を表します <em>(DOMString)</em>
+</li>
+<li>
+<strong>givenName:</strong> 連絡先の名を表します <em>(DOMString)</em>
+</li>
+<li>
+<strong>middleName:</strong> 連絡先のミドルネームを表します <em>(DOMString)</em>
+</li>
+<li>
+<strong>honorificPrefix:</strong> 連絡先の接頭敬称を表します (例: Mr. Dr.) <em>(DOMString)</em>
+</li>
+<li>
+<strong>honorificSuffix:</strong> 連絡先の接尾敬称を表します (例: Esq.) <em>(DOMString)</em>
+</li>
+</ul>
+<h2>
+<a name="ContactName_">詳細</a>
+</h2>
+
+<p><code><a href="cordova_contacts_contacts.md.html#ContactName">ContactName</a></code> オブジェクトは連絡先の名前プロパティーの情報を格納します。</p>
+
+<h2>
+<a name="ContactName_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android 2.X</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Bada 1.2 &amp; 2.0</li>
+</ul>
+<h2>
+<a name="ContactName_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>function onSuccess(contacts) {
+    for (var i=0; i&lt;contacts.length; i++) {
+        alert("名前: " + contacts[i].name.formatted + "\n" +
+                "姓: " + contacts[i].name.familyName + "\n" +
+                "名: " + contacts[i].name.givenName + "\n" +
+                "ミドルネーム: " + contacts[i].name.middleName + "\n" +
+                "接頭敬称: " + contacts[i].name.honorificSuffix + "\n" +
+                "接尾敬称: " + contacts[i].name.honorificSuffix);
+    }
+};
+
+function onError(<a href="cordova_contacts_contacts.md.html#contactError">contactError</a>) {
+    alert('エラーが発生しました。');
+};
+
+var options = new <a href="cordova_contacts_contacts.md.html#ContactFindOptions">ContactFindOptions</a>();
+options.filter="";
+filter = ["displayName","name"];
+navigator.<a href="cordova_contacts_contacts.md.html#contacts.find">contacts.find</a>(filter, onSuccess, onError, options);
+</code></pre>
+
+<h2>
+<a name="ContactName_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;<a href="cordova_contacts_contacts.md.html#Contact">Contact</a> の使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        var options = new <a href="cordova_contacts_contacts.md.html#ContactFindOptions">ContactFindOptions</a>();
+        options.filter="";
+        filter = ["displayName","name"];
+        navigator.<a href="cordova_contacts_contacts.md.html#contacts.find">contacts.find</a>(filter, onSuccess, onError, options);
+    }
+
+    // onSuccess: 連絡先の取得に成功した場合
+    //
+    function onSuccess(contacts) {
+        for (var i=0; i&lt;contacts.length; i++) {
+            alert("名前: " + contacts[i].name.formatted + "\n" +
+                    "姓: " + contacts[i].name.familyName + "\n" +
+                    "名: " + contacts[i].name.givenName + "\n" +
+                    "ミドルネーム: " + contacts[i].name.middleName + "\n" +
+                    "接頭敬称: " + contacts[i].name.honorificSuffix + "\n" +
+                    "接尾敬称: " + contacts[i].name.honorificSuffix);
+        }
+    };
+
+    // onError: 連絡先の取得に失敗した場合
+    //
+    function onError(<a href="cordova_contacts_contacts.md.html#contactError">contactError</a>) {
+        alert('エラーが発生しました。');
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;使用例&lt;/h1&gt;
+    &lt;p&gt;連絡先の検索&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="ContactName_android">Android に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>formatted:</strong> 部分的にサポートされています。 honorificPrefix, givenName, middleName, familyName, honorificSuffix を連結したものを返しますが、保存は行われません。</li>
+</ul>
+<h2>
+<a name="ContactName_blackberry_webworks_os_5_0_and_higher">BlackBerry WebWorks (OS 5.0 and higher) に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>formatted:</strong> 部分的にサポートされています。 BlackBerry の <strong>firstName</strong> と <strong>lastName</strong> フィールドを連結したものを返します。</li>
+<li>
+<strong>familyName:</strong> サポートされています。 BlackBerry の <strong>lastName</strong> フィールドに保存されています。</li>
+<li>
+<strong>givenName:</strong> サポートされています。 BlackBerry の <strong>firstName</strong> フィールドに保存されています。</li>
+<li>
+<strong>middleName:</strong> このプロパティーはサポートされておらず、常に <code>null</code> を返します。</li>
+<li>
+<strong>honorificPrefix:</strong> このプロパティーはサポートされておらず、常に <code>null</code> を返します。</li>
+<li>
+<strong>honorificSuffix:</strong> このプロパティーはサポートされておらず、常に <code>null</code> を返します。</li>
+</ul>
+<h2>
+<a name="ContactName_ios">iOS に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>formatted:</strong> 部分的にサポートされています。 iOS の合成名を返しますが、保存は行われません。</li>
+</ul>
+<h2>
+<a name="ContactName_bada">Bada に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>formatted:</strong> サポートされていません。</li>
+<li>
+<strong>middleName:</strong> サポートされていません。
+_ <strong>honorificPrefix:</strong> サポートされていません。</li>
+<li>
+<strong>honorificSuffix:</strong> サポートされていません。</li>
+</ul>
+<hr>
+<h1><a name="ContactOrganization">ContactOrganization</a></h1>
+
+<p><code><a href="cordova_contacts_contacts.md.html#Contact">Contact</a></code> オブジェクトの組織プロパティーを表します。</p>
+
+<h2>
+<a name="ContactOrganization_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>pref:</strong> <code><a href="cordova_contacts_contacts.md.html#ContactOrganization">ContactOrganization</a></code> がユーザーの推奨値を含むかどうかを表します。含む場合、 <code>true</code> がセットされます <em>(boolean)</em>
+</li>
+<li>
+<strong>type:</strong> フィールドのタイプを表します (例: 'home') <em>(DOMString)</em>
+</li>
+<li>
+<strong>name:</strong> 組織名を表します <em>(DOMString)</em>
+</li>
+<li>
+<strong>department:</strong> 部署名を表します <em>(DOMString)</em>
+</li>
+<li>
+<strong>title:</strong> 役職名を表します <em>(DOMString)</em>
+</li>
+</ul>
+<h2>
+<a name="ContactOrganization_">詳細</a>
+</h2>
+
+<p><code><a href="cordova_contacts_contacts.md.html#ContactOrganization">ContactOrganization</a></code> オブジェクトは連絡先の組織情報を表します。 <code><a href="cordova_contacts_contacts.md.html#Contact">Contact</a></code> オブジェクトは複数の <code><a href="cordova_contacts_contacts.md.html#ContactOrganization">ContactOrganization</a></code> オブジェクトを配列に保持します。</p>
+
+<h2>
+<a name="ContactOrganization_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Bada 1.2</li>
+</ul>
+<h2>
+<a name="ContactOrganization_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>function onSuccess(contacts) {
+    for (var i=0; i&lt;contacts.length; i++) {
+        for (var j=0; j&lt;contacts[i].organizations.length; j++) {
+            alert("推奨値: " + contacts[i].organizations[j].pref + "\n" +
+                    "タイプ: " + contacts[i].organizations[j].type + "\n" +
+                    "組織名: " + contacts[i].organizations[j].name + "\n" +
+                    "部署名: " + contacts[i].organizations[j].department + "\n" +
+                    "役職名: " + contacts[i].organizations[j].title);
+        }
+    }
+};
+
+function onError(<a href="cordova_contacts_contacts.md.html#contactError">contactError</a>) {
+    alert('エラーが発生しました。');
+};
+
+var options = new <a href="cordova_contacts_contacts.md.html#ContactFindOptions">ContactFindOptions</a>();
+options.filter="";
+filter = ["displayName","organizations"];
+navigator.<a href="cordova_contacts_contacts.md.html#contacts.find">contacts.find</a>(filter, onSuccess, onError, options);
+</code></pre>
+
+<h2>
+<a name="ContactOrganization_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;<a href="cordova_contacts_contacts.md.html#Contact">Contact</a> の使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        var options = new <a href="cordova_contacts_contacts.md.html#ContactFindOptions">ContactFindOptions</a>();
+        options.filter="";
+        filter = ["displayName","organizations"];
+        navigator.<a href="cordova_contacts_contacts.md.html#contacts.find">contacts.find</a>(filter, onSuccess, onError, options);
+    }
+
+    // onSuccess: 連絡先の取得に成功した場合
+    //
+    function onSuccess(contacts) {
+        for (var i=0; i&lt;contacts.length; i++) {
+            for (var j=0; j&lt;contacts[i].organizations.length; j++) {
+                alert("推奨値: " + contacts[i].organizations[j].pref + "\n" +
+                        "タイプ: " + contacts[i].organizations[j].type + "\n" +
+                        "組織名: " + contacts[i].organizations[j].name + "\n" +
+                        "部署名: " + contacts[i].organizations[j].department + "\n" +
+                        "役職名: " + contacts[i].organizations[j].title);
+            }
+        }
+    };
+
+    // onError: 連絡先の取得に失敗した場合
+    //
+    function onError(<a href="cordova_contacts_contacts.md.html#contactError">contactError</a>) {
+        alert('エラーが発生しました。');
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;使用例&lt;/h1&gt;
+    &lt;p&gt;連絡先の検索&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="ContactOrganization_android_2_x">Android 2.X に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>pref:</strong> このプロパティーは Android 2.X ではサポートされておらず、常に <code>false</code> を返します。</li>
+</ul>
+<h2>
+<a name="ContactOrganization_android_1_x">Android 1.X に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>pref:</strong> このプロパティーは Android 1.X ではサポートされておらず、常に <code>false</code> を返します。</li>
+<li>
+<strong>type:</strong> このプロパティーは Android 1.X ではサポートされておらず、常に <code>null</code> を返します。</li>
+<li>
+<strong>title:</strong> このプロパティーは Android 1.X ではサポートされておらず、常に <code>null</code> を返します。</li>
+</ul>
+<h2>
+<a name="ContactOrganization_blackberry_webworks_os_5_0_and_higher">BlackBerry WebWorks (OS 5.0 and higher) に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>pref:</strong> このプロパティーは BlackBerry ではサポートされておらず、常に <code>false</code> を返します。</li>
+<li>
+<strong>type:</strong> このプロパティーは BlackBerry ではサポートされておらず、常に <code>null</code> を返します。</li>
+<li>
+<strong>name:</strong> 部分的にサポートされています。一つ目の組織名が BlackBerry の <strong>company</strong> フィールドに保存されます。</li>
+<li>
+<strong>department:</strong> このプロパティーはサポートされておらず、常に <code>null</code> を返します。</li>
+<li>
+<strong>title:</strong> 部分的にサポートされています。一つ目の役職名が BlackBerry の <strong>jobTitle</strong> フィールドに保存されます。</li>
+</ul>
+<h2>
+<a name="ContactOrganization_ios">iOS に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>pref:</strong> このプロパティーは iOS ではサポートされておらず、常に <code>false</code> を返します。</li>
+<li>
+<strong>type:</strong> このプロパティーは iOS ではサポートされておらず、常に <code>null</code> を返します。</li>
+<li>
+<strong>name:</strong> 部分的にサポートされています。一つ目の組織名が iOS の <strong>kABPersonOrganizationProperty</strong> フィールドに保存されます。</li>
+<li>
+<strong>department</strong>: 部分的にサポートされています。一つ目の部署名が iOS の <strong>kABPersonDepartmentProperty</strong> フィールドに保存されます。</li>
+<li>
+<strong>title</strong>: 部分的にサポートされています。一つ目の役職名が iOS の <strong>kABPersonJobTitleProperty</strong> フィールドに保存されます。</li>
+</ul>
+<h2>
+<a name="ContactOrganization_bada_2_0">Bada 2.0 に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<a href="cordova_contacts_contacts.md.html#ContactOrganization">ContactOrganization</a> はサポートされていません。</li>
+</ul>
+<hr>
+<h1><a name="ContactError">ContactError</a></h1>
+
+<p><code><a href="cordova_contacts_contacts.md.html#ContactError">ContactError</a></code> オブジェクトは、エラーが発生したときに <code><a href="cordova_contacts_contacts.md.html#contactError">contactError</a></code> コールバック関数に渡されるオブジェクトです。</p>
+
+<h2>
+<a name="ContactError_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>code:</strong> 事前に定義された以下のエラーコードのうちの1つを表します</li>
+</ul>
+<h2>
+<a name="ContactError_">定数</a>
+</h2>
+
+<ul>
+<li><code><a href="cordova_contacts_contacts.md.html#ContactError">ContactError</a>.UNKNOWN_ERROR</code></li>
+<li><code><a href="cordova_contacts_contacts.md.html#ContactError">ContactError</a>.INVALID_ARGUMENT_ERROR</code></li>
+<li><code><a href="cordova_contacts_contacts.md.html#ContactError">ContactError</a>.TIMEOUT_ERROR</code></li>
+<li><code><a href="cordova_contacts_contacts.md.html#ContactError">ContactError</a>.PENDING_OPERATION_ERROR</code></li>
+<li><code><a href="cordova_contacts_contacts.md.html#ContactError">ContactError</a>.IO_ERROR</code></li>
+<li><code><a href="cordova_contacts_contacts.md.html#ContactError">ContactError</a>.NOT_SUPPORTED_ERROR</code></li>
+<li><code><a href="cordova_contacts_contacts.md.html#ContactError">ContactError</a>.PERMISSION_DENIED_ERROR</code></li>
+</ul>
+<h2>
+<a name="ContactError_">概要</a>
+</h2>
+
+<p><code><a href="cordova_contacts_contacts.md.html#ContactError">ContactError</a></code> オブジェクトは、エラーが発生したときに <code><a href="cordova_contacts_contacts.md.html#contactError">contactError</a></code> コールバック関数に渡されるオブジェクトです。</p>
+
+<hr>
+<h1><a name="contactSuccess">contactSuccess</a></h1>
+
+<p><code><a href="cordova_contacts_contacts.md.html#contacts.find">contacts.find</a></code> メソッドの実行に成功した場合に呼び出される、 <code><a href="cordova_contacts_contacts.md.html#Contact">Contact</a></code> 配列を提供するコールバック関数です。</p>
+
+<pre class="prettyprint"><code>function(contacts) {
+    // 任意のコード
+}
+</code></pre>
+
+<h2>
+<a name="contactSuccess_">パラメーター</a>
+</h2>
+
+<ul>
+<li>
+<strong>contacts:</strong> 検索の結果の連絡先配列 (<code><a href="cordova_contacts_contacts.md.html#Contact">Contact</a></code>)</li>
+</ul>
+<h2>
+<a name="contactSuccess_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>function <a href="cordova_contacts_contacts.md.html#contactSuccess">contactSuccess</a>(contacts) {
+    for (var i=0; i&lt;contacts.length; i++) {
+        console.log("表示名 = " + contacts[i].displayName);
+    }
+}
+</code></pre>
+
+<hr>
+<h1><a name="contactError">contactError</a></h1>
+
+<p>連絡先情報の取得に失敗したときに呼び出されるコールバック関数です。</p>
+
+<pre class="prettyprint"><code>function(error) {
+    // エラー処理
+}
+</code></pre>
+
+<hr>
+<h1><a name="contactFields">contactFields</a></h1>
+
+<p><code><a href="cordova_contacts_contacts.md.html#contacts.find">contacts.find</a></code> メソッドを使用する際の必須パラメーターです。このパラメーターを使って、検索操作によって得られる <code><a href="cordova_contacts_contacts.md.html#Contact">Contact</a></code> オブジェクトが持つフィールドを指定します。</p>
+
+<pre class="prettyprint"><code>["name", "phoneNumbers", "emails"]
+</code></pre>
+
+<hr>
+<h1><a name="contactFindOptions">contactFindOptions</a></h1>
+
+<p><code><a href="cordova_contacts_contacts.md.html#contacts.find">contacts.find</a></code> メソッドを使用する際のオプションのパラメーターです。連絡先の検索時にフィルターをかける場合に使用します。</p>
+
+<pre class="prettyprint"><code>{
+    filter: "",
+    multiple: true,
+};
+</code></pre>
+
+<h2>
+<a name="contactFindOptions_">オプション</a>
+</h2>
+
+<ul>
+<li>
+<strong>filter:</strong> 絞り込み検索用の文字列を指定します <em>(DOMString)</em> (デフォルト: "")</li>
+<li>
+<strong>multiple:</strong> 検索時に複数の連絡先を返すかどうかを指定します <em>(Boolean)</em> (デフォルト: false)</li>
+</ul>
+</div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

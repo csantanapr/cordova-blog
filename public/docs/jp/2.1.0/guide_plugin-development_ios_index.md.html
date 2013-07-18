@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="English" value="en">
+<option value="edge">edge</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0rc1">2.7.0rc1</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0rc1">2.6.0rc1</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0rc1">2.5.0rc1</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0rc1">2.4.0rc1</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0rc2">2.3.0rc2</option>
+<option value="2.3.0rc1">2.3.0rc1</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0rc2">2.2.0rc2</option>
+<option value="2.2.0rc1">2.2.0rc1</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0rc2">2.1.0rc2</option>
+<option value="2.1.0rc1">2.1.0rc1</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0rc1">2.0.0rc1</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0rc1">1.9.0rc1</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0rc1">1.8.0rc1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0rc1">1.7.0rc1</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0rc1">1.6.0rc1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0rc1">1.5.0rc1</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="Japanese" value="jp">
+<option value="2.2.0">2.2.0</option>
+<option selected value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="kr"><option value="2.0.0">2.0.0</option></optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Developing a Plugin on iOS</h1>
+            <small><select><option value="Developing%2520a%2520Plugin%2520on%2520iOS">Developing a Plugin on iOS</option>
+<option value="Developing%20a%20Plugin%20on%20iOS_">      - プラグインクラスのマッピング</option>
+<option value="Developing%20a%20Plugin%20on%20iOS_ios_cordova_plugin">      - iOS Cordova Plugin の作成</option>
+<option value="Developing%20a%20Plugin%20on%20iOS_">      - プラグインシグネチャ</option>
+<option value="Developing%20a%20Plugin%20on%20iOS_ios_echo">      - iOS プラグインの Echo プラグイン</option>
+<option value="Developing%20a%20Plugin%20on%20iOS_">      - 一歩進んだプラグインの機能</option>
+<option value="Developing%20a%20Plugin%20on%20iOS_">      - プラグインのデバッグ</option>
+<option value="Developing%20a%20Plugin%20on%20iOS_">      - よくある落とし穴</option>
+<option value="Developing%20a%20Plugin%20on%20iOS_">      - 非推奨のプラグインシグネチャに関する注意点</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>API リファレンス</h1>
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a></li>
+<li><a href="cordova_camera_camera.md.html#Camera">Camera</a></li>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_compass_compass.md.html#Compass">Compass</a></li>
+<li><a href="cordova_connection_connection.md.html#Connection">Connection</a></li>
+<li><a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a></li>
+<li><a href="cordova_device_device.md.html#Device">Device</a></li>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_file_file.md.html#File">File</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a></li>
+<li><a href="cordova_media_media.md.html#Media">Media</a></li>
+<li><a href="cordova_notification_notification.md.html#Notification">Notification</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+</ul>
+<h1>Guides</h1>
+<ul>
+<li><a href="guide_getting-started_index.md.html#%E5%85%A5%E9%96%80%E3%82%AC%E3%82%A4%E3%83%89">入門ガイド</a></li>
+<li><a href="guide_command-line_index.md.html#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E4%BD%BF%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89">コマンドライン使用ガイド</a></li>
+<li><a href="guide_upgrading_index.md.html#%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89">アップグレードガイド</a></li>
+<li><a href="guide_plugin-development_index.md.html#%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E9%96%8B%E7%99%BA%E3%82%AC%E3%82%A4%E3%83%89">プラグイン開発ガイド</a></li>
+<li><a href="guide_whitelist_index.md.html#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89">ドメインホワイトリストガイド</a></li>
+<li><a href="guide_cordova-webview_index.md.html#WebView%20%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF">WebView の埋め込み</a></li>
+<li><a href="_index.html">索引</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Developing%20a%20Plugin%20on%20iOS">Developing a Plugin on iOS</a></h1>
+
+<p>プラグインの開発には、 Cordova-iOS のアーキテクチャの理解が必要です。 Conrdova-iOS は UIWebView から構成されています。インターセプト命令は、 URL の変化に応じて UIWebView に渡されます。これらのプラグインは .plist ファイルの Plugins キーにクラスマッピングとして表されています。</p>
+
+<p>プラグインは <code>CDVPlugin</code> クラスを継承した Objective-C のクラスです。</p>
+
+<h2>
+<a name="Developing%20a%20Plugin%20on%20iOS_">プラグインクラスのマッピング</a>
+</h2>
+
+<p>プラグインの JavaScript 部分は常に <code>cordova.exec</code> メソッドを以下のように使います:</p>
+
+<pre class="prettyprint"><code>exec(&lt;successFunction&gt;, &lt;failFunction&gt;, &lt;service&gt;, &lt;action&gt;, [&lt;args&gt;]);
+</code></pre>
+
+<p>これは UIWebView から iOS ネイティブ側へのリクエストを整理し、おおよそ要約すると <code>service</code> クラスで <code>action</code> メソッドを、 <code>args</code> 配列で渡された引数と一緒に呼び出すということになります。</p>
+
+<p>このプラグインは、 Cordova-iOS アプリケーションのプロジェクトフォルダーの中の <code>Cordova.plist</code> ファイルの <code>Plugins</code> キー (辞書) に追加される必要があります。</p>
+
+<pre class="prettyprint"><code>&lt;key&gt;service_name&lt;/key&gt;
+&lt;string&gt;PluginClassName&lt;/string&gt;
+</code></pre>
+
+<p><code>service_name</code> のキーは JavaScript の <code>exec</code> の中で使用しているものと一致している必要があり、値はプラグインの Objective-C クラスの名前になります。これがないと、プラグインはコンパイルされますが、 Cordova からアクセスできない状態となります。</p>
+
+<h2>
+<a name="Developing%20a%20Plugin%20on%20iOS_ios_cordova_plugin">iOS Cordova Plugin の作成</a>
+</h2>
+
+<p>私たちはプラグインリクエストをネイティブ側に送る JavaScript を作成しました。また、正しく <code>Cordova.plist</code> ファイルでマッピングされた iOS Objective-C プラグインもあります。では、最終的に iOS Objective-C プラグインのクラスがどのようになるのか見ていきましょう。</p>
+
+<p>JavaScript の <code>exec</code> 関数によってプラグインに割り当てられたものは、プラグインクラスの対応する <code>action</code> メソッドに渡されます。プラグインメソッドのシグネチャは次のようになります:</p>
+
+<pre class="prettyprint"><code>- (void) myMethod:(CDVInvokedUrlCommand*)command
+{
+    CDVPluginResult* pluginResult = nil;
+    NSString* javaScript = nil;
+
+    @try {
+        NSString* myarg = [command.arguments objectAtIndex:0];
+
+        if (myarg != nil) {
+            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+            javaScript = [pluginResult toSuccessCallbackString:command.callbackId];
+        } 
+    } @catch (id exception) {
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_JSON_EXCEPTION messageAsString:[exception reason]];
+        javaScript = [pluginResult toErrorCallbackString:command.callbackId];
+    }
+
+    [self writeJavascript:javaScript];
+}
+</code></pre>
+
+<ol>
+<li><a class="external" href="https://github.com/apache/cordova-ios/blob/master/CordovaLib/Classes/CDVInvokedUrlCommand.h">CDVInvokedUrlCommand.h</a></li>
+<li><a class="external" href="https://github.com/apache/cordova-ios/blob/master/CordovaLib/Classes/CDVPluginResult.h">CDVPluginResult.h</a></li>
+</ol>
+<h2>
+<a name="Developing%20a%20Plugin%20on%20iOS_">プラグインシグネチャ</a>
+</h2>
+
+<p><strong>Cordova 2.1.0</strong> からサポートされた <strong>新しいシグネチャ</strong> は次のとおりです:</p>
+
+<pre class="prettyprint"><code>    - (void) myMethod:(CDVInvokedUrlCommand*)command;
+</code></pre>
+
+<p><strong>古い (非推奨)</strong> シグネチャはつぎのとおりです:</p>
+
+<pre class="prettyprint"><code>    - (void) myMethod:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;
+</code></pre>
+
+<p>基本的に、オプション辞書は新しいシグネチャでは削除されており、 callbackId は引数配列の 0 番目の要素ではなく、別のプロパティーとなっています。</p>
+
+<h2>
+<a name="Developing%20a%20Plugin%20on%20iOS_ios_echo">iOS プラグインの Echo プラグイン</a>
+</h2>
+
+<p><code>Cordova.plist</code> ファイルの <code>Plugins</code> キー (辞書) に以下を追加します:</p>
+
+<pre class="prettyprint"><code>&lt;key&gt;Echo&lt;/key&gt;
+&lt;string&gt;Echo&lt;/string&gt;
+</code></pre>
+
+<p>次のファイル (<code>Echo.h</code> と <code>Echo.m</code>) を Cordova-iOS アプリケーションフォルダーの中の
+プラグインフォルダーに追加します:</p>
+
+<pre class="prettyprint"><code>/********* Echo.h Cordova Plugin Header *******/
+
+#import &lt;Cordova/CDV.h&gt;
+
+@interface Echo : CDVPlugin
+
+- (void) echo:(CDVInvokedUrlCommand*)command;
+
+@end
+
+/********* Echo.m Cordova Plugin Implementation *******/
+
+#import "Echo.h"
+#import &lt;Cordova/CDV.h&gt;
+
+@implementation Echo
+
+- (void) echo:(CDVInvokedUrlCommand*)command
+{
+    CDVPluginResult* pluginResult = nil;
+    NSString* javaScript = nil;
+
+    @try {
+        NSString* echo = [command.arguments objectAtIndex:0];
+
+        if (echo != nil &amp;&amp; [echo length] &gt; 0) {
+            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:echo];
+            javaScript = [pluginResult toSuccessCallbackString:command.callbackId];
+        } else {
+            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
+            javaScript = [pluginResult toErrorCallbackString:command.callbackId];
+        }
+    } @catch (NSException* exception) {
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_JSON_EXCEPTION messageAsString:[exception reason]];
+        javaScript = [pluginResult toErrorCallbackString:command.callbackId];
+    }
+
+    [self writeJavascript:javaScript];
+}
+
+@end
+</code></pre>
+
+<p>コードを見ていきましょう。一番上には、必要なすべての Cordova に関する import 文が並んでいます。クラスは <code>CDVPlugin</code> を継承しています - これはとても重要です。</p>
+
+<p>このプラグインは 1 つのアクション <code>echo</code> のみをサポートしています。最初に、 <code>objectAtIndex</code> メソッドを <code>args</code> に使って引数配列 0 番目の要素である echo 用文字列を取得します。次に、 <code>objectAtIndex</code> メソッドを使って、引数配列の1番目の要素である echo 用文字列を取得します。ここで、少しパラメーターに対してチェックを行います: <code>nil</code> チェックや文字列の長さが0でないかどうかなどです。</p>
+
+<p>もしそうであった場合は、ステータスが <code>ERROR</code> の <code>PluginResult</code> を返します。もしこれらのチェックをパスしたら、ステータスが <code>OK</code> の <code>PluginResult</code> を返し、パラメーターとして受け取った <code>echo</code> 文字列を渡します。そして、もし正常な場合は <code>toSuccessCallbackString</code> メソッド、エラーの場合は <code>toErrorCallbackString</code> メソッドを呼びだして <code>PluginResult</code> を JavaScript に変換します。</p>
+
+<p>最後に、 JavaScript 側で成功またはエラーコールバック関数を実行するような JavaScript を書き出します。もし成功コールバックが呼ばれた場合は、 <code>echo</code> パラメーターをパラメーターとして渡します。</p>
+
+<h2>
+<a name="Developing%20a%20Plugin%20on%20iOS_">一歩進んだプラグインの機能</a>
+</h2>
+
+<p>他にも、オーバーライド出来るメソッドについては以下を参照してください:</p>
+
+<ol>
+<li><a class="external" href="https://github.com/apache/cordova-ios/blob/master/CordovaLib/Classes/CDVPlugin.h">CDVPlugin.h</a></li>
+<li><a class="external" href="https://github.com/apache/cordova-ios/blob/master/CordovaLib/Classes/CDVPlugin.m">CDVPlugin.m</a></li>
+</ol>
+<p>例えば、 pausa, <a href="cordova_events_events.md.html#resume">resume</a>, app terminate, handleOpenURL events といったような機能を実装できます。</p>
+
+<h2>
+<a name="Developing%20a%20Plugin%20on%20iOS_">プラグインのデバッグ</a>
+</h2>
+
+<p>Objective-C 側でデバッグするには、 Xcode のビルトインのデバッガーを使用します。 JavaScript 側では、 <a class="external" href="https://github.com/apache/cordova-weinre">Apache Cordova Project の Weinre</a> または <a class="external" href="http://www.iwebinspector.com/">サードパーティ製の iWebInspector</a> を使用できます。</p>
+
+<p>iOS 6 では、 Safari 6.0 を使用して簡単に iOS 6 シミュレーター上で動いているアプリをデバッグできます。</p>
+
+<h2>
+<a name="Developing%20a%20Plugin%20on%20iOS_">よくある落とし穴</a>
+</h2>
+
+<ul>
+<li>Cordova.plist にプラグインマッピングを追加することを忘れないでください - もし忘れている場合は、 Xcode のコンソールログにエラーが表示されます</li>
+<li>接続するすべてのホストを <a href="guide_whitelist_index.md.html#Domain%20Whitelist%20Guide">ホワイトリスト</a> に追加することを忘れないで下さい - もし忘れている場合は、 Xcode のコンソールログにエラーが表示されます</li>
+<li>
+<p>もしアプリが復帰する際にイベント処理をしていて、イベント復帰時にアラートといったようなネイティブ関数を実行すると、アプリケーションが停止してしまいます。安全のため、 JavaScript 呼び出しをタイムアウト値0の setTimeout でラップしてください:</p>
+
+<pre class="prettyprint"><code>setTimeout(function() {
+    // 任意のコード
+}, 0);
+</code></pre>
+</li>
+</ul>
+<h2>
+<a name="Developing%20a%20Plugin%20on%20iOS_">非推奨のプラグインシグネチャに関する注意点</a>
+</h2>
+
+<p><strong>古い (非推奨)</strong> シグネチャはつぎのとおりです:</p>
+
+<pre class="prettyprint"><code>    - (void) myMethod:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;
+</code></pre>
+
+<p>Objective-C プラグインメソッドの <code>options</code> パラメーターは非推奨であり、使われるべきではありません。レガシー的な理由で、 <code>args</code> 配列の最後の JavaScript オブジェクト要素は、 Objective-C 側メソッドの <code>options</code> 辞書に渡されます。どんな JavaScript オブジェクトでも <code>args</code> 配列の最後の要素として渡されるべきであり、もし配列の途中の要素に JavaScript オブジェクトがあると、それ以降の Objective-C 側の配列のインデックスがでたらめになることに十分注意してください。 options 辞書はただ1つの JavaScript オブジェクトのみをサポートしており、また配列の一番最後の要素のみネイティブメソッドに渡されます。このようにエラーを起こしやすいので、 <code>options</code> は非推奨となっています。</p>
+
+            </div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

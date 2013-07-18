@@ -32,8 +32,17 @@ How to compile the site
 
     # the site is generated in `public/` with an index.html file that
     # can be opened using:
-    $ www/serve.rb
+    $ rake serve
 
+
+Where to make changes
+----------------------
+The files that are served by cordova.apache.org live in public/.
+
+"rake build" uses lesscss & jekyll to compile some files from www/ into public/
+
+Some files live only in public/, and changes to them should be made directly. The
+list of these can be found in _config.yml.
 
 How to update the docs
 ----------------------
@@ -63,4 +72,14 @@ How to deploy the website
 
 - the website is automatically updated on each commit.
 - the website should update within seconds.
+
+After running "rake build", run "svn status". You'll notice it looks like:
+
+~       public/blog/2013
+M       public/blog/index.html
+
+To fix the ~, run the following commands:
+
+svn update --depth files --force public/blog/*
+svn update --depth files --force public/blog/*/* public/blog/*/*/*
 
