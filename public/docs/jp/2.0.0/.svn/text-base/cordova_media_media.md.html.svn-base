@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="English" value="en">
+<option value="edge">edge</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0rc1">2.7.0rc1</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0rc1">2.6.0rc1</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0rc1">2.5.0rc1</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0rc1">2.4.0rc1</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0rc2">2.3.0rc2</option>
+<option value="2.3.0rc1">2.3.0rc1</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0rc2">2.2.0rc2</option>
+<option value="2.2.0rc1">2.2.0rc1</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0rc2">2.1.0rc2</option>
+<option value="2.1.0rc1">2.1.0rc1</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0rc1">2.0.0rc1</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0rc1">1.9.0rc1</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0rc1">1.8.0rc1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0rc1">1.7.0rc1</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0rc1">1.6.0rc1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0rc1">1.5.0rc1</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="Japanese" value="jp">
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option selected value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="kr"><option value="2.0.0">2.0.0</option></optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Media</h1>
+            <small><select><option value="Media">Media</option>
+<option value="Media_">      - パラメーター</option>
+<option value="Media_">      - メソッド</option>
+<option value="Media_">      - 追加の読み取り専用パラメーター</option>
+<option value="Media_">      - サポートされているプラットフォーム</option>
+<option value="Media_">      - パーミッション</option>
+<option value="media.getCurrentPosition">media.getCurrentPosition</option>
+<option value="media.getCurrentPosition_">      - パラメーター</option>
+<option value="media.getCurrentPosition_">      - 概要</option>
+<option value="media.getCurrentPosition_">      - サポートされているプラットフォーム</option>
+<option value="media.getCurrentPosition_">      - 使用例</option>
+<option value="media.getCurrentPosition_">      - 詳細な使用例</option>
+<option value="media.getDuration">media.getDuration</option>
+<option value="media.getDuration_">      - 概要</option>
+<option value="media.getDuration_">      - サポートされているプラットフォーム</option>
+<option value="media.getDuration_">      - 使用例</option>
+<option value="media.getDuration_">      - 詳細な使用例</option>
+<option value="media.pause">media.pause</option>
+<option value="media.pause_">      - 概要</option>
+<option value="media.pause_">      - サポートされているプラットフォーム</option>
+<option value="media.pause_">      - 使用例</option>
+<option value="media.pause_">      - 詳細な使用例</option>
+<option value="media.play">media.play</option>
+<option value="media.play_">      - 概要</option>
+<option value="media.play_">      - サポートされているプラットフォーム</option>
+<option value="media.play_">      - 使用例</option>
+<option value="media.play_">      - 詳細な使用例</option>
+<option value="media.play_blackberry_webworks">      - BlackBerry WebWorks に関する注意点</option>
+<option value="media.play_ios">      - iOS に関する注意点</option>
+<option value="media.release">media.release</option>
+<option value="media.release_">      - 概要</option>
+<option value="media.release_">      - サポートされているプラットフォーム</option>
+<option value="media.release_">      - 使用例</option>
+<option value="media.release_">      - 詳細な使用例</option>
+<option value="media.seekTo">media.seekTo</option>
+<option value="media.seekTo_">      - パラメーター</option>
+<option value="media.seekTo_">      - 概要</option>
+<option value="media.seekTo_">      - サポートされているプラットフォーム</option>
+<option value="media.seekTo_">      - 使用例</option>
+<option value="media.seekTo_full_example">      - Full Example</option>
+<option value="media.seekTo_blackberry_webworks">      - BlackBerry WebWorks に関する注意点</option>
+<option value="media.startRecord">media.startRecord</option>
+<option value="media.startRecord_">      - 概要</option>
+<option value="media.startRecord_">      - サポートされているプラットフォーム</option>
+<option value="media.startRecord_">      - 使用例</option>
+<option value="media.startRecord_">      - 詳細な使用例</option>
+<option value="media.startRecord_blackberry_webworks">      - BlackBerry WebWorks に関する注意点</option>
+<option value="media.startRecord_ios">      - iOS に関する注意点</option>
+<option value="media.stop">media.stop</option>
+<option value="media.stop_">      - 概要</option>
+<option value="media.stop_">      - サポートされているプラットフォーム</option>
+<option value="media.stop_">      - 使用例</option>
+<option value="media.stop_">      - 詳細な使用例</option>
+<option value="media.stopRecord">media.stopRecord</option>
+<option value="media.stopRecord_">      - 概要</option>
+<option value="media.stopRecord_">      - サポートされているプラットフォーム</option>
+<option value="media.stopRecord_">      - 使用例</option>
+<option value="media.stopRecord_">      - 詳細な使用例</option>
+<option value="MediaError">MediaError</option>
+<option value="MediaError_">      - プロパティー</option>
+<option value="MediaError_">      - 定数</option>
+<option value="MediaError_">      - 概要</option>
+<option value="mediaError">mediaError</option>
+<option value="mediaError_">      - パラメーター</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>API リファレンス</h1>
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a></li>
+<li><a href="cordova_camera_camera.md.html#Camera">Camera</a></li>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_compass_compass.md.html#Compass">Compass</a></li>
+<li><a href="cordova_connection_connection.md.html#Connection">Connection</a></li>
+<li><a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a></li>
+<li><a href="cordova_device_device.md.html#Device">Device</a></li>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_file_file.md.html#File">File</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a></li>
+<li><a href="cordova_media_media.md.html#Media">Media</a></li>
+<li><a href="cordova_notification_notification.md.html#Notification">Notification</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+</ul>
+<h1>Guides</h1>
+<ul>
+<li><a href="guide_getting-started_index.md.html#%E5%85%A5%E9%96%80%E3%82%AC%E3%82%A4%E3%83%89">入門ガイド</a></li>
+<li><a href="guide_command-line_index.md.html#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E4%BD%BF%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89">コマンドライン使用ガイド</a></li>
+<li><a href="guide_upgrading_index.md.html#%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89">アップグレードガイド</a></li>
+<li><a href="guide_plugin-development_index.md.html#%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E9%96%8B%E7%99%BA%E3%82%AC%E3%82%A4%E3%83%89">プラグイン開発ガイド</a></li>
+<li><a href="guide_whitelist_index.md.html#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89">ドメインホワイトリストガイド</a></li>
+<li><a href="guide_cordova-webview_index.md.html#WebView%20%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF">WebView の埋め込み</a></li>
+<li><a href="_index.html">索引</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Media">Media</a></h1>
+
+<blockquote>
+  <p><code><a href="cordova_media_media.md.html#Media">Media</a></code> オブジェクトは、デバイス上でのオーディオファイルの再生や録音などといった機能をサポートします。</p>
+</blockquote>
+
+<pre class="prettyprint"><code>var media = new <a href="cordova_media_media.md.html#Media">Media</a>(src, mediaSuccess, [<a href="cordova_media_media.md.html#mediaError">mediaError</a>], [mediaStatus]);
+</code></pre>
+
+<p>注意: 現在の実装はメディアキャプチャーに関する W3C の仕様を満たしていません。利便性のためだけに提供されています。将来的には最新の W3C の仕様に合わせるとともに、現在の API を廃止することも検討されています。</p>
+
+<h2>
+<a name="Media_">パラメーター</a>
+</h2>
+
+<ul>
+<li>
+<strong>src</strong>: オーディオコンテンツを示す URI を表します <em>(DOMString)</em>
+</li>
+<li>
+<strong>mediaSuccess</strong>: (オプション) <a href="cordova_media_media.md.html#Media">Media</a> オブジェクトが再生、録音、停止などのアクションを完了したときに呼ばれるコールバック関数を表します <em>(Function)</em>
+</li>
+<li>
+<strong><a href="cordova_media_media.md.html#mediaError">mediaError</a></strong>: (オプション) エラー発生時に呼ばれるコールバック関数を表します <em>(Function)</em>
+</li>
+<li>
+<strong>mediaStatus</strong>: (オプション) ステータスが変わったときに呼ばれるコールバック関数を表します <em>(Function)</em>
+</li>
+</ul>
+<h2>
+<a name="Media_">メソッド</a>
+</h2>
+
+<ul>
+<li>
+<a href="cordova_media_media.md.html#media.getCurrentPosition">media.getCurrentPosition</a>: オーディオファイル内の現在の再生位置を返します</li>
+<li>
+<a href="cordova_media_media.md.html#media.getDuration">media.getDuration</a>: オーディオファイルの再生時間を返します</li>
+<li>
+<a href="cordova_media_media.md.html#media.play">media.play</a>: オーディオファイルを再生または再開します</li>
+<li>
+<a href="cordova_media_media.md.html#media.pause">media.pause</a>: オーディオファイルを一時停止します</li>
+<li>
+<a href="cordova_media_media.md.html#media.release">media.release</a>: OS のオーディオリソースを開放します</li>
+<li>
+<a href="cordova_media_media.md.html#media.seekTo">media.seekTo</a>: オーディオファイル中の再生位置を動かします</li>
+<li>
+<a href="cordova_media_media.md.html#media.startRecord">media.startRecord</a>: オーディオファイルの録音を開始します</li>
+<li>
+<a href="cordova_media_media.md.html#media.stopRecord">media.stopRecord</a>: オーディオファイルの録音を停止します</li>
+<li>
+<a href="cordova_media_media.md.html#media.stop">media.stop</a>: オーディオファイルを停止します</li>
+</ul>
+<h2>
+<a name="Media_">追加の読み取り専用パラメーター</a>
+</h2>
+
+<ul>
+<li>
+<strong>position</strong>: 再生位置を秒単位で表します。
+<ul>
+<li>再生中は自動的に値が更新されないので、 <code>getCurrentPosition</code> メソッドを呼び、値を更新します</li>
+</ul>
+</li>
+<li>
+<strong>duration</strong>: メディアの再生時間を秒単位で表します</li>
+</ul>
+<h2>
+<a name="Media_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7 (Mango)</li>
+</ul>
+<h2>
+<a name="Media_">パーミッション</a>
+</h2>
+
+<h3>Android</h3>
+
+<h4>app/res/xml/plugins.xml</h4>
+
+<pre class="prettyprint"><code>&lt;plugin name="<a href="cordova_media_media.md.html#Media">Media</a>" value="org.apache.cordova.AudioHandler" /&gt;
+</code></pre>
+
+<h4>app/AndroidManifest.xml</h4>
+
+<pre class="prettyprint"><code>&lt;uses-permission android:name="android.permission.RECORD_AUDIO" /&gt;
+&lt;uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;
+</code></pre>
+
+<h3>Bada</h3>
+
+<h4>manifest.xml</h4>
+
+<pre class="prettyprint"><code>&lt;Privilege&gt;
+    &lt;Name&gt;RECORDING&lt;/Name&gt;
+&lt;/Privilege&gt;
+</code></pre>
+
+<h3>BlackBerry WebWorks</h3>
+
+<h4>www/plugins.xml</h4>
+
+<pre class="prettyprint"><code>&lt;plugin name="<a href="cordova_media_capture_capture.md.html#Capture">Capture</a>" value="org.apache.cordova.media.MediaCapture" /&gt;
+</code></pre>
+
+<h3>iOS</h3>
+
+<h4>App/Supporting Files/Cordova.plist</h4>
+
+<pre class="prettyprint"><code>&lt;key&gt;Plugins&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;<a href="cordova_media_media.md.html#Media">Media</a>&lt;/key&gt;
+    &lt;string&gt;CDVSound&lt;/string&gt;
+&lt;/dict&gt;
+</code></pre>
+
+<h3>webOS</h3>
+
+<pre class="prettyprint"><code>パーミッションの設定は必要ありません。
+</code></pre>
+
+<h3>Windows Phone</h3>
+
+<h4>Properties/WPAppManifest.xml</h4>
+
+<pre class="prettyprint"><code>&lt;Capabilities&gt;
+    &lt;Capability Name="ID_CAP_MEDIALIB" /&gt;
+    &lt;Capability Name="ID_CAP_MICROPHONE" /&gt;
+    &lt;Capability Name="ID_HW_FRONTCAMERA" /&gt;
+    &lt;Capability Name="ID_CAP_ISV_CAMERA" /&gt;
+    &lt;Capability Name="ID_CAP_CAMERA" /&gt;
+&lt;/Capabilities&gt;
+</code></pre>
+
+<p>参照: <a class="external" href="http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx">Application Manifest for Windows Phone</a></p>
+
+<hr>
+<h1><a name="media.getCurrentPosition">media.getCurrentPosition</a></h1>
+
+<p>オーディオファイル内の現在の再生位置を返します。</p>
+
+<pre class="prettyprint"><code><a href="cordova_media_media.md.html#media.getCurrentPosition">media.getCurrentPosition</a>(mediaSuccess, [<a href="cordova_media_media.md.html#mediaError">mediaError</a>]);
+</code></pre>
+
+<h2>
+<a name="media.getCurrentPosition_">パラメーター</a>
+</h2>
+
+<ul>
+<li>
+<strong>mediaSuccess</strong>: 現在再生位置とともに呼ばれるコールバック関数を表します</li>
+<li>
+<strong><a href="cordova_media_media.md.html#mediaError">mediaError</a></strong>: (オプション) エラー発生時に呼ばれるコールバック関数を表します</li>
+</ul>
+<h2>
+<a name="media.getCurrentPosition_">概要</a>
+</h2>
+
+<p><code><a href="cordova_media_media.md.html#media.getCurrentPosition">media.getCurrentPosition</a></code> 関数は <a href="cordova_media_media.md.html#Media">Media</a> オブジェクトのオーディオファイルの現在再生位置を返す非同期関数です。 <a href="cordova_media_media.md.html#Media">Media</a> オブジェクト内の <strong>position</strong> パラメーターの値も更新します。</p>
+
+<h2>
+<a name="media.getCurrentPosition_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7 (Mango)</li>
+</ul>
+<h2>
+<a name="media.getCurrentPosition_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// オーディオプレイヤー
+//
+var my_media = new <a href="cordova_media_media.md.html#Media">Media</a>(src, onSuccess, onError);
+
+// メディアの再生位置を一秒ごとに更新
+var mediaTimer = setInterval(function() {
+        // 再生位置を取得
+        my_media.getCurrentPosition(
+            // 呼び出し成功
+            function(position) {
+            if (position &gt; -1) {
+            console.log((position) + " sec");
+            }
+            },
+            // 呼び出し失敗
+            function(e) {
+                console.log("Error getting pos=" + e);
+            }
+        );
+    }, 1000);
+</code></pre>
+
+<h2>
+<a name="media.getCurrentPosition_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>    &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                  "http://www.w3.org/TR/html4/strict.dtd"&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;メディアの使用例&lt;/title&gt;
+
+        &lt;script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" charset="utf-8"&gt;
+
+        // Cordova の読み込み完了まで待機
+        //
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+        // Cordova 準備完了
+        //
+        function onDeviceReady() {
+            playAudio("http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3");
+        }
+
+        // オーディオプレイヤー
+        //
+        var my_media = null;
+        var mediaTimer = null;
+
+        // オーディオ再生
+        //
+        function playAudio(src) {
+            // src から <a href="cordova_media_media.md.html#Media">Media</a> オブジェクトを作成
+            my_media = new <a href="cordova_media_media.md.html#Media">Media</a>(src, onSuccess, onError);
+
+            // オーディオ再生
+            my_media.play();
+
+            // my_media の再生位置を一秒ごとに更新
+            if (mediaTimer == null) {
+                mediaTimer = setInterval(function() {
+                    // my_media の再生位置を取得
+                    my_media.getCurrentPosition(
+                        // 呼び出し成功
+                        function(position) {
+                            if (position &gt; -1) {
+                                setAudioPosition((position) + " sec");
+                            }
+                        },
+                        // 呼び出し失敗
+                        function(e) {
+                            console.log("Error getting pos=" + e);
+                            setAudioPosition("Error: " + e);
+                        }
+                    );
+                }, 1000);
+            }
+        }
+
+        // オーディオ一時停止
+        //
+        function pauseAudio() {
+            if (my_media) {
+                my_media.<a href="cordova_events_events.md.html#pause">pause</a>();
+            }
+        }
+
+        // オーディオ停止
+        //
+        function stopAudio() {
+            if (my_media) {
+                my_media.stop();
+            }
+            clearInterval(mediaTimer);
+            mediaTimer = null;
+        }
+
+        // 成功時のコールバック関数
+        //
+        function onSuccess() {
+            console.log("playAudio():Audio Success");
+        }
+
+        // エラー時のコールバック関数
+        //
+        function onError(error) {
+            alert('コード: '        + error.code    + '\n' +
+                  'メッセージ: '    + error.message + '\n');
+        }
+
+        // 再生位置をセット
+        //
+        function setAudioPosition(position) {
+            document.getElementById('audio_position').innerHTML = position;
+        }
+
+        &lt;/script&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;a href="#" class="btn large" onclick="playAudio('http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3');"&gt;再生&lt;/a&gt;
+        &lt;a href="#" class="btn large" onclick="pauseAudio();"&gt;一時停止&lt;/a&gt;
+        &lt;a href="#" class="btn large" onclick="stopAudio();"&gt;停止&lt;/a&gt;
+        &lt;p id="audio_position"&gt;&lt;/p&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="media.getDuration">media.getDuration</a></h1>
+
+<p>オーディオファイルの再生時間を返します。</p>
+
+<pre class="prettyprint"><code><a href="cordova_media_media.md.html#media.getDuration">media.getDuration</a>();
+</code></pre>
+
+<h2>
+<a name="media.getDuration_">概要</a>
+</h2>
+
+<p><code><a href="cordova_media_media.md.html#media.getDuration">media.getDuration</a></code> 関数は秒単位でオーディオファイルの再生時間を返す同期関数です。再生時間が不明な場合は、-1が返されます。</p>
+
+<h2>
+<a name="media.getDuration_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7 (Mango)</li>
+</ul>
+<h2>
+<a name="media.getDuration_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>    // オーディオプレイヤー
+    //
+    var my_media = new <a href="cordova_media_media.md.html#Media">Media</a>(src, onSuccess, onError);
+
+    // 再生時間を取得
+    var counter = 0;
+    var timerDur = setInterval(function() {
+        counter = counter + 100;
+        if (counter &gt; 2000) {
+            clearInterval(timerDur);
+        }
+        var dur = my_media.getDuration();
+        if (dur &gt; 0) {
+            clearInterval(timerDur);
+            document.getElementById('audio_duration').innerHTML = (dur) + " sec";
+        }
+    }, 100);
+</code></pre>
+
+<h2>
+<a name="media.getDuration_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>    &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                          "http://www.w3.org/TR/html4/strict.dtd"&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;メディアの使用例&lt;/title&gt;
+
+        &lt;script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" charset="utf-8"&gt;
+
+        // Cordova の読み込み完了まで待機
+        //
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+        // Cordova 準備完了
+        //
+        function onDeviceReady() {
+            playAudio("http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3");
+        }
+
+        // オーディオプレイヤー
+        //
+        var my_media = null;
+        var mediaTimer = null;
+
+        // オーディオ再生
+        //
+        function playAudio(src) {
+            // src から <a href="cordova_media_media.md.html#Media">Media</a> オブジェクトを作成
+            my_media = new <a href="cordova_media_media.md.html#Media">Media</a>(src, onSuccess, onError);
+
+            // オーディオ再生
+            my_media.play();
+
+            // my_media の再生位置を一秒ごとに更新
+            if (mediaTimer == null) {
+                mediaTimer = setInterval(function() {
+                    // my_media の再生位置を取得
+                    my_media.getCurrentPosition(
+                        // 呼び出し成功
+                        function(position) {
+                            if (position &gt; -1) {
+                                setAudioPosition((position) + " sec");
+                            }
+                        },
+                        // 呼び出し失敗
+                        function(e) {
+                            console.log("Error getting pos=" + e);
+                            setAudioPosition("Error: " + e);
+                        }
+                    );
+                }, 1000);
+            }
+        }
+
+        // オーディオ一時停止
+        //
+        function pauseAudio() {
+            if (my_media) {
+                my_media.<a href="cordova_events_events.md.html#pause">pause</a>();
+            }
+        }
+
+        // オーディオ停止
+        //
+        function stopAudio() {
+            if (my_media) {
+                my_media.stop();
+            }
+            clearInterval(mediaTimer);
+            mediaTimer = null;
+        }
+
+        // 成功時のコールバック関数
+        //
+        function onSuccess() {
+            console.log("playAudio():Audio Success");
+        }
+
+        // エラー時のコールバック関数
+        //
+        function onError(error) {
+            alert('コード: '        + error.code    + '\n' +
+                  'メッセージ: '    + error.message + '\n');
+        }
+
+        // 再生位置をセット
+        //
+        function setAudioPosition(position) {
+            document.getElementById('audio_position').innerHTML = position;
+        }
+
+        &lt;/script&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;a href="#" class="btn large" onclick="playAudio('http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3');"&gt;再生&lt;/a&gt;
+        &lt;a href="#" class="btn large" onclick="pauseAudio();"&gt;一時停止&lt;/a&gt;
+        &lt;a href="#" class="btn large" onclick="stopAudio();"&gt;停止&lt;/a&gt;
+        &lt;p id="audio_position"&gt;&lt;/p&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="media.pause">media.pause</a></h1>
+
+<p>オーディオファイルを一時停止します。</p>
+
+<pre class="prettyprint"><code><a href="cordova_media_media.md.html#media.pause">media.pause</a>();
+</code></pre>
+
+<h2>
+<a name="media.pause_">概要</a>
+</h2>
+
+<p><code><a href="cordova_media_media.md.html#media.pause">media.pause</a></code> 関数はオーディオファイルを一時停止させる同期関数です。</p>
+
+<h2>
+<a name="media.pause_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7 (Mango)</li>
+</ul>
+<h2>
+<a name="media.pause_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// オーディオ再生
+//
+function playAudio(url) {
+    // URL のオーディオファイルを再生
+    var my_media = new <a href="cordova_media_media.md.html#Media">Media</a>(url,
+        // 呼び出し成功
+        function() {
+            console.log("playAudio():Audio Success");
+        },
+        // 呼び出し失敗
+        function(err) {
+            console.log("playAudio():Audio Error: "+err);
+    });
+
+    // オーディオ再生
+    my_media.play();
+
+    // 10秒後に一時停止
+    setTimeout(function() {
+        <a href="cordova_media_media.md.html#media.pause">media.pause</a>();
+    }, 10000);
+}
+</code></pre>
+
+<h2>
+<a name="media.pause_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>    &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                          "http://www.w3.org/TR/html4/strict.dtd"&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;メディアの使用例&lt;/title&gt;
+
+        &lt;script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" charset="utf-8"&gt;
+
+        // Cordova の読み込み完了まで待機
+        //
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+        // Cordova 準備完了
+        //
+        function onDeviceReady() {
+            playAudio("http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3");
+        }
+
+        // オーディオプレイヤー
+        //
+        var my_media = null;
+        var mediaTimer = null;
+
+        // オーディオ再生
+        //
+        function playAudio(src) {
+            // src から <a href="cordova_media_media.md.html#Media">Media</a> オブジェクトを作成
+            my_media = new <a href="cordova_media_media.md.html#Media">Media</a>(src, onSuccess, onError);
+
+            // オーディオ再生
+            my_media.play();
+
+            // my_media の再生位置を一秒ごとに更新
+            if (mediaTimer == null) {
+                mediaTimer = setInterval(function() {
+                    // my_media の再生位置を取得
+                    my_media.getCurrentPosition(
+                        // 呼び出し成功
+                        function(position) {
+                            if (position &gt; -1) {
+                                setAudioPosition((position) + " sec");
+                            }
+                        },
+                        // 呼び出し失敗
+                        function(e) {
+                            console.log("Error getting pos=" + e);
+                            setAudioPosition("Error: " + e);
+                        }
+                    );
+                }, 1000);
+            }
+        }
+
+        // オーディオ一時停止
+        //
+        function pauseAudio() {
+            if (my_media) {
+                my_media.<a href="cordova_events_events.md.html#pause">pause</a>();
+            }
+        }
+
+        // オーディオ停止
+        //
+        function stopAudio() {
+            if (my_media) {
+                my_media.stop();
+            }
+            clearInterval(mediaTimer);
+            mediaTimer = null;
+        }
+
+        // 成功時のコールバック関数
+        //
+        function onSuccess() {
+            console.log("playAudio():Audio Success");
+        }
+
+        // エラー時のコールバック関数 
+        //
+        function onError(error) {
+            alert('コード: '        + error.code    + '\n' +
+                  'メッセージ: '    + error.message + '\n');
+        }
+
+        // 再生位置をセット
+        //
+        function setAudioPosition(position) {
+            document.getElementById('audio_position').innerHTML = position;
+        }
+
+        &lt;/script&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;a href="#" class="btn large" onclick="playAudio('http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3');"&gt;再生&lt;/a&gt;
+        &lt;a href="#" class="btn large" onclick="pauseAudio();"&gt;一時停止&lt;/a&gt;
+        &lt;a href="#" class="btn large" onclick="stopAudio();"&gt;停止&lt;/a&gt;
+        &lt;p id="audio_position"&gt;&lt;/p&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="media.play">media.play</a></h1>
+
+<p>オーディオファイルを再生または再開します。</p>
+
+<pre class="prettyprint"><code><a href="cordova_media_media.md.html#media.play">media.play</a>();
+</code></pre>
+
+<h2>
+<a name="media.play_">概要</a>
+</h2>
+
+<p><code><a href="cordova_media_media.md.html#media.play">media.play</a></code> 関数はオーディオファイルを再生または再開させる同期関数です。</p>
+
+<h2>
+<a name="media.play_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7 (Mango)</li>
+</ul>
+<h2>
+<a name="media.play_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// オーディオ再生
+//
+function playAudio(url) {
+    // URL のオーディオファイルを再生
+    var my_media = new <a href="cordova_media_media.md.html#Media">Media</a>(url,
+        // 呼び出し成功
+        function() {
+            console.log("playAudio():Audio Success");
+        },
+        // 呼び出し失敗
+        function(err) {
+            console.log("playAudio():Audio Error: "+err);
+    });
+
+    // オーディオ再生
+    my_media.play();
+}
+</code></pre>
+
+<h2>
+<a name="media.play_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>    &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                          "http://www.w3.org/TR/html4/strict.dtd"&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;メディアの使用例&lt;/title&gt;
+
+        &lt;script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" charset="utf-8"&gt;
+
+        // Cordova の読み込み完了まで待機
+        //
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+        // Cordova 準備完了
+        //
+        function onDeviceReady() {
+            playAudio("http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3");
+        }
+
+        // オーディオプレイヤー
+        //
+        var my_media = null;
+        var mediaTimer = null;
+
+        // オーディオ再生
+        //
+        function playAudio(src) {
+            if (my_media == null) {
+                // src から <a href="cordova_media_media.md.html#Media">Media</a> オブジェクトを作成
+                my_media = new <a href="cordova_media_media.md.html#Media">Media</a>(src, onSuccess, onError);
+            } // else 現在のオーディオを再生
+            // オーディオ再生
+            my_media.play();
+
+            // my_media の再生位置を一秒ごとに更新
+            if (mediaTimer == null) {
+                mediaTimer = setInterval(function() {
+                    // my_media の再生位置を取得
+                    my_media.getCurrentPosition(
+                        // 呼び出し成功
+                        function(position) {
+                            if (position &gt; -1) {
+                                setAudioPosition((position) + " sec");
+                            }
+                        },
+                        // 呼び出し失敗
+                        function(e) {
+                            console.log("Error getting pos=" + e);
+                            setAudioPosition("Error: " + e);
+                        }
+                    );
+                }, 1000);
+            }
+        }
+
+        // オーディオ一時停止
+        //
+        function pauseAudio() {
+            if (my_media) {
+                my_media.<a href="cordova_events_events.md.html#pause">pause</a>();
+            }
+        }
+
+        // オーディオ停止
+        //
+        function stopAudio() {
+            if (my_media) {
+                my_media.stop();
+            }
+            clearInterval(mediaTimer);
+            mediaTimer = null;
+        }
+
+        // 成功時のコールバック関数
+        //
+        function onSuccess() {
+            console.log("playAudio():Audio Success");
+        }
+
+        // エラー時のコールバック関数
+        //
+        function onError(error) {
+            alert('コード: '        + error.code    + '\n' +
+                  'メッセージ: '    + error.message + '\n');
+        }
+
+        // 再生位置をセット
+        //
+        function setAudioPosition(position) {
+            document.getElementById('audio_position').innerHTML = position;
+        }
+
+        &lt;/script&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;a href="#" class="btn large" onclick="playAudio('http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3');"&gt;再生&lt;/a&gt;
+        &lt;a href="#" class="btn large" onclick="pauseAudio();"&gt;一時停止&lt;/a&gt;
+        &lt;a href="#" class="btn large" onclick="stopAudio();"&gt;停止&lt;/a&gt;
+        &lt;p id="audio_position"&gt;&lt;/p&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="media.play_blackberry_webworks">BlackBerry WebWorks に関する注意点</a>
+</h2>
+
+<ul>
+<li>BlackBerry は同時に再生できるオーディオの数が決まっています。 CDMA デバイスは1つのオーディオのみサポートしています。他のデバイスは2つまで同時再生をサポートしています。サポートされている数以上のオーディオファイルを再生することは、直前の再生オーディオを停止することに繋がります。</li>
+</ul>
+<h2>
+<a name="media.play_ios">iOS に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<p><strong>numberOfLoops</strong></p>
+
+<p>このオプションを <strong>play</strong> メソッドに渡すことで、そのメディアファイルを何回再生するかを指定します。例:</p>
+
+<pre class="prettyprint"><code>var myMedia = new <a href="cordova_media_media.md.html#Media">Media</a>("http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3")
+myMedia.play({ numberOfLoops: 2 })
+</code></pre>
+</li>
+<li>
+<p><strong>playAudioWhenScreenIsLocked</strong></p>
+
+<p>このオプションを <strong>play</strong> メソッドに渡すことで、スクリーンがロックされた状態でもオーディオを再生するかどうかを指定します (設定しなかった場合、デフォルトは true です) 。もし true にセットされた場合は、ハードウェアのミュートボタンの設定は無視されます。例:</p>
+
+<pre class="prettyprint"><code>var myMedia = new <a href="cordova_media_media.md.html#Media">Media</a>("http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3")
+myMedia.play({ playAudioWhenScreenIsLocked : false })
+</code></pre>
+</li>
+</ul>
+<hr>
+<h1><a name="media.release">media.release</a></h1>
+
+<p>OS のオーディオリソースを開放します。</p>
+
+<pre class="prettyprint"><code><a href="cordova_media_media.md.html#media.release">media.release</a>();
+</code></pre>
+
+<h2>
+<a name="media.release_">概要</a>
+</h2>
+
+<p><code><a href="cordova_media_media.md.html#media.release">media.release</a></code> 関数は OS のオーディオリソースを開放する同期関数です。 Android ではメディア再生のための OpenCore インスタンスが有限のため、この関数は特に Android にとって重要な関数です。 メディアリソースが不要になった場合には、 'release' 関数を使用してください。</p>
+
+<h2>
+<a name="media.release_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7 (Mango)</li>
+</ul>
+<h2>
+<a name="media.release_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// オーディオプレイヤー
+//
+var my_media = new <a href="cordova_media_media.md.html#Media">Media</a>(src, onSuccess, onError);
+
+my_media.play();
+my_media.stop();
+my_media.release();
+</code></pre>
+
+<h2>
+<a name="media.release_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>    &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                          "http://www.w3.org/TR/html4/strict.dtd"&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;メディアの使用例&lt;/title&gt;
+
+        &lt;script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" charset="utf-8"&gt;
+
+        // Cordova の読み込み完了まで待機
+        //
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+        // Cordova 準備完了
+        //
+        function onDeviceReady() {
+            playAudio("http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3");
+        }
+
+        // オーディオプレイヤー
+        //
+        var my_media = null;
+        var mediaTimer = null;
+
+        // オーディオ再生
+        //
+        function playAudio(src) {
+            // src から <a href="cordova_media_media.md.html#Media">Media</a> オブジェクトを作成
+            my_media = new <a href="cordova_media_media.md.html#Media">Media</a>(src, onSuccess, onError);
+
+            // オーディオ再生
+            my_media.play();
+
+            // my_media の再生位置を一秒ごとに更新
+            if (mediaTimer == null) {
+                mediaTimer = setInterval(function() {
+                    // my_media の再生位置を取得
+                    my_media.getCurrentPosition(
+                        // 呼び出し成功
+                        function(position) {
+                            if (position &gt; -1) {
+                                setAudioPosition((position) + " sec");
+                            }
+                        },
+                        // 呼び出し失敗
+                        function(e) {
+                            console.log("Error getting pos=" + e);
+                            setAudioPosition("Error: " + e);
+                        }
+                    );
+                }, 1000);
+            }
+        }
+
+        // オーディオ一時停止
+        //
+        function pauseAudio() {
+            if (my_media) {
+                my_media.<a href="cordova_events_events.md.html#pause">pause</a>();
+            }
+        }
+
+        // オーディオ停止
+        //
+        function stopAudio() {
+            if (my_media) {
+                my_media.stop();
+            }
+            clearInterval(mediaTimer);
+            mediaTimer = null;
+        }
+
+        // 成功時のコールバック関数
+        //
+        function onSuccess() {
+            console.log("playAudio():Audio Success");
+        }
+
+        // エラー時のコールバック関数
+        //
+        function onError(error) {
+            alert('コード: '        + error.code    + '\n' +
+                  'メッセージ: '    + error.message + '\n');
+        }
+
+        // 再生位置をセット
+        //
+        function setAudioPosition(position) {
+            document.getElementById('audio_position').innerHTML = position;
+        }
+
+        &lt;/script&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;a href="#" class="btn large" onclick="playAudio('http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3');"&gt;再生&lt;/a&gt;
+        &lt;a href="#" class="btn large" onclick="pauseAudio();"&gt;一時停止&lt;/a&gt;
+        &lt;a href="#" class="btn large" onclick="stopAudio();"&gt;停止&lt;/a&gt;
+        &lt;p id="audio_position"&gt;&lt;/p&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="media.seekTo">media.seekTo</a></h1>
+
+<p>オーディオファイル中の再生位置を動かします。</p>
+
+<pre class="prettyprint"><code><a href="cordova_media_media.md.html#media.seekTo">media.seekTo</a>(milliseconds);
+</code></pre>
+
+<h2>
+<a name="media.seekTo_">パラメーター</a>
+</h2>
+
+<ul>
+<li>
+<strong>milliseconds</strong>: 再生位置を動かす先の位置をミリ秒単位で表します</li>
+</ul>
+<h2>
+<a name="media.seekTo_">概要</a>
+</h2>
+
+<p><code><a href="cordova_media_media.md.html#media.seekTo">media.seekTo</a></code> 関数は <a href="cordova_media_media.md.html#Media">Media</a> オブジェクトのオーディオファイルの現在再生位置を更新する非同期関数です。 <a href="cordova_media_media.md.html#Media">Media</a> オブジェクト内の <strong>position</strong> パラメーターの値も更新します。</p>
+
+<h2>
+<a name="media.seekTo_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 6.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7 (Mango)</li>
+</ul>
+<h2>
+<a name="media.seekTo_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>    // オーディオプレイヤー
+    //
+    var my_media = new <a href="cordova_media_media.md.html#Media">Media</a>(src, onSuccess, onError);
+    my_media.play();
+    // 5秒後に、10秒の位置まで移動
+    setTimeout(function() {
+        my_media.seekTo(10000);
+    }, 5000);
+</code></pre>
+
+<h2>
+<a name="media.seekTo_full_example">Full Example</a>
+</h2>
+
+<pre class="prettyprint"><code>    &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                  "http://www.w3.org/TR/html4/strict.dtd"&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;メディアの使用例&lt;/title&gt;
+
+        &lt;script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" charset="utf-8"&gt;
+
+        // Cordova の読み込み完了まで待機
+        //
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+        // Cordova 準備完了
+        //
+        function onDeviceReady() {
+            playAudio("http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3");
+        }
+
+        // オーディオプレイヤー
+        //
+        var my_media = null;
+        var mediaTimer = null;
+
+        // オーディオ再生
+        //
+        function playAudio(src) {
+            // src から <a href="cordova_media_media.md.html#Media">Media</a> オブジェクトを作成
+            my_media = new <a href="cordova_media_media.md.html#Media">Media</a>(src, onSuccess, onError);
+
+            // オーディオ再生
+            my_media.play();
+            // メディアの再生位置を一秒ごとに更新
+            mediaTimer = setInterval(function() {
+                // 再生位置を取得
+                my_media.getCurrentPosition(
+                    // 呼び出し成功
+                    function(position) {
+                        if (position &gt; -1) {
+                            setAudioPosition(position + " sec");
+                        }
+                    },
+                    // 呼び出し失敗
+                    function(e) {
+                        console.log("Error getting pos=" + e);
+                    }
+                );
+            }, 1000);
+            // 5秒後に、10秒の位置まで移動
+            setTimeout(function() {
+                my_media.seekTo(10000);
+            }, 5000);
+        }
+
+        // オーディオ停止
+        //
+        function stopAudio() {
+            if (my_media) {
+                my_media.stop();
+            }
+            clearInterval(mediaTimer);
+            mediaTimer = null;
+        }
+
+        // 成功時のコールバック関数
+        //
+        function onSuccess() {
+            console.log("playAudio():Audio Success");
+        }
+
+        // エラー時のコールバック関数
+        //
+        function onError(error) {
+            alert('コード: '        + error.code    + '\n' +
+                  'メッセージ: '    + error.message + '\n');
+        }
+
+        // 再生位置をセット
+        //
+        function setAudioPosition(position) {
+            document.getElementById('audio_position').innerHTML = position;
+        }
+
+        &lt;/script&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;a href="#" class="btn large" onclick="playAudio('http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3');"&gt;再生&lt;/a&gt;
+        &lt;a href="#" class="btn large" onclick="stopAudio();"&gt;停止&lt;/a&gt;
+        &lt;p id="audio_position"&gt;&lt;/p&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="media.seekTo_blackberry_webworks">BlackBerry WebWorks に関する注意点</a>
+</h2>
+
+<ul>
+<li>この API は BlackBerry OS 5 デバイスではサポートされていません。</li>
+</ul>
+<hr>
+<h1><a name="media.startRecord">media.startRecord</a></h1>
+
+<p>オーディオファイルの録音を開始します。</p>
+
+<pre class="prettyprint"><code><a href="cordova_media_media.md.html#media.startRecord">media.startRecord</a>();
+</code></pre>
+
+<h2>
+<a name="media.startRecord_">概要</a>
+</h2>
+
+<p><code><a href="cordova_media_media.md.html#media.startRecord">media.startRecord</a></code> 関数はオーディオファイルの録音を開始する同期関数です。</p>
+
+<h2>
+<a name="media.startRecord_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7 (Mango)</li>
+</ul>
+<h2>
+<a name="media.startRecord_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// オーディオの録音
+//
+function recordAudio() {
+    var src = "myrecording.mp3";
+    var mediaRec = new <a href="cordova_media_media.md.html#Media">Media</a>(src,
+        // 呼び出し成功
+        function() {
+            console.log("recordAudio():Audio Success");
+        },
+
+        // 呼び出し失敗
+        function(err) {
+            console.log("recordAudio():Audio Error: "+ err.code);
+        });
+
+    // オーディオの録音
+    mediaRec.startRecord();
+}
+</code></pre>
+
+<h2>
+<a name="media.startRecord_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;デバイスプロパティーの使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // オーディオの録音
+    //
+    function recordAudio() {
+        var src = "myrecording.mp3";
+        var mediaRec = new <a href="cordova_media_media.md.html#Media">Media</a>(src, onSuccess, onError);
+
+        // オーディオの録音
+        mediaRec.startRecord();
+
+        // 10秒後に録音を停止
+        var recTime = 0;
+        var recInterval = setInterval(function() {
+            recTime = recTime + 1;
+            setAudioPosition(recTime + " sec");
+            if (recTime &gt;= 10) {
+                clearInterval(recInterval);
+                mediaRec.stopRecord();
+            }
+        }, 1000);
+    }
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        recordAudio();
+    }
+
+    // 成功時のコールバック関数
+    //
+    function onSuccess() {
+        console.log("recordAudio():Audio Success");
+    }
+
+    // エラー時のコールバック関数 
+    //
+    function onError(error) {
+        alert('コード: '        + error.code    + '\n' +
+              'メッセージ: '    + error.message + '\n');
+    }
+
+    // 再生位置をセット
+    //
+    function setAudioPosition(position) {
+        document.getElementById('audio_position').innerHTML = position;
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p id="media"&gt;オーディオを録音...&lt;/p&gt;
+    &lt;p id="audio_position"&gt;&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="media.startRecord_blackberry_webworks">BlackBerry WebWorks に関する注意点</a>
+</h2>
+
+<ul>
+<li>BlackBerry デバイスはオーディオを Adaptive Multi-Rate フォーマットで録音します。ファイル名は .amr 拡張子で指定される必要があります。</li>
+</ul>
+<h2>
+<a name="media.startRecord_ios">iOS に関する注意点</a>
+</h2>
+
+<ul>
+<li>録音するためのファイルは既に .wav 形式で存在していなければなりません。 <a href="cordova_file_file.md.html#File">File</a> API 群を使用することでファイルを作成することができます。</li>
+</ul>
+<hr>
+<h1><a name="media.stop">media.stop</a></h1>
+
+<p>オーディオファイルを停止します。</p>
+
+<pre class="prettyprint"><code><a href="cordova_media_media.md.html#media.stop">media.stop</a>();
+</code></pre>
+
+<h2>
+<a name="media.stop_">概要</a>
+</h2>
+
+<p><code><a href="cordova_media_media.md.html#media.stop">media.stop</a></code> 関数はオーディオファイルを停止させる同期関数です。</p>
+
+<h2>
+<a name="media.stop_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7 (Mango)</li>
+</ul>
+<h2>
+<a name="media.stop_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// オーディオ再生
+//
+function playAudio(url) {
+    // URL のオーディオファイルを再生
+    var my_media = new <a href="cordova_media_media.md.html#Media">Media</a>(url,
+        // 呼び出し成功
+        function() {
+            console.log("playAudio():Audio Success");
+        },
+        // 呼び出し失敗
+        function(err) {
+            console.log("playAudio():Audio Error: "+err);
+    });
+
+    // オーディオ再生
+    my_media.play();
+
+    // 10秒後に一時停止
+    setTimeout(function() {
+        my_media.stop();
+    }, 10000);
+}
+</code></pre>
+
+<h2>
+<a name="media.stop_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>    &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                          "http://www.w3.org/TR/html4/strict.dtd"&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;メディアの使用例&lt;/title&gt;
+
+        &lt;script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" charset="utf-8"&gt;
+
+        // Cordova の読み込み完了まで待機
+        //
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+        // Cordova 準備完了
+        //
+        function onDeviceReady() {
+            playAudio("http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3");
+        }
+
+        // オーディオプレイヤー
+        //
+        var my_media = null;
+        var mediaTimer = null;
+
+        // オーディオ再生
+        //
+        function playAudio(src) {
+            // src から <a href="cordova_media_media.md.html#Media">Media</a> オブジェクトを作成
+            my_media = new <a href="cordova_media_media.md.html#Media">Media</a>(src, onSuccess, onError);
+
+            // オーディオ再生
+            my_media.play();
+
+            // my_media の再生位置を一秒ごとに更新
+            if (mediaTimer == null) {
+                mediaTimer = setInterval(function() {
+                    // my_media の再生位置を取得
+                    my_media.getCurrentPosition(
+                        // 呼び出し成功
+                        function(position) {
+                            if (position &gt; -1) {
+                                setAudioPosition((position) + " sec");
+                            }
+                        },
+                        // 呼び出し失敗
+                        function(e) {
+                            console.log("Error getting pos=" + e);
+                            setAudioPosition("Error: " + e);
+                        }
+                    );
+                }, 1000);
+            }
+        }
+
+        // オーディオ一時停止
+        //
+        function pauseAudio() {
+            if (my_media) {
+                my_media.<a href="cordova_events_events.md.html#pause">pause</a>();
+            }
+        }
+
+        // オーディオ停止
+        //
+        function stopAudio() {
+            if (my_media) {
+                my_media.stop();
+            }
+            clearInterval(mediaTimer);
+            mediaTimer = null;
+        }
+
+        // 成功時のコールバック関数
+        //
+        function onSuccess() {
+            console.log("playAudio():Audio Success");
+        }
+
+        // エラー時のコールバック関数 
+        //
+        function onError(error) {
+            alert('コード: '        + error.code    + '\n' +
+                  'メッセージ: '    + error.message + '\n');
+        }
+
+        // 再生位置をセット
+        //
+        function setAudioPosition(position) {
+            document.getElementById('audio_position').innerHTML = position;
+        }
+
+        &lt;/script&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;a href="#" class="btn large" onclick="playAudio('http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3');"&gt;再生&lt;/a&gt;
+        &lt;a href="#" class="btn large" onclick="pauseAudio();"&gt;一時停止&lt;/a&gt;
+        &lt;a href="#" class="btn large" onclick="stopAudio();"&gt;停止&lt;/a&gt;
+        &lt;p id="audio_position"&gt;&lt;/p&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="media.stopRecord">media.stopRecord</a></h1>
+
+<p>オーディオファイルの録音を停止します。</p>
+
+<pre class="prettyprint"><code><a href="cordova_media_media.md.html#media.stopRecord">media.stopRecord</a>();
+</code></pre>
+
+<h2>
+<a name="media.stopRecord_">概要</a>
+</h2>
+
+<p><code><a href="cordova_media_media.md.html#media.stopRecord">media.stopRecord</a></code> 関数はオーディオファイルの録音を停止させる同期関数です。</p>
+
+<h2>
+<a name="media.stopRecord_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7 (Mango)</li>
+</ul>
+<h2>
+<a name="media.stopRecord_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// オーディオの録音
+//
+function recordAudio() {
+    var src = "myrecording.mp3";
+    var mediaRec = new <a href="cordova_media_media.md.html#Media">Media</a>(src,
+        // 呼び出し成功
+        function() {
+            console.log("recordAudio():Audio Success");
+        },
+
+        // 呼び出し失敗
+        function(err) {
+            console.log("recordAudio():Audio Error: "+ err.code);
+    });
+
+    // オーディオの録音
+    mediaRec.startRecord();
+
+    // 10秒後に録音を停止
+    setTimeout(function() {
+        mediaRec.stopRecord();
+    }, 10000);
+}
+</code></pre>
+
+<h2>
+<a name="media.stopRecord_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;デバイスプロパティーの使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // オーディオの録音
+    //
+    function recordAudio() {
+        var src = "myrecording.mp3";
+        var mediaRec = new <a href="cordova_media_media.md.html#Media">Media</a>(src, onSuccess, onError);
+
+        // オーディオの録音
+        mediaRec.startRecord();
+
+        // 10秒後に録音を停止
+        var recTime = 0;
+        var recInterval = setInterval(function() {
+            recTime = recTime + 1;
+            setAudioPosition(recTime + " sec");
+            if (recTime &gt;= 10) {
+                clearInterval(recInterval);
+                mediaRec.stopRecord();
+            }
+        }, 1000);
+    }
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        recordAudio();
+    }
+
+    // 成功時のコールバック関数
+    //
+    function onSuccess() {
+        console.log("recordAudio():Audio Success");
+    }
+
+    // エラー時のコールバック関数 
+    //
+    function onError(error) {
+        alert('コード: '        + error.code    + '\n' +
+              'メッセージ: '    + error.message + '\n');
+    }
+
+    // 再生位置をセット
+    //
+    function setAudioPosition(position) {
+        document.getElementById('audio_position').innerHTML = position;
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p id="media"&gt;オーディオを録音...&lt;/p&gt;
+    &lt;p id="audio_position"&gt;&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="MediaError">MediaError</a></h1>
+
+<p><code><a href="cordova_media_media.md.html#MediaError">MediaError</a></code> オブジェクトは、エラー発生時に <code><a href="cordova_media_media.md.html#mediaError">mediaError</a></code> コールバック関数に渡されます。</p>
+
+<h2>
+<a name="MediaError_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>code:</strong> 事前に定義された以下のエラーコードのうちの1つを表します</li>
+<li>
+<strong>message:</strong> エラーの内容を表すエラーメッセージを表します</li>
+</ul>
+<h2>
+<a name="MediaError_">定数</a>
+</h2>
+
+<ul>
+<li><code><a href="cordova_media_media.md.html#MediaError">MediaError</a>.MEDIA_ERR_ABORTED</code></li>
+<li><code><a href="cordova_media_media.md.html#MediaError">MediaError</a>.MEDIA_ERR_NETWORK</code></li>
+<li><code><a href="cordova_media_media.md.html#MediaError">MediaError</a>.MEDIA_ERR_DECODE</code></li>
+<li><code><a href="cordova_media_media.md.html#MediaError">MediaError</a>.MEDIA_ERR_NONE_SUPPORTED</code></li>
+</ul>
+<h2>
+<a name="MediaError_">概要</a>
+</h2>
+
+<p><code><a href="cordova_media_media.md.html#MediaError">MediaError</a></code> オブジェクトは、エラー発生時に <code><a href="cordova_media_media.md.html#mediaError">mediaError</a></code> コールバック関数に渡されます。</p>
+
+<hr>
+<h1><a name="mediaError">mediaError</a></h1>
+
+<p>メディア関数群にエラーが発生したときのユーザーによって定義されるコールバック関数です。</p>
+
+<pre class="prettyprint"><code>function(error) {
+    // エラー処理
+}
+</code></pre>
+
+<h2>
+<a name="mediaError_">パラメーター</a>
+</h2>
+
+<ul>
+<li>
+<strong>error:</strong> デバイスから返されるエラーを表します (<code><a href="cordova_media_media.md.html#MediaError">MediaError</a></code>)</li>
+</ul>
+</div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

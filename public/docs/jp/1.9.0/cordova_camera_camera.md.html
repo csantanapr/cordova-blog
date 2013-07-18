@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="English" value="en">
+<option value="edge">edge</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0rc1">2.7.0rc1</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0rc1">2.6.0rc1</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0rc1">2.5.0rc1</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0rc1">2.4.0rc1</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0rc2">2.3.0rc2</option>
+<option value="2.3.0rc1">2.3.0rc1</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0rc2">2.2.0rc2</option>
+<option value="2.2.0rc1">2.2.0rc1</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0rc2">2.1.0rc2</option>
+<option value="2.1.0rc1">2.1.0rc1</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0rc1">2.0.0rc1</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0rc1">1.9.0rc1</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0rc1">1.8.0rc1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0rc1">1.7.0rc1</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0rc1">1.6.0rc1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0rc1">1.5.0rc1</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="Japanese" value="jp">
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option selected value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="kr"><option value="2.0.0">2.0.0</option></optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Camera</h1>
+            <small><select><option value="Camera">Camera</option>
+<option value="Camera_">      - メソッド</option>
+<option value="Camera_">      - パーミッション</option>
+<option value="camera.getPicture">camera.getPicture</option>
+<option value="camera.getPicture_">      - 概要</option>
+<option value="camera.getPicture_">      - サポートされているプラットフォーム</option>
+<option value="camera.getPicture_ios">      - iOS に関する注意点</option>
+<option value="camera.getPicture_windows_phone_7">      - Windows Phone 7 に関する注意点</option>
+<option value="camera.getPicture_">      - 使用例</option>
+<option value="camera.getPicture_">      - 詳細な使用例</option>
+<option value="cameraSuccess">cameraSuccess</option>
+<option value="cameraSuccess_">      - パラメーター</option>
+<option value="cameraSuccess_">      - 使用例</option>
+<option value="cameraError">cameraError</option>
+<option value="cameraError_">      - パラメーター</option>
+<option value="cameraOptions">cameraOptions</option>
+<option value="cameraOptions_">      - オプション</option>
+<option value="cameraOptions_android">      - Android に関する注意点</option>
+<option value="cameraOptions_blackberry">      - BlackBerry に関する注意点</option>
+<option value="cameraOptions_webos">      - WebOS に関する注意点</option>
+<option value="cameraOptions_ios">      - iOS に関する注意点</option>
+<option value="cameraOptions_windows_phone_7">      - Windows Phone 7 に関する注意点</option>
+<option value="cameraOptions_bada_1_2">      - Bada 1.2 に関する注意点</option>
+<option value="CameraPopoverOptions">CameraPopoverOptions</option>
+<option value="CameraPopoverOptions_camerapopoveroptions">      - CameraPopoverOptions</option>
+<option value="CameraPopoverOptions_">      - 使用例</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>API リファレンス</h1>
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a></li>
+<li><a href="cordova_camera_camera.md.html#Camera">Camera</a></li>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_compass_compass.md.html#Compass">Compass</a></li>
+<li><a href="cordova_connection_connection.md.html#Connection">Connection</a></li>
+<li><a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a></li>
+<li><a href="cordova_device_device.md.html#Device">Device</a></li>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_file_file.md.html#File">File</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a></li>
+<li><a href="cordova_media_media.md.html#Media">Media</a></li>
+<li><a href="cordova_notification_notification.md.html#Notification">Notification</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+</ul>
+<h1>Guides</h1>
+<ul>
+<li><a href="guide_getting-started_index.md.html#%E5%85%A5%E9%96%80%E3%82%AC%E3%82%A4%E3%83%89">入門ガイド</a></li>
+<li><a href="guide_command-line_index.md.html#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E4%BD%BF%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89">コマンドライン使用ガイド</a></li>
+<li><a href="guide_upgrading_index.md.html#%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89">アップグレードガイド</a></li>
+<li><a href="guide_whitelist_index.md.html#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89">ドメインホワイトリストガイド</a></li>
+<li><a href="guide_cordova-webview_index.md.html#WebView%20%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF">WebView の埋め込み</a></li>
+<li><a href="_index.html">索引</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Camera">Camera</a></h1>
+
+<blockquote>
+  <p><code>camera</code> オブジェクトは、デバイスのカメラアプリへの制御を提供します。</p>
+</blockquote>
+
+<h2>
+<a name="Camera_">メソッド</a>
+</h2>
+
+<ul>
+<li><a href="cordova_camera_camera.md.html#camera.getPicture">camera.getPicture</a></li>
+<li><a href="cordova_camera_camera.cleanup.md.html#camera.cleanup">camera.cleanup</a></li>
+</ul>
+<h2>
+<a name="Camera_">パーミッション</a>
+</h2>
+
+<h3>Android</h3>
+
+<h4>app/res/xml/plugins.xml</h4>
+
+<pre class="prettyprint"><code>&lt;plugin name="<a href="cordova_camera_camera.md.html#Camera">Camera</a>" value="org.apache.cordova.CameraLauncher" /&gt;
+</code></pre>
+
+<h4>app/AndroidManifest</h4>
+
+<pre class="prettyprint"><code>&lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;
+</code></pre>
+
+<h3>Bada</h3>
+
+<h4>manifest.xml</h4>
+
+<pre class="prettyprint"><code>&lt;Privilege&gt;
+    &lt;Name&gt;CAMERA&lt;/Name&gt;
+&lt;/Privilege&gt;
+&lt;Privilege&gt;
+    &lt;Name&gt;RECORDING&lt;/Name&gt;
+&lt;/Privilege&gt;
+</code></pre>
+
+<h3>BlackBerry WebWorks</h3>
+
+<h4>www/plugins.xml</h4>
+
+<pre class="prettyprint"><code>&lt;plugin name="<a href="cordova_camera_camera.md.html#Camera">Camera</a>" value="org.apache.cordova.camera.<a href="cordova_camera_camera.md.html#Camera">Camera</a>" /&gt;
+</code></pre>
+
+<h4>www/config.xml</h4>
+
+<pre class="prettyprint"><code>&lt;feature id="blackberry.media.camera" /&gt;
+
+&lt;rim:permissions&gt;
+    &lt;rim:permit&gt;use_camera&lt;/rim:permit&gt;
+&lt;/rim:permissions&gt;
+</code></pre>
+
+<h3>iOS</h3>
+
+<h4>App/Supporting Files/Cordova.plist</h4>
+
+<pre class="prettyprint"><code>&lt;key&gt;Plugins&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;<a href="cordova_camera_camera.md.html#Camera">Camera</a>&lt;/key&gt;
+    &lt;string&gt;CDVCamera&lt;/string&gt;
+&lt;/dict&gt;
+</code></pre>
+
+<h3>webOS</h3>
+
+<pre class="prettyprint"><code>パーミッションの設定は必要ありません。
+</code></pre>
+
+<h3>Windows Phone</h3>
+
+<h4>Properties/WPAppManifest.xml</h4>
+
+<pre class="prettyprint"><code>&lt;Capabilities&gt;
+    &lt;Capability Name="ID_CAP_CAMERA" /&gt;
+    &lt;Capability Name="ID_CAP_ISV_CAMERA" /&gt;
+    &lt;Capability Name="ID_HW_FRONTCAMERA" /&gt;
+&lt;/Capabilities&gt;
+</code></pre>
+
+<p>参照: <a class="external" href="http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx">Application Manifest for Windows Phone</a></p>
+
+<hr>
+<h1><a name="camera.getPicture">camera.getPicture</a></h1>
+
+<p>デバイスのカメラで写真を撮る、またはデバイスのアルバム内にある写真を検索します。 Base64 形式でエンコードされたフォトイメージを表す文字列、またはイメージファイルの URI が返されます。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_camera_camera.md.html#camera.getPicture">camera.getPicture</a>( <a href="cordova_camera_camera.md.html#cameraSuccess">cameraSuccess</a>, <a href="cordova_camera_camera.md.html#cameraError">cameraError</a>, [ <a href="cordova_camera_camera.md.html#cameraOptions">cameraOptions</a> ] );
+</code></pre>
+
+<h2>
+<a name="camera.getPicture_">概要</a>
+</h2>
+
+<p><code><a href="cordova_camera_camera.md.html#camera.getPicture">camera.getPicture</a></code> 関数はユーザーが写真を撮れるように、デバイスが標準で備えるカメラアプリを起動します (もしデフォルト設定である <code><a href="cordova_camera_camera.md.html#Camera">Camera</a>.sourceType = <a href="cordova_camera_camera.md.html#Camera">Camera</a>.PictureSourceType.CAMERA</code> の場合) 。写真の撮影が完了するとカメラアプリは終了し、アプリケーションに戻ります。</p>
+
+<p>もし <code><a href="cordova_camera_camera.md.html#Camera">Camera</a>.sourceType = <a href="cordova_camera_camera.md.html#Camera">Camera</a>.PictureSourceType.PHOTOLIBRARY</code> もしくは <code><a href="cordova_camera_camera.md.html#Camera">Camera</a>.PictureSourceType.SAVEDPHOTOALBUM</code> が指定された場合、写真選択ダイアログが表示され、アルバムから写真を選択できるようになります。</p>
+
+<p>返り値は <code><a href="cordova_camera_camera.md.html#cameraSuccess">cameraSuccess</a></code> 関数に送信されます。値は <code><a href="cordova_camera_camera.md.html#cameraOptions">cameraOptions</a></code> の設定に従い、以下のいずれかのフォーマットで送られます:</p>
+
+<ul>
+<li>Base64 形式でエンコードされたフォトイメージを表す文字列 (デフォルト)</li>
+<li>ローカルストレージ内に記録されたファイルの場所を表す文字列</li>
+</ul>
+<p>エンコードされたイメージや URI をもとに、以下のような処理の記述が可能です:</p>
+
+<ul>
+<li>
+<code>&lt;img&gt;</code> タグで画像を表示 <em>(下記の使用例を参考にしてください)</em>
+</li>
+<li>データをローカルに保存 (<code>LocalStorage</code> や <a class="external" href="http://brianleroux.github.com/lawnchair/">Lawnchair</a> など)</li>
+<li>データをリモートサーバーに送信</li>
+</ul>
+<p>注意: iPhone 4 や Black Berry Touch 9800 などの最新デバイスで撮影したイメージの画質は良好で、フォトアルバムから取得する画像はたとえ quality パラメーターで画質を指定したとしても、縮小されません。 <em>そのような画像を Base64 でエンコードすると、メモリーの問題が発生します。</em> よって、 FILE_URI を '<a href="cordova_camera_camera.md.html#Camera">Camera</a>.destinationType' として使用することが推奨されます。</p>
+
+<h2>
+<a name="camera.getPicture_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上) </li>
+<li>iOS</li>
+<li>Windows Phone 7 (Mango)</li>
+<li>Bada 1.2</li>
+</ul>
+<h2>
+<a name="camera.getPicture_ios">iOS に関する注意点</a>
+</h2>
+
+<p>JavaScript の alert() をコールバック関数に含めると、問題が生じる可能性があります。 alert を setTimeout() でラップすることで、 alert が表示される前に iOS の image picker または popover が完全に閉じるようにします: setTimeout("alert('message');", 0);</p>
+
+<h2>
+<a name="camera.getPicture_windows_phone_7">Windows Phone 7 に関する注意点</a>
+</h2>
+
+<p>Zune とデバイスが接続している間は、ネイティブカメラアプリケーションは起動せずに、エラーコールバックが呼び出されます。</p>
+
+<h2>
+<a name="camera.getPicture_">使用例</a>
+</h2>
+
+<p>写真を撮影し、 Base64 形式のイメージとして取得します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_camera_camera.md.html#camera.getPicture">camera.getPicture</a>(onSuccess, onFail, { quality: 50,
+    destinationType: <a href="cordova_camera_camera.md.html#Camera">Camera</a>.DestinationType.DATA_URL
+ });
+
+function onSuccess(imageData) {
+    var image = document.getElementById('myImage');
+    image.src = "data:image/jpeg;base64," + imageData;
+}
+
+function onFail(message) {
+    alert('エラーが発生しました: ' + message);
+}
+</code></pre>
+
+<p>撮影した写真の URI を取得します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_camera_camera.md.html#camera.getPicture">camera.getPicture</a>(onSuccess, onFail, { quality: 50,
+    destinationType: <a href="cordova_camera_camera.md.html#Camera">Camera</a>.DestinationType.FILE_URI });
+
+function onSuccess(imageURI) {
+    var image = document.getElementById('myImage');
+    image.src = imageURI;
+}
+
+function onFail(message) {
+    alert('エラーが発生しました: ' + message);
+}
+</code></pre>
+
+<h2>
+<a name="camera.getPicture_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;写真を撮ってみよう&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    var pictureSource;   // 写真ソース
+    var destinationType; // 戻り値のフォーマット
+
+    // Cordova がデバイスと接続するまで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>",onDeviceReady,false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        pictureSource=navigator.camera.PictureSourceType;
+        destinationType=navigator.camera.DestinationType;
+    }
+
+    // 写真の撮影に成功した場合 (URI 形式)
+    //
+    function onPhotoDataSuccess(imageData) {
+      // 下記のコメントを外すことで Base64 形式のデータをログに出力
+      // console.log(imageData);
+
+      // 画像ハンドルを取得
+      //
+      var smallImage = document.getElementById('smallImage');
+
+      // 画像要素を表示
+      //
+      smallImage.style.display = 'block';
+
+      // 取得した写真を表示
+      // 画像のリサイズにインライン CSS を使用
+      //
+      smallImage.src = "data:image/jpeg;base64," + imageData;
+    }
+
+    // 写真の撮影に成功した場合 (URI  形式)
+    //
+    function onPhotoURISuccess(imageURI) {
+      // 下記のコメントを外すことでファイル URI をログに出力
+      // console.log(imageURI);
+
+      // 画像ハンドルを取得
+      //
+      var largeImage = document.getElementById('largeImage');
+
+      // 画像要素を表示
+      //
+      largeImage.style.display = 'block';
+
+      // 取得した写真を表示
+      // 画像のリサイズにインライン CSS を使
+      //
+      largeImage.src = imageURI;
+    }
+
+    // ボタンがクリックされた場合の処理
+    //
+    function capturePhoto() {
+      // 編集が許可された写真を撮影し、 Base64 形式のイメージとして取得する場合
+      navigator.<a href="cordova_camera_camera.md.html#camera.getPicture">camera.getPicture</a>(onPhotoDataSuccess, onFail, { quality: 50,
+        destinationType: destinationType.DATA_URL });
+    }
+
+    // ボタンがクリックされた場合の処理
+    //
+    function capturePhotoEdit() {
+      // 編集が許可された写真を撮影し、 Base64 形式のイメージとして取得する場合
+      navigator.<a href="cordova_camera_camera.md.html#camera.getPicture">camera.getPicture</a>(onPhotoDataSuccess, onFail, { quality: 20, allowEdit: true,
+        destinationType: destinationType.DATA_URL });
+    }
+
+    // ボタンがクリックされた場合の処理
+    //
+    function getPhoto(source) {
+      // 写真をファイル URI として取得する場合
+      navigator.<a href="cordova_camera_camera.md.html#camera.getPicture">camera.getPicture</a>(onPhotoURISuccess, onFail, { quality: 50,
+        destinationType: destinationType.FILE_URI,
+        sourceType: source });
+    }
+
+    // エラー発生時の処理
+    //
+    function onFail(message) {
+      alert('エラーが発生しました: ' + message);
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button onclick="capturePhoto();"&gt;写真を撮影&lt;/button&gt; &lt;br&gt;
+    &lt;button onclick="capturePhotoEdit();"&gt;写真を撮影して編集&lt;/button&gt; &lt;br&gt;
+    &lt;button onclick="getPhoto(pictureSource.PHOTOLIBRARY);"&gt;フォトライブラリから取得&lt;/button&gt;&lt;br&gt;
+    &lt;button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);"&gt;フォトアルバムから取得&lt;/button&gt;&lt;br&gt;
+    &lt;img style="display:none;width:60px;height:60px;" id="smallImage" src="" /&gt;
+    &lt;img style="display:none;" id="largeImage" src="" /&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="cameraSuccess">cameraSuccess</a></h1>
+
+<p>撮影が成功したときに呼び出されるコールバック関数です。</p>
+
+<pre class="prettyprint"><code>function(imageData) {
+    // 任意のコード
+}
+</code></pre>
+
+<h2>
+<a name="cameraSuccess_">パラメーター</a>
+</h2>
+
+<ul>
+<li>
+<strong>imageData:</strong> Base64 エンコーディングされた画像データ、またはイメージファイルの URI (<code><a href="cordova_camera_camera.md.html#cameraOptions">cameraOptions</a></code>による) (<code>String</code>)</li>
+</ul>
+<h2>
+<a name="cameraSuccess_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// 画像を表示
+//
+function cameraCallback(imageData) {
+    var image = document.getElementById('myImage');
+    image.src = "data:image/jpeg;base64," + imageData;
+}
+</code></pre>
+
+<hr>
+<h1><a name="cameraError">cameraError</a></h1>
+
+<p>エラーが発生した場合に呼び出されるコールバック関数です。</p>
+
+<pre class="prettyprint"><code>function(message) {
+    // エラーメッセージを表示
+}
+</code></pre>
+
+<h2>
+<a name="cameraError_">パラメーター</a>
+</h2>
+
+<ul>
+<li>
+<strong>message:</strong> デバイスのネイティブコードによって与えられたメッセージ (<code>String</code>)</li>
+</ul>
+<hr>
+<h1><a name="cameraOptions">cameraOptions</a></h1>
+
+<p>カメラの設定をカスタマイズするのためのオプションパラメーターです。</p>
+
+<pre class="prettyprint"><code>{ quality : 75,
+  destinationType : <a href="cordova_camera_camera.md.html#Camera">Camera</a>.DestinationType.DATA_URL,
+  sourceType : <a href="cordova_camera_camera.md.html#Camera">Camera</a>.PictureSourceType.CAMERA,
+  allowEdit : true,
+  encodingType: <a href="cordova_camera_camera.md.html#Camera">Camera</a>.EncodingType.JPEG,
+  targetWidth: 100,
+  targetHeight: 100,
+  popoverOptions: <a href="cordova_camera_camera.md.html#CameraPopoverOptions">CameraPopoverOptions</a>,
+  saveToPhotoAlbum: false };
+</code></pre>
+
+<h2>
+<a name="cameraOptions_">オプション</a>
+</h2>
+
+<ul>
+<li><p><strong>quality:</strong> イメージの画質を指定します。 範囲: 0から100 (<code>Number</code>)</p></li>
+<li>
+<p><strong>destinationType:</strong> 返り値のフォーマットを指定します。フォーマットは navigator.camera.DestinationType で定義されています。 (<code>Number</code>)</p>
+
+<pre class="prettyprint"><code><a href="cordova_camera_camera.md.html#Camera">Camera</a>.DestinationType = {
+    DATA_URL : 0,           // 画像を Base64 形式で取得
+    FILE_URI : 1            // 画像をファイル URI として取得
+};
+</code></pre>
+</li>
+<li>
+<p><strong>sourceType:</strong> 取得ソースを指定します。ソースは nagivator.camera.PictureSourceType で定義されています。 (<code>Number</code>)</p>
+
+<pre class="prettyprint"><code><a href="cordova_camera_camera.md.html#Camera">Camera</a>.PictureSourceType = {
+    PHOTOLIBRARY : 0,
+    CAMERA : 1,
+    SAVEDPHOTOALBUM : 2
+};
+</code></pre>
+</li>
+<li><p><strong>allowEdit:</strong> イメージ選択の前に、簡単な編集を許可します。 (<code>Boolean</code>)</p></li>
+<li>
+<p><strong>encodingType:</strong> 画像ファイルのエンコード形式を選択します。形式は navigator.camera.EncodingType で定義されています。 (<code>Number</code>)</p>
+
+<pre class="prettyprint"><code><a href="cordova_camera_camera.md.html#Camera">Camera</a>.EncodingType = {
+    JPEG : 0,               // 画像を JPEG 形式で取得
+    PNG : 1                 // 画像を PNG 形式で取得
+};
+</code></pre>
+</li>
+<li><p><strong>targetWidth:</strong> 画像をスケールするための幅をピクセルで指定します。 targetHeight と同時に使用してください。アスペクト比は保持されます。 (<code>Number</code>)</p></li>
+<li><p><strong>targetHeight:</strong> 画像をスケールするための高さをピクセルで指定します。 targetWidth と同時に使用してください。アスペクト比は保持されます。 (<code>Number</code>)</p></li>
+<li>
+<p><strong>mediaType:</strong> 画像の取得元を指定します。 PictureSourceType に PHOTOLIBRARY もしくは SAVEPHOTOALBUM が指定されている場合にのみ有効です。取得元は nagivator.camera.MediaType で定義されています。 (<code>Number</code>)</p>
+
+<pre class="prettyprint"><code><a href="cordova_camera_camera.md.html#Camera">Camera</a>.MediaType = {
+    PICTURE: 0,             // 取得元は静止画像のみとします。デフォルトです。返り値のフォーマットは DestinationType によって指定されたものになります。
+    VIDEO: 1,               // 取得元はビデオのみとします。戻り値のフォーマットは常にファイル URI となります。
+    ALLMEDIA : 2            // 全てのメディアタイプからの取得を許可します。
+};
+</code></pre>
+</li>
+<li><p><strong>correctOrientation:</strong> 写真が撮影されたときと同じ向きになるよう写真を回転させます。 (<code>Boolean</code>)</p></li>
+<li>
+<strong>saveToPhotoAlbum:</strong> 写真が撮影された後、デバイスのフォトアルバムに画像を保存します。 (<code>Boolean</code>)</li>
+<li>
+<strong>popoverOptions:</strong> iPad でのポップオーバーの位置を指定します。iOS のみのオプションです。 <a href="cordova_camera_camera.md.html#CameraPopoverOptions">CameraPopoverOptions</a> で定義されます。</li>
+</ul>
+<h2>
+<a name="cameraOptions_android">Android に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<code>allowEdit</code> は無視されます。</li>
+<li>
+<a href="cordova_camera_camera.md.html#Camera">Camera</a>.PictureSourceType.PHOTOLIBRARY と <a href="cordova_camera_camera.md.html#Camera">Camera</a>.PictureSourceType.SAVEDPHOTOALBUM は同じフォトアルバムを表示します。</li>
+</ul>
+<h2>
+<a name="cameraOptions_blackberry">BlackBerry に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<code>quality</code> パラメーターは無視されます。</li>
+<li>
+<code>sourceType</code> パラメーターは無視されます。</li>
+<li>
+<code>allowEdit</code> は無視されます。</li>
+<li>撮影後にカメラアプリを閉じるためには、アプリケーションにキー入力許可の権限が付与されている必要があります。</li>
+<li>大きなサイズで撮影を行った場合、高画質カメラを搭載したデバイスでエンコードすることができない場合があります。 (Torch 9800 など)</li>
+<li>
+<a href="cordova_camera_camera.md.html#Camera">Camera</a>.MediaType はサポートされていません。</li>
+<li>
+<code>correctOrientation</code> パラメーターは無視されます。</li>
+<li>
+<code>saveToPhotoAlbum</code> パラメーターは無視されます。</li>
+</ul>
+<h2>
+<a name="cameraOptions_webos">WebOS に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<code>quality</code> パラメーターは無視されます。</li>
+<li>
+<code>sourceType</code> パラメーターは無視されます。</li>
+<li>
+<code>allowEdit</code> は無視されます。</li>
+<li>
+<a href="cordova_camera_camera.md.html#Camera">Camera</a>.MediaType はサポートされていません。</li>
+<li>
+<code>correctOrientation</code> パラメーターは無視されます。</li>
+<li>
+<code>saveToPhotoAlbum</code> パラメーターは無視されます。</li>
+</ul>
+<h2>
+<a name="cameraOptions_ios">iOS に関する注意点</a>
+</h2>
+
+<ul>
+<li>メモリエラーを防ぐには、 <code>quality</code> パラメーターを50以下に設定してください。</li>
+<li>
+<code>destinationType.FILE_URI</code> が使用された場合、撮影された写真や編集された写真はアプリケーションの temporary ディレクトリに保存されます。もしストレージの空きが少ない場合、このディレクトリは navigator.fileMgr API を使って消去できます。</li>
+</ul>
+<h2>
+<a name="cameraOptions_windows_phone_7">Windows Phone 7 に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<code>allowEdit</code> は無視されます。</li>
+<li>
+<code>correctOrientation</code> パラメーターは無視されます。</li>
+<li>
+<code>saveToPhotoAlbum</code> パラメーターは無視されます。</li>
+</ul>
+<h2>
+<a name="cameraOptions_bada_1_2">Bada 1.2 に関する注意点</a>
+</h2>
+
+<ul>
+<li>オプションはサポートされていません。</li>
+<li>常に FILE URI を返します。</li>
+</ul>
+<hr>
+<h1><a name="CameraPopoverOptions">CameraPopoverOptions</a></h1>
+
+<p>画像をライブラリーもしくはアルバムから選択する際の、 iPad でのポップオーバーの位置や矢印の向きを指定するためのパラメーターです。 iOS のみのオプションです。</p>
+
+<pre class="prettyprint"><code>{ x : 0,
+  y :  32,
+  width : 320,
+  height : 480,
+  arrowDir : <a href="cordova_camera_camera.md.html#Camera">Camera</a>.PopoverArrowDirection.ARROW_ANY
+};
+</code></pre>
+
+<h2>
+<a name="CameraPopoverOptions_camerapopoveroptions">CameraPopoverOptions</a>
+</h2>
+
+<ul>
+<li><p><strong>x:</strong> ポップオーバーの x 座標をピクセルで表します。 (<code>Number</code>)</p></li>
+<li><p><strong>y:</strong> ポップオーバーの y 座標をピクセルで表します。 (<code>Number</code>)</p></li>
+<li><p><strong>width:</strong> ポップオーバーの幅をピクセルで表します。 (<code>Number</code>)</p></li>
+<li><p><strong>height:</strong> ポップオーバーの高さをピクセルで表します。 (<code>Number</code>)</p></li>
+<li>
+<p><strong>arrowDir:</strong> ポップオーバーの矢印の向きを表します。 <a href="cordova_camera_camera.md.html#Camera">Camera</a>.PopoverArrowDirection で定義されます。 (<code>Number</code>)</p>
+
+<pre class="prettyprint"><code>    <a href="cordova_camera_camera.md.html#Camera">Camera</a>.PopoverArrowDirection = {
+        ARROW_UP : 1,        // iOS の UIPopoverArrowDirection 定数に同じ
+        ARROW_DOWN : 2,
+        ARROW_LEFT : 4,
+        ARROW_RIGHT : 8,
+        ARROW_ANY : 15
+    };
+</code></pre>
+</li>
+</ul>
+<p>ポップオーバーのサイズは矢印の方向や画面の向きによって調節され、変わる可能性があることについて注意してください。アンカー要素の位置を特定するとき、画面の向きの変化を考慮に入れることを忘れないで下さい。</p>
+
+<h2>
+<a name="CameraPopoverOptions_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>var popover = new <a href="cordova_camera_camera.md.html#CameraPopoverOptions">CameraPopoverOptions</a>(300,300,100,100,<a href="cordova_camera_camera.md.html#Camera">Camera</a>.PopoverArrowDirection.ARROW_ANY);
+var options = { quality: 50, destinationType: <a href="cordova_camera_camera.md.html#Camera">Camera</a>.DestinationType.DATA_URL,sourceType: <a href="cordova_camera_camera.md.html#Camera">Camera</a>.PictureSource.SAVEDPHOTOALBUM, popoverOptions : popover };
+
+navigator.<a href="cordova_camera_camera.md.html#camera.getPicture">camera.getPicture</a>(onSuccess, onFail, options);
+
+function onSuccess(imageData) {
+    var image = document.getElementById('myImage');
+    image.src = "data:image/jpeg;base64," + imageData;
+}
+
+function onFail(message) {
+    alert('Failed because: ' + message);
+}
+</code></pre>
+
+            </div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

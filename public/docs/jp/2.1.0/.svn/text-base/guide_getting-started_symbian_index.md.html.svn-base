@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="English" value="en">
+<option value="edge">edge</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0rc1">2.7.0rc1</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0rc1">2.6.0rc1</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0rc1">2.5.0rc1</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0rc1">2.4.0rc1</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0rc2">2.3.0rc2</option>
+<option value="2.3.0rc1">2.3.0rc1</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0rc2">2.2.0rc2</option>
+<option value="2.2.0rc1">2.2.0rc1</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0rc2">2.1.0rc2</option>
+<option value="2.1.0rc1">2.1.0rc1</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0rc1">2.0.0rc1</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0rc1">1.9.0rc1</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0rc1">1.8.0rc1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0rc1">1.7.0rc1</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0rc1">1.6.0rc1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0rc1">1.5.0rc1</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="Japanese" value="jp">
+<option value="2.2.0">2.2.0</option>
+<option selected value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="kr"><option value="2.0.0">2.0.0</option></optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Getting Started with Symbian</h1>
+            <small><select><option value="Getting%2520Started%2520with%2520Symbian">Getting Started with Symbian</option>
+<option value="Getting%20Started%20with%20Symbian_">      - ビデオチュートリアル:</option>
+<option value="Getting%20Started%20with%20Symbian_1">      - 1. 必要なもの</option>
+<option value="Getting%20Started%20with%20Symbian_2_sdk_cordova">      - 2. SDK と Cordova のインストール</option>
+<option value="Getting%20Started%20with%20Symbian_3">      - 3. 新規プロジェクトの作成</option>
+<option value="Getting%20Started%20with%20Symbian_4_hello_world">      - 4. Hello World の作成</option>
+<option value="Getting%20Started%20with%20Symbian_5a">      - 5A. シミュレーターへのデプロイ</option>
+<option value="Getting%20Started%20with%20Symbian_5b">      - 5B. デバイスへのデプロイ</option>
+<option value="Getting%20Started%20with%20Symbian_">      - 終了</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>API リファレンス</h1>
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a></li>
+<li><a href="cordova_camera_camera.md.html#Camera">Camera</a></li>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_compass_compass.md.html#Compass">Compass</a></li>
+<li><a href="cordova_connection_connection.md.html#Connection">Connection</a></li>
+<li><a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a></li>
+<li><a href="cordova_device_device.md.html#Device">Device</a></li>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_file_file.md.html#File">File</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a></li>
+<li><a href="cordova_media_media.md.html#Media">Media</a></li>
+<li><a href="cordova_notification_notification.md.html#Notification">Notification</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+</ul>
+<h1>Guides</h1>
+<ul>
+<li><a href="guide_getting-started_index.md.html#%E5%85%A5%E9%96%80%E3%82%AC%E3%82%A4%E3%83%89">入門ガイド</a></li>
+<li><a href="guide_command-line_index.md.html#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E4%BD%BF%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89">コマンドライン使用ガイド</a></li>
+<li><a href="guide_upgrading_index.md.html#%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89">アップグレードガイド</a></li>
+<li><a href="guide_plugin-development_index.md.html#%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E9%96%8B%E7%99%BA%E3%82%AC%E3%82%A4%E3%83%89">プラグイン開発ガイド</a></li>
+<li><a href="guide_whitelist_index.md.html#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89">ドメインホワイトリストガイド</a></li>
+<li><a href="guide_cordova-webview_index.md.html#WebView%20%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF">WebView の埋め込み</a></li>
+<li><a href="_index.html">索引</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Getting%20Started%20with%20Symbian">Getting Started with Symbian</a></h1>
+
+<p>このガイドは、 Cordova のための開発環境セットアップ方法、またシンプルなアプリの動かし方を解説します。 Cordova は以前は PhoneGap と呼ばれていたため、いくつかのサイトは PhoneGap という名前をまだ使用しています。</p>
+
+<h2>
+<a name="Getting%20Started%20with%20Symbian_">ビデオチュートリアル:</a>
+</h2>
+
+<ul>
+<li><a class="external" href="http://www.youtube.com/v/R9zktJUN7AI?autoplay=1">Cordova Installer - Xcode 4 Template</a></li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Symbian_1">1. 必要なもの</a>
+</h2>
+
+<ul>
+<li>Windows, OS X, または Linux</li>
+</ul>
+<p>他に <a class="external" href="http://wiki.phonegap.com/w/page/16494811/PhoneGap-Symbian-%28Qt%29">QT for Symbian</a> や <a class="external" href="http://wiki.phonegap.com/w/page/16494782/Getting-Started-with-PhoneGap-Symbian-(WRT-on-Sony-Ericsson">Symbian with Sony Ericsson</a>) といったガイドもあります。</p>
+
+<h2>
+<a name="Getting%20Started%20with%20Symbian_2_sdk_cordova">2. SDK と Cordova のインストール</a>
+</h2>
+
+<ul>
+<li>
+<a class="external" href="http://www.cygwin.com/setup.exe">cygwin</a> をダウンロードし、インストールします (Windows のみ) 。デフォルトでは選択されていませんが、 "make" を選択してください</li>
+<li>
+<a class="external" href="http://phonegap.com/download">Cordova</a> の最新版をダウンロードし解凍します。これから Android ディレクトリと一緒に作業を進めます</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Symbian_3">3. 新規プロジェクトの作成</a>
+</h2>
+
+<ul>
+<li>cygwin で、 Cordova を解凍したディレクトリまで移動し、 Symbian ディレクトリに移動します</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Symbian_4_hello_world">4. Hello World の作成</a>
+</h2>
+
+<ul>
+<li>phonegap/symbian/framework/www にある index.html を好きなエディタで開きます</li>
+<li>
+<code>body</code> タグの中にある <code>"Build your phonegap app here! Dude!"</code> を削除し、 <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code> を追加します</li>
+<li>cygwin または terminal で、 make を実行します。これにより、 phonegap-symbian.wrt と app.wgz が作られます</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Symbian_5a">5A. シミュレーターへのデプロイ</a>
+</h2>
+
+<ul>
+<li>Mac もしくは Linux には、 <a class="external" href="http://www.aptana.org/products/studio2/download">Aptana Studio</a> と <a class="external" href="http://www.forum.nokia.com/info/sw.nokia.com/id/00d62bd8-4214-4c86-b608-5f11b94dad54/Nokia_WRT_Plug_in_for_Aptana_Studio.html">Nokia WRT Plug-in for Aptana Studio</a> をインストールする必要があります。これは、ブラウザベースの JavaScript エミュレーターを持っています</li>
+<li>Windows は、S60 エミュレーターを持つ <a class="external" href="http://www.forum.nokia.com/info/sw.nokia.com/id/ec866fab-4b76-49f6-b5a5-af0631419e9c/S60_All_in_One_SDKs.html">S60 SDK</a> をダウンロードします</li>
+<li>エミュレーターに phonegap-symbian.wrt と app.wgz をロードします</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Symbian_5b">5B. デバイスへのデプロイ</a>
+</h2>
+
+<ul>
+<li>phonegap-symbian.wrt と app.wgz を bluetooth または email を使ってデバイスにロードします</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Symbian_">終了</a>
+</h2>
+
+<p>さらに詳しいガイドは <a class="external" href="http://wiki.phonegap.com/w/page/16494780/Getting-Started-with-Phonegap-Nokia-WRT">ここ</a> で確認できます。</p>
+
+            </div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

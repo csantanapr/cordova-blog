@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="English" value="en">
+<option value="edge">edge</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0rc1">2.7.0rc1</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0rc1">2.6.0rc1</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0rc1">2.5.0rc1</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0rc1">2.4.0rc1</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0rc2">2.3.0rc2</option>
+<option value="2.3.0rc1">2.3.0rc1</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0rc2">2.2.0rc2</option>
+<option value="2.2.0rc1">2.2.0rc1</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0rc2">2.1.0rc2</option>
+<option value="2.1.0rc1">2.1.0rc1</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0rc1">2.0.0rc1</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0rc1">1.9.0rc1</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0rc1">1.8.0rc1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0rc1">1.7.0rc1</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0rc1">1.6.0rc1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0rc1">1.5.0rc1</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="Japanese" value="jp">
+<option selected value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="kr"><option value="2.0.0">2.0.0</option></optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Storage</h1>
+            <small><select><option value="Storage">Storage</option>
+<option value="Storage_">      - メソッド</option>
+<option value="Storage_">      - 引数</option>
+<option value="Storage_">      - オブジェクト</option>
+<option value="Storage_">      - パーミッション</option>
+<option value="openDatabase">openDatabase</option>
+<option value="openDatabase_">      - 概要</option>
+<option value="openDatabase_">      - サポートされているプラットフォーム</option>
+<option value="openDatabase_">      - 使用例</option>
+<option value="openDatabase_">      - 詳細な使用例</option>
+<option value="database_name">database_name</option>
+<option value="database_version">database_version</option>
+<option value="database_displayname">database_displayname</option>
+<option value="database_size">database_size</option>
+<option value="Database">Database</option>
+<option value="Database_">      - メソッド</option>
+<option value="Database_">      - 詳細</option>
+<option value="Database_">      - サポートされているプラットフォーム</option>
+<option value="Database_transaction">      - Transaction の例</option>
+<option value="Database_change_version">      - Change Version の例</option>
+<option value="Database_">      - 詳細な使用例</option>
+<option value="SQLTransaction">SQLTransaction</option>
+<option value="SQLTransaction_">      - メソッド</option>
+<option value="SQLTransaction_">      - 詳細</option>
+<option value="SQLTransaction_">      - サポートされているプラットフォーム</option>
+<option value="SQLTransaction_execute_sql">      - Execute SQL の例</option>
+<option value="SQLTransaction_">      - 詳細な使用例</option>
+<option value="SQLResultSet">SQLResultSet</option>
+<option value="SQLResultSet_">      - プロパティー</option>
+<option value="SQLResultSet_">      - 詳細</option>
+<option value="SQLResultSet_">      - サポートされているプラットフォーム</option>
+<option value="SQLResultSet_execute_sql">      - Execute SQL の例</option>
+<option value="SQLResultSet_">      - 詳細な使用例</option>
+<option value="SQLResultSetList">SQLResultSetList</option>
+<option value="SQLResultSetList_">      - プロパティー</option>
+<option value="SQLResultSetList_">      - メソッド</option>
+<option value="SQLResultSetList_">      - 詳細</option>
+<option value="SQLResultSetList_">      - サポートされているプラットフォーム</option>
+<option value="SQLResultSetList_execute_sql">      - Execute SQL の例</option>
+<option value="SQLResultSetList_">      - 詳細な使用例</option>
+<option value="SQLError">SQLError</option>
+<option value="SQLError_">      - プロパティー</option>
+<option value="SQLError_">      - 定数</option>
+<option value="SQLError_">      - 概要</option>
+<option value="localStorage">localStorage</option>
+<option value="localStorage_">      - メソッド</option>
+<option value="localStorage_">      - 詳細</option>
+<option value="localStorage_">      - サポートされているプラットフォーム</option>
+<option value="localStorage_key">      - Key の例</option>
+<option value="localStorage_set_item">      - Set Item の例</option>
+<option value="localStorage_get_item">      - Get Item の例</option>
+<option value="localStorage_remove_item">      - Remove Item の例</option>
+<option value="localStorage_clear">      - Clear の例</option>
+<option value="localStorage_">      - 詳細な使用例</option>
+<option value="localStorage_windows_phone_7">      - Windows Phone 7 に関する注意点</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>API リファレンス</h1>
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a></li>
+<li><a href="cordova_camera_camera.md.html#Camera">Camera</a></li>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_compass_compass.md.html#Compass">Compass</a></li>
+<li><a href="cordova_connection_connection.md.html#Connection">Connection</a></li>
+<li><a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a></li>
+<li><a href="cordova_device_device.md.html#Device">Device</a></li>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_file_file.md.html#File">File</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a></li>
+<li><a href="cordova_globalization_globalization.md.html#Globalization">Globalization</a></li>
+<li><a href="cordova_media_media.md.html#Media">Media</a></li>
+<li><a href="cordova_notification_notification.md.html#Notification">Notification</a></li>
+<li><a href="cordova_splashscreen_splashscreen.md.html#Splashscreen">Splashscreen</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+</ul>
+<h1>Guides</h1>
+<ul>
+<li><a href="guide_getting-started_index.md.html#%E5%85%A5%E9%96%80%E3%82%AC%E3%82%A4%E3%83%89">入門ガイド</a></li>
+<li><a href="guide_command-line_index.md.html#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E4%BD%BF%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89">コマンドライン使用ガイド</a></li>
+<li><a href="guide_upgrading_index.md.html#%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89">アップグレードガイド</a></li>
+<li><a href="guide_project-settings_index.md.html#%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E8%A8%AD%E5%AE%9A">プロジェクトの設定</a></li>
+<li><a href="guide_plugin-development_index.md.html#%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E9%96%8B%E7%99%BA%E3%82%AC%E3%82%A4%E3%83%89">プラグイン開発ガイド</a></li>
+<li><a href="guide_whitelist_index.md.html#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89">ドメインホワイトリストガイド</a></li>
+<li><a href="guide_cordova-webview_index.md.html#WebView%20%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF">WebView の埋め込み</a></li>
+<li><a href="_index.html">索引</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Storage">Storage</a></h1>
+
+<blockquote>
+  <p>デバイスのストレージにアクセスする機能を提供します。</p>
+</blockquote>
+
+<p>この API は <a class="external" href="http://dev.w3.org/html5/webdatabase/">W3C Web SQL </a><a href="cordova_storage_storage.md.html#Database">Database</a> 仕様書 と <a class="external" href="http://dev.w3.org/html5/webstorage/">W3C Web </a><a href="cordova_storage_storage.md.html#Storage">Storage</a> API 仕様書 をベースとしています。いくつかのデバイスではすでにこの機能の実装を提供しています。これらについては、 Cordova の実装ではなくビルトインのサポートが実行されます。ストレージのサポートがされてないデバイスについては、 Cordova の実装によって W3C の仕様に沿った機能が提供されます。</p>
+
+<h2>
+<a name="Storage_">メソッド</a>
+</h2>
+
+<ul>
+<li><a href="cordova_storage_storage.md.html#openDatabase">openDatabase</a></li>
+</ul>
+<h2>
+<a name="Storage_">引数</a>
+</h2>
+
+<ul>
+<li><a href="cordova_storage_storage.md.html#database_name">database_name</a></li>
+<li><a href="cordova_storage_storage.md.html#database_version">database_version</a></li>
+<li><a href="cordova_storage_storage.md.html#database_displayname">database_displayname</a></li>
+<li><a href="cordova_storage_storage.md.html#database_size">database_size</a></li>
+</ul>
+<h2>
+<a name="Storage_">オブジェクト</a>
+</h2>
+
+<ul>
+<li><a href="cordova_storage_storage.md.html#Database">Database</a></li>
+<li><a href="cordova_storage_storage.md.html#SQLTransaction">SQLTransaction</a></li>
+<li><a href="cordova_storage_storage.md.html#SQLResultSet">SQLResultSet</a></li>
+<li><a href="cordova_storage_storage.md.html#SQLResultSetList">SQLResultSetList</a></li>
+<li><a href="cordova_storage_storage.md.html#SQLError">SQLError</a></li>
+<li><a href="cordova_storage_storage.md.html#localStorage">localStorage</a></li>
+</ul>
+<h2>
+<a name="Storage_">パーミッション</a>
+</h2>
+
+<h3>Android</h3>
+
+<h4>app/res/xml/config.xml</h4>
+
+<pre class="prettyprint"><code>&lt;plugin name="<a href="cordova_storage_storage.md.html#Storage">Storage</a>" value="org.apache.cordova.<a href="cordova_storage_storage.md.html#Storage">Storage</a>" /&gt;
+</code></pre>
+
+<h3>Bada</h3>
+
+<pre class="prettyprint"><code>パーミッションの設定は必要ありません。
+</code></pre>
+
+<h3>BlackBerry WebWorks</h3>
+
+<h4>www/config.xml</h4>
+
+<pre class="prettyprint"><code>&lt;feature id="blackberry.widgetcache" required="true" version="1.0.0.0" /&gt;
+</code></pre>
+
+<h3>iOS</h3>
+
+<pre class="prettyprint"><code>パーミッションの設定は必要ありません。
+</code></pre>
+
+<h3>webOS</h3>
+
+<pre class="prettyprint"><code>パーミッションの設定は必要ありません。
+</code></pre>
+
+<h3>Windows Phone</h3>
+
+<pre class="prettyprint"><code>パーミッションの設定は必要ありません。
+</code></pre>
+
+<h3>Tizen</h3>
+
+<pre class="prettyprint"><code>パーミッションの設定は必要ありません。
+</code></pre>
+
+<hr>
+<h1><a name="openDatabase">openDatabase</a></h1>
+
+<p><a href="cordova_storage_storage.md.html#Database">Database</a> オブジェクトを新規作成します。</p>
+
+<pre class="prettyprint"><code>var dbShell = window.<a href="cordova_storage_storage.md.html#openDatabase">openDatabase</a>(<a href="cordova_storage_storage.md.html#database_name">database_name</a>, <a href="cordova_storage_storage.md.html#database_version">database_version</a>, <a href="cordova_storage_storage.md.html#database_displayname">database_displayname</a>, <a href="cordova_storage_storage.md.html#database_size">database_size</a>);
+</code></pre>
+
+<h2>
+<a name="openDatabase_">概要</a>
+</h2>
+
+<p>window.<a href="cordova_storage_storage.md.html#openDatabase">openDatabase</a> メソッドは新しい <a href="cordova_storage_storage.md.html#Database">Database</a> オブジェクトを返します。</p>
+
+<p>このメソッドは SQLite のデータベースを新規作成し、 <a href="cordova_storage_storage.md.html#Database">Database</a> オブジェクトを返します。 <a href="cordova_storage_storage.md.html#Database">Database</a> オブジェクトは、データを操作するために使います。</p>
+
+<h2>
+<a name="openDatabase_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 6.0 以上)</li>
+<li>iPhone</li>
+<li>webOS</li>
+<li>Tizen</li>
+</ul>
+<h2>
+<a name="openDatabase_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>var db = window.<a href="cordova_storage_storage.md.html#openDatabase">openDatabase</a>("test", "1.0", "Test DB", 1000000);
+</code></pre>
+
+<h2>
+<a name="openDatabase_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;<a href="cordova_storage_storage.md.html#Storage">Storage</a> の使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        var db = window.<a href="cordova_storage_storage.md.html#openDatabase">openDatabase</a>("test", "1.0", "Test DB", 1000000);
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;使用例&lt;/h1&gt;
+    &lt;p&gt;データベースを開く&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="database_name">database_name</a></h1>
+
+<p>データベース名です。</p>
+
+<hr>
+<h1><a name="database_version">database_version</a></h1>
+
+<p>データベースのバージョンです。</p>
+
+<hr>
+<h1><a name="database_displayname">database_displayname</a></h1>
+
+<p>実際に表示されるデータベース名です。</p>
+
+<hr>
+<h1><a name="database_size">database_size</a></h1>
+
+<p>データベースのサイズです。バイト単位で表されます。</p>
+
+<hr>
+<h1><a name="Database">Database</a></h1>
+
+<p>データベースの操作に必要なメソッドを提供します。</p>
+
+<h2>
+<a name="Database_">メソッド</a>
+</h2>
+
+<ul>
+<li>
+<strong>transaction</strong>: データベースのトランザクションを実行します</li>
+<li>
+<strong>changeVersion</strong>: スクリプトがデータベースのバージョンを自動的に確認し、スキーマのアップデートと同時にバージョンを変更します</li>
+</ul>
+<h2>
+<a name="Database_">詳細</a>
+</h2>
+
+<p><a href="cordova_storage_storage.md.html#Database">Database</a> オブジェクトは <code>window.<a href="cordova_storage_storage.md.html#openDatabase">openDatabase</a>()</code> メソッド呼び出し時に返されるオブジェクトです。</p>
+
+<h2>
+<a name="Database_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 6.0 以上)</li>
+<li>iPhone</li>
+<li>webOS</li>
+<li>Tizen</li>
+</ul>
+<h2>
+<a name="Database_transaction">Transaction の例</a>
+</h2>
+
+<pre class="prettyprint"><code>function populateDB(tx) {
+    tx.executeSql('DROP TABLE IF EXISTS DEMO');
+    tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id unique, data)');
+    tx.executeSql('INSERT INTO DEMO (id, data) VALUES (1, "First row")');
+    tx.executeSql('INSERT INTO DEMO (id, data) VALUES (2, "Second row")');
+}
+
+function errorCB(err) {
+    alert("SQL実行中にエラーが発生しました: "+err.code);
+}
+
+function successCB() {
+    alert("成功しました。");
+}
+
+var db = window.<a href="cordova_storage_storage.md.html#openDatabase">openDatabase</a>("<a href="cordova_storage_storage.md.html#Database">Database</a>", "1.0", "Cordova Demo", 200000);
+db.transaction(populateDB, errorCB, successCB);
+</code></pre>
+
+<h2>
+<a name="Database_change_version">Change Version の例</a>
+</h2>
+
+<pre class="prettyprint"><code>var db = window.<a href="cordova_storage_storage.md.html#openDatabase">openDatabase</a>("<a href="cordova_storage_storage.md.html#Database">Database</a>", "1.0", "Cordova Demo", 200000);
+db.changeVersion("1.0", "1.1");
+</code></pre>
+
+<h2>
+<a name="Database_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;<a href="cordova_storage_storage.md.html#Storage">Storage</a> の使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        var db = window.<a href="cordova_storage_storage.md.html#openDatabase">openDatabase</a>("<a href="cordova_storage_storage.md.html#Database">Database</a>", "1.0", "Cordova Demo", 200000);
+        db.transaction(populateDB, errorCB, successCB);
+    }
+
+    // データベースを操作 
+    //
+    function populateDB(tx) {
+        tx.executeSql('DROP TABLE IF EXISTS DEMO');
+        tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id unique, data)');
+        tx.executeSql('INSERT INTO DEMO (id, data) VALUES (1, "First row")');
+        tx.executeSql('INSERT INTO DEMO (id, data) VALUES (2, "Second row")');
+    }
+
+    // トランザクション失敗時のコールバック
+    //
+    function errorCB(tx, err) {
+        alert("SQL実行中にエラーが発生しました: "+err);
+    }
+
+    // トランザクション成功時のコールバック
+    //
+    function successCB() {
+        alert("成功しました。");
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Example&lt;/h1&gt;
+    &lt;p&gt;<a href="cordova_storage_storage.md.html#Database">Database</a>&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="SQLTransaction">SQLTransaction</a></h1>
+
+<p>データベースに対して SQL を実行するためのメソッドを提供します。</p>
+
+<h2>
+<a name="SQLTransaction_">メソッド</a>
+</h2>
+
+<ul>
+<li>
+<strong>executeSql</strong>: SQL 文を実行します</li>
+</ul>
+<h2>
+<a name="SQLTransaction_">詳細</a>
+</h2>
+
+<p><a href="cordova_storage_storage.md.html#Database">Database</a> オブジェクトの transaction メソッドを呼ぶとき、それに対応するコールバック関数が <a href="cordova_storage_storage.md.html#SQLTransaction">SQLTransaction</a> オブジェクトと一緒に呼び出されます。 executeSql メソッドを複数回使用することで、データベーストランザクションを作成できます。</p>
+
+<h2>
+<a name="SQLTransaction_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 6.0 以上)</li>
+<li>iPhone</li>
+<li>webOS</li>
+<li>Tizen</li>
+</ul>
+<h2>
+<a name="SQLTransaction_execute_sql">Execute SQL の例</a>
+</h2>
+
+<pre class="prettyprint"><code>function populateDB(tx) {
+    tx.executeSql('DROP TABLE IF EXISTS DEMO');
+    tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id unique, data)');
+    tx.executeSql('INSERT INTO DEMO (id, data) VALUES (1, "First row")');
+    tx.executeSql('INSERT INTO DEMO (id, data) VALUES (2, "Second row")');
+}
+
+function errorCB(err) {
+    alert("SQL 実行中にエラーが発生しました: "+err);
+}
+
+function successCB() {
+    alert("成功しました。");
+}
+
+var db = window.<a href="cordova_storage_storage.md.html#openDatabase">openDatabase</a>("<a href="cordova_storage_storage.md.html#Database">Database</a>", "1.0", "Cordova Demo", 200000);
+db.transaction(populateDB, errorCB, successCB);
+</code></pre>
+
+<h2>
+<a name="SQLTransaction_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;<a href="cordova_storage_storage.md.html#Storage">Storage</a> の使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        var db = window.<a href="cordova_storage_storage.md.html#openDatabase">openDatabase</a>("<a href="cordova_storage_storage.md.html#Database">Database</a>", "1.0", "Cordova Demo", 200000);
+        db.transaction(populateDB, errorCB, successCB);
+    }
+
+    // データベースを操作
+    //
+    function populateDB(tx) {
+        tx.executeSql('DROP TABLE IF EXISTS DEMO');
+        tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id unique, data)');
+        tx.executeSql('INSERT INTO DEMO (id, data) VALUES (1, "First row")');
+        tx.executeSql('INSERT INTO DEMO (id, data) VALUES (2, "Second row")');
+    }
+
+    // トランザクション失敗時のコールバック
+    //
+    function errorCB(err) {
+        alert("SQL 実行中にエラーが発生しました: "+err);
+    }
+
+    // トランザクション成功時のコールバック
+    //
+    function successCB() {
+        alert("成功しました。");
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;使用例&lt;/h1&gt;
+    &lt;p&gt;SQLトランザクション&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="SQLResultSet">SQLResultSet</a></h1>
+
+<p><a href="cordova_storage_storage.md.html#SQLTransaction">SQLTransaction</a> の executeSql メソッドが呼ばれるとき、 <a href="cordova_storage_storage.md.html#SQLResultSet">SQLResultSet</a> とともにコールバック関数が呼び出されます。</p>
+
+<h2>
+<a name="SQLResultSet_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>insertId</strong>: <a href="cordova_storage_storage.md.html#SQLResultSet">SQLResultSet</a> オブジェクトの SQL 文によりデータベースに挿入された行の行番号を表します</li>
+<li>
+<strong>rowsAffected</strong>: SQL 文によって変更された行数を表します。もし SQL 文がデータベースに変更を加えなかった場合は0を返します</li>
+<li>
+<strong>rows</strong>: 結果を表す SQLResultSetRowList オブジェクトです。行が返されなかった場合、オブジェクトは空になります</li>
+</ul>
+<h2>
+<a name="SQLResultSet_">詳細</a>
+</h2>
+
+<p><a href="cordova_storage_storage.md.html#SQLTransaction">SQLTransaction</a> の executeSql メソッドが呼び出されるとき、 <a href="cordova_storage_storage.md.html#SQLResultSet">SQLResultSet</a> オブジェクトとともにコールバック関数が呼び出されます。この結果オブジェクトは3つのプロパティーを持っています。1つめは <code>insertId</code> で、 SQL の insert 文が成功した行の番号を返します。もし SQL 文が insert 文では無かった場合、 <code>insertId</code> はセットされません。2つめの <code>rowsAffected</code> は SQL の select 文に対しては常に0を返します。 insert もしくは update 文に対しては、修正された行数を返します。最後の <a href="cordova_storage_storage.md.html#SQLResultSetList">SQLResultSetList</a> は、 SQL の select 文によって返されたデータを保持します。</p>
+
+<h2>
+<a name="SQLResultSet_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 6.0 以上)</li>
+<li>iPhone</li>
+<li>webOS</li>
+<li>Tizen</li>
+</ul>
+<h2>
+<a name="SQLResultSet_execute_sql">Execute SQL の例</a>
+</h2>
+
+<pre class="prettyprint"><code>function queryDB(tx) {
+    tx.executeSql('SELECT * FROM DEMO', [], querySuccess, errorCB);
+}
+
+function querySuccess(tx, results) {
+    console.log("検索された行 = " + results.rows.length);
+    // select 文のため、 rowsAffected は0となり、 true となります
+    if (!results.rowsAffected) {
+        console.log('どの行も変更されていません。');
+        return false;
+    }
+    // insert 文では、このプロパティーは挿入された最終行を表します
+    console.log("挿入された行 = " + results.insertId);
+}
+
+function errorCB(err) {
+    alert("SQL 実行中にエラーが発生しました: "+err.code);
+}
+
+var db = window.<a href="cordova_storage_storage.md.html#openDatabase">openDatabase</a>("<a href="cordova_storage_storage.md.html#Database">Database</a>", "1.0", "Cordova Demo", 200000);
+db.transaction(queryDB, errorCB);
+</code></pre>
+
+<h2>
+<a name="SQLResultSet_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;<a href="cordova_storage_storage.md.html#Storage">Storage</a> の使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // データベースを操作
+    //
+    function populateDB(tx) {
+        tx.executeSql('DROP TABLE IF EXISTS DEMO');
+        tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id unique, data)');
+        tx.executeSql('INSERT INTO DEMO (id, data) VALUES (1, "First row")');
+        tx.executeSql('INSERT INTO DEMO (id, data) VALUES (2, "Second row")');
+    }
+
+    // データベースに問い合わせ
+    //
+    function queryDB(tx) {
+        tx.executeSql('SELECT * FROM DEMO', [], querySuccess, errorCB);
+    }
+
+    // 問い合わせ成功時のコールバック
+    //
+    function querySuccess(tx, results) {
+        console.log("検索された行 = " + results.rows.length);
+        // select 文のため、 rowsAffected は0となり、 true となります
+        if (!results.rowsAffected) {
+            console.log('どの行も変更されていません。');
+            return false;
+        }
+        // insert 文では、このプロパティーは挿入された最終行を表します
+        console.log("挿入された行 = " + results.insertId);
+    }
+
+    // トランザクション失敗時のコールバック
+    //
+    function successCB() {
+        var db = window.<a href="cordova_storage_storage.md.html#openDatabase">openDatabase</a>("<a href="cordova_storage_storage.md.html#Database">Database</a>", "1.0", "Cordova Demo", 200000);
+        db.transaction(queryDB, errorCB);
+    }
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        var db = window.<a href="cordova_storage_storage.md.html#openDatabase">openDatabase</a>("<a href="cordova_storage_storage.md.html#Database">Database</a>", "1.0", "Cordova Demo", 200000);
+        db.transaction(populateDB, errorCB, successCB);
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;使用例&lt;/h1&gt;
+    &lt;p&gt;データベース&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="SQLResultSetList">SQLResultSetList</a></h1>
+
+<p>SQL 問い合わせから返される行を保持した <a href="cordova_storage_storage.md.html#SQLResultSet">SQLResultSet</a> のプロパティーのうちの1つです。</p>
+
+<h2>
+<a name="SQLResultSetList_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>length</strong>: SQL 問い合わせによって返される行の行数を表します</li>
+</ul>
+<h2>
+<a name="SQLResultSetList_">メソッド</a>
+</h2>
+
+<ul>
+<li>
+<strong>item</strong>: 指定された行を JavaScript オブジェクトとして返します</li>
+</ul>
+<h2>
+<a name="SQLResultSetList_">詳細</a>
+</h2>
+
+<p><a href="cordova_storage_storage.md.html#SQLResultSetList">SQLResultSetList</a> は SQL の select 文によって返されるデータを保持しています。このオブジェクトは select 文によって返された行の数を表す length プロパティーを持っています。ある行のデータを取得するためには、行番号を指定した <code>item</code> メソッドを使用します。この item メソッドは JavaScript オブジェクトを返します。この JavaScript オブジェクトは select 文が実行されたデータベースのカラムをプロパティーとして持っています。</p>
+
+<h2>
+<a name="SQLResultSetList_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 6.0 以上)</li>
+<li>iPhone</li>
+<li>webOS</li>
+<li>Tizen</li>
+</ul>
+<h2>
+<a name="SQLResultSetList_execute_sql">Execute SQL の例</a>
+</h2>
+
+<pre class="prettyprint"><code>function queryDB(tx) {
+    tx.executeSql('SELECT * FROM DEMO', [], querySuccess, errorCB);
+}
+
+function querySuccess(tx, results) {
+    var len = results.rows.length;
+    console.log("DEMO table: " + len + " 行見つかりました。");
+    for (var i=0; i&lt;len; i++){
+        console.log("行 = " + i + " ID = " + results.rows.item(i).id + " Data = " + results.rows.item(i).data);
+    }
+}
+
+function errorCB(err) {
+    alert("SQL 実行中にエラーが発生しました: "+err.code);
+}
+
+var db = window.<a href="cordova_storage_storage.md.html#openDatabase">openDatabase</a>("<a href="cordova_storage_storage.md.html#Database">Database</a>", "1.0", "Cordova Demo", 200000);
+db.transaction(queryDB, errorCB);
+</code></pre>
+
+<h2>
+<a name="SQLResultSetList_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;<a href="cordova_storage_storage.md.html#Storage">Storage</a> の使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // データベースを操作
+    //
+    function populateDB(tx) {
+        tx.executeSql('DROP TABLE IF EXISTS DEMO');
+        tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id unique, data)');
+        tx.executeSql('INSERT INTO DEMO (id, data) VALUES (1, "First row")');
+        tx.executeSql('INSERT INTO DEMO (id, data) VALUES (2, "Second row")');
+    }
+
+    // データベースに問い合わせ
+    //
+    function queryDB(tx) {
+        tx.executeSql('SELECT * FROM DEMO', [], querySuccess, errorCB);
+    }
+
+    // 問い合わせ成功時のコールバック
+    //
+    function querySuccess(tx, results) {
+        var len = results.rows.length;
+        console.log("DEMO table: " + len + " 行見つかりました。");
+        for (var i=0; i&lt;len; i++){
+            console.log("行 = " + i + " ID = " + results.rows.item(i).id + " Data = " + results.rows.item(i).data);
+        }
+    }
+
+    // トランザクション失敗時のコールバック
+    //
+    function errorCB(err) {
+        console.log("SQL 実行中にエラーが発生しました: "+err.code);
+    }
+
+    // トランザクション成功時のコールバック
+    //
+    function successCB() {
+        var db = window.<a href="cordova_storage_storage.md.html#openDatabase">openDatabase</a>("<a href="cordova_storage_storage.md.html#Database">Database</a>", "1.0", "Cordova Demo", 200000);
+        db.transaction(queryDB, errorCB);
+    }
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        var db = window.<a href="cordova_storage_storage.md.html#openDatabase">openDatabase</a>("<a href="cordova_storage_storage.md.html#Database">Database</a>", "1.0", "Cordova Demo", 200000);
+        db.transaction(populateDB, errorCB, successCB);
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;使用例&lt;/h1&gt;
+    &lt;p&gt;データベース&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="SQLError">SQLError</a></h1>
+
+<p>エラー発生時に投げられる <code><a href="cordova_storage_storage.md.html#SQLError">SQLError</a></code> オブジェクトです。</p>
+
+<h2>
+<a name="SQLError_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>code:</strong> 事前に定義された以下のエラーコードのうちの1つを表します</li>
+<li>
+<strong>message:</strong> エラーの詳細メッセージを表します</li>
+</ul>
+<h2>
+<a name="SQLError_">定数</a>
+</h2>
+
+<ul>
+<li><code><a href="cordova_storage_storage.md.html#SQLError">SQLError</a>.UNKNOWN_ERR</code></li>
+<li>`<a href="cordova_storage_storage.md.html#SQLError">SQLError</a>.DATABASE_ERR</li>
+<li><code><a href="cordova_storage_storage.md.html#SQLError">SQLError</a>.VERSION_ERR</code></li>
+<li><code><a href="cordova_storage_storage.md.html#SQLError">SQLError</a>.TOO_LARGE_ERR</code></li>
+<li><code><a href="cordova_storage_storage.md.html#SQLError">SQLError</a>.QUOTA_ERR</code></li>
+<li><code><a href="cordova_storage_storage.md.html#SQLError">SQLError</a>.SYNTAX_ERR</code></li>
+<li><code><a href="cordova_storage_storage.md.html#SQLError">SQLError</a>.CONSTRAINT_ERR</code></li>
+<li><code><a href="cordova_storage_storage.md.html#SQLError">SQLError</a>.TIMEOUT_ERR</code></li>
+</ul>
+<h2>
+<a name="SQLError_">概要</a>
+</h2>
+
+<p>データベース操作時のエラーに対して投げられる <code><a href="cordova_storage_storage.md.html#SQLError">SQLError</a></code> オブジェクトです。</p>
+
+<hr>
+<h1><a name="localStorage">localStorage</a></h1>
+
+<p>W3C <a href="cordova_storage_storage.md.html#Storage">Storage</a> interface (http://dev.w3.org/html5/webstorage/#the-localstorage-attribute) へのアクセスを提供します。</p>
+
+<pre class="prettyprint"><code>var storage = window.<a href="cordova_storage_storage.md.html#localStorage">localStorage</a>;
+</code></pre>
+
+<h2>
+<a name="localStorage_">メソッド</a>
+</h2>
+
+<ul>
+<li>
+<strong>key</strong>: キーの名前を返します</li>
+<li>
+<strong>getItem</strong>: キーによって指定されたアイテムを返します</li>
+<li>
+<strong>setItem</strong>: キーによって指定されたアイテムを保存します</li>
+<li>
+<strong>removeItem</strong>: キーによって指定されたアイテムを削除します</li>
+<li>
+<strong>clear</strong>: 全てのキーとアイテムを削除します</li>
+</ul>
+<h2>
+<a name="localStorage_">詳細</a>
+</h2>
+
+<p><a href="cordova_storage_storage.md.html#localStorage">localStorage</a> は W3C <a href="cordova_storage_storage.md.html#Storage">Storage</a> interface へのインターフェースを提供します。キーと値のペアでデータを管理します。</p>
+
+<p>注意: window.sessionStorage は同じインターフェースを提供しますが、アプリが起動するたびにこの値はクリアされます。</p>
+
+<h2>
+<a name="localStorage_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 6.0 以上)</li>
+<li>iPhone</li>
+<li>Windows Phone 7</li>
+<li>Tizen</li>
+</ul>
+<h2>
+<a name="localStorage_key">Key の例</a>
+</h2>
+
+<pre class="prettyprint"><code>var keyName = window.<a href="cordova_storage_storage.md.html#localStorage">localStorage</a>.key(0);
+</code></pre>
+
+<h2>
+<a name="localStorage_set_item">Set Item の例</a>
+</h2>
+
+<pre class="prettyprint"><code>window.<a href="cordova_storage_storage.md.html#localStorage">localStorage</a>.setItem("key", "value");
+</code></pre>
+
+<h2>
+<a name="localStorage_get_item">Get Item の例</a>
+</h2>
+
+<pre class="prettyprint"><code>var value = window.<a href="cordova_storage_storage.md.html#localStorage">localStorage</a>.getItem("key");
+// value の値は "value"
+</code></pre>
+
+<h2>
+<a name="localStorage_remove_item">Remove Item の例</a>
+</h2>
+
+<pre class="prettyprint"><code>window.<a href="cordova_storage_storage.md.html#localStorage">localStorage</a>.removeItem("key");
+</code></pre>
+
+<h2>
+<a name="localStorage_clear">Clear の例</a>
+</h2>
+
+<pre class="prettyprint"><code>window.<a href="cordova_storage_storage.md.html#localStorage">localStorage</a>.clear();
+</code></pre>
+
+<h2>
+<a name="localStorage_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;<a href="cordova_storage_storage.md.html#Storage">Storage</a> の使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        window.<a href="cordova_storage_storage.md.html#localStorage">localStorage</a>.setItem("key", "value");
+        var keyname = window.<a href="cordova_storage_storage.md.html#localStorage">localStorage</a>.key(i);
+        // key の値は "key"
+        var value = window.<a href="cordova_storage_storage.md.html#localStorage">localStorage</a>.getItem("key");
+        // value の値は "value"
+        window.<a href="cordova_storage_storage.md.html#localStorage">localStorage</a>.removeItem("key");
+        window.<a href="cordova_storage_storage.md.html#localStorage">localStorage</a>.setItem("key2", "value2");
+        window.<a href="cordova_storage_storage.md.html#localStorage">localStorage</a>.clear();
+        // <a href="cordova_storage_storage.md.html#localStorage">localStorage</a> は空
+    }
+
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;使用例&lt;/h1&gt;
+    &lt;p&gt;<a href="cordova_storage_storage.md.html#localStorage">localStorage</a> のサンプル&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="localStorage_windows_phone_7">Windows Phone 7 に関する注意点</a>
+</h2>
+
+<ul>
+<li>ドット表記は Windows Phone では使用できません。 window.<a href="cordova_storage_storage.md.html#localStorage">localStorage</a>.setItem/getItem メソッドを使用して、 W3C の仕様で定義されている window.<a href="cordova_storage_storage.md.html#localStorage">localStorage</a>.someKey = 'someValue'; の方法は使用しないでください。</li>
+</ul>
+</div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

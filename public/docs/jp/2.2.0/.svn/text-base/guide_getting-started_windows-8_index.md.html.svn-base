@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="English" value="en">
+<option value="edge">edge</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0rc1">2.7.0rc1</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0rc1">2.6.0rc1</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0rc1">2.5.0rc1</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0rc1">2.4.0rc1</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0rc2">2.3.0rc2</option>
+<option value="2.3.0rc1">2.3.0rc1</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0rc2">2.2.0rc2</option>
+<option value="2.2.0rc1">2.2.0rc1</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0rc2">2.1.0rc2</option>
+<option value="2.1.0rc1">2.1.0rc1</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0rc1">2.0.0rc1</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0rc1">1.9.0rc1</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0rc1">1.8.0rc1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0rc1">1.7.0rc1</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0rc1">1.6.0rc1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0rc1">1.5.0rc1</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="Japanese" value="jp">
+<option selected value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="kr"><option value="2.0.0">2.0.0</option></optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Getting Started with Windows 8</h1>
+            <small><select><option value="Getting%2520Started%2520with%2520Windows%25208">Getting Started with Windows 8</option>
+<option value="Getting%20Started%20with%20Windows%208_1">      - 1. 必要なもの</option>
+<option value="Getting%20Started%20with%20Windows%208_2_sdk_cordova">      - 2. SDK と Cordova のインストール</option>
+<option value="Getting%20Started%20with%20Windows%208_3">      - 3. 新規プロジェクトの作成</option>
+<option value="Getting%20Started%20with%20Windows%208_4">      - 4. プロジェクトのテスト</option>
+<option value="Getting%20Started%20with%20Windows%208_">      - 終了</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>API リファレンス</h1>
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a></li>
+<li><a href="cordova_camera_camera.md.html#Camera">Camera</a></li>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_compass_compass.md.html#Compass">Compass</a></li>
+<li><a href="cordova_connection_connection.md.html#Connection">Connection</a></li>
+<li><a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a></li>
+<li><a href="cordova_device_device.md.html#Device">Device</a></li>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_file_file.md.html#File">File</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a></li>
+<li><a href="cordova_globalization_globalization.md.html#Globalization">Globalization</a></li>
+<li><a href="cordova_media_media.md.html#Media">Media</a></li>
+<li><a href="cordova_notification_notification.md.html#Notification">Notification</a></li>
+<li><a href="cordova_splashscreen_splashscreen.md.html#Splashscreen">Splashscreen</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+</ul>
+<h1>Guides</h1>
+<ul>
+<li><a href="guide_getting-started_index.md.html#%E5%85%A5%E9%96%80%E3%82%AC%E3%82%A4%E3%83%89">入門ガイド</a></li>
+<li><a href="guide_command-line_index.md.html#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E4%BD%BF%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89">コマンドライン使用ガイド</a></li>
+<li><a href="guide_upgrading_index.md.html#%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89">アップグレードガイド</a></li>
+<li><a href="guide_project-settings_index.md.html#%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E8%A8%AD%E5%AE%9A">プロジェクトの設定</a></li>
+<li><a href="guide_plugin-development_index.md.html#%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E9%96%8B%E7%99%BA%E3%82%AC%E3%82%A4%E3%83%89">プラグイン開発ガイド</a></li>
+<li><a href="guide_whitelist_index.md.html#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89">ドメインホワイトリストガイド</a></li>
+<li><a href="guide_cordova-webview_index.md.html#WebView%20%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF">WebView の埋め込み</a></li>
+<li><a href="_index.html">索引</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Getting%20Started%20with%20Windows%208">Getting Started with Windows 8</a></h1>
+
+<p>このガイドは、 Cordova のための開発環境セットアップ方法、またシンプルなアプリの動かし方を解説します。 Cordova は以前は PhoneGap と呼ばれていたため、いくつかのサイトは PhoneGap という名前をまだ使用しています。</p>
+
+<p>Windows 8 と Windows RT での開発中で、 Microsoft は "Metro スタイルアプリ" という呼び名を廃止予定です。 MSDN 上では、これらのタイプのアプリは "Windows ストアアプリ" と呼んでいます。このガイドでは、この名前を使用します。また、ガイド中で Windows 8 の記述がある部分は、常に Windows 8 と Windows RT の両方を指すとして考えてください。</p>
+
+<h2>
+<a name="Getting%20Started%20with%20Windows%208_1">1. 必要なもの</a>
+</h2>
+
+<ul>
+<li><p>Windows 8</p></li>
+<li><p>Visual Studio 2012 Professional 以上、または Visual Studio 2012 Express for Windows 8</p></li>
+</ul>
+<p><a class="external" href="http://www.windowsstore.com/">ここ</a> の手順に沿って Windows ストアにアプリを登録してください。</p>
+
+<h2>
+<a name="Getting%20Started%20with%20Windows%208_2_sdk_cordova">2. SDK と Cordova のインストール</a>
+</h2>
+
+<ul>
+<li>お好きなエディションをセットアップしてください。すべての有料エディション (Professional 等) で Windows ストアアプリを作成できます。 <a class="external" href="http://www.microsoft.com/visualstudio/jpn/products/visual-studio-express-products">Express エディション</a> を使用して Windows ストアアプリを作成するには、 <strong>Express for Windows 8</strong> が必要になります。</li>
+<li>
+<a class="external" href="http://phonegap.com/download">Cordova</a> の最新版をダウンロードし解凍します。 これから <strong>lib\windows-8</strong> サブフォルダーと一緒に作業を進めます。</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Windows%208_3">3. 新規プロジェクトの作成</a>
+</h2>
+
+<p>あなたは既に Windows ストアアプリにて利用可能な "HTML/JavaScript track" を使用して Windows 8 アプリを作ることができます。 Cordova の Windows ストアアプリでの目的は、他の Cordova プラットフォームで使用しているものと同じ API を Windows ストアアプリでも使用できるようにすることです。</p>
+
+<ul>
+<li>Visual Studio 2012 を開き、 <strong>New Project</strong> を選択します。</li>
+<li>
+<p>ツリーから <strong>Installed - Template - Other Languages - JavaScript - Windows Store</strong> を選択し、プロジェクトリストから <strong>Blank App</strong> を選択します。お好きなプロジェクト名を入力してください。このガイドでは <strong>CordovaWin8Foo</strong> を使用します。</p>
+
+<p><img src="img/guide/getting-started/windows-8/wsnewproject.png" alt="" title=""></p>
+</li>
+<li>
+<p>Microsoft はウェブサイトのデフォルトページに、大抵の開発者が <strong>index.html</strong> を使用するのに対し、 <strong>default.html</strong> を使用し続けています。 (加えて、他のプラットフォームでも大抵 <strong>index.html</strong> がデフォルトページの名前として使われているでしょう。) これを修正するために、 Solution Explorer で <strong>default.html</strong> ファイルを <strong>index.html</strong> へリネームします。そして、 <strong>package.appxmanifest</strong> ファイルをダブルクリックし、 <strong>Start page</strong> の値を <strong>index.html</strong> に変更します。</p>
+
+<p><img src="img/guide/getting-started/windows-8/wschangemanifest.png" alt="" title=""></p>
+</li>
+<li><p><strong>cordova.js</strong> をプロジェクトに含めるには、 Solution Explorer で <strong>js</strong> フォルダーを右クリックして <strong>Add - New Item</strong> を選択します。 <strong>lib\windows-8</strong> フォルダーにある <strong>cordova.js</strong> ファイルを指定します。</p></li>
+<li><p><strong>index.html</strong> のコードを編集します。 <strong>cordova.js</strong> への参照を追加します。手動でもできますし、 Solution Explorer 内のファイルをドラッグすることでも追加できます。</p></li>
+</ul>
+<h3>参照の追加...</h3>
+
+<pre class="prettyprint"><code>    &lt;!-- WinJS references --&gt;
+    &lt;link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" /&gt;
+    &lt;script src="//Microsoft.WinJS.1.0/js/base.js"&gt;&lt;/script&gt;
+    &lt;script src="//Microsoft.WinJS.1.0/js/ui.js"&gt;&lt;/script&gt;
+
+    &lt;!-- Cordova --&gt;
+    &lt;script src="/js/cordova.js"&gt;&lt;/script&gt;
+
+    &lt;!-- CordovaWin8Foo references --&gt;
+    &lt;link href="/css/default.css" rel="stylesheet" /&gt;
+    &lt;script src="/js/default.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<ul>
+<li>次に、 Cordova が動いていることを確認するためのコードを追加します。</li>
+</ul>
+<h3>'<a href="cordova_events_events.md.html#deviceready">deviceready</a>' ハンドラーの追加...</h3>
+
+<pre class="prettyprint"><code>&lt;body&gt;
+    &lt;p&gt;Content goes here&lt;/p&gt;
+
+    &lt;script type="text/javascript"&gt;
+
+        console.log("Subscribing...");
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", function () {
+
+            navigator.<a href="cordova_notification_notification.md.html#notification.alert">notification.alert</a>("デバイスの準備ができました!");
+
+        });
+
+    &lt;/script&gt;
+
+&lt;/body&gt;
+</code></pre>
+
+<h2>
+<a name="Getting%20Started%20with%20Windows%208_4">4. プロジェクトのテスト</a>
+</h2>
+
+<ul>
+<li>
+<p>プロジェクトを Visual Studio から実行します。メッセージボックスが現れるのが確認できるでしょう。</p>
+
+<p><img src="img/guide/getting-started/windows-8/wsalert.png" alt="" title=""></p>
+</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Windows%208_">終了</a>
+</h2>
+
+<p>以上です。これで Windows ストアアプリを Cordova で作成する準備ができました。</p>
+
+            </div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

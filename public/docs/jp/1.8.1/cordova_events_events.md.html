@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="English" value="en">
+<option value="edge">edge</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0rc1">2.7.0rc1</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0rc1">2.6.0rc1</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0rc1">2.5.0rc1</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0rc1">2.4.0rc1</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0rc2">2.3.0rc2</option>
+<option value="2.3.0rc1">2.3.0rc1</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0rc2">2.2.0rc2</option>
+<option value="2.2.0rc1">2.2.0rc1</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0rc2">2.1.0rc2</option>
+<option value="2.1.0rc1">2.1.0rc1</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0rc1">2.0.0rc1</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0rc1">1.9.0rc1</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0rc1">1.8.0rc1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0rc1">1.7.0rc1</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0rc1">1.6.0rc1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0rc1">1.5.0rc1</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="Japanese" value="jp">
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option selected value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="kr"><option value="2.0.0">2.0.0</option></optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Events</h1>
+            <small><select><option value="Events">Events</option>
+<option value="Events_event_types">      - Event Types</option>
+<option value="Events_">      - パーミッション</option>
+<option value="deviceready">deviceready</option>
+<option value="deviceready_">      - 詳細</option>
+<option value="deviceready_">      - サポートされているプラットフォーム</option>
+<option value="deviceready_">      - 使用例</option>
+<option value="deviceready_">      - 詳細な使用例</option>
+<option value="pause">pause</option>
+<option value="pause_">      - 詳細</option>
+<option value="pause_">      - サポートされているプラットフォーム</option>
+<option value="pause_">      - 使用例</option>
+<option value="pause_">      - 詳細な使用例</option>
+<option value="pause_ios">      - iOS に関する注意点</option>
+<option value="resume">resume</option>
+<option value="resume_">      - 詳細</option>
+<option value="resume_">      - サポートされているプラットフォーム</option>
+<option value="resume_">      - 使用例</option>
+<option value="resume_">      - 詳細な使用例</option>
+<option value="resume_ios">      - iOS に関する注意点</option>
+<option value="online">online</option>
+<option value="online_">      - 詳細</option>
+<option value="online_">      - サポートされているプラットフォーム</option>
+<option value="online_">      - 使用例</option>
+<option value="online_">      - 詳細な使用例</option>
+<option value="online_ios">      - iOS に関する注意点</option>
+<option value="online_windows_phone_7">      - Windows Phone 7 に関する注意点</option>
+<option value="offline">offline</option>
+<option value="offline_">      - 詳細</option>
+<option value="offline_">      - サポートされているプラットフォーム</option>
+<option value="offline_">      - 使用例</option>
+<option value="offline_">      - 詳細な使用例</option>
+<option value="offline_ios">      - iOS に関する注意点</option>
+<option value="offline_windows_phone_7">      - Windows Phone 7 に関する注意点</option>
+<option value="backbutton">backbutton</option>
+<option value="backbutton_">      - 詳細</option>
+<option value="backbutton_">      - サポートされているプラットフォーム</option>
+<option value="backbutton_">      - 使用例</option>
+<option value="backbutton_">      - 詳細な使用例</option>
+<option value="batterycritical">batterycritical</option>
+<option value="batterycritical_">      - 詳細</option>
+<option value="batterycritical_">      - サポートされているプラットフォーム</option>
+<option value="batterycritical_">      - 使用例</option>
+<option value="batterycritical_">      - 詳細な使用例</option>
+<option value="batterylow">batterylow</option>
+<option value="batterylow_">      - 詳細</option>
+<option value="batterylow_">      - サポートされているプラットフォーム</option>
+<option value="batterylow_">      - 使用例</option>
+<option value="batterylow_">      - 詳細な使用例</option>
+<option value="batterystatus">batterystatus</option>
+<option value="batterystatus_">      - 詳細</option>
+<option value="batterystatus_">      - サポートされているプラットフォーム</option>
+<option value="batterystatus_windows_phone_7">      - Windows Phone 7 に関する注意点</option>
+<option value="batterystatus_">      - 使用例</option>
+<option value="batterystatus_">      - 詳細な使用例</option>
+<option value="menubutton">menubutton</option>
+<option value="menubutton_">      - 詳細</option>
+<option value="menubutton_">      - サポートされているプラットフォーム</option>
+<option value="menubutton_">      - 使用例</option>
+<option value="menubutton_">      - 詳細な使用例</option>
+<option value="searchbutton">searchbutton</option>
+<option value="searchbutton_">      - 詳細</option>
+<option value="searchbutton_">      - サポートされているプラットフォーム</option>
+<option value="searchbutton_">      - 使用例</option>
+<option value="searchbutton_">      - 詳細な使用例</option>
+<option value="startcallbutton">startcallbutton</option>
+<option value="startcallbutton_">      - 詳細</option>
+<option value="startcallbutton_">      - サポートされているプラットフォーム</option>
+<option value="startcallbutton_">      - 使用例</option>
+<option value="startcallbutton_">      - 詳細な使用例</option>
+<option value="endcallbutton">endcallbutton</option>
+<option value="endcallbutton_">      - 詳細</option>
+<option value="endcallbutton_">      - サポートされているプラットフォーム</option>
+<option value="endcallbutton_">      - 使用例</option>
+<option value="endcallbutton_">      - 詳細な使用例</option>
+<option value="volumedownbutton">volumedownbutton</option>
+<option value="volumedownbutton_">      - 詳細</option>
+<option value="volumedownbutton_">      - サポートされているプラットフォーム</option>
+<option value="volumedownbutton_">      - 使用例</option>
+<option value="volumedownbutton_">      - 詳細な使用例</option>
+<option value="volumeupbutton">volumeupbutton</option>
+<option value="volumeupbutton_">      - 詳細</option>
+<option value="volumeupbutton_">      - サポートされているプラットフォーム</option>
+<option value="volumeupbutton_">      - 使用例</option>
+<option value="volumeupbutton_">      - 詳細な使用例</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>API リファレンス</h1>
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a></li>
+<li><a href="cordova_camera_camera.md.html#Camera">Camera</a></li>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_compass_compass.md.html#Compass">Compass</a></li>
+<li><a href="cordova_connection_connection.md.html#Connection">Connection</a></li>
+<li><a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a></li>
+<li><a href="cordova_device_device.md.html#Device">Device</a></li>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_file_file.md.html#File">File</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a></li>
+<li><a href="cordova_media_media.md.html#Media">Media</a></li>
+<li><a href="cordova_notification_notification.md.html#Notification">Notification</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+</ul>
+<h1>Guides</h1>
+<ul>
+<li><a href="guide_getting-started_index.md.html#%E5%85%A5%E9%96%80%E3%82%AC%E3%82%A4%E3%83%89">入門ガイド</a></li>
+<li><a href="guide_upgrading_index.md.html#%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89">アップグレードガイド</a></li>
+<li><a href="guide_whitelist_index.md.html#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89">ドメインホワイトリストガイド</a></li>
+<li><a href="_index.html">索引</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Events">Events</a></h1>
+
+<blockquote>
+  <p>Cordova ライフサイクルのイベントです。</p>
+</blockquote>
+
+<h2>
+<a name="Events_event_types">Event Types</a>
+</h2>
+
+<ul>
+<li><a href="cordova_events_events.md.html#deviceready">deviceready</a></li>
+<li><a href="cordova_events_events.md.html#pause">pause</a></li>
+<li><a href="cordova_events_events.md.html#resume">resume</a></li>
+<li><a href="cordova_events_events.md.html#online">online</a></li>
+<li><a href="cordova_events_events.md.html#offline">offline</a></li>
+<li><a href="cordova_events_events.md.html#backbutton">backbutton</a></li>
+<li><a href="cordova_events_events.md.html#batterycritical">batterycritical</a></li>
+<li><a href="cordova_events_events.md.html#batterylow">batterylow</a></li>
+<li><a href="cordova_events_events.md.html#batterystatus">batterystatus</a></li>
+<li><a href="cordova_events_events.md.html#menubutton">menubutton</a></li>
+<li><a href="cordova_events_events.md.html#searchbutton">searchbutton</a></li>
+<li><a href="cordova_events_events.md.html#startcallbutton">startcallbutton</a></li>
+<li><a href="cordova_events_events.md.html#endcallbutton">endcallbutton</a></li>
+<li><a href="cordova_events_events.md.html#volumedownbutton">volumedownbutton</a></li>
+<li><a href="cordova_events_events.md.html#volumeupbutton">volumeupbutton</a></li>
+</ul>
+<h2>
+<a name="Events_">パーミッション</a>
+</h2>
+
+<h3>Android</h3>
+
+<h4>app/res/xml/plugins.xml</h4>
+
+<pre class="prettyprint"><code>&lt;plugin name="Battery" value="org.apache.cordova.BatteryListener" /&gt;
+</code></pre>
+
+<h4>app/AndroidManifest.xml</h4>
+
+<pre class="prettyprint"><code>&lt;uses-permission android:name="android.permission.BROADCAST_STICKY" /&gt;
+</code></pre>
+
+<h3>Bada</h3>
+
+<h4>manifest.xml</h4>
+
+<pre class="prettyprint"><code>&lt;Privilege&gt;
+    &lt;Name&gt;SYSTEM_SERVICE&lt;/Name&gt;
+&lt;/Privilege&gt;
+</code></pre>
+
+<h3>BlackBerry WebWorks</h3>
+
+<h4>www/plugins.xml</h4>
+
+<pre class="prettyprint"><code>&lt;plugin name="Battery" value="org.apache.cordova.battery.Battery" /&gt;
+</code></pre>
+
+<h4>www/config.xml</h4>
+
+<pre class="prettyprint"><code>&lt;feature id="blackberry.app"          required="true" version="1.0.0.0" /&gt;
+&lt;feature id="blackberry.app.event"    required="true" version="1.0.0.0" /&gt;
+&lt;feature id="blackberry.system.event" required="true" version="1.0.0.0" /&gt;
+</code></pre>
+
+<h3>iOS</h3>
+
+<h4>App/Supporting Files/Cordova.plist</h4>
+
+<pre class="prettyprint"><code>&lt;key&gt;Plugins&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;Battery&lt;/key&gt;
+    &lt;string&gt;CDVBattery&lt;/string&gt;
+&lt;/dict&gt;
+</code></pre>
+
+<h3>webOS</h3>
+
+<pre class="prettyprint"><code>パーミッションの設定は必要ありません。
+</code></pre>
+
+<h3>Windows Phone</h3>
+
+<pre class="prettyprint"><code>パーミッションの設定は必要ありません。
+</code></pre>
+
+<hr>
+<h1><a name="deviceready">deviceready</a></h1>
+
+<p>このイベントは Cordova が完全にロードされたときに呼び出されます。</p>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", yourCallbackFunction, false);
+</code></pre>
+
+<h2>
+<a name="deviceready_">詳細</a>
+</h2>
+
+<p>このイベントはすべての Cordova アプリケーションで使用される重要なイベントです。</p>
+
+<p>Cordova はネイティブと JavaScript の2つのコードで形成されます。ネイティブコードがロードされている間は、カスタムのロード画面が表示されます。しかし、 JavaScript は DOM が読み込まれるまではロードされません。そのため、 Cordova の JavaScript 関数群がロードされる前に、それらの関数が呼ばれる可能性があります。</p>
+
+<p>Cordova の <code><a href="cordova_events_events.md.html#deviceready">deviceready</a></code> イベントは、 Cordova が完全にロードした後で呼び出されます。安全に Cordova 関数を呼び出すためには、デバイスが完全に呼び出されたことを確認してください。</p>
+
+<p>通常は、 HTML の DOM が読み込まれた後、 <code>document.addEventListener</code> を通じてイベントリスナーをセットします。</p>
+
+<h2>
+<a name="deviceready_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7</li>
+<li>Bada 1.2 &amp; 2.x</li>
+</ul>
+<h2>
+<a name="deviceready_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+function onDeviceReady() {
+    // Cordova API を安全に使用できます
+}
+</code></pre>
+
+<h2>
+<a name="deviceready_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova <a href="cordova_device_device.md.html#Device">Device</a> Ready 使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova のロード完了とともに onDeviceReady を呼び出します。
+    //
+    // この時点では、ドキュメントの読み込みは完了していますが、 cordova-1.8.1.js はまだ完了していません。
+    // Cordova のロード完了とともに
+    // `<a href="cordova_events_events.md.html#deviceready">deviceready</a>` イベントが呼び出されます。
+    //
+    function onLoad() {
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+    }
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        // Cordova API を安全に使用できます
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body onload="onLoad()"&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="pause">pause</a></h1>
+
+<p>このイベントは Cordova アプリケーションがバックグラウンド動作になったときに呼び出されます。</p>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#pause">pause</a>", yourCallbackFunction, false);
+</code></pre>
+
+<h2>
+<a name="pause_">詳細</a>
+</h2>
+
+<p>Cordova はネイティブと JavaScript の2つのコードで形成されます。 ネイティブコードがアプリをバックグラウンド動作にしているとき、 <a href="cordova_events_events.md.html#pause">pause</a> イベントが呼び出されます。</p>
+
+<p>通常は、 Cordova の '<a href="cordova_events_events.md.html#deviceready">deviceready</a>' イベントを受け取った後、 <code>document.addEventListener</code> を通じてイベントリスナーをセットします。</p>
+
+<h2>
+<a name="pause_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7</li>
+</ul>
+<h2>
+<a name="pause_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#pause">pause</a>", onPause, false);
+
+function onPause() {
+    // <a href="cordova_events_events.md.html#pause">pause</a> イベントに関する操作を記述
+}
+</code></pre>
+
+<h2>
+<a name="pause_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova Pause 使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova のロード完了とともに onDeviceReady を呼び出します。
+    //
+    // この時点では、ドキュメントの読み込みは完了していますが、 cordova-1.8.1.js はまだ完了していません。
+    // Cordova のロード完了とともに
+    // `<a href="cordova_events_events.md.html#deviceready">deviceready</a>` イベントが呼び出されます。
+    //
+    function onLoad() {
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+    }
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        document.addEventListener("<a href="cordova_events_events.md.html#pause">pause</a>", onPause, false);
+    }
+
+    // <a href="cordova_events_events.md.html#pause">pause</a> イベントに関する操作を記述
+    //
+    function onPause() {
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body onload="onLoad()"&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="pause_ios">iOS に関する注意点</a>
+</h2>
+
+<p><a href="cordova_events_events.md.html#pause">pause</a> ハンドラー内では、 Objective-C を利用するあらゆる呼び出し、または alerts のようなインタラクティブな呼び出しが一切動作しません。これは、 console.log やプラグインまたは Cordova API からのすべての呼び出しが呼び出せないことを意味します。これらは、アプリを再開されたときに実行されます (次の run-loop で実行されます) 。</p>
+
+<ul>
+<li>
+<p><strong>resign</strong> イベント</p>
+
+<p>この iOS 固有のイベントは <a href="cordova_events_events.md.html#pause">pause</a> イベントの一部として使用でき、アプリ実行中にオン／オフボタンが押されたことを検知するのに使われます。 もしアプリ (とデバイス) がマルチタスク可能なら、このイベントは iOS 5 でのみ続く <strong><a href="cordova_events_events.md.html#pause">pause</a></strong> と対になります (事実上マルチタスク可能な iOS 5 のすべてのロックされたアプリはバックグラウンド操作となります) 。</p>
+
+<p>iOS 5 で、もしデバイスがロック状態でもまだアプリを動かしたいのなら、アプリに対してマルチタスク機能を無効 (UIApplicationExitsOnSuspend - YES) にする必要があります。これは、 iOS 4 の場合と異なります。 iOS 4 の場合は、デバイスロック状態でアプリを動作させることと、マルチタスク機能の設定は関係ありません。</p>
+</li>
+</ul>
+<hr>
+<h1><a name="resume">resume</a></h1>
+
+<p>このイベントは Cordova アプリケーションがバックグラウンドから復帰したときに呼び出されます。</p>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#resume">resume</a>", yourCallbackFunction, false);
+</code></pre>
+
+<h2>
+<a name="resume_">詳細</a>
+</h2>
+
+<p>Cordova はネイティブと JavaScript の2つのコードで形成されます。ネイティブコードがアプリをバックグラウンドから復帰させるとき、 <a href="cordova_events_events.md.html#resume">resume</a> イベントが呼び出されます。</p>
+
+<p>通常は、 Cordova の '<a href="cordova_events_events.md.html#deviceready">deviceready</a>' イベントを受け取った後、 <code>document.addEventListener</code> を通じてイベントリスナーをセットします。</p>
+
+<h2>
+<a name="resume_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7</li>
+</ul>
+<h2>
+<a name="resume_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#resume">resume</a>", onResume, false);
+
+function onResume() {
+    // <a href="cordova_events_events.md.html#resume">resume</a> イベントに関する操作を記述
+}
+</code></pre>
+
+<h2>
+<a name="resume_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova Resume 使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova のロード完了とともに onDeviceReady を呼び出します。
+    //
+    // この時点では、ドキュメントの読み込みは完了していますが、 cordova-1.8.1.js はまだ完了していません。
+    // Cordova のロード完了とともに
+    // `<a href="cordova_events_events.md.html#deviceready">deviceready</a>` イベントが呼び出されます。
+    //
+    function onLoad() {
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+    }
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        document.addEventListener("<a href="cordova_events_events.md.html#resume">resume</a>", onResume, false);
+    }
+
+    // <a href="cordova_events_events.md.html#resume">resume</a> イベントに関する操作を記述
+    //
+    function onResume() {
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body onload="onLoad()"&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="resume_ios">iOS に関する注意点</a>
+</h2>
+
+<p>アプリが復帰したとき、 <strong><a href="cordova_events_events.md.html#pause">pause</a></strong> イベントハンドラー中の console.log への呼び出しが走ります。 <strong><a href="cordova_events_events.md.html#pause">pause</a></strong> イベントの iOS に関する注意点のセクションに詳細を記載しています。</p>
+
+<p><strong><a href="cordova_events_events.md.html#resume">resume</a></strong> イベントが呼び出されるとき、 <code>alert</code> のようなインタラクティブな関数はタイムアウト値を0にした <code>setTimeout</code> 関数によってラップされる必要があります。</p>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#resume">resume</a>", onResume, false);
+
+function onResume() {
+    setTimeout(function() {
+            // 任意のコード
+          }, 0);
+}
+</code></pre>
+
+<ul>
+<li>
+<p><strong>active</strong> イベント</p>
+
+<p>この iOS 固有のイベントは <strong><a href="cordova_events_events.md.html#resume">resume</a></strong> イベントの一部として使用でき、アプリ実行中にオン／オフボタンが押されたことを検知するのに使われます。もしアプリ (とデバイス) がマルチタスク可能なら、このイベントは iOS 5 でのみ続く <strong><a href="cordova_events_events.md.html#resume">resume</a></strong> と対になります (事実上マルチタスク可能な iOS 5 のすべてのロックされたアプリはバックグラウンド操作となります) 。</p>
+
+<p>iOS 5 で、もしデバイスがロック状態でもまだアプリを動かしたいのなら、アプリに対してマルチタスク機能を無効 (UIApplicationExitsOnSuspend - YES) にする必要があります。これは、 iOS 4 の場合と異なります。 iOS 4 の場合は、デバイスロック状態でアプリを動作させることと、マルチタスク機能の設定は関係ありません。</p>
+</li>
+</ul>
+<hr>
+<h1><a name="online">online</a></h1>
+
+<p>このイベントは Cordova アプリケーションがオンライン (インターネットに接続) になったときに呼び出されます。</p>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#online">online</a>", yourCallbackFunction, false);
+</code></pre>
+
+<h2>
+<a name="online_">詳細</a>
+</h2>
+
+<p>アプリのネットワーク接続がオンラインになったとき、 <a href="cordova_events_events.md.html#online">online</a> イベントが呼び出されます。</p>
+
+<p>通常は、 Cordova の '<a href="cordova_events_events.md.html#deviceready">deviceready</a>' イベントを受け取った後、 <code>document.addEventListener</code> を通じてイベントリスナーをセットします。</p>
+
+<h2>
+<a name="online_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7</li>
+</ul>
+<h2>
+<a name="online_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#online">online</a>", onOnline, false);
+
+function onOnline() {
+    // <a href="cordova_events_events.md.html#online">online</a> イベントに関する操作を記述
+}
+</code></pre>
+
+<h2>
+<a name="online_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova Online 使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova のロード完了とともに onDeviceReady を呼び出します。
+    //
+    // この時点では、ドキュメントの読み込みは完了していますが、 cordova-1.8.1.js はまだ完了していません。
+    // Cordova のロード完了とともに
+    // `<a href="cordova_events_events.md.html#deviceready">deviceready</a>` イベントが呼び出されます。
+    //
+    function onLoad() {
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+    }
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        document.addEventListener("<a href="cordova_events_events.md.html#online">online</a>", onOnline, false);
+    }
+
+    // <a href="cordova_events_events.md.html#online">online</a> イベントに関する操作を記述
+    //
+    function onOnline() {
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body onload="onLoad()"&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="online_ios">iOS に関する注意点</a>
+</h2>
+
+<p>初回起動時、最初の <a href="cordova_events_events.md.html#online">online</a> イベントは少なくとも起動に1秒かかります。</p>
+
+<h2>
+<a name="online_windows_phone_7">Windows Phone 7 に関する注意点</a>
+</h2>
+
+<p>エミュレーターで起動している場合、デバイスの connection.status は常に unknown (不明) であるため、このイベントは呼び出されません。</p>
+
+<hr>
+<h1><a name="offline">offline</a></h1>
+
+<p>このイベントは Cordova アプリケーションがオフライン (インターネットに接続) になったときに呼び出されます。</p>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#online">online</a>", yourCallbackFunction, false);
+</code></pre>
+
+<h2>
+<a name="offline_">詳細</a>
+</h2>
+
+<p>アプリのネットワーク接続がオフラインになったとき、 <a href="cordova_events_events.md.html#offline">offline</a> イベントが呼び出されます。</p>
+
+<p>通常は、 Cordova の '<a href="cordova_events_events.md.html#deviceready">deviceready</a>' イベントを受け取った後、 <code>document.addEventListener</code> を通じてイベントリスナーをセットします。</p>
+
+<h2>
+<a name="offline_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7</li>
+</ul>
+<h2>
+<a name="offline_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#offline">offline</a>", onOffline, false);
+
+function onOffline() {
+    // <a href="cordova_events_events.md.html#offline">offline</a>イベントに関する操作を記述
+}
+</code></pre>
+
+<h2>
+<a name="offline_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova Offline 使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova のロード完了とともに onDeviceReady を呼び出します。
+    //
+    // この時点では、ドキュメントの読み込みは完了していますが、 cordova-1.8.1.js はまだ完了していません。
+    // Cordova のロード完了とともに
+    // `<a href="cordova_events_events.md.html#deviceready">deviceready</a>` イベントが呼び出されます。
+    //
+    function onLoad() {
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+    }
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        document.addEventListener("<a href="cordova_events_events.md.html#offline">offline</a>", onOffline, false);
+    }
+
+    // <a href="cordova_events_events.md.html#offline">offline</a> イベントに関する操作を記述
+    //
+    function onOffline() {
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body onload="onLoad()"&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="offline_ios">iOS に関する注意点</a>
+</h2>
+
+<p>初回起動時、最初の <a href="cordova_events_events.md.html#offline">offline</a> イベントは少なくとも起動に1秒かかります。</p>
+
+<h2>
+<a name="offline_windows_phone_7">Windows Phone 7 に関する注意点</a>
+</h2>
+
+<p>エミュレーターで起動している場合、デバイスの connection.status は常に unknown (不明) であるため、このイベントは呼び出されません。</p>
+
+<hr>
+<h1><a name="backbutton">backbutton</a></h1>
+
+<p>このイベントはユーザーが戻るボタンを押したときに呼び出されます。</p>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#backbutton">backbutton</a>", yourCallbackFunction, false);
+</code></pre>
+
+<h2>
+<a name="backbutton_">詳細</a>
+</h2>
+
+<p>もしデフォルトの戻るボタンの挙動を上書きしたい場合は、 '<a href="cordova_events_events.md.html#backbutton">backbutton</a>' イベントにイベントリスナーを登録することができます。戻るボタンの挙動を上書きするために、他のメソッドを呼び出す必要はありません。ただ '<a href="cordova_events_events.md.html#backbutton">backbutton</a>' イベントリスナーを登録するだけで大丈夫です。</p>
+
+<p>通常は、 Cordova の '<a href="cordova_events_events.md.html#deviceready">deviceready</a>' イベントを受け取った後、 <code>document.addEventListener</code> を通じてイベントリスナーをセットします。</p>
+
+<h2>
+<a name="backbutton_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>Windows Phone 7 (Mango)</li>
+</ul>
+<h2>
+<a name="backbutton_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#backbutton">backbutton</a>", onBackKeyDown, false);
+
+function onBackKeyDown() {
+    // メニューボタン関する操作を記述
+}
+</code></pre>
+
+<h2>
+<a name="backbutton_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova Back Button 使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordovaのロード完了とともに onDeviceReady を呼び出します。
+    //
+    // この時点では、ドキュメントの読み込みは完了していますが、 cordova-1.8.1.js はまだ完了していません。
+    // Cordova のロード完了とともに
+    // `<a href="cordova_events_events.md.html#deviceready">deviceready</a>` イベントが呼び出されます。
+    //
+    function onLoad() {
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+    }
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        // イベントリスナーを登録
+        document.addEventListener("<a href="cordova_events_events.md.html#backbutton">backbutton</a>", onBackKeyDown, false);
+    }
+
+    // メニューボタン関する操作を記述
+    //
+    function onBackKeyDown() {
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body onload="onLoad()"&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="batterycritical">batterycritical</a></h1>
+
+<p>このイベントはバッテリー残量が危険な閾値に達したことを Cordova アプリケーションが検知したときに呼び出されます。</p>
+
+<pre class="prettyprint"><code>window.addEventListener("<a href="cordova_events_events.md.html#batterycritical">batterycritical</a>", yourCallbackFunction, false);
+</code></pre>
+
+<h2>
+<a name="batterycritical_">詳細</a>
+</h2>
+
+<p>このイベントはバッテリー残量が危険なパーセンテージの閾値に達したことを Cordova アプリケーションが検知したときに呼び出されます。この値はデバイス固有です。</p>
+
+<p><a href="cordova_events_events.md.html#batterycritical">batterycritical</a> ハンドラーは以下の2つのプロパティーを含むオブジェクトを伴って呼び出されます:</p>
+
+<ul>
+<li>
+<strong>level:</strong> バッテリーのパーセンテージ (0-100) <em>(Number)</em>
+</li>
+<li>
+<strong>isPlugged:</strong> デバイスが充電器に接続されているかどうかを表します <em>(Boolean)</em>
+</li>
+</ul>
+<p>通常は、 Cordova の '<a href="cordova_events_events.md.html#deviceready">deviceready</a>' イベントを受け取った後、 <code>window.addEventListener</code> を通じてイベントリスナーをセットします。</p>
+
+<h2>
+<a name="batterycritical_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>iOS</li>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+</ul>
+<h2>
+<a name="batterycritical_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>window.addEventListener("<a href="cordova_events_events.md.html#batterycritical">batterycritical</a>", onBatteryCritical, false);
+
+function onBatteryCritical(info) {
+    // バッテリー関する操作を記述
+    alert("バッテリー残量が危険です " + info.level + "%\nすぐに充電してください。");
+}
+</code></pre>
+
+<h2>
+<a name="batterycritical_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova <a href="cordova_device_device.md.html#Device">Device</a> Ready 使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova のロード完了とともに onDeviceReady を呼び出します。
+    //
+    // この時点では、ドキュメントの読み込みは完了していますが、 cordova-1.8.1.js はまだ完了していません。
+    // Cordova のロード完了とともに
+    // `<a href="cordova_events_events.md.html#deviceready">deviceready</a>` イベントが呼び出されます。
+    //
+    function onLoad() {
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+    }
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        window.addEventListener("<a href="cordova_events_events.md.html#batterycritical">batterycritical</a>", onBatteryCritical, false);
+    }
+
+    // バッテリー関する操作を記述
+    //
+    function onBatteryCritical(info) {
+        alert("バッテリー残量が危険です " + info.level + "%\nすぐに充電してください。");
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body onload="onLoad()"&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="batterylow">batterylow</a></h1>
+
+<p>このイベントはバッテリー残量が低下したことを Cordova アプリケーションが検知したときに呼び出されます。</p>
+
+<pre class="prettyprint"><code>window.addEventListener("<a href="cordova_events_events.md.html#batterylow">batterylow</a>", yourCallbackFunction, false);
+</code></pre>
+
+<h2>
+<a name="batterylow_">詳細</a>
+</h2>
+
+<p>このイベントはバッテリー残量のパーセンテージが低下の閾値に達したことを Cordova アプリケーションが検知したときに呼び出されます。この値はデバイス固有です。</p>
+
+<p><a href="cordova_events_events.md.html#batterylow">batterylow</a> ハンドラーは以下の2つのプロパティーを含むオブジェクトを伴って呼び出されます:</p>
+
+<ul>
+<li>
+<strong>level:</strong> バッテリーのパーセンテージ (0-100) <em>(Number)</em>
+</li>
+<li>
+<strong>isPlugged:</strong> デバイスが充電器に接続されているかどうかを表します <em>(Boolean)</em>
+</li>
+</ul>
+<p>通常は、 Cordova の '<a href="cordova_events_events.md.html#deviceready">deviceready</a>' イベントを受け取った後、 <code>document.addEventListener</code> を通じてイベントリスナーをセットします。</p>
+
+<h2>
+<a name="batterylow_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>iOS</li>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+</ul>
+<h2>
+<a name="batterylow_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>window.addEventListener("<a href="cordova_events_events.md.html#batterylow">batterylow</a>", onBatteryLow, false);
+
+function onBatteryLow(info) {
+    // バッテリー関する操作を記述
+    alert("バッテリー残量が低下しています " + info.level + "%");
+}
+</code></pre>
+
+<h2>
+<a name="batterylow_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova <a href="cordova_device_device.md.html#Device">Device</a> Ready 使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova のロード完了とともに onDeviceReady を呼び出します。
+    //
+    // この時点では、ドキュメントの読み込みは完了していますが、 cordova-1.8.1.js はまだ完了していません。
+    // Cordova のロード完了とともに
+    // `<a href="cordova_events_events.md.html#deviceready">deviceready</a>` イベントが呼び出されます。
+    //
+    function onLoad() {
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+    }
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        window.addEventListener("<a href="cordova_events_events.md.html#batterylow">batterylow</a>", onBatteryLow, false);
+    }
+
+    // バッテリー関する操作を記述
+    //
+    function onBatteryLow(info) {
+        alert("バッテリー残量が低下しています " + info.level + "%");
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body onload="onLoad()"&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="batterystatus">batterystatus</a></h1>
+
+<p>このイベントはバッテリーのステータスが変化したことを Cordova アプリケーションが検知したときに呼び出されます。</p>
+
+<pre class="prettyprint"><code>window.addEventListener("<a href="cordova_events_events.md.html#batterystatus">batterystatus</a>", yourCallbackFunction, false);
+</code></pre>
+
+<h2>
+<a name="batterystatus_">詳細</a>
+</h2>
+
+<p>このイベントはバッテリー残量のパーセンテージが1パーセントでも変化したことを Cordova アプリケーションが検知したときに呼び出されます。 また、デバイスが充電器に接続されたとき、接続が解除されたときも呼び出されます。</p>
+
+<p>battery status ハンドラーは以下の2つのプロパティーを含むオブジェクトを伴って呼び出されます:</p>
+
+<ul>
+<li>
+<strong>level:</strong> バッテリーのパーセンテージ (0-100) <em>(Number)</em>
+</li>
+<li>
+<strong>isPlugged:</strong> デバイスが充電器に接続されているかどうかを表します <em>(Boolean)</em>
+</li>
+</ul>
+<p>通常は、 Cordova の '<a href="cordova_events_events.md.html#deviceready">deviceready</a>' イベントを受け取った後、 <code>window.addEventListener</code> を通じてイベントリスナーをセットします。</p>
+
+<h2>
+<a name="batterystatus_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>iOS</li>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>Windows Phone 7 (Mango)</li>
+</ul>
+<h2>
+<a name="batterystatus_windows_phone_7">Windows Phone 7 に関する注意点</a>
+</h2>
+
+<p>Windows Phone 7 はバッテリー残量を取得するネイティブの API を提供していないため、
+level プロパティーは利用できません。 <code>isPlugged</code> パラメーターはサポートされています。</p>
+
+<h2>
+<a name="batterystatus_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>window.addEventListener("<a href="cordova_events_events.md.html#batterystatus">batterystatus</a>", onBatteryStatus, false);
+
+function onBatteryStatus(info) {
+    // バッテリーに関する操作を記述
+    console.log("残量: " + info.level + " 充電器に接続: " + info.isPlugged);
+}
+</code></pre>
+
+<h2>
+<a name="batterystatus_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova <a href="cordova_device_device.md.html#Device">Device</a> Ready 使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova のロード完了とともに onDeviceReady を呼び出します。
+    //
+    // この時点では、ドキュメントの読み込みは完了していますが、 cordova-1.8.1.js はまだ完了していません。
+    // Cordova のロード完了とともに
+    // `<a href="cordova_events_events.md.html#deviceready">deviceready</a>` イベントが呼び出されます。
+    //
+    function onLoad() {
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+    }
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        window.addEventListener("<a href="cordova_events_events.md.html#batterystatus">batterystatus</a>", onBatteryStatus, false);
+    }
+
+    // バッテリーに関する操作を記述
+    //
+    function onBatteryStatus(info) {
+        console.log("残量: " + info.level + " 充電器に接続: " + info.isPlugged);
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body onload="onLoad()"&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="menubutton">menubutton</a></h1>
+
+<p>このイベントはユーザーがメニューボタンを押したときに呼び出されます。</p>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#menubutton">menubutton</a>", yourCallbackFunction, false);
+</code></pre>
+
+<h2>
+<a name="menubutton_">詳細</a>
+</h2>
+
+<p>もしデフォルトのメニューボタンの挙動を上書きしたい場合は、 '<a href="cordova_events_events.md.html#menubutton">menubutton</a>' イベントにイベントリスナーを登録することができます。</p>
+
+<p>通常は、 Cordova の '<a href="cordova_events_events.md.html#deviceready">deviceready</a>' イベントを受け取った後、 <code>document.addEventListener</code> を通じてイベントリスナーをセットします。</p>
+
+<h2>
+<a name="menubutton_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+</ul>
+<h2>
+<a name="menubutton_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#menubutton">menubutton</a>", onMenuKeyDown, false);
+
+function onMenuKeyDown() {
+    // メニューボタン関する操作を記述
+}
+</code></pre>
+
+<h2>
+<a name="menubutton_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                      "http://www.w3.org/TR/html4/strict.dtd"&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova Menu Button 使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova のロード完了とともに onDeviceReady を呼び出します。
+    //
+    // この時点では、ドキュメントの読み込みは完了していますが、 cordova-1.8.1.js はまだ完了していません。
+    // Cordova のロード完了とともに
+    // `<a href="cordova_events_events.md.html#deviceready">deviceready</a>` イベントが呼び出されます。
+    //
+    function onLoad() {
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+    }
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        // イベントリスナーを登録
+        document.addEventListener("<a href="cordova_events_events.md.html#menubutton">menubutton</a>", onMenuKeyDown, false);
+    }
+
+    // メニューボタン関する操作を記述
+    //
+    function onMenuKeyDown() {
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body onload="onLoad()"&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="searchbutton">searchbutton</a></h1>
+
+<p>このイベントはユーザーが検索ボタンを押したときに呼び出されます。</p>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#searchbutton">searchbutton</a>", yourCallbackFunction, false);
+</code></pre>
+
+<h2>
+<a name="searchbutton_">詳細</a>
+</h2>
+
+<p>もし Android にデフォルトの検索ボタンの挙動を上書きしたい場合は、 '<a href="cordova_events_events.md.html#searchbutton">searchbutton</a>' イベントにイベントリスナーを登録することができます。</p>
+
+<p>通常は、 Cordova の '<a href="cordova_events_events.md.html#deviceready">deviceready</a>' イベントを受け取った後、 <code>document.addEventListener</code> を通じてイベントリスナーをセットします。</p>
+
+<h2>
+<a name="searchbutton_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+</ul>
+<h2>
+<a name="searchbutton_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#searchbutton">searchbutton</a>", onSearchKeyDown, false);
+
+function onSearchKeyDown() {
+    // 検索ボタン関する操作を記述
+}
+</code></pre>
+
+<h2>
+<a name="searchbutton_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                      "http://www.w3.org/TR/html4/strict.dtd"&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova Search Button 使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova のロード完了とともに onDeviceReady を呼び出します。
+    //
+    // この時点では、ドキュメントの読み込みは完了していますが、 cordova-1.8.1.js はまだ完了していません。
+    // Cordova のロード完了とともに
+    // `<a href="cordova_events_events.md.html#deviceready">deviceready</a>` イベントが呼び出されます。
+    //
+    function onLoad() {
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+    }
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        // イベントリスナーを登録
+        document.addEventListener("<a href="cordova_events_events.md.html#searchbutton">searchbutton</a>", onSearchKeyDown, false);
+    }
+
+    // 検索ボタン関する操作を記述
+    //
+    function onSearchKeyDown() {
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body onload="onLoad()"&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="startcallbutton">startcallbutton</a></h1>
+
+<p>このイベントはユーザーがスタートコールボタンを押したときに呼び出されます。</p>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#startcallbutton">startcallbutton</a>", yourCallbackFunction, false);
+</code></pre>
+
+<h2>
+<a name="startcallbutton_">詳細</a>
+</h2>
+
+<p>もしデフォルトの検索ボタンの挙動を上書きしたい場合は、 '<a href="cordova_events_events.md.html#startcallbutton">startcallbutton</a>' イベントにイベントリスナーを登録することができます。</p>
+
+<p>通常は、 Cordova の '<a href="cordova_events_events.md.html#deviceready">deviceready</a>' イベントを受け取った後、 <code>document.addEventListener</code> を通じてイベントリスナーをセットします。</p>
+
+<h2>
+<a name="startcallbutton_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+</ul>
+<h2>
+<a name="startcallbutton_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#startcallbutton">startcallbutton</a>", onStartCallKeyDown, false);
+
+function onStartCallKeyDown() {
+    // スタートコールボタン関する操作を記述
+}
+</code></pre>
+
+<h2>
+<a name="startcallbutton_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                      "http://www.w3.org/TR/html4/strict.dtd"&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova Start Call Button 使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova のロード完了とともに onDeviceReady を呼び出します。
+    //
+    // この時点では、ドキュメントの読み込みは完了していますが、 cordova-1.8.1.js はまだ完了していません。
+    // Cordova のロード完了とともに
+    // `<a href="cordova_events_events.md.html#deviceready">deviceready</a>` イベントが呼び出されます。
+    //
+    function onLoad() {
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+    }
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        // イベントリスナーを登録
+        document.addEventListener("<a href="cordova_events_events.md.html#startcallbutton">startcallbutton</a>", onStartCallKeyDown, false);
+    }
+
+    // スタートコールボタン関する操作を記述
+    //
+    function onStartCallKeyDown() {
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body onload="onLoad()"&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="endcallbutton">endcallbutton</a></h1>
+
+<p>このイベントはユーザーがエンドコールボタンを押したときに呼び出されます。</p>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#endcallbutton">endcallbutton</a>", yourCallbackFunction, false);
+</code></pre>
+
+<h2>
+<a name="endcallbutton_">詳細</a>
+</h2>
+
+<p>もしデフォルトのエンドコールボタンの挙動を上書きしたい場合は、 '<a href="cordova_events_events.md.html#endcallbutton">endcallbutton</a>' イベントにイベントリスナーを登録することができます。</p>
+
+<p>通常は、 Cordova の '<a href="cordova_events_events.md.html#deviceready">deviceready</a>' イベントを受け取った後、 <code>document.addEventListener</code> を通じてイベントリスナーをセットします。</p>
+
+<h2>
+<a name="endcallbutton_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+</ul>
+<h2>
+<a name="endcallbutton_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#endcallbutton">endcallbutton</a>", onEndCallKeyDown, false);
+
+function onEndCallKeyDown() {
+    // エンドコールボタン関する操作を記述
+}
+</code></pre>
+
+<h2>
+<a name="endcallbutton_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                      "http://www.w3.org/TR/html4/strict.dtd"&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova End Call Button 使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova のロード完了とともに onDeviceReady を呼び出します。
+    //
+    // この時点では、ドキュメントの読み込みは完了していますが、 cordova-1.8.1.js はまだ完了していません。
+    // Cordova のロード完了とともに
+    // `<a href="cordova_events_events.md.html#deviceready">deviceready</a>` イベントが呼び出されます。
+    //
+    function onLoad() {
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+    }
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        // イベントリスナーを登録
+        document.addEventListener("<a href="cordova_events_events.md.html#endcallbutton">endcallbutton</a>", onEndCallKeyDown, false);
+    }
+
+    // エンドコールボタン関する操作を記述
+    //
+    function onEndCallKeyDown() {
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body onload="onLoad()"&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="volumedownbutton">volumedownbutton</a></h1>
+
+<p>このイベントはユーザーがボリュームダウンボタンを押したときに呼び出されます。</p>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#volumedownbutton">volumedownbutton</a>", yourCallbackFunction, false);
+</code></pre>
+
+<h2>
+<a name="volumedownbutton_">詳細</a>
+</h2>
+
+<p>もしデフォルトのボリュームダウンボタンの挙動を上書きしたい場合は、 '<a href="cordova_events_events.md.html#volumedownbutton">volumedownbutton</a>' イベントにイベントリスナーを登録することができます。</p>
+
+<p>通常は、 Cordova の '<a href="cordova_events_events.md.html#deviceready">deviceready</a>' イベントを受け取った後、 <code>document.addEventListener</code> を通じてイベントリスナーをセットします。</p>
+
+<h2>
+<a name="volumedownbutton_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+</ul>
+<h2>
+<a name="volumedownbutton_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#volumedownbutton">volumedownbutton</a>", onVolumeDownKeyDown, false);
+
+function onVolumeDownKeyDown() {
+    // ボリュームダウンボタン関する操作を記述
+}
+</code></pre>
+
+<h2>
+<a name="volumedownbutton_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                      "http://www.w3.org/TR/html4/strict.dtd"&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova Volume Down Button 使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova のロード完了とともに onDeviceReady を呼び出します。
+    //
+    // この時点では、ドキュメントの読み込みは完了していますが、 cordova-1.8.1.js はまだ完了していません。
+    // Cordova のロード完了とともに
+    // `<a href="cordova_events_events.md.html#deviceready">deviceready</a>` イベントが呼び出されます。
+    //
+    function onLoad() {
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+    }
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        // イベントリスナーを登録
+        document.addEventListener("<a href="cordova_events_events.md.html#volumedownbutton">volumedownbutton</a>", onVolumeDownKeyDown, false);
+    }
+
+    // ボリュームダウンボタン関する操作を記述
+    //
+    function onVolumeDownKeyDown() {
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body onload="onLoad()"&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="volumeupbutton">volumeupbutton</a></h1>
+
+<p>このイベントはユーザーがボリュームアップボタンを押したときに呼び出されます。</p>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#volumeupbutton">volumeupbutton</a>", yourCallbackFunction, false);
+</code></pre>
+
+<h2>
+<a name="volumeupbutton_">詳細</a>
+</h2>
+
+<p>もしデフォルトのボリュームアップボタンの挙動を上書きしたい場合は、 '<a href="cordova_events_events.md.html#volumeupbutton">volumeupbutton</a>' イベントにイベントリスナーを登録することができます。</p>
+
+<p>通常は、 Cordova の '<a href="cordova_events_events.md.html#deviceready">deviceready</a>' イベントを受け取った後、 <code>document.addEventListener</code> を通じてイベントリスナーをセットします。</p>
+
+<h2>
+<a name="volumeupbutton_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+</ul>
+<h2>
+<a name="volumeupbutton_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>document.addEventListener("<a href="cordova_events_events.md.html#volumeupbutton">volumeupbutton</a>", onVolumeUpKeyDown, false);
+
+function onVolumeUpKeyDown() {
+    // ボリュームアップボタン関する操作を記述
+}
+</code></pre>
+
+<h2>
+<a name="volumeupbutton_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                      "http://www.w3.org/TR/html4/strict.dtd"&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cordova Volume Up Button 使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova のロード完了とともに onDeviceReady を呼び出します。
+    //
+    // この時点では、ドキュメントの読み込みは完了していますが、 cordova-1.8.1.js はまだ完了していません。
+    // Cordova のロード完了とともに
+    // `<a href="cordova_events_events.md.html#deviceready">deviceready</a>` イベントが呼び出されます。
+    //
+    function onLoad() {
+        document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+    }
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        // イベントリスナーを登録
+        document.addEventListener("<a href="cordova_events_events.md.html#volumeupbutton">volumeupbutton</a>", onVolumeUpKeyDown, false);
+    }
+
+    // ボリュームアップボタン関する操作を記述
+    //
+    function onVolumeUpKeyDown() {
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body onload="onLoad()"&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+            </div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

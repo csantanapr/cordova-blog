@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="English" value="en">
+<option value="edge">edge</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0rc1">2.7.0rc1</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0rc1">2.6.0rc1</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0rc1">2.5.0rc1</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0rc1">2.4.0rc1</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0rc2">2.3.0rc2</option>
+<option value="2.3.0rc1">2.3.0rc1</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0rc2">2.2.0rc2</option>
+<option value="2.2.0rc1">2.2.0rc1</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0rc2">2.1.0rc2</option>
+<option value="2.1.0rc1">2.1.0rc1</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0rc1">2.0.0rc1</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0rc1">1.9.0rc1</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0rc1">1.8.0rc1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0rc1">1.7.0rc1</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0rc1">1.6.0rc1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0rc1">1.5.0rc1</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="Japanese" value="jp">
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option selected value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="kr"><option value="2.0.0">2.0.0</option></optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Accelerometer</h1>
+            <small><select><option value="Accelerometer">Accelerometer</option>
+<option value="Accelerometer_">      - メソッド</option>
+<option value="Accelerometer_">      - 引数</option>
+<option value="Accelerometer_">      - オブジェクト (読み取り専用)</option>
+<option value="Accelerometer_">      - パーミッション</option>
+<option value="accelerometer.getCurrentAcceleration">accelerometer.getCurrentAcceleration</option>
+<option value="accelerometer.getCurrentAcceleration_">      - 概要</option>
+<option value="accelerometer.getCurrentAcceleration_">      - サポートされているプラットフォーム</option>
+<option value="accelerometer.getCurrentAcceleration_">      - 使用例</option>
+<option value="accelerometer.getCurrentAcceleration_">      - 詳細な使用例</option>
+<option value="accelerometer.getCurrentAcceleration_iphone">      - iPhone に関する注意点</option>
+<option value="accelerometer.watchAcceleration">accelerometer.watchAcceleration</option>
+<option value="accelerometer.watchAcceleration_">      - 概要</option>
+<option value="accelerometer.watchAcceleration_">      - サポートされているプラットフォーム</option>
+<option value="accelerometer.watchAcceleration_">      - 使用例</option>
+<option value="accelerometer.watchAcceleration_">      - 詳細な使用例</option>
+<option value="accelerometer.watchAcceleration_iphone">      -  iPhone に関する注意点</option>
+<option value="accelerometer.clearWatch">accelerometer.clearWatch</option>
+<option value="accelerometer.clearWatch_">      - サポートされているプラットフォーム</option>
+<option value="accelerometer.clearWatch_">      - 使用例</option>
+<option value="accelerometer.clearWatch_">      - 詳細な使用例</option>
+<option value="Acceleration">Acceleration</option>
+<option value="Acceleration_">      - プロパティー</option>
+<option value="Acceleration_">      - 概要</option>
+<option value="Acceleration_">      - サポートされているプラットフォーム</option>
+<option value="Acceleration_">      - 使用例</option>
+<option value="Acceleration_">      - 詳細な使用例</option>
+<option value="accelerometerSuccess">accelerometerSuccess</option>
+<option value="accelerometerSuccess_">      - パラメーター</option>
+<option value="accelerometerSuccess_">      - 使用例</option>
+<option value="accelerometerError">accelerometerError</option>
+<option value="accelerometerOptions">accelerometerOptions</option>
+<option value="accelerometerOptions_">      - オプション</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>API リファレンス</h1>
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a></li>
+<li><a href="cordova_camera_camera.md.html#Camera">Camera</a></li>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_compass_compass.md.html#Compass">Compass</a></li>
+<li><a href="cordova_connection_connection.md.html#Connection">Connection</a></li>
+<li><a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a></li>
+<li><a href="cordova_device_device.md.html#Device">Device</a></li>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_file_file.md.html#File">File</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a></li>
+<li><a href="cordova_media_media.md.html#Media">Media</a></li>
+<li><a href="cordova_notification_notification.md.html#Notification">Notification</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+</ul>
+<h1>Guides</h1>
+<ul>
+<li><a href="guide_getting-started_index.md.html#%E5%85%A5%E9%96%80%E3%82%AC%E3%82%A4%E3%83%89">入門ガイド</a></li>
+<li><a href="guide_command-line_index.md.html#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E4%BD%BF%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89">コマンドライン使用ガイド</a></li>
+<li><a href="guide_upgrading_index.md.html#%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89">アップグレードガイド</a></li>
+<li><a href="guide_whitelist_index.md.html#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89">ドメインホワイトリストガイド</a></li>
+<li><a href="guide_cordova-webview_index.md.html#WebView%20%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF">WebView の埋め込み</a></li>
+<li><a href="_index.html">索引</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Accelerometer">Accelerometer</a></h1>
+
+<blockquote>
+  <p>デバイスの動きを (x, y, z) 軸で取得します。</p>
+</blockquote>
+
+<h2>
+<a name="Accelerometer_">メソッド</a>
+</h2>
+
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#accelerometer.getCurrentAcceleration">accelerometer.getCurrentAcceleration</a></li>
+<li><a href="cordova_accelerometer_accelerometer.md.html#accelerometer.watchAcceleration">accelerometer.watchAcceleration</a></li>
+<li><a href="cordova_accelerometer_accelerometer.md.html#accelerometer.clearWatch">accelerometer.clearWatch</a></li>
+</ul>
+<h2>
+<a name="Accelerometer_">引数</a>
+</h2>
+
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#accelerometerSuccess">accelerometerSuccess</a></li>
+<li><a href="cordova_accelerometer_accelerometer.md.html#accelerometerError">accelerometerError</a></li>
+<li><a href="cordova_accelerometer_accelerometer.md.html#accelerometerOptions">accelerometerOptions</a></li>
+</ul>
+<h2>
+<a name="Accelerometer_">オブジェクト (読み取り専用)</a>
+</h2>
+
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Acceleration">Acceleration</a></li>
+</ul>
+<h2>
+<a name="Accelerometer_">パーミッション</a>
+</h2>
+
+<h3>Android</h3>
+
+<h4>app/res/xml/plugins.xml</h4>
+
+<pre class="prettyprint"><code>&lt;plugin name="<a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a>" value="org.apache.cordova.AccelListener" /&gt;
+</code></pre>
+
+<h3>Bada</h3>
+
+<pre class="prettyprint"><code>パーミッションの設定は必要ありません。
+</code></pre>
+
+<h3>BlackBerry WebWorks</h3>
+
+<h4>www/plugins.xml</h4>
+
+<pre class="prettyprint"><code>&lt;plugin name="<a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a>" value="org.apache.cordova.accelerometer.<a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a>" /&gt;
+</code></pre>
+
+<h4>www/config.xml</h4>
+
+<pre class="prettyprint"><code>&lt;feature id="blackberry.system"  required="true" version="1.0.0.0" /&gt;
+&lt;feature id="org.apache.cordova" required="true" version="1.0.0" /&gt;
+</code></pre>
+
+<h3>iOS</h3>
+
+<h4>App/Supporting Files/Cordova.plist</h4>
+
+<pre class="prettyprint"><code>&lt;key&gt;Plugins&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;<a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a>&lt;/key&gt;
+    &lt;string&gt;CDVAccelerometer&lt;/string&gt;
+&lt;/dict&gt;
+</code></pre>
+
+<h3>webOS</h3>
+
+<pre class="prettyprint"><code>パーミッションの設定は必要ありません。
+</code></pre>
+
+<h3>Windows Phone</h3>
+
+<h4>Properties/WPAppManifest.xml</h4>
+
+<pre class="prettyprint"><code>&lt;Capabilities&gt;
+    &lt;Capability Name="ID_CAP_SENSORS" /&gt;
+&lt;/Capabilities&gt;
+</code></pre>
+
+<p>参照: <a class="external" href="http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx">Application Manifest for Windows Phone</a></p>
+
+<hr>
+<h1><a name="accelerometer.getCurrentAcceleration">accelerometer.getCurrentAcceleration</a></h1>
+
+<p>デバイスの傾きの増加量を計測します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_accelerometer_accelerometer.md.html#accelerometer.getCurrentAcceleration">accelerometer.getCurrentAcceleration</a>(<a href="cordova_accelerometer_accelerometer.md.html#accelerometerSuccess">accelerometerSuccess</a>, <a href="cordova_accelerometer_accelerometer.md.html#accelerometerError">accelerometerError</a>);
+</code></pre>
+
+<h2>
+<a name="accelerometer.getCurrentAcceleration_">概要</a>
+</h2>
+
+<p>加速度センサーはデバイスの傾きの増加量を計測します。 加速度センサーでは x, y, z 軸の3次元の傾きを取得出来ます。</p>
+
+<p>加速度情報は <code><a href="cordova_accelerometer_accelerometer.md.html#accelerometerSuccess">accelerometerSuccess</a></code> コールバック関数によって返されます。</p>
+
+<h2>
+<a name="accelerometer.getCurrentAcceleration_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+<li>Windows Phone 7 (Mango)</li>
+<li>Bada 1.2 &amp; 2.x</li>
+</ul>
+<h2>
+<a name="accelerometer.getCurrentAcceleration_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>function onSuccess(acceleration) {
+    alert('X 軸における加速度: ' + acceleration.x + '\n' +
+          'Y 軸における加速度: ' + acceleration.y + '\n' +
+          'Z 軸における加速度: ' + acceleration.z + '\n' +
+          'タイムスタンプ: '     + acceleration.timestamp + '\n');
+};
+
+function onError() {
+    alert('エラーが発生しました。');
+};
+
+navigator.<a href="cordova_accelerometer_accelerometer.md.html#accelerometer.getCurrentAcceleration">accelerometer.getCurrentAcceleration</a>(onSuccess, onError);
+</code></pre>
+
+<h2>
+<a name="accelerometer.getCurrentAcceleration_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;加速度センサーの使用&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        navigator.<a href="cordova_accelerometer_accelerometer.md.html#accelerometer.getCurrentAcceleration">accelerometer.getCurrentAcceleration</a>(onSuccess, onError);
+    }
+
+    // onSuccess: 現在の加速度情報を取得
+    //
+    function onSuccess(acceleration) {
+        alert('X 軸における加速度: ' + acceleration.x + '\n' +
+              'Y 軸における加速度: ' + acceleration.y + '\n' +
+              'Z 軸における加速度: ' + acceleration.z + '\n' +
+              'タイムスタンプ: '     + acceleration.timestamp + '\n');
+    }
+
+    // onError: 加速度情報の取得に失敗
+    //
+    function onError() {
+        alert('エラーが発生しました。');
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;使用例&lt;/h1&gt;
+    &lt;p&gt;getCurrentAcceleration&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="accelerometer.getCurrentAcceleration_iphone">iPhone に関する注意点</a>
+</h2>
+
+<ul>
+<li>iPhone はピンポイントで現在の加速度情報を得ることは出来ません。</li>
+<li>加速度情報を取得するには、一定の時間間隔で加速度データの変異を計測する必要があります。</li>
+<li>そのため、 <code>getCurrentAcceleration</code> 関数は Cordova の <code>watchAccelerometer</code> 関数で取得した最新値を返します。</li>
+</ul>
+<hr>
+<h1><a name="accelerometer.watchAcceleration">accelerometer.watchAcceleration</a></h1>
+
+<p>ある時間間隔における x, y, z 軸上の加速度を返します。</p>
+
+<pre class="prettyprint"><code>var watchID = navigator.<a href="cordova_accelerometer_accelerometer.md.html#accelerometer.watchAcceleration">accelerometer.watchAcceleration</a>(<a href="cordova_accelerometer_accelerometer.md.html#accelerometerSuccess">accelerometerSuccess</a>,
+                                                       <a href="cordova_accelerometer_accelerometer.md.html#accelerometerError">accelerometerError</a>,
+                                                       [<a href="cordova_accelerometer_accelerometer.md.html#accelerometerOptions">accelerometerOptions</a>]);
+</code></pre>
+
+<h2>
+<a name="accelerometer.watchAcceleration_">概要</a>
+</h2>
+
+<p>加速度センサーはデバイスの傾きの増加量を計測します。加速度センサーでは x, y, z 軸の3次元の傾きを取得出来ます。</p>
+
+<p><code><a href="cordova_accelerometer_accelerometer.md.html#accelerometer.watchAcceleration">accelerometer.watchAcceleration</a></code> 関数を使うと、一定の間隔ごとにデバイスの加速度情報を取得できます。加速度情報を取得するたびに、 <code><a href="cordova_accelerometer_accelerometer.md.html#accelerometerSuccess">accelerometerSuccess</a></code> コールバック関数が実行されます。加速度情報を取得する間隔は、 <code>acceleratorOptions</code> オブジェクトのパラメーター <code>frequency</code> を通じてミリ秒単位で指定できます。</p>
+
+<p>本関数の戻り値である watch ID は、実行中の加速度センサー測定への参照を表します。また、 <code><a href="cordova_accelerometer_accelerometer.md.html#accelerometer.clearWatch">accelerometer.clearWatch</a></code> 関数に watch ID を渡すことで、加速度センサーの監視を停止できます。</p>
+
+<h2>
+<a name="accelerometer.watchAcceleration_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+<li>Windows Phone 7 (Mango)</li>
+<li>Bada 1.2 &amp; 2.x</li>
+</ul>
+<h2>
+<a name="accelerometer.watchAcceleration_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>function onSuccess(acceleration) {
+    alert('X 軸における加速度: ' + acceleration.x + '\n' +
+          'Y 軸における加速度: ' + acceleration.y + '\n' +
+          'Z 軸における加速度: ' + acceleration.z + '\n' +
+          'タイムスタンプ: '     + acceleration.timestamp + '\n');
+};
+
+function onError() {
+    alert('エラーが発生しました。');
+};
+
+var options = { frequency: 3000 };  // 3秒ごとに更新
+
+var watchID = navigator.<a href="cordova_accelerometer_accelerometer.md.html#accelerometer.watchAcceleration">accelerometer.watchAcceleration</a>(onSuccess, onError, options);
+</code></pre>
+
+<h2>
+<a name="accelerometer.watchAcceleration_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;加速度センサーの使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // watch ID が現在の `watchAcceleration` を参照
+    var watchID = null;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        startWatch();
+    }
+
+    // 加速度情報の監視を開始
+    //
+    function startWatch() {
+
+        // 加速度情報を3秒ごとに更新
+        var options = { frequency: 3000 };
+
+        watchID = navigator.<a href="cordova_accelerometer_accelerometer.md.html#accelerometer.watchAcceleration">accelerometer.watchAcceleration</a>(onSuccess, onError, options);
+    }
+
+    // 加速度情報の監視を停止
+    //
+    function stopWatch() {
+        if (watchID) {
+            navigator.<a href="cordova_accelerometer_accelerometer.md.html#accelerometer.clearWatch">accelerometer.clearWatch</a>(watchID);
+            watchID = null;
+        }
+    }
+
+    // onSuccess: 現在の加速度情報を取得
+    //
+    function onSuccess(acceleration) {
+        var element = document.getElementById('accelerometer');
+        element.innerHTML = 'X 軸における加速度: ' + acceleration.x + '&lt;br /&gt;' +
+                            'Y 軸における加速度: ' + acceleration.y + '&lt;br /&gt;' +
+                            'Z 軸における加速度: ' + acceleration.z + '&lt;br /&gt;' +
+                            'タイムスタンプ: '     + acceleration.timestamp + '&lt;br /&gt;';
+    }
+
+    // onError: 加速度情報の取得に失敗
+    //
+    function onError() {
+        alert('エラーが発生しました。');
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="accelerometer"&gt;加速度センサーを待機...&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="accelerometer.watchAcceleration_iphone"> iPhone に関する注意点</a>
+</h2>
+
+<ul>
+<li>指定された時間間隔に対して、 Cordova はコールバック関数を呼び出し、加速度情報を渡します。</li>
+<li>ただし、時間間隔は Cordova によって最低 40ms 、最高 1000ms に制限されています。</li>
+<li>たとえば時間間隔として 3秒 (3000ms) を指定した場合、 Cordova は加速度情報を1秒で取得しますが、コールバック関数は3秒ごとに呼び出されます。</li>
+</ul>
+<hr>
+<h1><a name="accelerometer.clearWatch">accelerometer.clearWatch</a></h1>
+
+<p>指定した watch ID の加速度情報の監視を停止します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_accelerometer_accelerometer.md.html#accelerometer.clearWatch">accelerometer.clearWatch</a>(watchID);
+</code></pre>
+
+<ul>
+<li>
+<strong>watchID</strong>: <code><a href="cordova_accelerometer_accelerometer.md.html#accelerometer.watchAcceleration">accelerometer.watchAcceleration</a></code>  によって返される ID。</li>
+</ul>
+<h2>
+<a name="accelerometer.clearWatch_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+<li>Windows Phone 7 (Mango)</li>
+<li>Bada 1.2 &amp; 2.x</li>
+</ul>
+<h2>
+<a name="accelerometer.clearWatch_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>var watchID = navigator.<a href="cordova_accelerometer_accelerometer.md.html#accelerometer.watchAcceleration">accelerometer.watchAcceleration</a>(onSuccess, onError, options);
+
+// ... 後に続く ...
+
+navigator.<a href="cordova_accelerometer_accelerometer.md.html#accelerometer.clearWatch">accelerometer.clearWatch</a>(watchID);
+</code></pre>
+
+<h2>
+<a name="accelerometer.clearWatch_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;加速度センサーの使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // watch ID が現在の `watchAcceleration` を参照
+    var watchID = null;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        startWatch();
+    }
+
+    // 加速度情報の監視を開始
+    //
+    function startWatch() {
+
+        // 加速度情報を3秒ごとに更新
+        var options = { frequency: 3000 };
+
+        watchID = navigator.<a href="cordova_accelerometer_accelerometer.md.html#accelerometer.watchAcceleration">accelerometer.watchAcceleration</a>(onSuccess, onError, options);
+    }
+
+    // 加速度情報の監視を停止
+    //
+    function stopWatch() {
+        if (watchID) {
+            navigator.<a href="cordova_accelerometer_accelerometer.md.html#accelerometer.clearWatch">accelerometer.clearWatch</a>(watchID);
+            watchID = null;
+        }
+    }
+
+    // onSuccess: 現在の加速度情報を取得
+    //
+    function onSuccess(acceleration) {
+        var element = document.getElementById('accelerometer');
+        element.innerHTML = 'X 軸における加速度: ' + acceleration.x + '&lt;br /&gt;' +
+                            'Y 軸における加速度: ' + acceleration.y + '&lt;br /&gt;' +
+                            'Z 軸における加速度: ' + acceleration.z + '&lt;br /&gt;' +
+                            'タイムスタンプ: '     + acceleration.timestamp + '&lt;br /&gt;';
+    }
+
+    // onError: 加速度情報の取得に失敗
+    //
+    function onError() {
+        alert('エラーが発生しました。');
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="accelerometer"&gt;加速度センサーを待機...&lt;/div&gt;
+    &lt;button onclick="stopWatch();"&gt;監視中止&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="Acceleration">Acceleration</a></h1>
+
+<p>ある時間軸上でキャプチャーされた加速度センサーのデータを保持します。</p>
+
+<h2>
+<a name="Acceleration_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>x:</strong>  x 軸上での加速度を表します。 (単位 m/s^2) (<code>Number</code>)</li>
+<li>
+<strong>y:</strong>  y 軸上での加速度を表します。 (単位 m/s^2) (<code>Number</code>)</li>
+<li>
+<strong>z:</strong>  z 軸上での加速度を表します。 (単位 m/s^2) (<code>Number</code>)</li>
+<li>
+<strong>timestamp:</strong> ミリ秒単位のタイムスタンプ値を表します。 (<code>DOMTimeStamp</code>)</li>
+</ul>
+<h2>
+<a name="Acceleration_">概要</a>
+</h2>
+
+<p>x, y, z の加速度は重力の影響 (9.81 m/s^2) を含みます。デバイスが机の上に表向きで置かれている場合、値はそれぞれ x=0, y=0, z=9.81 となります。</p>
+
+<h2>
+<a name="Acceleration_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7 (Mango)</li>
+<li>Bada 1.2 &amp; 2.x</li>
+</ul>
+<h2>
+<a name="Acceleration_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>function onSuccess(acceleration) {
+    alert('X 軸における加速度: ' + acceleration.x + '\n' +
+          'Y 軸における加速度: ' + acceleration.y + '\n' +
+          'Z 軸における加速度: ' + acceleration.z + '\n' +
+          'タイムスタンプ: '     + acceleration.timestamp + '\n');
+};
+
+function onError() {
+    alert('エラーが発生しました。');
+};
+
+navigator.<a href="cordova_accelerometer_accelerometer.md.html#accelerometer.getCurrentAcceleration">accelerometer.getCurrentAcceleration</a>(onSuccess, onError);
+</code></pre>
+
+<h2>
+<a name="Acceleration_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;加速度センサーの使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        navigator.<a href="cordova_accelerometer_accelerometer.md.html#accelerometer.getCurrentAcceleration">accelerometer.getCurrentAcceleration</a>(onSuccess, onError);
+    }
+
+    // onSuccess: 現在の加速度情報を取得
+    //
+    function onSuccess(acceleration) {
+        alert('X 軸における加速度: ' + acceleration.x + '\n' +
+              'Y 軸における加速度: ' + acceleration.y + '\n' +
+              'Z 軸における加速度: ' + acceleration.z + '\n' +
+              'タイムスタンプ: '     + acceleration.timestamp + '\n');
+    }
+
+    // onError: 加速度情報の取得に失敗
+    //
+    function onError() {
+        alert('エラーが発生しました。');
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;使用例&lt;/h1&gt;
+    &lt;p&gt;getCurrentAcceleration&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="accelerometerSuccess">accelerometerSuccess</a></h1>
+
+<p>加速度情報を返す onSuccess コールバック関数です。</p>
+
+<pre class="prettyprint"><code>function(acceleration) {
+    // 任意のコード
+}
+</code></pre>
+
+<h2>
+<a name="accelerometerSuccess_">パラメーター</a>
+</h2>
+
+<ul>
+<li>
+<strong>acceleration:</strong> ある瞬間における加速度を表します。 (<a href="cordova_accelerometer_accelerometer.md.html#Acceleration">Acceleration</a>)</li>
+</ul>
+<h2>
+<a name="accelerometerSuccess_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>function onSuccess(acceleration) {
+    alert('X 軸における加速度: ' + acceleration.x + '\n' +
+          'Y 軸における加速度: ' + acceleration.y + '\n' +
+          'Z 軸における加速度: ' + acceleration.z + '\n' +
+          'タイムスタンプ: '     + acceleration.timestamp + '\n');
+};
+</code></pre>
+
+<hr>
+<h1><a name="accelerometerError">accelerometerError</a></h1>
+
+<p>加速度情報の取得に失敗したときに呼び出されるコールバック関数です。</p>
+
+<pre class="prettyprint"><code>function() {
+    // エラー処理
+}
+</code></pre>
+
+<hr>
+<h1><a name="accelerometerOptions">accelerometerOptions</a></h1>
+
+<p>加速度センサーを取得する際のパラメーターを表します。</p>
+
+<h2>
+<a name="accelerometerOptions_">オプション</a>
+</h2>
+
+<ul>
+<li>
+<strong>frequency:</strong> 加速度情報の取得頻度をミリ秒単位で表します。 <em>(Number)</em> (デフォルト: 10000)</li>
+</ul>
+</div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+        <title>Apache Cordova</title>
+        <description>Apache Cordova - Apache Cordova is a set of device APIs that allow a web mobile app developer to access native device function from JavaScript.</description>
+        <atom:link href="http://cordova.apache.org/rss.xml" rel="self" type="application/rss+xml" />
+        <link>http://cordova.apache.org/rss.xml</link>
+        <lastBuildDate>Fri, 12 Jul 2013 22:33:17 -0400</lastBuildDate>
+        <pubDate>Fri, 12 Jul 2013 22:33:17 -0400</pubDate>
+        <ttl>1800</ttl>
+        <image>
+            <url>http://cordova.apache.org</url>
+            <title>Apache Cordova</title>
+            <link>http://cordova.apache.org/rss.xml</link>
+            <width>128</width>
+            <height>128</height>
+            <description>Apache Cordova is a set of device APIs that allow a web mobile app developer to access native device function from JavaScript.</description>
+        </image>
+
+
+        <item>
+                <title>Apache Cordova Gets an Official Blog</title>
+                <description>&lt;p&gt;Cordova now has a Blog! Look here to stay up-to-date with what&amp;#8217;s happening with the project. There is a major release &lt;a href='https://issues.apache.org/jira/browse/CB/fixforversion/12322491'&gt;3.0&lt;/a&gt; just around the corner (July 19, 2013), and we are really excited about it!&lt;/p&gt;
+
+&lt;p&gt;Be sure to &lt;a href='http://cordova.apache.org/rss.xml'&gt;subscribe&lt;/a&gt; using RSS&lt;/p&gt;</description>
+                <link>http://cordova.apache.org/blog/2013/07/11/cordova-has-a-blog.html</link>
+                <guid>http://cordova.apache.org/blog/2013/07/11/cordova-has-a-blog</guid>
+                <pubDate>Thu, 11 Jul 2013 15:45:04 -0400</pubDate>
+        </item>
+
+
+</channel>
+</rss>

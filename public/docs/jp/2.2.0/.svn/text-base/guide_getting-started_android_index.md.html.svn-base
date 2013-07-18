@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="English" value="en">
+<option value="edge">edge</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0rc1">2.7.0rc1</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0rc1">2.6.0rc1</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0rc1">2.5.0rc1</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0rc1">2.4.0rc1</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0rc2">2.3.0rc2</option>
+<option value="2.3.0rc1">2.3.0rc1</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0rc2">2.2.0rc2</option>
+<option value="2.2.0rc1">2.2.0rc1</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0rc2">2.1.0rc2</option>
+<option value="2.1.0rc1">2.1.0rc1</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0rc1">2.0.0rc1</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0rc1">1.9.0rc1</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0rc1">1.8.0rc1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0rc1">1.7.0rc1</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0rc1">1.6.0rc1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0rc1">1.5.0rc1</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="Japanese" value="jp">
+<option selected value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="kr"><option value="2.0.0">2.0.0</option></optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Getting Started with Android</h1>
+            <small><select><option value="Getting%2520Started%2520with%2520Android">Getting Started with Android</option>
+<option value="Getting%20Started%20with%20Android_1">      - 1. 必要なもの</option>
+<option value="Getting%20Started%20with%20Android_2_sdk_cordova">      - 2. SDK と Cordova のインストール</option>
+<option value="Getting%20Started%20with%20Android_3a_path_mac_os">      - 3A. PATH 環境変数の設定 (Mac OS)</option>
+<option value="Getting%20Started%20with%20Android_3b_path_windows">      - 3B. PATH 環境変数の設定 (Windows)</option>
+<option value="Getting%20Started%20with%20Android_4">      - 4. 新規プロジェクトの作成</option>
+<option value="Getting%20Started%20with%20Android_5a">      - 5A. エミュレーターへのデプロイ</option>
+<option value="Getting%20Started%20with%20Android_5b">      - 5B. デバイスへのデプロイ</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>API リファレンス</h1>
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a></li>
+<li><a href="cordova_camera_camera.md.html#Camera">Camera</a></li>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_compass_compass.md.html#Compass">Compass</a></li>
+<li><a href="cordova_connection_connection.md.html#Connection">Connection</a></li>
+<li><a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a></li>
+<li><a href="cordova_device_device.md.html#Device">Device</a></li>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_file_file.md.html#File">File</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a></li>
+<li><a href="cordova_globalization_globalization.md.html#Globalization">Globalization</a></li>
+<li><a href="cordova_media_media.md.html#Media">Media</a></li>
+<li><a href="cordova_notification_notification.md.html#Notification">Notification</a></li>
+<li><a href="cordova_splashscreen_splashscreen.md.html#Splashscreen">Splashscreen</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+</ul>
+<h1>Guides</h1>
+<ul>
+<li><a href="guide_getting-started_index.md.html#%E5%85%A5%E9%96%80%E3%82%AC%E3%82%A4%E3%83%89">入門ガイド</a></li>
+<li><a href="guide_command-line_index.md.html#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E4%BD%BF%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89">コマンドライン使用ガイド</a></li>
+<li><a href="guide_upgrading_index.md.html#%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89">アップグレードガイド</a></li>
+<li><a href="guide_project-settings_index.md.html#%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E8%A8%AD%E5%AE%9A">プロジェクトの設定</a></li>
+<li><a href="guide_plugin-development_index.md.html#%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E9%96%8B%E7%99%BA%E3%82%AC%E3%82%A4%E3%83%89">プラグイン開発ガイド</a></li>
+<li><a href="guide_whitelist_index.md.html#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89">ドメインホワイトリストガイド</a></li>
+<li><a href="guide_cordova-webview_index.md.html#WebView%20%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF">WebView の埋め込み</a></li>
+<li><a href="_index.html">索引</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Getting%20Started%20with%20Android">Getting Started with Android</a></h1>
+
+<p>このガイドは、 Cordova のための開発環境セットアップ方法、またシンプルなアプリの動かし方を解説します。</p>
+
+<h2>
+<a name="Getting%20Started%20with%20Android_1">1. 必要なもの</a>
+</h2>
+
+<ul>
+<li>Eclipse 3.4以上</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Android_2_sdk_cordova">2. SDK と Cordova のインストール</a>
+</h2>
+
+<ul>
+<li>
+<a class="external" href="http://www.eclipse.org/downloads/">Eclipse Classic</a> のダウンロードとインストール</li>
+<li>
+<a class="external" href="http://developer.android.com/sdk/index.html">Android SDK</a> のダウンロードとインストール</li>
+<li>
+<a class="external" href="http://developer.android.com/sdk/eclipse-adt.html#installing">ADT Plugin</a> のダウンロードとインストール</li>
+<li>
+<a class="external" href="http://incubator.apache.org/cordova/#download">Cordova</a> の最新版をダウンロードし解凍します。これから Android ディレクトリと一緒に作業を進めます。</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Android_3a_path_mac_os">3A. PATH 環境変数の設定 (Mac OS)</a>
+</h2>
+
+<ul>
+<li>ターミナルを開きます (デフォルトでは、 Applications/Utilites フォルダーにあります)</li>
+<li>以下のコマンドを実行します</li>
+</ul>
+<p><code>touch ~/.bash_profile; open ~/.bash_profile</code></p>
+
+<ul>
+<li>これにより、ファイルをあなたのデフォルトテキストエディタで開きます</li>
+<li>Android SDK platform-tools と tools ディレクトリにパスを通す必要があります。この例では、 "/Development/android-sdk-macosx" を SDK がインストールされているフォルダーとします。以下の行を追加します:</li>
+</ul>
+<p><code>export PATH=${PATH}:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools</code></p>
+
+<ul>
+<li>ファイルを保存し、テキストエディタを終了します</li>
+<li>PATH を更新するために、 .bash_profile を実行します</li>
+</ul>
+<p><code>source ~/.bash_profile</code></p>
+
+<ul>
+<li>これで、ターミナルを開く度に Android SDK へのパスが通っているようになります</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Android_3b_path_windows">3B. PATH 環境変数の設定 (Windows)</a>
+</h2>
+
+<ul>
+<li>デスクトップから、マイコンピューターを右クリックし、プロパティーをクリックします</li>
+<li>左側の列から、詳細設定をクリックします</li>
+<li>システムプロパティーのウィンドウで、環境変数ボタンをクリックします</li>
+<li>システム環境変数から、 PATH を選択します</li>
+<li>編集ボタンをクリックします</li>
+<li>Android SDK platform-tools と tools ディレクトリにパスを通す必要があります。この例では、 "C:\Development\android-sdk-macosx" を SDK がインストールされているフォルダーとします。以下をテキストボックスに追加します:</li>
+</ul>
+<p><code>;C:\Development\android-sdk-windows\platform-tools;C:\Development\android-sdk-windows\tools</code></p>
+
+<ul>
+<li>編集を保存します。環境変数ダイアログを閉じます</li>
+<li>追加で、 <code>%JAVA_HOME%\bin</code> も PATH に追加する必要があるかもしれません。この作業が必要かどうかを確認するには、コマンドプロンプトで <code>java</code> を入力してください。もしプログラムが見つからなかった場合は、 <code>%JAVA_HOME%\bin</code> を PATH に追加してください。場合によっては、 %JAVA_HOME% の環境変数ではなくフルパスを指定する必要があるかもしれません</li>
+<li>
+<code>%ANT_HOME%\bin</code> も PATH に追加する必要があるかもしれません。この作業が必要かどうかを確認するには、コマンドプロンプトで <code>ant</code> を入力してください。もしプログラムが見つからなかった場合は、 <code>%ANT_HOME%\bin</code> を PATH に追加してください。場合によっては、 %ANT_HOME% の環境変数ではなくフルパスを指定する必要があるかもしれません</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Android_4">4. 新規プロジェクトの作成</a>
+</h2>
+
+<ul>
+<li>ターミナルで、 Cordova の <code>android</code> サブフォルダーの中にある <code>bin</code> ディレクトリまで移動します</li>
+<li>
+<p><code>./create &lt;project_folder_path&gt; &lt;package_name&gt; &lt;project_name&gt;</code> と入力し、 <strong>"Enter"</strong> を押します</p>
+
+<pre class="prettyprint"><code>&lt;project_folder_path&gt; は新規 Cordova Android プロジェクトへのパスです
+&lt;package_name&gt; はパッケージ名です。例: com.YourCompany.YourAppName
+&lt;project_name&gt; はプロジェクト名です。例: YourApp (スペースを含まない)
+</code></pre>
+</li>
+<li><p>Eclipse を起動し、メニューから <strong>新規プロジェクト</strong> を選択します
+<img src="img/guide/getting-started/android/eclipse_new_project.png" alt="" title=""></p></li>
+<li>
+<code>&lt;project_folder_path&gt;</code> で使用したディレクトリを選択します</li>
+<li>Finish をクリックします</li>
+</ul>
+<p>もしプロジェクトがa red X indicatingを保つ場合には問題があるので、以下の追加の手順が必要です</p>
+
+<ul>
+<li>プロジェクトフォルダーを右クリックします</li>
+<li>プロパティーダイアログで、ナビゲーションパネルから Android を選択します</li>
+<li>Project build target には、インストールしてある中での最新バージョンの Android API を選択します</li>
+<li>OK をクリックします</li>
+<li>プロジェクトメニューバーから Clean を選択します</li>
+<li>これでプロジェクトからエラーが無くなるはずです</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Android_5a">5A. エミュレーターへのデプロイ</a>
+</h2>
+
+<ul>
+<li>プロジェクトを右クリックし、次を <strong>実行 &gt; Android Application</strong> を選択</li>
+<li>適切な AVD を選択。 もしない場合は、作成する必要があります</li>
+</ul>
+<p><strong>注意: より早く動かすために、 Intel ベースのエミュレーターを使用します:</strong></p>
+
+<ul>
+<li>Android SDK Manager を開きます
+<img src="img/guide/getting-started/android/eclipse_android_sdk_button.png" alt="" title="">
+</li>
+<li>ひとつ以上の <code>Intel x86 Atom</code> システムイメージおよび <code>Intel Hardware Accelerated Execution Manager</code> (Extras 以下にあります) をインストールします</li>
+<li>Android SDK の中の <code>extras/intel/Hardware_Accelerated_Execution_Manager</code> にダウンロードされた Intel installer を実行します</li>
+<li>Target を Intel のイメージとした新しい AVD を作成します</li>
+<li>エミュレーターがスタートするとき、 HAX モジュールのロードに失敗したといったエラーメッセージが出力されないことを確認します</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Android_5b">5B. デバイスへのデプロイ</a>
+</h2>
+
+<ul>
+<li>デバイスの設定で USB デバッグが有効になっていること、またコンピュータに接続されていることを確認 (<strong>設定 &gt; アプリケーション &gt; 開発</strong>)</li>
+<li>プロジェクトを右クリックし、次を <strong>実行 &gt; Android Application</strong> を選択</li>
+</ul>
+</div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

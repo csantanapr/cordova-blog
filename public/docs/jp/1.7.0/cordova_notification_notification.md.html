@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="English" value="en">
+<option value="edge">edge</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0rc1">2.7.0rc1</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0rc1">2.6.0rc1</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0rc1">2.5.0rc1</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0rc1">2.4.0rc1</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0rc2">2.3.0rc2</option>
+<option value="2.3.0rc1">2.3.0rc1</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0rc2">2.2.0rc2</option>
+<option value="2.2.0rc1">2.2.0rc1</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0rc2">2.1.0rc2</option>
+<option value="2.1.0rc1">2.1.0rc1</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0rc1">2.0.0rc1</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0rc1">1.9.0rc1</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0rc1">1.8.0rc1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0rc1">1.7.0rc1</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0rc1">1.6.0rc1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0rc1">1.5.0rc1</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="Japanese" value="jp">
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option selected value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="kr"><option value="2.0.0">2.0.0</option></optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Notification</h1>
+            <small><select><option value="Notification">Notification</option>
+<option value="Notification_">      - メソッド</option>
+<option value="notification.alert">notification.alert</option>
+<option value="notification.alert_">      - 概要</option>
+<option value="notification.alert_">      - サポートされているプラットフォーム</option>
+<option value="notification.alert_">      - 使用例</option>
+<option value="notification.alert_">      - 詳細な使用例</option>
+<option value="notification.alert_windows_phone_7">      - Windows Phone 7 に関する注意点</option>
+<option value="notification.alert_bada_2_x">      - Bada 2.xに関する注意点</option>
+<option value="notification.confirm">notification.confirm</option>
+<option value="notification.confirm_">      - 概要</option>
+<option value="notification.confirm_">      - サポートされているプラットフォーム</option>
+<option value="notification.confirm_">      - 使用例</option>
+<option value="notification.confirm_">      - 詳細な使用例</option>
+<option value="notification.confirm_windows_phone_7">      - Windows Phone 7 に関する注意点</option>
+<option value="notification.confirm_bada_2_x">      - Bada 2.x に関する注意点</option>
+<option value="notification.confirm_bada_1_2">      - Bada 1.2 に関する注意点</option>
+<option value="notification.beep">notification.beep</option>
+<option value="notification.beep_">      - サポートされているプラットフォーム</option>
+<option value="notification.beep_">      - 使用例</option>
+<option value="notification.beep_">      - 詳細な使用例</option>
+<option value="notification.beep_android">      - Android に関する注意点</option>
+<option value="notification.beep_iphone">      - iPhone に関する注意点</option>
+<option value="notification.beep_windows_phone_7">      - Windows Phone 7 に関する注意点</option>
+<option value="notification.vibrate">notification.vibrate</option>
+<option value="notification.vibrate_">      - サポートされているプラットフォーム</option>
+<option value="notification.vibrate_">      - 使用例</option>
+<option value="notification.vibrate_">      - 詳細な使用例</option>
+<option value="notification.vibrate_iphone">      - iPhone に関する注意点</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>API リファレンス</h1>
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a></li>
+<li><a href="cordova_camera_camera.md.html#Camera">Camera</a></li>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_compass_compass.md.html#Compass">Compass</a></li>
+<li><a href="cordova_connection_connection.md.html#Connection">Connection</a></li>
+<li><a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a></li>
+<li><a href="cordova_device_device.md.html#Device">Device</a></li>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_file_file.md.html#File">File</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a></li>
+<li><a href="cordova_media_media.md.html#Media">Media</a></li>
+<li><a href="cordova_notification_notification.md.html#Notification">Notification</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+</ul>
+<h1>Guides</h1>
+<ul>
+<li><a href="guide_getting-started_index.md.html#%E5%85%A5%E9%96%80%E3%82%AC%E3%82%A4%E3%83%89">入門ガイド</a></li>
+<li><a href="_index.html">索引</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Notification">Notification</a></h1>
+
+<blockquote>
+  <p>視覚、聴覚、触覚を用いたデバイス通知機能を提供します。</p>
+</blockquote>
+
+<h2>
+<a name="Notification_">メソッド</a>
+</h2>
+
+<ul>
+<li><a href="cordova_notification_notification.md.html#notification.alert">notification.alert</a></li>
+<li><a href="cordova_notification_notification.md.html#notification.confirm">notification.confirm</a></li>
+<li><a href="cordova_notification_notification.md.html#notification.beep">notification.beep</a></li>
+<li><a href="cordova_notification_notification.md.html#notification.vibrate">notification.vibrate</a></li>
+</ul>
+<hr>
+<h1><a name="notification.alert">notification.alert</a></h1>
+
+<p>通知ダイアログボックスを表示します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_notification_notification.md.html#notification.alert">notification.alert</a>(message, alertCallback, [title], [buttonName])
+</code></pre>
+
+<ul>
+<li>
+<strong>message:</strong> ダイアログのメッセージを表します (<code>String</code>)</li>
+<li>
+<strong>alertCallback:</strong> 通知ダイアログが確認された後に呼び出されるコールバック関数を表します (<code>Function</code>)</li>
+<li>
+<strong>title:</strong> ダイアログのタイトルを表します (<code>String</code>) (オプション, デフォルト: "Alert")</li>
+<li>
+<strong>buttonName:</strong> ボタンの名前を表します (<code>String</code>) (オプション, デフォルト: "OK")</li>
+</ul>
+<h2>
+<a name="notification.alert_">概要</a>
+</h2>
+
+<p>ほとんどの Cordova の実装はネイティブのダイアログボックスを使用しています。一部のプラットフォームのみブラウザの <code>alert</code> 関数を使っており、通常これらはカスタマイズが制限されます。</p>
+
+<h2>
+<a name="notification.alert_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+<li>Windows Phone 7 (Mango)</li>
+<li>Bada 1.2 &amp; 2.x</li>
+</ul>
+<h2>
+<a name="notification.alert_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// Android / BlackBerry WebWorks (OS 5.0 以上) / iPhone
+//
+function alertDismissed() {
+    // 任意のコード
+}
+
+navigator.<a href="cordova_notification_notification.md.html#notification.alert">notification.alert</a>(
+    'あなたの勝ちです！', // メッセージ
+    alertDismissed, // コールバック関数
+    'ゲームオーバー', // タイトル
+    '終了' // ボタン名
+);
+</code></pre>
+
+<h2>
+<a name="notification.alert_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;<a href="cordova_notification_notification.md.html#Notification">Notification</a> の使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        // 処理なし
+    }
+
+    // 通知ダイアログボックスが確認された
+    function alertDismissed() {
+        // 任意のコード
+    }
+
+    // 通知ダイアログを表示
+    //
+    function showAlert() {
+        navigator.<a href="cordova_notification_notification.md.html#notification.alert">notification.alert</a>(
+            'あなたの勝ちです！', // メッセージ
+            alertDismissed, // コールバック関数
+            'ゲームオーバー', // タイトル
+            '終了' // ボタン名
+        );
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;a href="#" onclick="showAlert(); return false;"&gt;通知を表示&lt;/a&gt;&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="notification.alert_windows_phone_7">Windows Phone 7 に関する注意点</a>
+</h2>
+
+<ul>
+<li>ボタンの名前は無視され、常に 'OK' が使用されます。</li>
+<li>ビルトインのブラウザ通知ダイアログ機能はないため、もし alert('foo'); とだけ書きたい場合は、 window.alert = navigator.<a href="cordova_notification_notification.md.html#notification.alert">notification.alert</a>; と window.alert に Cordova の <a href="cordova_notification_notification.md.html#notification.alert">notification.alert</a> をアサインできます。</li>
+<li>通知と確認の呼び出しはノンブロッキングで、結果は非同期でのみ取得可能です。</li>
+</ul>
+<h2>
+<a name="notification.alert_bada_2_x">Bada 2.xに関する注意点</a>
+</h2>
+
+<ul>
+<li>通知は、 Javascript の alert を使用します。</li>
+</ul>
+<hr>
+<h1><a name="notification.confirm">notification.confirm</a></h1>
+
+<p>カスタマイズ可能な確認ダイアログボックスを表示します。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_notification_notification.md.html#notification.confirm">notification.confirm</a>(message, confirmCallback, [title], [buttonLabels])
+</code></pre>
+
+<ul>
+<li>
+<strong>message:</strong> ダイアログのメッセージを表します (<code>String</code>)</li>
+<li>
+<strong>confirmCallback:</strong> 押されたボタンのインデックス (1, 2, または3) とともに呼び出されるコールバック関数を表します (<code>Number</code>)</li>
+<li>
+<strong>title:</strong> ダイアログのタイトルを表します (<code>String</code>) (オプション, デフォルト: "Confirm")</li>
+<li>
+<strong>buttonLabels:</strong> ボタンのラベルを設定するためのカンマ区切りの文字列を表します (String) (オプション, デフォルト: "OK,Cancel")</li>
+</ul>
+<h2>
+<a name="notification.confirm_">概要</a>
+</h2>
+
+<p><code><a href="cordova_notification_notification.md.html#notification.confirm">notification.confirm</a></code> 関数は、ブラウザの confirm 関数よりも広いカスタマイズ性を持ったネイティブダイアログボックスを表示する関数です。</p>
+
+<h2>
+<a name="notification.confirm_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+<li>Windows Phone 7 (Mango)</li>
+<li>Bada 1.2 &amp; 2.x</li>
+</ul>
+<h2>
+<a name="notification.confirm_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// 確認ダイアログの表示プロセスの開始
+function onConfirm(button) {
+    alert('選択されたボタン ' + button);
+}
+
+// カスタム確認ダイアログを表示
+//
+function showConfirm() {
+    navigator.<a href="cordova_notification_notification.md.html#notification.confirm">notification.confirm</a>(
+        'あなたの勝ちです！', // メッセージ
+        onConfirm, // 選択されたボタン情報とともに呼ばれるコールバック関数
+        'ゲームオーバー', // タイトル
+        'リスタート,終了' // ボタン
+    );
+}
+</code></pre>
+
+<h2>
+<a name="notification.confirm_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;<a href="cordova_notification_notification.md.html#Notification">Notification</a> の使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        // 処理なし
+    }
+
+    // 確認ダイアログの表示プロセスの開始
+    function onConfirm(button) {
+        alert('選択されたボタン ' + button);
+    }
+
+    // カスタム確認ダイアログを表示
+    //
+    function showConfirm() {
+        navigator.<a href="cordova_notification_notification.md.html#notification.confirm">notification.confirm</a>(
+            'あなたの勝ちです！', // メッセージ
+            onConfirm, // 選択されたボタン情報とともに呼ばれるコールバック関数
+            'ゲームオーバー', // タイトル
+            'リスタート,終了' // ボタン
+        );
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;a href="#" onclick="showConfirm(); return false;"&gt;確認ダイアログを表示&lt;/a&gt;&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="notification.confirm_windows_phone_7">Windows Phone 7 に関する注意点</a>
+</h2>
+
+<ul>
+<li>ボタンの名前は無視され、常に 'OK|Cancel' が使用されます。</li>
+<li>ビルトインのブラウザ確認ダイアログ機能はないため、もし confirm('foo'); とだけ書きたい場合は、 window.confirm = navigator.<a href="cordova_notification_notification.md.html#notification.confirm">notification.confirm</a>; と window.confirm に Cordova の <a href="cordova_notification_notification.md.html#notification.confirm">notification.confirm</a> をアサインできます。</li>
+<li>通知と確認の呼び出しはノンブロッキングで、結果は非同期でのみ取得可能です。</li>
+</ul>
+<h2>
+<a name="notification.confirm_bada_2_x">Bada 2.x に関する注意点</a>
+</h2>
+
+<ul>
+<li>確認は、 Javascript の alert を使用します。</li>
+</ul>
+<h2>
+<a name="notification.confirm_bada_1_2">Bada 1.2 に関する注意点</a>
+</h2>
+
+<ul>
+<li>ボタンの名前は無視され、常に 'OK|Cancel' が使用されます。</li>
+</ul>
+<hr>
+<h1><a name="notification.beep">notification.beep</a></h1>
+
+<p>デバイスが警告音を鳴らします。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_notification_notification.md.html#notification.beep">notification.beep</a>(times);
+</code></pre>
+
+<ul>
+<li>
+<strong>times:</strong> 警告音を鳴らす回数を表します (<code>Number</code>)</li>
+</ul>
+<h2>
+<a name="notification.beep_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+<li>Windows Phone 7 (Mango)</li>
+<li>Bada 1.2 &amp; 2.x</li>
+</ul>
+<h2>
+<a name="notification.beep_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// 警告音を2回鳴らす
+navigator.<a href="cordova_notification_notification.md.html#notification.beep">notification.beep</a>(2);
+</code></pre>
+
+<h2>
+<a name="notification.beep_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;<a href="cordova_notification_notification.md.html#Notification">Notification</a> の使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        // 処理なし
+    }
+
+    // 通知ダイアログを表示
+    //
+    function showAlert() {
+        navigator.<a href="cordova_notification_notification.md.html#notification.alert">notification.alert</a>(
+            'あなたの勝ちです！', // メッセージ
+            'ゲームオーバー', // タイトル
+            '終了' // ボタン名
+        );
+    }
+
+    // 警告音を3回鳴らす
+    //
+    function playBeep() {
+        navigator.<a href="cordova_notification_notification.md.html#notification.beep">notification.beep</a>(3);
+    }
+
+    // 2秒間バイブレーションさせます
+    //
+    function vibrate() {
+        navigator.<a href="cordova_notification_notification.md.html#notification.vibrate">notification.vibrate</a>(2000);
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;a href="#" onclick="showAlert(); return false;"&gt;通知を表示&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href="#" onclick="playBeep(); return false;"&gt;警告音を鳴らす&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href="#" onclick="vibrate(); return false;"&gt;バイブレーション&lt;/a&gt;&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="notification.beep_android">Android に関する注意点</a>
+</h2>
+
+<ul>
+<li>Android では、 "Settings/Sound &amp; Display" パネルで設定されたデフォルトの "<a href="cordova_notification_notification.md.html#Notification">Notification</a> ringtone" を鳴らします。</li>
+</ul>
+<h2>
+<a name="notification.beep_iphone">iPhone に関する注意点</a>
+</h2>
+
+<ul>
+<li>引数の警告音の回数を無視します。</li>
+<li>iPhone はネイティブの beep API を持っていません。</li>
+<li>Cordova は media API を使って、オーディオファイルを再生することで警告音を実装しています。</li>
+<li>ユーザーは適切な警告音のファイルを用意する必要があります。</li>
+<li>このファイルは30秒未満とし、 www/root に beep.wav として保存してください。</li>
+</ul>
+<h2>
+<a name="notification.beep_windows_phone_7">Windows Phone 7 に関する注意点</a>
+</h2>
+
+<ul>
+<li>WP7 の Cordova ライブラリは独自の警告音ファイルを含んでおり、それを使用しています。</li>
+</ul>
+<hr>
+<h1><a name="notification.vibrate">notification.vibrate</a></h1>
+
+<p>指定された時間デバイスをバイブレーションさせます。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_notification_notification.md.html#notification.vibrate">notification.vibrate</a>(milliseconds)
+</code></pre>
+
+<ul>
+<li>
+<strong>time:</strong> バイブレーションの長さをミリ秒単位で表します。 1000ミリ秒は1秒です (<code>Number</code>)</li>
+</ul>
+<h2>
+<a name="notification.vibrate_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iPhone</li>
+<li>Windows Phone 7</li>
+<li>Bada 1.2 &amp; 2.x</li>
+</ul>
+<h2>
+<a name="notification.vibrate_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// 2.5秒間バイブレーションさせます
+//
+navigator.<a href="cordova_notification_notification.md.html#notification.vibrate">notification.vibrate</a>(2500);
+</code></pre>
+
+<h2>
+<a name="notification.vibrate_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;<a href="cordova_notification_notification.md.html#Notification">Notification</a> の使用例&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // Cordova の読み込み完了まで待機
+    //
+    document.addEventListener("<a href="cordova_events_events.md.html#deviceready">deviceready</a>", onDeviceReady, false);
+
+    // Cordova 準備完了
+    //
+    function onDeviceReady() {
+        // 処理なし
+    }
+
+    // 通知ダイアログを表示
+    //
+    function showAlert() {
+        navigator.<a href="cordova_notification_notification.md.html#notification.alert">notification.alert</a>(
+            'あなたの勝ちです！', // メッセージ
+            'ゲームオーバー', // タイトル
+            '終了' // ボタン名
+        );
+    }
+
+    // 警告音を3回鳴らす
+    //
+    function playBeep() {
+        navigator.<a href="cordova_notification_notification.md.html#notification.beep">notification.beep</a>(3);
+    }
+
+    // 2秒間バイブレーションさせます
+    //
+    function vibrate() {
+        navigator.<a href="cordova_notification_notification.md.html#notification.vibrate">notification.vibrate</a>(2000);
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;a href="#" onclick="showAlert(); return false;"&gt;通知を表示&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href="#" onclick="playBeep(); return false;"&gt;警告音を鳴らす&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href="#" onclick="vibrate(); return false;"&gt;バイブレーション&lt;/a&gt;&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="notification.vibrate_iphone">iPhone に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<p><strong>time:</strong> 引数のバイブレーションの長さを無視し、あらかじめ定められた時間バイブレーションします。</p>
+
+<pre class="prettyprint"><code>navigator.<a href="cordova_notification_notification.md.html#notification.vibrate">notification.vibrate</a>();
+navigator.<a href="cordova_notification_notification.md.html#notification.vibrate">notification.vibrate</a>(2500); // 2500は無視されます
+</code></pre>
+</li>
+</ul>
+</div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

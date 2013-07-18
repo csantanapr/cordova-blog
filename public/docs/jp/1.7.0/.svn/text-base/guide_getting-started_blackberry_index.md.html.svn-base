@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="English" value="en">
+<option value="edge">edge</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0rc1">2.7.0rc1</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0rc1">2.6.0rc1</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0rc1">2.5.0rc1</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0rc1">2.4.0rc1</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0rc2">2.3.0rc2</option>
+<option value="2.3.0rc1">2.3.0rc1</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0rc2">2.2.0rc2</option>
+<option value="2.2.0rc1">2.2.0rc1</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0rc2">2.1.0rc2</option>
+<option value="2.1.0rc1">2.1.0rc1</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0rc1">2.0.0rc1</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0rc1">1.9.0rc1</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0rc1">1.8.0rc1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0rc1">1.7.0rc1</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0rc1">1.6.0rc1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0rc1">1.5.0rc1</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="Japanese" value="jp">
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option selected value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="kr"><option value="2.0.0">2.0.0</option></optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Getting Started with Blackberry</h1>
+            <small><select><option value="Getting%2520Started%2520with%2520Blackberry">Getting Started with Blackberry</option>
+<option value="Getting%20Started%20with%20Blackberry_1">      - 1. 必要なもの</option>
+<option value="Getting%20Started%20with%20Blackberry_2_sdk_cordova">      - 2. SDK と Cordova のインストール</option>
+<option value="Getting%20Started%20with%20Blackberry_3">      - 3. 新規プロジェクトの作成</option>
+<option value="Getting%20Started%20with%20Blackberry_4_hello_world">      - 4. Hello World の作成</option>
+<option value="Getting%20Started%20with%20Blackberry_5a">      - 5A. シミュレーターへのデプロイ</option>
+<option value="Getting%20Started%20with%20Blackberry_5b_windows_and_mac">      - 5B. デバイスへのデプロイ (Windows and Mac)</option>
+<option value="Getting%20Started%20with%20Blackberry_">      - 追加の情報</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>API リファレンス</h1>
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a></li>
+<li><a href="cordova_camera_camera.md.html#Camera">Camera</a></li>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_compass_compass.md.html#Compass">Compass</a></li>
+<li><a href="cordova_connection_connection.md.html#Connection">Connection</a></li>
+<li><a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a></li>
+<li><a href="cordova_device_device.md.html#Device">Device</a></li>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_file_file.md.html#File">File</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a></li>
+<li><a href="cordova_media_media.md.html#Media">Media</a></li>
+<li><a href="cordova_notification_notification.md.html#Notification">Notification</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+</ul>
+<h1>Guides</h1>
+<ul>
+<li><a href="guide_getting-started_index.md.html#%E5%85%A5%E9%96%80%E3%82%AC%E3%82%A4%E3%83%89">入門ガイド</a></li>
+<li><a href="_index.html">索引</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Getting%20Started%20with%20Blackberry">Getting Started with Blackberry</a></h1>
+
+<p>Cordova for BlackBerry は <a class="external" href="https://bdsc.webapps.blackberry.com/html5">BlackBerry WebWorks framework</a> を使用して作られています。 BlackBerry WebWorks ツールは Windows または Mac にて使用可能です。 WebWorks アプリケーションは OS 5.0以上の BlackBerry デバイスまたは BlackBerry PlayBook OS にのみデプロイ可能です。</p>
+
+<h2>
+<a name="Getting%20Started%20with%20Blackberry_1">1. 必要なもの</a>
+</h2>
+
+<ul>
+<li>Windows XP (32-bit) またはWindows 7 (32-bit and 64-bit) または Mac OSX 10.6.4以上</li>
+<li>Java Development Kit (JDK)
+<ul>
+<li>Windows: <a class="external" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html#jdk">Oracle JDK</a> (32-Bit Version)</li>
+<li>Mac OS X: Mac OS X 10.7より前については、 Java はデフォルトで提供されています。 OS X 10.7以上については、 <a class="external" href="http://support.apple.com/kb/DL1421">Java</a> のインストールが必要です</li>
+</ul>
+</li>
+<li>Apache Ant
+<ul>
+<li>Windows: <a class="external" href="http://ant.apache.org/bindownload.cgi">Apache Ant</a>
+</li>
+<li>Mac OS X: Apache Ant は Java と一緒にインストールされます</li>
+</ul>
+</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Blackberry_2_sdk_cordova">2. SDK と Cordova のインストール</a>
+</h2>
+
+<ul>
+<li>PlayBook の開発には <a class="external" href="http://www.adobe.com/devnet/air/air-sdk-download.html">Adobe Air SDK</a> が必要です</li>
+<li>1つ以上の WebWorks SDK をダウンロード、インストールします。 インストールしたディレクトリを覚えておいてください。
+<ul>
+<li>スマートフォンの開発: <a class="external" href="https://bdsc.webapps.blackberry.com/html5/download/sdk">BlackBerry WebWorks Smartphone SDK</a>
+</li>
+<li>PlayBook の開発: <a class="external" href="https://bdsc.webapps.blackberry.com/html5/download/sdk">BlackBerry WebWorks Tablet OS SDK</a>
+</li>
+</ul>
+</li>
+<li>
+<a class="external" href="http://phonegap.com/download">Cordova</a> の最新版をダウンロードし解凍します。</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Blackberry_3">3. 新規プロジェクトの作成</a>
+</h2>
+
+<ul>
+<li>コマンドプロンプトまたはターミナルをひらいて、 Cordova をダウンロード、解凍したディレクトリまで移動します。</li>
+<li>そのディレクトリには、 Cordova がサポートするプラットフォームごとにさらにディレクトリがあります。 blackberry のディレクトリに移動します。</li>
+<li>blackberry のディレクトリには、 <code>sample</code> と <code>www</code> の2つのディレクトリがあります。 <code>sample</code> フォルダーには、完成した Cordova プロジェクトが入っています。 <code>sample</code> フォルダーをコンピュータ内の別の場所にコピーします。</li>
+<li>コピーしたフォルダーに移動します。</li>
+<li>project.properties ファイルをあなたの好きなエディタで開き、 <code>blackberry.bbwp.dir=</code> および／または <code>playbook.bbwp.dir=</code> の部分を編集します。 値には、先ほどインストールした WebWorks SDK の中の <code>bbwp</code> バイナリファイルの位置をセットします。</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Blackberry_4_hello_world">4. Hello World の作成</a>
+</h2>
+
+<p>サンプルプロジェクトのディレクトリ内でコマンドプロンプトまたはターミナルで <code>ant target build</code> とタイプすることで、サンプルプロジェクトをビルドします。ここで、 <code>target</code> は <code>blackberry</code> か <code>playbook</code> に置き換えてください。これは Cordova のサンプルプロジェクトで、普通の Hello World アプリではないことに注意してください。 www フォルダーにある index.html は多くの Cordova API の使用例を含みます。</p>
+
+<h2>
+<a name="Getting%20Started%20with%20Blackberry_5a">5A. シミュレーターへのデプロイ</a>
+</h2>
+
+<p>BlackBerry スマートフォンシミュレーターは Windows でのみ利用可能です。 PlayBook シミュレーターは VMWare Player (Windows) または VMWare Fusion (Mac OS X) を必要とします。 WebWorks SDK はデフォルトのシミュレーターを提供しています。追加のシミュレーターも <a class="external" href="http://us.blackberry.com/developers/resources/simulators.jsp">入手可能</a> です。</p>
+
+<ul>
+<li>project.properties ファイルをお好きなエディタで開き、以下のプロパティーをカスタマイズします。
+<ul>
+<li>スマートフォン (オプション)
+<ul>
+<li>
+<code>blackberry.sim.dir</code> : シミュレーターのあるディレクトリへのパスを表します。 Windows では、ファイルセパレーターの '\' は '\\' でエスケープされている必要があります。</li>
+<li>
+<code>blackberry.sim.bin</code> : 指定されたシミュレーターのディレクトリ内で、実行したいシミュレーターの名前を表します。</li>
+</ul>
+</li>
+<li>Playbook
+<ul>
+<li>
+<code>playbook.sim.ip</code> : シミュレーターのセキュリティ設定でデベロッパーモードにした場合の、取得する IP アドレスを表します。</li>
+<li>
+<code>playbook.sim.password</code> : シミュレーターのセキュリティ設定で設定できるシミュレータのパスワードを表します。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>プロジェクトのディレクトリにいるときは、コマンドプロンプトまたはターミナルで <code>ant target load-simulator</code> とタイプしてください。 ここで、 <code>target</code> は <code>blackberry</code> か <code>playbook</code> に置き換えてください。 PlayBook では、シミュレーターのバーチャルイメージは既にスタートしている必要があることに注意してください。</li>
+<li>アプリケーションは、シミュレーター内の All Applications セクションにインストールされます。 BlackBerry OS 5 ではアプリケーションは Download フォルダーにインストールされることに注意してください。</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Blackberry_5b_windows_and_mac">5B. デバイスへのデプロイ (Windows and Mac)</a>
+</h2>
+
+<ul>
+<li>デバイスへのデプロイは、 RIM から取得できる signing keys が必要です。
+<ul>
+<li>signing keys のリクエストのため、この <a class="external" href="https://bdsc.webapps.blackberry.com/html5/signingkey">フォーム</a> に記入し提出してください。</li>
+<li>signing keys を受け取ったら、それらをインストールします:
+<ul>
+<li><a class="external" href="https://bdsc.webapps.blackberry.com/html5/documentation/ww_publishing/signing_setup_smartphone_apps_1920010_11.html">Setup Smartphone Signing keys</a></li>
+<li><a class="external" href="https://bdsc.webapps.blackberry.com/html5/documentation/ww_publishing/signing_setup_tablet_apps_1920009_11.html">Setup Tablet Signing keys</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>サインされたアプリケーションを USB 接続されたスマートフォンデバイスにインストールするために、 <a class="external" href="http://us.blackberry.com/apps-software/desktop/">BlackBerry Desktop Software</a> をインストールします。</li>
+<li>project.properties ファイルをお好きなエディタで開き、以下のプロパティーをカスタマイズします:
+<ul>
+<li>スマートフォン (オプション)
+<ul>
+<li>
+<code>blackberry.sigtool.password</code> : signing keys が登録されたときに使われるパスワードを表します。 もし指定されていない場合は、プロンプトにより入力が促されます。</li>
+</ul>
+</li>
+<li>Playbook (必須)
+<ul>
+<li>
+<code>playbook.sigtool.csk.password</code> : Signing key のパスワードを表します。</li>
+<li>
+<code>playbook.sigtool.p12.password</code> : Signing key のパスワードを表します。</li>
+<li>
+<code>playbook.device.ip</code> : デバイスのセキュリティ設定でデベロッパーモードにした場合の、取得する IP アドレスを表します。</li>
+<li>
+<code>playbook.device.password</code> : デバイスのセキュリティ設定で設定できるデバイスのパスワードを表します。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>プロジェクトのディレクトリにいるときは、コマンドプロンプトまたはターミナルで <code>ant target load-device</code> とタイプしてください。ここで、 <code>target</code> は <code>blackberry</code> か <code>playbook</code> に置き換えてください。</li>
+<li>アプリケーションは、デバイス内の All Applications セクションにインストールされます。 BlackBerry OS 5 ではアプリケーションは Download フォルダーにインストールされることに注意してください。</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Blackberry_">追加の情報</a>
+</h2>
+
+<p>以下の記事は、 BlackBerry WebWorks framework を使って Cordova アプリケーションを開発するときに役立ちます。</p>
+
+<ul>
+<li><a class="external" href="http://supportforums.blackberry.com/t5/Web-and-WebWorks-Development/Common-BlackBerry-WebWorks-development-pitfalls-that-can-be/ta-p/624712">BlackBerry WebWorks Development Pitfalls</a></li>
+<li><a class="external" href="https://bdsc.webapps.blackberry.com/html5/documentation/ww_developing/bestpractice_compiling_ww_apps_1873324_11.html">Best practices for packaging WebWorks applications</a></li>
+</ul>
+</div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

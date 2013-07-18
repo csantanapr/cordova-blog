@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="English" value="en">
+<option value="edge">edge</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0rc1">2.7.0rc1</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0rc1">2.6.0rc1</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0rc1">2.5.0rc1</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0rc1">2.4.0rc1</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0rc2">2.3.0rc2</option>
+<option value="2.3.0rc1">2.3.0rc1</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0rc2">2.2.0rc2</option>
+<option value="2.2.0rc1">2.2.0rc1</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0rc2">2.1.0rc2</option>
+<option value="2.1.0rc1">2.1.0rc1</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0rc1">2.0.0rc1</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0rc1">1.9.0rc1</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0rc1">1.8.0rc1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0rc1">1.7.0rc1</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0rc1">1.6.0rc1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0rc1">1.5.0rc1</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="Japanese" value="jp">
+<option value="2.2.0">2.2.0</option>
+<option selected value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="kr"><option value="2.0.0">2.0.0</option></optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Embedding Cordova WebView on iOS</h1>
+            <small><select><option value="Embedding%2520Cordova%2520WebView%2520on%2520iOS">Embedding Cordova WebView on iOS</option>
+<option value="Embedding%20Cordova%20WebView%20on%20iOS_">      - 必要なもの</option>
+<option value="Embedding%20Cordova%20WebView%20on%20iOS_xcode_cleaver_cordovalib">      - Xcode プロジェクトへの Cleaver の追加 (CordovaLib サブプロジェクト)</option>
+<option value="Embedding%20Cordova%20WebView%20on%20iOS_cdvviewcontroller">      - コード中での CDVViewController の使用法</option>
+<option value="Embedding%20Cordova%20WebView%20on%20iOS_html_css_javascript">      - HTML, CSS, JavaScript ファイルの追加</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>API リファレンス</h1>
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a></li>
+<li><a href="cordova_camera_camera.md.html#Camera">Camera</a></li>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_compass_compass.md.html#Compass">Compass</a></li>
+<li><a href="cordova_connection_connection.md.html#Connection">Connection</a></li>
+<li><a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a></li>
+<li><a href="cordova_device_device.md.html#Device">Device</a></li>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_file_file.md.html#File">File</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a></li>
+<li><a href="cordova_media_media.md.html#Media">Media</a></li>
+<li><a href="cordova_notification_notification.md.html#Notification">Notification</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+</ul>
+<h1>Guides</h1>
+<ul>
+<li><a href="guide_getting-started_index.md.html#%E5%85%A5%E9%96%80%E3%82%AC%E3%82%A4%E3%83%89">入門ガイド</a></li>
+<li><a href="guide_command-line_index.md.html#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E4%BD%BF%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89">コマンドライン使用ガイド</a></li>
+<li><a href="guide_upgrading_index.md.html#%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89">アップグレードガイド</a></li>
+<li><a href="guide_plugin-development_index.md.html#%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E9%96%8B%E7%99%BA%E3%82%AC%E3%82%A4%E3%83%89">プラグイン開発ガイド</a></li>
+<li><a href="guide_whitelist_index.md.html#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89">ドメインホワイトリストガイド</a></li>
+<li><a href="guide_cordova-webview_index.md.html#WebView%20%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF">WebView の埋め込み</a></li>
+<li><a href="_index.html">索引</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Embedding%20Cordova%20WebView%20on%20iOS">Embedding Cordova WebView on iOS</a></h1>
+
+<p>Cordova 1.4 からは、 Cordova を iOS アプリケーションの中でコンポーネントとして使用できます。このコンポーネントのコードネームは "Cleaver" です。</p>
+
+<p>Cordova 1.4 以降の Xcode テンプレートを用いて作られた新しい Cordova バースのアプリケーションは Cleaver を使用し、このテンプレートは Cleaver の参照実装と捉えられます。</p>
+
+<p>Cordova 2.0.0 以降は、 Cleaver を実装したサブプロジェクトのみをサポートしています。</p>
+
+<h2>
+<a name="Embedding%20Cordova%20WebView%20on%20iOS_">必要なもの</a>
+</h2>
+
+<ol>
+<li>
+<strong>Cordova 2.1.0</strong> またはそれ以降</li>
+<li>
+<strong>Xcode 4.3</strong> またはそれ以降</li>
+<li>
+<code>Cordova.plist</code> ファイル (<a href="guide_command-line_index.md.html#Command-Line%20Usage_ios">新しく作成した</a> Cordova プロジェクトから)</li>
+</ol>
+<h2>
+<a name="Embedding%20Cordova%20WebView%20on%20iOS_xcode_cleaver_cordovalib">Xcode プロジェクトへの Cleaver の追加 (CordovaLib サブプロジェクト)</a>
+</h2>
+
+<ol>
+<li>ハードディスクの<strong>恒久的なフォルダー</strong> (例: ~/Documents/Cordova) に <strong>Cordova をダウンロードし解凍</strong>します</li>
+<li>Xcode が起動している場合、 <strong>終了</strong> します</li>
+<li>
+<strong>Terminal.app</strong> を使用して、Cordova をダウンロードしたディレクトリまで <strong>移動</strong>します</li>
+<li>
+<code>Cordova.plist</code> ファイルをディスクのプロジェクトフォルダー内に <strong>コピー</strong> します (上の <strong>必要なもの</strong> を参照してください)</li>
+<li>
+<code>Cordova.plist</code> ファイルを Xcode の Project Navigator に <strong>ドラッグアンドドロップ</strong> します</li>
+<li>
+<strong>"Create groups for any added folders"</strong> のラジオボタンを <strong>選択</strong> し、 <strong>Finish</strong> ボタンをクリックします</li>
+<li>
+<code>CordovaLib.xcodeproj</code> ファイルを Xcode の Project Navigator に <strong>ドラッグアンドドロップ</strong> します (上の、 CordovaLib のサブディレクトリ、恒久的なフォルダーから)</li>
+<li>Project Navigator で <code>CordovaLib.xcodeproj</code> を選択します</li>
+<li>
+<strong><a href="cordova_file_file.md.html#File">File</a> Inspector</strong> を開くため、 <strong>Option-Command-1</strong> キーを押します</li>
+<li>
+<strong>Location</strong> のドロップダウンメニューのため、 <strong><a href="cordova_file_file.md.html#File">File</a> Inspector</strong> から <strong>"Relative to CORDOVALIB"</strong> を選択します</li>
+<li>Project Navigator の <strong>Project アイコン</strong> をクリックし、 <strong>Target</strong> を選択し、 <strong>"Build Settings"</strong> タブを選択します</li>
+<li>
+<strong>"Other Linker <a href="cordova_file_file.md.html#Flags">Flags</a>"</strong> の値に <code>-all_load</code> と <code>-Obj-C</code> を追加します</li>
+<li>Project Navigator の <strong>Project アイコン</strong> をクリックし、 <strong>Target</strong> を選択し、 <strong>"Build Phases"</strong> タブを選択します</li>
+<li>
+<strong>"Link Binaries with Libraries"</strong> を展開します</li>
+<li>
+<p><strong>"+" ボタン</strong> をクリックし、以下の <strong>framework</strong> を追加します (オプションで、 Project Navigator の中でこれらを Frameworks グループに <strong>移動</strong> します):</p>
+
+<pre class="prettyprint"><code>AddressBook.framework
+AddressBookUI.framework
+AudioToolbox.framework
+AVFoundation.framework
+CoreLocation.framework
+MediaPlayer.framework
+QuartzCore.framework
+SystemConfiguration.framework
+MobileCoreServices.framework
+CoreMedia.framework
+</code></pre>
+</li>
+<li><p><strong>"Target Dependencies"</strong> を展開します。 (もしこのラベルのボックスが複数ある場合は、一番上のものを選んでください)</p></li>
+<li>
+<strong>"+" ボタン</strong> をクリックし、 <code>CordovaLib</code> ビルドプロダクトを追加します</li>
+<li>
+<strong>"Link Binaries with Libraries"</strong> を展開します。
+(もしこのラベルのボックスが複数ある場合は、一番上のものを選んでください)</li>
+<li>
+<strong>"+" ボタン</strong> をクリックし、 <code>libCordova.a</code> を追加します</li>
+<li>Xcode 設定 <strong>"Xcode Preferences -&gt; Locations -&gt; Derived Data -&gt; Advanced…"</strong> を <strong>"Unique"</strong> にセットします</li>
+<li>Project Navigator の <strong>Project アイコン</strong> をクリックし、 <strong>Target</strong> を選択し、 <strong>"Build Settings"</strong> タブを選択します</li>
+<li>
+<p><strong>"Header Search Paths"</strong> で検索をします。この設定に、以下の値を追加します (クォートを含む)</p>
+
+<pre class="prettyprint"><code>"$(TARGET_BUILD_DIR)/usr/local/lib/include"
+
+
+"$(OBJROOT)/UninstalledProducts/include"
+
+
+"$(BUILT_PRODUCTS_DIR)"
+</code></pre>
+
+<p><strong>Cordova 2.1.0</strong> では、 CordovaLib は <strong>Automatic Reference Counting (ARC)</strong> を使用するようにアップグレードされました。 CordovaLib を使用するにあたって <strong>ARC</strong> にアップグレードする必要はありませんが、もしプロジェクトを <strong>ARC</strong> を使用するようにアップグレードしたい場合は、メニューから Xcode migration wizard : <strong>Edit -&gt; Refactor -&gt; Convert to Objective-C ARC…</strong> を使用して、 <strong>libCordova.a を選択解除</strong> し、ウィザードを完了してください。</p>
+</li>
+</ol>
+<h2>
+<a name="Embedding%20Cordova%20WebView%20on%20iOS_cdvviewcontroller">コード中での CDVViewController の使用法</a>
+</h2>
+
+<ol>
+<li>
+<p>この <strong>header</strong> を追加します:</p>
+
+<pre class="prettyprint"><code>#import &lt;Cordova/CDVViewController.h&gt;
+</code></pre>
+</li>
+<li>
+<p><strong>新しい</strong> <code>CDVViewController</code> のインスタンスを作成し、どこかで保持します:</p>
+
+<pre class="prettyprint"><code>CDVViewController* viewController = [CDVViewController new];
+</code></pre>
+</li>
+<li>
+<p>(<em>オプション</em>) <code>wwwFolderName</code> プロパティーをセットします (デフォルトは <code>"www"</code>):</p>
+
+<pre class="prettyprint"><code>viewController.wwwFolderName = @"myfolder";
+</code></pre>
+</li>
+<li>
+<p>(<em>オプション</em>) <code>startPage</code> プロパティーをセットします (デフォルトは <code>"index.html"</code>):</p>
+
+<pre class="prettyprint"><code>viewController.startPage = @"mystartpage.html";
+</code></pre>
+</li>
+<li>
+<p>(<em>オプション</em>) <code>useSplashScreen</code> プロパティーをセットします (デフォルトは <code>NO</code>):</p>
+
+<pre class="prettyprint"><code>viewController.useSplashScreen = YES;
+</code></pre>
+</li>
+<li>
+<p><strong>view frame</strong> をセットします (常にこれを最後のプロパティーとしてセットします):</p>
+
+<pre class="prettyprint"><code>viewController.view.frame = CGRectMake(0, 0, 320, 480);
+</code></pre>
+</li>
+<li>
+<p>Cleaver を view に <strong>追加</strong> します:</p>
+
+<pre class="prettyprint"><code>[myView addSubview:viewController.view];
+</code></pre>
+</li>
+</ol>
+<h2>
+<a name="Embedding%20Cordova%20WebView%20on%20iOS_html_css_javascript">HTML, CSS, JavaScript ファイルの追加</a>
+</h2>
+
+<ol>
+<li>
+<strong>新しいフォルダー</strong> を <strong>ディスク上の</strong> プロジェクト内に作成します。例として名前は <code>www</code> とします</li>
+<li>
+<strong>HTML, CSS, JavaScript ファイル</strong> をこのフォルダーの中に入れます</li>
+<li>このフォルダーを Xcode の Project Navigator に <strong>ドラッグアンドドロップ</strong> します</li>
+<li>
+<strong>"Create groups for any added folders"</strong> のラジオボタンを <strong>選択</strong> します</li>
+<li>
+<p><code>CDVViewController</code> をインスタンス化するとき、 <strong>(1)</strong> で作成したフォルダーに <strong>適切な <code>wwwFolderName</code> と <code>startPage</code> プロパティーをセット</strong> するか、デフォルト値を使用します (前のセクションを参照してください)。</p>
+
+<pre class="prettyprint"><code>/*
+ もし 'myfolder' という名前のフォルダーを作成し、
+ startPage として 'mypage.html' を
+ 使用したい場合
+*/
+viewController.wwwFolderName = @"myfolder";
+viewController.startPage = @"mypage.html"
+</code></pre>
+</li>
+</ol>
+</div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

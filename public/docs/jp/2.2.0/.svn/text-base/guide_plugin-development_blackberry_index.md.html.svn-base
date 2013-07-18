@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="English" value="en">
+<option value="edge">edge</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0rc1">2.7.0rc1</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0rc1">2.6.0rc1</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0rc1">2.5.0rc1</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0rc1">2.4.0rc1</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0rc2">2.3.0rc2</option>
+<option value="2.3.0rc1">2.3.0rc1</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0rc2">2.2.0rc2</option>
+<option value="2.2.0rc1">2.2.0rc1</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0rc2">2.1.0rc2</option>
+<option value="2.1.0rc1">2.1.0rc1</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0rc1">2.0.0rc1</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0rc1">1.9.0rc1</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0rc1">1.8.0rc1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0rc1">1.7.0rc1</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0rc1">1.6.0rc1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0rc1">1.5.0rc1</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="Japanese" value="jp">
+<option selected value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="kr"><option value="2.0.0">2.0.0</option></optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Developing a Plugin on BlackBerry</h1>
+            <small><select><option value="Developing%2520a%2520Plugin%2520on%2520BlackBerry">Developing a Plugin on BlackBerry</option>
+<option value="Developing%20a%20Plugin%20on%20BlackBerry_blackberry_echo">      - Blackberry での Echo プラグインの作り方</option>
+<option value="Developing%20a%20Plugin%20on%20BlackBerry_plugins_xml">      - plugins.xml の修正</option>
+<option value="Developing%20a%20Plugin%20on%20BlackBerry_echo_java">      - Echo.java の追加</option>
+<option value="Developing%20a%20Plugin%20on%20BlackBerry_echo_java">      - Echo.java の実装</option>
+<option value="Developing%20a%20Plugin%20on%20BlackBerry_www_jar">      - www フォルダーの .jar の更新</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>API リファレンス</h1>
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a></li>
+<li><a href="cordova_camera_camera.md.html#Camera">Camera</a></li>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_compass_compass.md.html#Compass">Compass</a></li>
+<li><a href="cordova_connection_connection.md.html#Connection">Connection</a></li>
+<li><a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a></li>
+<li><a href="cordova_device_device.md.html#Device">Device</a></li>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_file_file.md.html#File">File</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a></li>
+<li><a href="cordova_globalization_globalization.md.html#Globalization">Globalization</a></li>
+<li><a href="cordova_media_media.md.html#Media">Media</a></li>
+<li><a href="cordova_notification_notification.md.html#Notification">Notification</a></li>
+<li><a href="cordova_splashscreen_splashscreen.md.html#Splashscreen">Splashscreen</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+</ul>
+<h1>Guides</h1>
+<ul>
+<li><a href="guide_getting-started_index.md.html#%E5%85%A5%E9%96%80%E3%82%AC%E3%82%A4%E3%83%89">入門ガイド</a></li>
+<li><a href="guide_command-line_index.md.html#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E4%BD%BF%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89">コマンドライン使用ガイド</a></li>
+<li><a href="guide_upgrading_index.md.html#%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89">アップグレードガイド</a></li>
+<li><a href="guide_project-settings_index.md.html#%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E8%A8%AD%E5%AE%9A">プロジェクトの設定</a></li>
+<li><a href="guide_plugin-development_index.md.html#%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E9%96%8B%E7%99%BA%E3%82%AC%E3%82%A4%E3%83%89">プラグイン開発ガイド</a></li>
+<li><a href="guide_whitelist_index.md.html#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89">ドメインホワイトリストガイド</a></li>
+<li><a href="guide_cordova-webview_index.md.html#WebView%20%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF">WebView の埋め込み</a></li>
+<li><a href="_index.html">索引</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Developing%20a%20Plugin%20on%20BlackBerry">Developing a Plugin on BlackBerry</a></h1>
+
+<h2>
+<a name="Developing%20a%20Plugin%20on%20BlackBerry_blackberry_echo">Blackberry での Echo プラグインの作り方</a>
+</h2>
+
+<p>このガイドでは、 BlackBerry での Echo プラグインの作り方について説明します。
+もし上位のガイドである JavaScript パートのプラグインについてのガイドを読んでいない場合は、それを最初に読むことをおすすめします。
+加えて、 <a class="external" href="https://git-wip-us.apache.org/repos/asf?p=incubator-cordova-blackberry-webworks.git;a=summary">Cordova Blackberry repo</a> をダウンロードしてください。</p>
+
+<p>Cordova-BlackBerry プロジェクトは Torch, Bold, Playbook といった BlackBerry デバイスへのデプロイを可能にします。
+通常の携帯端末タイプの BlackBerry (例, Torch と Bold) とタブレットタイプの Playbook の間には、デプロイ方法に差があります。
+この2つのコードはベースが違うため、1つを開発しているときは、もう1つのためにコードを複製してあげる必要があります。
+そのため、このガイドでは携帯端末にフォーカスし、タブレットにはフォーカスしません。
+将来的には、両方のプラットフォームをカバーする予定です。</p>
+
+<p>前のガイドからの続きで、 Echo プラグインは基本的にユーザーが <code>window.echo</code>
+関数で与えたメッセージを返します。</p>
+
+<p>Echo 関数:</p>
+
+<pre class="prettyprint"><code>window.echo = function(str, callback) {
+        cordova.exec(callback, function(err) {
+            callback('Nothing to echo.');
+        }, "Echo", "echo", [str]);
+    };
+</code></pre>
+
+<h2>
+<a name="Developing%20a%20Plugin%20on%20BlackBerry_plugins_xml">plugins.xml の修正</a>
+</h2>
+
+<p>このファイルはプロジェクトの中の www フォルダーにあり、 Cordova プロジェクトが使用しているすべてのプラグインへの参照を含みます。
+新しい参照を追加して、 cordova.exec が呼ばれたときに、 Cordova が <code>cordova.exec</code> の "Echo" 引数を
+これから書くネイティブコードの Echo クラスにマッピングすることが分かるようにします。</p>
+
+<pre class="prettyprint"><code>&lt;plugins&gt;
+  ...
+  &lt;plugin name="Echo" value="org.apache.cordova.echo.Echo"/&gt;
+  ...
+&lt;/plugins&gt;
+</code></pre>
+
+<h2>
+<a name="Developing%20a%20Plugin%20on%20BlackBerry_echo_java">Echo.java の追加</a>
+</h2>
+
+<p>もし value 属性の構造にお気づきなら、 Echo プラグインへの定義されたパスが見えるでしょう。
+Cordova BlackBerry Webworks のリポジトリーのルートフォルダーで、 framework と呼ばれるフォルダーを探してください。
+このフォルダーは BlackBerry 上で動くすべてのソースコードを含んでいます。
+このフォルダー以下の <code>framework/ext/src/org/apache/cordova</code> にフォルダーに辿りつくまで cd し続けます。
+この時すべてのプラグインフォルダーが見えるでしょう。また、それぞれのフォルダーの中身はプラグインのソースコードとなっています。
+ここで、フォルダー echo を <code>framework/ext/src/org/apache/cordova/echo</code> に作成し、
+<code>Echo.java</code> をこの中の <code>framework/ext/src/org/apache/cordova/echo/Echo.java</code> の位置に新規追加します。</p>
+
+<h2>
+<a name="Developing%20a%20Plugin%20on%20BlackBerry_echo_java">Echo.java の実装</a>
+</h2>
+
+<p>プラグインの実装の基本的なアイデアは、 Plugin クラスを継承するクラスを作成し、
+PluginResult クラスを返す execute と呼ばれるメソッドを作成することです。
+cordova.exec へのすべての呼び出しは、クラス内で実行したいアクションと引数を渡します。
+この場合、 "echo" がクラス "Echo" 内で実行したいアクションで、 [str] が渡している引数です。</p>
+
+<pre class="prettyprint"><code>package org.apache.cordova.echo;
+
+import org.apache.cordova.api.Plugin;
+import org.apache.cordova.api.PluginResult;
+import org.apache.cordova.json4j.JSONArray;
+import org.apache.cordova.json4j.JSONException;
+import org.apache.cordova.json4j.JSONObject;
+/**
+ * BlackBerry でのプラグインの作り方デモのためのシンプルなプラグイン
+ * ユーザーがプラグインを呼び出したときのメッセージをそのまま返します
+ */
+public final class Echo extends Plugin {
+
+    public static final String echo = "echo";
+
+    public PluginResult execute(String action, JSONArray args, String callbackId) {
+        PluginResult result = new PluginResult(PluginResult.Status.INVALID_ACTION, "Echo: Invalid action:" + action);
+        if(action.equals(echo)){
+            try {
+                String theMsg = args.getString(0);
+                if(theMsg!= null || theMsg.length()&gt;0){
+                    result = new PluginResult(PluginResult.Status.OK, theMsg);
+                }else{
+                    result = new PluginResult(PluginResult.Status.ERROR, "Nothing to echo.");
+                }
+            } catch (JSONException e) {
+                result = new PluginResult(PluginResult.Status.JSON_EXCEPTION, e.getMessage());
+            }
+        }
+
+        return result;
+    }
+
+}
+</code></pre>
+
+<p>上のコードを見てみると、 execute メソッドの中で、最初にどんなアクションが来たかを調べているのが分かります。
+この Echo プラグインは1つのアクション "echo" のみを持つので、それのみをチェックします。
+もしプラグインに複数のアクションがあった場合は、 if 文を追加していき、これらをチェックしていきます。</p>
+
+<p>次に、 args パラメーターによって与えられた引数からメッセージを取得します。
+<code>String theMsg = args.getString(0);</code> とすることで、シンプルに一番最初の引数を取得することができます。</p>
+
+<p>いくつかのエラーチェックをし、もしメッセージが大丈夫そうなら、 ok ステータス (PluginResult.Status.OK) とメッセージ (theMsg) を持つ
+新しい PluginResult インスタンスを作ります。
+その後、 JavaScript に渡し、成功コールバック関数を呼び出す result を返します。
+もし何かエラーが起きた場合、 PluginResult.Status.ERROR, PluginResult.Status.JSON<em>EXCEPTION, PluginResult.Status.INVALID</em>ACTION といったような何種類かのステータス例外を返すことが出来ます。
+もしこのタイプの例外が返されたとき、 JavaScript 側ではエラーコールバックが
+呼び出されます。</p>
+
+<h2>
+<a name="Developing%20a%20Plugin%20on%20BlackBerry_www_jar">www フォルダーの .jar の更新</a>
+</h2>
+
+<p>あなたのプロジェクト内で Echo.java の追加分が更新される必要があります。 .jar ファイルをビルドするためには、 BlackBerry Webworks リポジトリーのルートディレクトリに cd します。
+次の ant コマンドを使用します:</p>
+
+<pre class="prettyprint"><code>ant update -Dproject.path="~/path_to_my_project"
+</code></pre>
+
+<p>これは build/ext フォルダーの中の新しい .jar ファイルをビルドします。
+<code>build/ext/cordova.jar</code> ファイルを プロジェクトの www/ext フォルダーにコピーします。</p>
+
+<p>もしすべてが上手くいったら、 BlackBerry で Echo プラグインが使用できるようになっているはずです。</p>
+
+            </div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

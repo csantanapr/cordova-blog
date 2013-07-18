@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="English" value="en">
+<option value="edge">edge</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0rc1">2.7.0rc1</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0rc1">2.6.0rc1</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0rc1">2.5.0rc1</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0rc1">2.4.0rc1</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0rc2">2.3.0rc2</option>
+<option value="2.3.0rc1">2.3.0rc1</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0rc2">2.2.0rc2</option>
+<option value="2.2.0rc1">2.2.0rc1</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0rc2">2.1.0rc2</option>
+<option value="2.1.0rc1">2.1.0rc1</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0rc1">2.0.0rc1</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0rc1">1.9.0rc1</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0rc1">1.8.0rc1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0rc1">1.7.0rc1</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0rc1">1.6.0rc1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0rc1">1.5.0rc1</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="Japanese" value="jp">
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="kr"><option selected value="2.0.0">2.0.0</option></optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Getting Started with Android</h1>
+            <small><select><option value="Getting%2520Started%2520with%2520Android">Getting Started with Android</option>
+<option value="Getting%20Started%20with%20Android_1">      - 1. 요구사항</option>
+<option value="Getting%20Started%20with%20Android_2_install_sdk_cordova">      - 2. Install SDK + Cordova</option>
+<option value="Getting%20Started%20with%20Android_3_setup_new_project">      -  3. Setup New Project</option>
+<option value="Getting%20Started%20with%20Android_4_hello_world">      - 4. Hello World</option>
+<option value="Getting%20Started%20with%20Android_5a">      - 5A. 시뮬레이터에 배포하기</option>
+<option value="Getting%20Started%20with%20Android_5b">      - 5B. 실제 장치에 배포하기</option>
+<option value="Getting%20Started%20with%20Android_">      - 성공!</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>API Reference</h1>
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a></li>
+<li><a href="cordova_camera_camera.md.html#Camera">Camera</a></li>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_compass_compass.md.html#Compass">Compass</a></li>
+<li><a href="cordova_connection_connection.md.html#Connection">Connection</a></li>
+<li><a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a></li>
+<li><a href="cordova_device_device.md.html#Device">Device</a></li>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_file_file.md.html#File">File</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a></li>
+<li><a href="cordova_media_media.md.html#Media">Media</a></li>
+<li><a href="cordova_notification_notification.md.html#Notification">Notification</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+</ul>
+<h1>Guides</h1>
+<ul>
+<li><a href="guide_getting-started_index.md.html#Getting%20Started%20Guides">Getting Started Guides</a></li>
+<li><a href="guide_command-line_index.md.html#%EC%BB%A4%EB%A7%A8%EB%93%9C%20%EB%9D%BC%EC%9D%B8%20%EC%82%AC%EC%9A%A9%EB%B2%95">커맨드 라인 사용법</a></li>
+<li><a href="guide_upgrading_index.md.html#Upgrading%20Guides">Upgrading Guides</a></li>
+<li><a href="guide_plugin-development_index.md.html#Plugin%20Development%20Guide">Plugin Development Guide</a></li>
+<li><a href="guide_whitelist_index.md.html#Domain%20Whitelist%20Guide">Domain Whitelist Guide</a></li>
+<li><a href="guide_cordova-webview_index.md.html#Embedding%20WebView">Embedding WebView</a></li>
+<li><a href="_index.html">Keyword Index</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Getting%20Started%20with%20Android">Getting Started with Android</a></h1>
+
+<p>이 문서는 Cordova의 개발환경을 설정하고 샘플 어플리케이션을 실행할 수 있는 방법을 설명한다. Cordova는 과거에 Phonegap으로 불리었기 때문에 일부에서 Phonegap의 이름이 남아있을 수 있다. </p>
+
+<h2>
+<a name="Getting%20Started%20with%20Android_1">1. 요구사항</a>
+</h2>
+
+<ul>
+<li>이클립스(Eclipse) 3.4+</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Android_2_install_sdk_cordova">2. Install SDK + Cordova</a>
+</h2>
+
+<ul>
+<li>
+<a class="external" href="http://www.eclipse.org/downloads/">Eclipse Classic</a> 를 다운로드 받고 설치한다.</li>
+<li>
+<a class="external" href="http://developer.android.com/sdk/index.html">Android SDK</a> 를 다운로드받고 설치한다.</li>
+<li>
+<a class="external" href="http://developer.android.com/sdk/eclipse-adt.html#installing">ADT Plugin</a>  를 다운로드받고 설치한다.</li>
+<li>최신버전의 <a class="external" href="http://phonegap.com/download">Cordova</a> 를 다운받고 압축을 푼다. 이제부터는 Android 디렉토리에서 작업할 것이다. </li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Android_3_setup_new_project"> 3. Setup New Project</a>
+</h2>
+
+<ul>
+<li>이클립스를 실행하고 <strong>New Project</strong>메뉴를 선택한다. 
+<img src="img/guide/getting-started/android/step_1.jpg" alt="" title="">
+</li>
+<li>새로운 어플리케이션을 지정한다.
+<img src="img/guide/getting-started/android/step_2.jpg" alt="" title="">
+</li>
+<li>어플리케이션 이름을 지정한다. 이는 프로젝트 이름과 패키지 네임스페이스로 사용된다.
+<img src="img/guide/getting-started/android/step_3.jpg" alt="" title="">
+</li>
+<li>그림대로 선택한다. 
+<img src="img/guide/getting-started/android/step_4.jpg" alt="" title="">
+</li>
+<li>Blank Activity 를 생선한다. 
+<img src="img/guide/getting-started/android/step_5.jpg" alt="" title="">
+</li>
+<li><p>Activity가 아무것도 상속받지 않았는지 확인한다. </p></li>
+<li>
+<p>프로젝트의 루트 디렉토리에서 두 개의 디렉토리를 생성한다.</p>
+
+<ul>
+<li><strong>/libs</strong></li>
+<li><strong>assets/www</strong></li>
+</ul>
+</li>
+<li>다운받은 Cordova에서 <strong>cordova-2.0.0.js</strong> 를 선택해 <strong>assets/www</strong> 에 복사한다.</li>
+<li>다운받은 Cordova에서 <strong>cordova-2.0.jar</strong> 를 선택해  <strong>/libs</strong> 에 복사한다.</li>
+<li><p>다운받은 Cordova에서 <strong>xml</strong> 폴더를 <strong>/res</strong> 에 복사한다.</p></li>
+<li><p><strong>cordova-2.0.0.jar</strong> 를 프로젝트 Build Path 에 추가한다. 우선 /libs 디렉토리르 우클릭해서 <strong>Build Paths/ &gt; Configure Build Path...</strong> 로 메뉴로 이동한다. Libraries 탭을 누르고 <strong>cordova-2.0.0.jar</strong> 를 프로젝트에 추가한다. 바로 추가되지 않는다면 f5 를 눌러서 리프레쉬한다. 
+<img src="img/guide/getting-started/android/buildPath.jpg" alt="" title=""></p></li>
+<li>
+<p><strong>src</strong> 폴더의 메인 Java 파일을 수정한다.</p>
+
+<ul>
+<li>
+<strong>import org.apache.cordova.*;</strong> 를 추가한다.</li>
+<li>상속받는 class 를 <strong>Activity</strong> 에서 <strong>DroidGap</strong> 로 바꾼다.</li>
+<li>
+<strong>setContentView()</strong> 라인을 <strong>super.loadUrl("file:///android_asset/www/index.html");</strong> 로 바꾼다.  <img src="img/guide/getting-started/android/javaSrc.jpg" alt="" title="">
+</li>
+</ul>
+</li>
+<li><p>AndroidManifest.xml 를 우클릭하고 <strong>Open With &gt; Text Editor</strong> 를 선택해서 파일을 연다. </p></li>
+<li>
+<p>아래의 권한설정값을 <strong>&lt;uses-sdk.../&gt;</strong> 와 <strong>&lt;application.../&gt;</strong> 태그 사이에 넣는다.</p>
+
+<pre class="prettyprint"><code>&lt;supports-screens 
+    android:largeScreens="true" 
+    android:normalScreens="true" 
+    android:smallScreens="true" 
+    android:resizeable="true" 
+    android:anyDensity="true" /&gt;
+&lt;uses-permission android:name="android.permission.VIBRATE" /&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /&gt;
+&lt;uses-permission android:name="android.permission.READ_PHONE_STATE" /&gt;
+&lt;uses-permission android:name="android.permission.INTERNET" /&gt;
+&lt;uses-permission android:name="android.permission.RECEIVE_SMS" /&gt;
+&lt;uses-permission android:name="android.permission.RECORD_AUDIO" /&gt;
+&lt;uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /&gt;
+&lt;uses-permission android:name="android.permission.READ_CONTACTS" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_CONTACTS" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /&gt; 
+&lt;uses-permission android:name="android.permission.GET_ACCOUNTS" /&gt;
+&lt;uses-permission android:name="android.permission.BROADCAST_STICKY" /&gt;
+</code></pre>
+</li>
+<li>어플리케이션 권한의 담요 목록을 추가하였음에 주의하자. Google play에 커밋하기 전에 사용하지 않는 권한은 삭제해주어야 한다. </li>
+<li>
+<p><strong>&lt;activity&gt;</strong> 태그안에 아래의 구문을 붙여넣기 함으로써 orientation 변화를 사용할 수 있다.</p>
+
+<pre class="prettyprint"><code>android:configChanges="orientation|keyboardHidden"
+</code></pre>
+</li>
+<li>
+<p>이제 AndroidManifest.xml 파일은 아래와 같이 보일 것이다.</p>
+
+<p><img src="img/guide/getting-started/android/manifest.png" alt="" title=""></p>
+</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Android_4_hello_world">4. Hello World</a>
+</h2>
+
+<ul>
+<li>
+<p><strong>assets/www</strong> 디렉토리에서 <strong>index.html</strong> 을 생성하고 아래의 코드를 붙여넣자:</p>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Cordova&lt;/title&gt;
+&lt;script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Android_5a">5A. 시뮬레이터에 배포하기</a>
+</h2>
+
+<ul>
+<li>프로젝트에서 우클릭하여 <strong>Run As &gt; Android Application</strong>을 선택한다.</li>
+<li>이클립스가 적합한 AVD를 선택하라고 할 것이다. 만약 없다면 생성해줘야 한다.</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Android_5b">5B. 실제 장치에 배포하기</a>
+</h2>
+
+<ul>
+<li>안드로이드 장치가 컴퓨터에 연결되어 있고 USB 디버깅이 활성화되어있는지 화인한다.(<strong>Settings &gt; Applications &gt; Development</strong>)</li>
+<li>프로젝트에서 <strong>Run As &gt; Android Application</strong>을 선택한다.</li>
+</ul>
+<h2>
+<a name="Getting%20Started%20with%20Android_">성공!</a>
+</h2>
+
+            </div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>

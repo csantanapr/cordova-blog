@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+--><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="generator" content="joDoc">
+<title>Apache Cordova API Documentation</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-device-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+</head>
+<body>
+        <div id="header">
+            <h1><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <small>
+                <select><optgroup label="English" value="en">
+<option value="edge">edge</option>
+<option value="2.8.0">2.8.0</option>
+<option value="2.7.0rc1">2.7.0rc1</option>
+<option value="2.7.0">2.7.0</option>
+<option value="2.6.0rc1">2.6.0rc1</option>
+<option value="2.6.0">2.6.0</option>
+<option value="2.5.0rc1">2.5.0rc1</option>
+<option value="2.5.0">2.5.0</option>
+<option value="2.4.0rc1">2.4.0rc1</option>
+<option value="2.4.0">2.4.0</option>
+<option value="2.3.0rc2">2.3.0rc2</option>
+<option value="2.3.0rc1">2.3.0rc1</option>
+<option value="2.3.0">2.3.0</option>
+<option value="2.2.0rc2">2.2.0rc2</option>
+<option value="2.2.0rc1">2.2.0rc1</option>
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0rc2">2.1.0rc2</option>
+<option value="2.1.0rc1">2.1.0rc1</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0rc1">2.0.0rc1</option>
+<option value="2.0.0">2.0.0</option>
+<option value="1.9.0rc1">1.9.0rc1</option>
+<option value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.8.0rc1">1.8.0rc1</option>
+<option value="1.8.0">1.8.0</option>
+<option value="1.7.0rc1">1.7.0rc1</option>
+<option value="1.7.0">1.7.0</option>
+<option value="1.6.1">1.6.1</option>
+<option value="1.6.0rc1">1.6.0rc1</option>
+<option value="1.6.0">1.6.0</option>
+<option value="1.5.0rc1">1.5.0rc1</option>
+<option value="1.5.0">1.5.0</option>
+</optgroup>
+<optgroup label="Japanese" value="jp">
+<option value="2.2.0">2.2.0</option>
+<option value="2.1.0">2.1.0</option>
+<option value="2.0.0">2.0.0</option>
+<option selected value="1.9.0">1.9.0</option>
+<option value="1.8.1">1.8.1</option>
+<option value="1.7.0">1.7.0</option>
+</optgroup>
+<optgroup label="Korean" value="kr"><option value="2.0.0">2.0.0</option></optgroup></select></small>
+        </div>
+        <div id="subheader">
+            <h1>Capture</h1>
+            <small><select><option value="Capture">Capture</option>
+<option value="Capture_">      - オブジェクト</option>
+<option value="Capture_">      - メソッド</option>
+<option value="Capture_">      - スコープ</option>
+<option value="Capture_">      - プロパティー</option>
+<option value="Capture_">      - メソッド</option>
+<option value="Capture_">      - サポートされているプラットフォーム</option>
+<option value="Capture_">      - パーミッション</option>
+<option value="capture.captureAudio">capture.captureAudio</option>
+<option value="capture.captureAudio_">      - 概要</option>
+<option value="capture.captureAudio_">      - サポートされているプラットフォーム</option>
+<option value="capture.captureAudio_">      - 使用例</option>
+<option value="capture.captureAudio_">      - 詳細な使用例</option>
+<option value="capture.captureAudio_blackberry_webworks">      - BlackBerry WebWorks に関する注意点</option>
+<option value="capture.captureAudio_ios">      - iOS に関する注意点</option>
+<option value="capture.captureAudio_windows_phone_7">      - Windows Phone 7 に関する注意点</option>
+<option value="CaptureAudioOptions">CaptureAudioOptions</option>
+<option value="CaptureAudioOptions_">      - プロパティー</option>
+<option value="CaptureAudioOptions_">      - 使用例</option>
+<option value="CaptureAudioOptions_android">      - Android に関する注意点</option>
+<option value="CaptureAudioOptions_blackberry_webworks">      - BlackBerry WebWorks に関する注意点</option>
+<option value="CaptureAudioOptions_ios">      - iOS に関する注意点</option>
+<option value="capture.captureImage">capture.captureImage</option>
+<option value="capture.captureImage_">      - 概要</option>
+<option value="capture.captureImage_">      - サポートされているプラットフォーム</option>
+<option value="capture.captureImage_windows_phone_7">      - Windows Phone 7 に関する注意点</option>
+<option value="capture.captureImage_">      - 使用例</option>
+<option value="capture.captureImage_">      - 詳細な使用例</option>
+<option value="CaptureImageOptions">CaptureImageOptions</option>
+<option value="CaptureImageOptions_">      - プロパティー</option>
+<option value="CaptureImageOptions_">      - 使用例</option>
+<option value="CaptureImageOptions_android">      - Android に関する注意点</option>
+<option value="CaptureImageOptions_blackberry_webworks">      - BlackBerry WebWorks に関する注意点</option>
+<option value="CaptureImageOptions_ios">      - iOS に関する注意点</option>
+<option value="capture.captureVideo">capture.captureVideo</option>
+<option value="capture.captureVideo_">      - 概要</option>
+<option value="capture.captureVideo_">      - サポートされているプラットフォーム</option>
+<option value="capture.captureVideo_">      - 使用例</option>
+<option value="capture.captureVideo_">      - 詳細な使用例</option>
+<option value="capture.captureVideo_blackberry_webworks">      - BlackBerry WebWorks に関する注意点</option>
+<option value="CaptureVideoOptions">CaptureVideoOptions</option>
+<option value="CaptureVideoOptions_">      - プロパティー</option>
+<option value="CaptureVideoOptions_">      - 使用例</option>
+<option value="CaptureVideoOptions_android">      - Android に関する注意点</option>
+<option value="CaptureVideoOptions_blackberry_webworks">      - BlackBerry WebWorks に関する注意点</option>
+<option value="CaptureVideoOptions_ios">      - iOS に関する注意点</option>
+<option value="CaptureError">CaptureError</option>
+<option value="CaptureError_">      - プロパティー</option>
+<option value="CaptureError_">      - 定数</option>
+<option value="CaptureCB">CaptureCB</option>
+<option value="CaptureCB_">      - 概要</option>
+<option value="CaptureCB_">      - 使用例</option>
+<option value="CaptureErrorCB">CaptureErrorCB</option>
+<option value="CaptureErrorCB_">      - 概要</option>
+<option value="CaptureErrorCB_">      - 使用例</option>
+<option value="ConfigurationData">ConfigurationData</option>
+<option value="ConfigurationData_">      - 概要</option>
+<option value="ConfigurationData_">      - プロパティー</option>
+<option value="ConfigurationData_">      - 使用例</option>
+<option value="MediaFile">MediaFile</option>
+<option value="MediaFile_">      - プロパティー</option>
+<option value="MediaFile_">      - メソッド</option>
+<option value="MediaFile.getFormatData">MediaFile.getFormatData</option>
+<option value="MediaFile.getFormatData_">      - 概要</option>
+<option value="MediaFile.getFormatData_">      - サポートされているプラットフォーム</option>
+<option value="MediaFile.getFormatData_blackberry_webworks">      - BlackBerry WebWorks に関する注意点</option>
+<option value="MediaFile.getFormatData_android">      - Android に関する注意点</option>
+<option value="MediaFile.getFormatData_ios">      - iOS に関する注意点</option>
+<option value="MediaFileData">MediaFileData</option>
+<option value="MediaFileData_">      - プロパティー</option>
+<option value="MediaFileData_blackberry_webworks">      - BlackBerry WebWorks に関する注意点</option>
+<option value="MediaFileData_android">      - Android に関する注意点</option>
+<option value="MediaFileData_ios">      - iOS に関する注意点</option></select></small>
+        </div>
+
+        <div id="sidebar">
+            <div class="vertical_divider"></div>
+        <h1>API リファレンス</h1>
+<ul>
+<li><a href="cordova_accelerometer_accelerometer.md.html#Accelerometer">Accelerometer</a></li>
+<li><a href="cordova_camera_camera.md.html#Camera">Camera</a></li>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_compass_compass.md.html#Compass">Compass</a></li>
+<li><a href="cordova_connection_connection.md.html#Connection">Connection</a></li>
+<li><a href="cordova_contacts_contacts.md.html#Contacts">Contacts</a></li>
+<li><a href="cordova_device_device.md.html#Device">Device</a></li>
+<li><a href="cordova_events_events.md.html#Events">Events</a></li>
+<li><a href="cordova_file_file.md.html#File">File</a></li>
+<li><a href="cordova_geolocation_geolocation.md.html#Geolocation">Geolocation</a></li>
+<li><a href="cordova_media_media.md.html#Media">Media</a></li>
+<li><a href="cordova_notification_notification.md.html#Notification">Notification</a></li>
+<li><a href="cordova_storage_storage.md.html#Storage">Storage</a></li>
+</ul>
+<h1>Guides</h1>
+<ul>
+<li><a href="guide_getting-started_index.md.html#%E5%85%A5%E9%96%80%E3%82%AC%E3%82%A4%E3%83%89">入門ガイド</a></li>
+<li><a href="guide_command-line_index.md.html#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E4%BD%BF%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89">コマンドライン使用ガイド</a></li>
+<li><a href="guide_upgrading_index.md.html#%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89">アップグレードガイド</a></li>
+<li><a href="guide_whitelist_index.md.html#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89">ドメインホワイトリストガイド</a></li>
+<li><a href="guide_cordova-webview_index.md.html#WebView%20%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF">WebView の埋め込み</a></li>
+<li><a href="_index.html">索引</a></li>
+</ul>
+</div>
+
+        <div id="scrollable">
+            <div id="content">
+                <h1><a name="Capture">Capture</a></h1>
+
+<blockquote>
+  <p>デバイスのオーディオ、イメージ、ビデオキャプチャー機能への制御を提供します。</p>
+</blockquote>
+
+<h2>
+<a name="Capture_">オブジェクト</a>
+</h2>
+
+<ul>
+<li><a href="cordova_media_capture_capture.md.html#Capture">Capture</a></li>
+<li><a href="cordova_media_capture_capture.md.html#CaptureAudioOptions">CaptureAudioOptions</a></li>
+<li><a href="cordova_media_capture_capture.md.html#CaptureImageOptions">CaptureImageOptions</a></li>
+<li><a href="cordova_media_capture_capture.md.html#CaptureVideoOptions">CaptureVideoOptions</a></li>
+<li><a href="cordova_media_capture_capture.md.html#CaptureCB">CaptureCB</a></li>
+<li><a href="cordova_media_capture_capture.md.html#CaptureErrorCB">CaptureErrorCB</a></li>
+<li><a href="cordova_media_capture_capture.md.html#ConfigurationData">ConfigurationData</a></li>
+<li><a href="cordova_media_capture_capture.md.html#MediaFile">MediaFile</a></li>
+<li><a href="cordova_media_capture_capture.md.html#MediaFileData">MediaFileData</a></li>
+</ul>
+<h2>
+<a name="Capture_">メソッド</a>
+</h2>
+
+<ul>
+<li><a href="cordova_media_capture_capture.md.html#capture.captureAudio">capture.captureAudio</a></li>
+<li><a href="cordova_media_capture_capture.md.html#capture.captureImage">capture.captureImage</a></li>
+<li><a href="cordova_media_capture_capture.md.html#capture.captureVideo">capture.captureVideo</a></li>
+<li><a href="cordova_media_capture_capture.md.html#MediaFile.getFormatData">MediaFile.getFormatData</a></li>
+</ul>
+<h2>
+<a name="Capture_">スコープ</a>
+</h2>
+
+<p><strong>capture</strong> オブジェクトは <strong>navigator.device</strong> オブジェクトに割り当てられており、そのためグローバルスコープです。</p>
+
+<pre class="prettyprint"><code>// グローバル capture オブジェクト
+var capture = navigator.device.capture;
+</code></pre>
+
+<h2>
+<a name="Capture_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>supportedAudioModes:</strong> デバイスによってサポートされているオーディオ録音のフォーマットです。 (<a href="cordova_media_capture_capture.md.html#ConfigurationData">ConfigurationData</a>[])</li>
+<li>
+<strong>supportedImageModes:</strong> デバイスによってサポートされている記録用の画像サイズやフォーマットです。 (<a href="cordova_media_capture_capture.md.html#ConfigurationData">ConfigurationData</a>[])</li>
+<li>
+<strong>supportedVideoModes:</strong> デバイスによってサポートされている記録用のビデオ解像度やフォーマットです。 (<a href="cordova_media_capture_capture.md.html#ConfigurationData">ConfigurationData</a>[])</li>
+</ul>
+<h2>
+<a name="Capture_">メソッド</a>
+</h2>
+
+<ul>
+<li>
+<a href="cordova_media_capture_capture.md.html#capture.captureAudio">capture.captureAudio</a>: オーディオ録音のために、デバイスのオーディオ録音アプリを起動します。</li>
+<li>
+<a href="cordova_media_capture_capture.md.html#capture.captureImage">capture.captureImage</a>: 画像取得のために、デバイスのカメラアプリを起動します。</li>
+<li>
+<a href="cordova_media_capture_capture.md.html#capture.captureVideo">capture.captureVideo</a>: ビデオ録画のために、デバイスのビデオ録画アプリを起動します。</li>
+</ul>
+<h2>
+<a name="Capture_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7 (Mango)</li>
+</ul>
+<h2>
+<a name="Capture_">パーミッション</a>
+</h2>
+
+<h3>Android</h3>
+
+<h4>app/res/xml/plugins.xml</h4>
+
+<pre class="prettyprint"><code>&lt;plugin name="<a href="cordova_media_capture_capture.md.html#Capture">Capture</a>" value="org.apache.cordova.<a href="cordova_media_capture_capture.md.html#Capture">Capture</a>"/&gt;
+</code></pre>
+
+<h4>app/AndroidManifest.xml</h4>
+
+<pre class="prettyprint"><code>&lt;uses-permission android:name="android.permission.RECORD_AUDIO" /&gt;
+&lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;
+</code></pre>
+
+<h3>Bada</h3>
+
+<h4>manifest.xml</h4>
+
+<pre class="prettyprint"><code>&lt;Privilege&gt;
+    &lt;Name&gt;RECORDING&lt;/Name&gt;
+&lt;/Privilege&gt;
+</code></pre>
+
+<h3>BlackBerry WebWorks</h3>
+
+<h4>www/plugins.xml</h4>
+
+<pre class="prettyprint"><code>&lt;plugin name="<a href="cordova_media_capture_capture.md.html#Capture">Capture</a>" value="org.apache.cordova.capture.MediaCapture" /&gt;
+</code></pre>
+
+<h4>www/config.xml</h4>
+
+<pre class="prettyprint"><code>&lt;feature id="blackberry.system"  required="true" version="1.0.0.0" /&gt;
+&lt;feature id="blackberry.io.file" required="true" version="1.0.0.0" /&gt;
+</code></pre>
+
+<h3>iOS</h3>
+
+<h4>App/Supporting Files/Cordova.plist</h4>
+
+<pre class="prettyprint"><code>&lt;key&gt;Plugins&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;<a href="cordova_media_capture_capture.md.html#Capture">Capture</a>&lt;/key&gt;
+    &lt;string&gt;CDVCapture&lt;/string&gt;
+&lt;/dict&gt;
+</code></pre>
+
+<h3>webOS</h3>
+
+<pre class="prettyprint"><code>パーミッションの設定は必要ありません。
+</code></pre>
+
+<h3>Windows Phone</h3>
+
+<h4>Properties/WPAppManifest.xml</h4>
+
+<pre class="prettyprint"><code>&lt;Capabilities&gt;
+    &lt;Capability Name="ID_CAP_MEDIALIB" /&gt;
+    &lt;Capability Name="ID_CAP_MICROPHONE" /&gt;
+    &lt;Capability Name="ID_HW_FRONTCAMERA" /&gt;
+    &lt;Capability Name="ID_CAP_ISV_CAMERA" /&gt;
+    &lt;Capability Name="ID_CAP_CAMERA" /&gt;
+&lt;/Capabilities&gt;
+</code></pre>
+
+<hr>
+<h1><a name="capture.captureAudio">capture.captureAudio</a></h1>
+
+<blockquote>
+  <p>オーディオ録音アプリを起動し、キャプチャーしたファイルの情報を返します。</p>
+</blockquote>
+
+<pre class="prettyprint"><code>navigator.device.<a href="cordova_media_capture_capture.md.html#capture.captureAudio">capture.captureAudio</a>(
+    <a href="cordova_media_capture_capture.md.html#CaptureCB">CaptureCB</a> captureSuccess, <a href="cordova_media_capture_capture.md.html#CaptureErrorCB">CaptureErrorCB</a> captureError, [<a href="cordova_media_capture_capture.md.html#CaptureAudioOptions">CaptureAudioOptions</a> options]
+);
+</code></pre>
+
+<h2>
+<a name="capture.captureAudio_">概要</a>
+</h2>
+
+<p>このメソッドは、デバイスのデフォルトのオーディオ録音アプリを使用して、オーディオをキャプチャーするための非同期操作を開始します。この操作はユーザーに、単一セッションで複数のビデオのキャプチャーをユーザーに許可します。</p>
+
+<p>キャプチャー操作は、ユーザーがオーディオ録音アプリを終了するか、 <a href="cordova_media_capture_capture.md.html#CaptureAudioOptions">CaptureAudioOptions</a> の中の <strong>limit</strong> パラメーターで指定された最大録音回数に達した場合に終了します。もし <strong>limit</strong> パラメーターが指定されていない場合は、デフォルト値である1が使用され、キャプチャー操作はユーザーが1度オーディオを録音した後に終了します。</p>
+
+<p>キャプチャー操作が終了した時、それぞれのオーディオ録音ファイル情報が書かれた <a href="cordova_media_capture_capture.md.html#MediaFile">MediaFile</a> オブジェクトの配列を伴った <a href="cordova_media_capture_capture.md.html#CaptureCB">CaptureCB</a> コールバック関数を呼び出します。もしオーディオがキャプチャーされる前にユーザーによって操作が終了されたら、 <a href="cordova_media_capture_capture.md.html#CaptureError">CaptureError</a>.<code>CAPTURE_NO_MEDIA_FILES</code> エラーコードを持つ <a href="cordova_media_capture_capture.md.html#CaptureError">CaptureError</a> オブジェクトを伴った <a href="cordova_media_capture_capture.md.html#CaptureErrorCB">CaptureErrorCB</a> コールバック関数が呼び出されます。</p>
+
+<h2>
+<a name="capture.captureAudio_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7 (Mango)</li>
+</ul>
+<h2>
+<a name="capture.captureAudio_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// capture コールバック関数
+var captureSuccess = function(mediaFiles) {
+    var i, path, len;
+    for (i = 0, len = mediaFiles.length; i &lt; len; i += 1) {
+        path = mediaFiles[i].fullPath;
+        // ファイルを使用した処理
+    }
+};
+
+// capture エラーコールバック関数
+var captureError = function(error) {
+    navigator.<a href="cordova_notification_notification.md.html#notification.alert">notification.alert</a>('Error code: ' + error.code, null, '<a href="cordova_media_capture_capture.md.html#Capture">Capture</a> Error');
+};
+
+// オーディオキャプチャーを開始
+navigator.device.<a href="cordova_media_capture_capture.md.html#capture.captureAudio">capture.captureAudio</a>(captureSuccess, captureError, {limit:2});
+</code></pre>
+
+<h2>
+<a name="capture.captureAudio_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;オーディオキャプチャー&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8" src="json2.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // キャプチャー操作の正常終了時の処理
+    //
+    function captureSuccess(mediaFiles) {
+        var i, len;
+        for (i = 0, len = mediaFiles.length; i &lt; len; i += 1) {
+            uploadFile(mediaFiles[i]);
+        }
+    }
+
+    // エラー発生時の処理
+    //
+    function captureError(error) {
+        var msg = 'キャプチャー中にエラーが発生しました: ' + error.code;
+        navigator.<a href="cordova_notification_notification.md.html#notification.alert">notification.alert</a>(msg, null, 'エラー');
+    }
+
+    // ボタンがクリックされた場合の処理
+    //
+    function captureAudio() {
+        // デバイスのオーディオ録音アプリを起動し、
+        // ユーザーに2つまでオーディオの録音を許可する
+        navigator.device.<a href="cordova_media_capture_capture.md.html#capture.captureAudio">capture.captureAudio</a>(captureSuccess, captureError, {limit: 2});
+    }
+
+    // ファイルをサーバーにアップロード
+    function uploadFile(mediaFile) {
+        var ft = new <a href="cordova_file_file.md.html#FileTransfer">FileTransfer</a>(),
+            path = mediaFile.fullPath,
+            name = mediaFile.name;
+
+        ft.upload(path,
+            "http://my.domain.com/upload.php",
+            function(result) {
+                console.log('アップロード成功: ' + result.responseCode);
+                console.log(result.bytesSent + ' バイト送信');
+            },
+            function(error) {
+                console.log('ファイルのアップロードに失敗 ' + path + ': ' + error.code);
+            },
+            { fileName: name });
+    }
+
+    &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;button onclick="captureAudio();"&gt;オーディオキャプチャー&lt;/button&gt; &lt;br&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="capture.captureAudio_blackberry_webworks">BlackBerry WebWorks に関する注意点</a>
+</h2>
+
+<ul>
+<li>Cordova for BlackBerry WebWorks は、オーディオ録音のために RIM より提供されている <strong>Voice Notes Recorder</strong> の起動を試みます。デベロッパーは、もしアプリがインストールされていない場合は <a href="cordova_media_capture_capture.md.html#CaptureError">CaptureError</a>.<code>CAPTURE_NOT_SUPPORTED</code> エラーを受け取ります。</li>
+</ul>
+<h2>
+<a name="capture.captureAudio_ios">iOS に関する注意点</a>
+</h2>
+
+<ul>
+<li>iOS にはデフォルトのオーディオ録音アプリがないため、シンプルなユーザーインターフェースが提供されます。</li>
+</ul>
+<h2>
+<a name="capture.captureAudio_windows_phone_7">Windows Phone 7 に関する注意点</a>
+</h2>
+
+<ul>
+<li>Windows Phone 7 にはデフォルトのオーディオ録音アプリがないため、シンプルなユーザーインターフェースが提供されます。</li>
+</ul>
+<hr>
+<h1><a name="CaptureAudioOptions">CaptureAudioOptions</a></h1>
+
+<blockquote>
+  <p>オーディオキャプチャーのオプションをカプセル化します。</p>
+</blockquote>
+
+<h2>
+<a name="CaptureAudioOptions_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>limit:</strong> 一つのキャプチャー操作で録音できるオーディオクリップの最大値を表します。値は1以上の必要があります (デフォルトは1です) 。</li>
+<li>
+<strong>duration:</strong> オーディオクリップの最大録音時間を秒で表します。</li>
+<li>
+<strong>mode:</strong> 選択されたオーディオのモードを表します。値は <code>capture.supportedAudioModes</code> の中の一つである必要があります。</li>
+</ul>
+<h2>
+<a name="CaptureAudioOptions_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// キャプチャー操作時のオーディオクリップの最大値を3に制限、最大録音時間を10秒に設定
+var options = { limit: 3, duration: 10 };
+
+navigator.device.<a href="cordova_media_capture_capture.md.html#capture.captureAudio">capture.captureAudio</a>(captureSuccess, captureError, options);
+</code></pre>
+
+<h2>
+<a name="CaptureAudioOptions_android">Android に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>duration</strong> パラメーターはサポートされていません。録画時間をプログラム的に制限することは出来ません。</li>
+<li>
+<strong>mode</strong> パラメーターはサポートされていません。録音のフォーマットをプログラム的に変更することは出来ません。録音は Adaptive Multi-Rate (AMR) フォーマット (audio/amr) を使用してエンコードされます。</li>
+</ul>
+<h2>
+<a name="CaptureAudioOptions_blackberry_webworks">BlackBerry WebWorks に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>duration</strong> パラメーターはサポートされていません。録画時間をプログラム的に制限することは出来ません。</li>
+<li>
+<strong>mode</strong> パラメーターはサポートされていません。録音のフォーマットをプログラム的に変更することは出来ません。録音は Adaptive Multi-Rate (AMR) フォーマット (audio/amr) を使用してエンコードされます。</li>
+</ul>
+<h2>
+<a name="CaptureAudioOptions_ios">iOS に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>limit</strong> パラメーターはサポートされていません。1つのキャプチャー操作につき1つの録音が作られます。</li>
+<li>
+<strong>mode</strong> パラメーターはサポートされていません。録音のフォーマットをプログラム的に変更することは出来ません。録音は Waveform Audio (WAV) フォーマット (audio/wav) を使用してエンコードされます。</li>
+</ul>
+<hr>
+<h1><a name="capture.captureImage">capture.captureImage</a></h1>
+
+<blockquote>
+  <p>カメラアプリを起動し、キャプチャーしたファイルの情報を返します。</p>
+</blockquote>
+
+<pre class="prettyprint"><code>navigator.device.<a href="cordova_media_capture_capture.md.html#capture.captureImage">capture.captureImage</a>(
+    <a href="cordova_media_capture_capture.md.html#CaptureCB">CaptureCB</a> captureSuccess, <a href="cordova_media_capture_capture.md.html#CaptureErrorCB">CaptureErrorCB</a> captureError, [<a href="cordova_media_capture_capture.md.html#CaptureImageOptions">CaptureImageOptions</a> options]
+);
+</code></pre>
+
+<h2>
+<a name="capture.captureImage_">概要</a>
+</h2>
+
+<p>このメソッドは、デバイスのカメラアプリを使用して、画像をキャプチャーするための非同期操作を開始します。この操作はユーザーに、単一セッションで複数の画像のキャプチャーをユーザーに許可します。</p>
+
+<p>キャプチャー操作は、ユーザーがカメラアプリを終了するか、 CaptureImageOption の中の <strong>limit</strong> パラメーターで指定された最大撮影回数に達した場合に終了します。もし <strong>limit</strong> パラメーターが指定されていない場合は、デフォルト値である1が使用され、キャプチャー操作はユーザーが1度画像を撮影した後に終了します。</p>
+
+<p>キャプチャー操作が終了した時、それぞれの画像ファイル情報が書かれた <a href="cordova_media_capture_capture.md.html#MediaFile">MediaFile</a> オブジェクトの配列を伴った <a href="cordova_media_capture_capture.md.html#CaptureCB">CaptureCB</a> コールバック関数を呼び出します。もし画像がキャプチャーされる前にユーザーによって操作が終了されたら、 <a href="cordova_media_capture_capture.md.html#CaptureError">CaptureError</a>.<code>CAPTURE_NO_MEDIA_FILES</code> エラーコードを持つ <a href="cordova_media_capture_capture.md.html#CaptureError">CaptureError</a> オブジェクトを伴った <a href="cordova_media_capture_capture.md.html#CaptureErrorCB">CaptureErrorCB</a> コールバック関数が呼び出されます。</p>
+
+<h2>
+<a name="capture.captureImage_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7 (Mango)</li>
+</ul>
+<h2>
+<a name="capture.captureImage_windows_phone_7">Windows Phone 7 に関する注意点</a>
+</h2>
+
+<p>Zune とデバイスが接続している間は、ネイティブカメラアプリケーションは起動せずに、エラーコールバックが呼び出されます。</p>
+
+<h2>
+<a name="capture.captureImage_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// capture コールバック関数
+var captureSuccess = function(mediaFiles) {
+    var i, path, len;
+    for (i = 0, len = mediaFiles.length; i &lt; len; i += 1) {
+        path = mediaFiles[i].fullPath;
+        // ファイルを使用した処理
+    }
+};
+
+// capture エラーコールバック関数
+var captureError = function(error) {
+    navigator.<a href="cordova_notification_notification.md.html#notification.alert">notification.alert</a>('Error code: ' + error.code, null, '<a href="cordova_media_capture_capture.md.html#Capture">Capture</a> Error');
+};
+
+// 画像のキャプチャーを開始
+navigator.device.<a href="cordova_media_capture_capture.md.html#capture.captureImage">capture.captureImage</a>(captureSuccess, captureError, {limit:2});
+</code></pre>
+
+<h2>
+<a name="capture.captureImage_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;画像キャプチャー&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8" src="json2.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // キャプチャー操作の正常終了時の処理
+    //
+    function captureSuccess(mediaFiles) {
+        var i, len;
+        for (i = 0, len = mediaFiles.length; i &lt; len; i += 1) {
+            uploadFile(mediaFiles[i]);
+        }
+    }
+
+    // エラー発生時の処理
+    //
+    function captureError(error) {
+        var msg = 'キャプチャー中にエラーが発生しました: ' + error.code;
+        navigator.<a href="cordova_notification_notification.md.html#notification.alert">notification.alert</a>(msg, null, 'エラー');
+    }
+
+    // ボタンがクリックされた場合の処理
+    //
+    function captureImage() {
+        // デバイスのカメラアプリを起動、
+        // ユーザーに2つまで画像のキャプチャーを許可する
+        navigator.device.<a href="cordova_media_capture_capture.md.html#capture.captureImage">capture.captureImage</a>(captureSuccess, captureError, {limit: 2});
+    }
+
+    // ファイルをサーバーにアップロード
+    function uploadFile(mediaFile) {
+        var ft = new <a href="cordova_file_file.md.html#FileTransfer">FileTransfer</a>(),
+            path = mediaFile.fullPath,
+            name = mediaFile.name;
+
+        ft.upload(path,
+            "http://my.domain.com/upload.php",
+            function(result) {
+                console.log('アップロード成功: ' + result.responseCode);
+                console.log(result.bytesSent + ' バイト送信');
+            },
+            function(error) {
+                console.log('ファイルのアップロードに失敗 ' + path + ': ' + error.code);
+            },
+            { fileName: name });
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button onclick="captureImage();"&gt;画像キャプチャー&lt;/button&gt; &lt;br&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<hr>
+<h1><a name="CaptureImageOptions">CaptureImageOptions</a></h1>
+
+<blockquote>
+  <p>画像キャプチャーのオプションをカプセル化します。</p>
+</blockquote>
+
+<h2>
+<a name="CaptureImageOptions_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>limit:</strong> 一つのキャプチャー操作で撮影できる画像の最大値を表します。値は1以上の必要があります (デフォルトは1です) 。</li>
+<li>
+<strong>mode:</strong> 選択された画像のモードを表します。値は <code>capture.supportedImageModes</code> の中の一つである必要があります。</li>
+</ul>
+<h2>
+<a name="CaptureImageOptions_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// キャプチャー操作時の取得画像の最大値を3に制限
+var options = { limit: 3 };
+
+navigator.device.<a href="cordova_media_capture_capture.md.html#capture.captureImage">capture.captureImage</a>(captureSuccess, captureError, options);
+</code></pre>
+
+<h2>
+<a name="CaptureImageOptions_android">Android に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>mode</strong> パラメーターはサポートされていません。画像のサイズとフォーマットはプログラム的に変更することはできません。しかし、画像サイズはユーザーによって変更することは可能です。画像は JPEG フォーマット (image/jpeg) で保存されます。</li>
+</ul>
+<h2>
+<a name="CaptureImageOptions_blackberry_webworks">BlackBerry WebWorks に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>mode</strong> パラメーターはサポートされていません。画像のサイズとフォーマットはプログラム的に変更することはできません。しかし、画像サイズはユーザーによって変更することは可能です。画像は JPEG フォーマット (image/jpeg) で保存されます。</li>
+</ul>
+<h2>
+<a name="CaptureImageOptions_ios">iOS に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>limit</strong> パラメーターはサポートされていません。1つのキャプチャー操作につき1つの画像が撮影されます。</li>
+<li>
+<strong>mode</strong> パラメーターはサポートされていません。画像のサイズとフォーマットはプログラム的に変更することはできません。画像は JPEG フォーマット (image/jpeg) で保存されます。</li>
+</ul>
+<hr>
+<h1><a name="capture.captureVideo">capture.captureVideo</a></h1>
+
+<blockquote>
+  <p>ビデオ録画アプリを起動し、キャプチャーしたビデオファイルの情報を返します。</p>
+</blockquote>
+
+<pre class="prettyprint"><code>navigator.device.<a href="cordova_media_capture_capture.md.html#capture.captureVideo">capture.captureVideo</a>(
+    <a href="cordova_media_capture_capture.md.html#CaptureCB">CaptureCB</a> captureSuccess, <a href="cordova_media_capture_capture.md.html#CaptureErrorCB">CaptureErrorCB</a> captureError, [<a href="cordova_media_capture_capture.md.html#CaptureVideoOptions">CaptureVideoOptions</a> options]
+);
+</code></pre>
+
+<h2>
+<a name="capture.captureVideo_">概要</a>
+</h2>
+
+<p>このメソッドは、デバイスのビデオ録画アプリを使用して、ビデオをキャプチャーするための非同期操作を開始します。この操作はユーザーに、単一セッションで複数のビデオのキャプチャーをユーザーに許可します。</p>
+
+<p>キャプチャー操作は、ユーザーがビデオ録画アプリを終了するか、 <a href="cordova_media_capture_capture.md.html#CaptureVideoOptions">CaptureVideoOptions</a> の中の <strong>limit</strong> パラメーターで指定された最大録画回数に達した場合に終了します。もし <strong>limit</strong> パラメーターが指定されていない場合は、デフォルト値である1が使用され、キャプチャー操作はユーザーが1度ビデオを録画した後に終了します。</p>
+
+<p>キャプチャー操作が終了した時、それぞれのビデオ録画ファイル情報が書かれた <a href="cordova_media_capture_capture.md.html#MediaFile">MediaFile</a> オブジェクトの配列を伴った <a href="cordova_media_capture_capture.md.html#CaptureCB">CaptureCB</a> コールバック関数を呼び出します。もしオーディオがキャプチャーされる前にユーザーによって操作が終了されたら、 <a href="cordova_media_capture_capture.md.html#CaptureError">CaptureError</a>.<code>CAPTURE_NO_MEDIA_FILES</code> エラーコードを持つ <a href="cordova_media_capture_capture.md.html#CaptureError">CaptureError</a> オブジェクトを伴った <a href="cordova_media_capture_capture.md.html#CaptureErrorCB">CaptureErrorCB</a> コールバック関数が呼び出されます。</p>
+
+<h2>
+<a name="capture.captureVideo_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7 (Mango)</li>
+</ul>
+<h2>
+<a name="capture.captureVideo_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// capture コールバック関数
+var captureSuccess = function(mediaFiles) {
+    var i, path, len;
+    for (i = 0, len = mediaFiles.length; i &lt; len; i += 1) {
+        path = mediaFiles[i].fullPath;
+        // ファイルを使用した処理
+    }
+};
+
+// capture エラーコールバック関数
+var captureError = function(error) {
+    navigator.<a href="cordova_notification_notification.md.html#notification.alert">notification.alert</a>('Error code: ' + error.code, null, '<a href="cordova_media_capture_capture.md.html#Capture">Capture</a> Error');
+};
+
+// ビデオキャプチャーを開始
+navigator.device.<a href="cordova_media_capture_capture.md.html#capture.captureVideo">capture.captureVideo</a>(captureSuccess, captureError, {limit:2});
+</code></pre>
+
+<h2>
+<a name="capture.captureVideo_">詳細な使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;ビデオキャプチャー&lt;/title&gt;
+
+    &lt;script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8" src="json2.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" charset="utf-8"&gt;
+
+    // キャプチャー操作の正常終了時の処理
+    //
+    function captureSuccess(mediaFiles) {
+        var i, len;
+        for (i = 0, len = mediaFiles.length; i &lt; len; i += 1) {
+            uploadFile(mediaFiles[i]);
+        }
+    }
+
+    // エラー発生時の処理
+    //
+    function captureError(error) {
+        var msg = 'キャプチャー中にエラーが発生しました: ' + error.code;
+        navigator.<a href="cordova_notification_notification.md.html#notification.alert">notification.alert</a>(msg, null, 'エラー');
+    }
+
+    // ボタンがクリックされた場合の処理
+    //
+    function captureVideo() {
+        // デバイスのビデオ録画アプリを起動し、
+        // ユーザーに2つまでビデオの録画を許可する
+        navigator.device.<a href="cordova_media_capture_capture.md.html#capture.captureVideo">capture.captureVideo</a>(captureSuccess, captureError, {limit: 2});
+    }
+
+    // ファイルをサーバーにアップロード
+    function uploadFile(mediaFile) {
+        var ft = new <a href="cordova_file_file.md.html#FileTransfer">FileTransfer</a>(),
+            path = mediaFile.fullPath,
+            name = mediaFile.name;
+
+        ft.upload(path,
+            "http://my.domain.com/upload.php",
+            function(result) {
+                console.log('アップロード成功: ' + result.responseCode);
+                console.log(result.bytesSent + ' バイト送信');
+            },
+            function(error) {
+                console.log('ファイルのアップロードに失敗 ' + path + ': ' + error.code);
+            },
+            { fileName: name });
+    }
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button onclick="captureVideo();"&gt;ビデオキャプチャー&lt;/button&gt; &lt;br&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+<a name="capture.captureVideo_blackberry_webworks">BlackBerry WebWorks に関する注意点</a>
+</h2>
+
+<ul>
+<li>Cordova for BlackBerry WebWorks は、ビデオ録画のために RIM より提供されている <strong>Video Recorder</strong> の起動を試みます。デベロッパーは、もしアプリがインストールされていない場合は <a href="cordova_media_capture_capture.md.html#CaptureError">CaptureError</a>.<code>CAPTURE_NOT_SUPPORTED</code> エラーを受け取ります。</li>
+</ul>
+<hr>
+<h1><a name="CaptureVideoOptions">CaptureVideoOptions</a></h1>
+
+<blockquote>
+  <p>ビデオキャプチャーのオプションをカプセル化します。</p>
+</blockquote>
+
+<h2>
+<a name="CaptureVideoOptions_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>limit:</strong> 一つのキャプチャー操作で録画できるビデオの最大値を表します。値は1以上の必要があります  (デフォルトは1です) 。</li>
+<li>
+<strong>duration:</strong> ビデオクリップの最大録画時間を秒で表します。</li>
+<li>
+<strong>mode:</strong> 選択されたビデオのモードを表します。値は <code>capture.supportedVideoModes</code> の中の一つである必要があります。</li>
+</ul>
+<h2>
+<a name="CaptureVideoOptions_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// キャプチャー操作時のビデオクリップの最大値を3に制限
+var options = { limit: 3 };
+
+navigator.device.<a href="cordova_media_capture_capture.md.html#capture.captureVideo">capture.captureVideo</a>(captureSuccess, captureError, options);
+</code></pre>
+
+<h2>
+<a name="CaptureVideoOptions_android">Android に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>duration</strong> パラメーターはサポートされていません。録画時間をプログラム的に制限することは出来ません。</li>
+<li>
+<strong>mode</strong> パラメーターはサポートされていません。ビデオのサイズとフォーマットはプログラム的に変更することはできません。しかし、これらのパラメーターはユーザーによって変更することは可能です。デフォルトでは、ビデオは 3GPP (video/3gpp) フォーマットで録画されます。</li>
+</ul>
+<h2>
+<a name="CaptureVideoOptions_blackberry_webworks">BlackBerry WebWorks に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>duration</strong> パラメーターはサポートされていません。 録画時間をプログラム的に制限することは出来ません。</li>
+<li>
+<strong>mode</strong> パラメーターはサポートされていません。 ビデオのサイズとフォーマットはプログラム的に変更することはできません。しかし、これらのパラメーターはユーザーによって変更することは可能です。 デフォルトでは、ビデオは 3GPP (video/3gpp) フォーマットで録画されます。</li>
+</ul>
+<h2>
+<a name="CaptureVideoOptions_ios">iOS に関する注意点</a>
+</h2>
+
+<ul>
+<li>
+<strong>limit</strong> パラメーターはサポートされていません。1つのキャプチャー操作につき1つのビデオが録画されます。</li>
+<li>
+<strong>duration</strong> パラメーターはサポートされていません。録画時間をプログラム的に制限することは出来ません。</li>
+<li>
+<strong>mode</strong> パラメーターはサポートされていません。ビデオのサイズとフォーマットはプログラム的に変更することはできません。デフォルトでは、ビデオは MOV (video/quicktime) フォーマットで録画されます。</li>
+</ul>
+<hr>
+<h1><a name="CaptureError">CaptureError</a></h1>
+
+<blockquote>
+  <p>失敗したメディアキャプチャー操作のエラーコードをカプセル化します。</p>
+</blockquote>
+
+<h2>
+<a name="CaptureError_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>code:</strong> 事前に定義された以下のエラーコードのうちの1つを表します</li>
+</ul>
+<h2>
+<a name="CaptureError_">定数</a>
+</h2>
+
+<ul>
+<li>
+<a href="cordova_media_capture_capture.md.html#CaptureError">CaptureError</a>.<code>CAPTURE_INTERNAL_ERR</code>: カメラまたはマイクが画像または音のキャプチャーに失敗した場合。</li>
+<li>
+<a href="cordova_media_capture_capture.md.html#CaptureError">CaptureError</a>.<code>CAPTURE_APPLICATION_BUSY</code>: カメラアプリまたはオーディオ録音アプリが現在他のキャプチャーリクエストを扱っている場合。</li>
+<li>
+<a href="cordova_media_capture_capture.md.html#CaptureError">CaptureError</a>.<code>CAPTURE_INVALID_ARGUMENT</code>: API の使用方法が不正であった場合 (例: limit パラメーターの値が1未満である) 。</li>
+<li>
+<a href="cordova_media_capture_capture.md.html#CaptureError">CaptureError</a>.<code>CAPTURE_NO_MEDIA_FILES</code>: ユーザーが何もキャプチャーせずにカメラアプリやオーディオ録音アプリを終了した場合。</li>
+<li>
+<a href="cordova_media_capture_capture.md.html#CaptureError">CaptureError</a>.<code>CAPTURE_NOT_SUPPORTED</code>: キャプチャー操作のリクエストがサポートされていない場合。</li>
+</ul>
+<hr>
+<h1><a name="CaptureCB">CaptureCB</a></h1>
+
+<blockquote>
+  <p>メディアキャプチャー操作が成功した場合に呼び出されます。</p>
+</blockquote>
+
+<pre class="prettyprint"><code>function captureSuccess( <a href="cordova_media_capture_capture.md.html#MediaFile">MediaFile</a>[] mediaFiles ) { ... };
+</code></pre>
+
+<h2>
+<a name="CaptureCB_">概要</a>
+</h2>
+
+<p>この関数は、キャプチャー操作が正常に完了したときに呼び出されます。これは、メディアファイルがキャプチャーされ、ユーザーがメディアキャプチャーアプリを終了した、もしくはキャプチャーの取得制限値に達したという意味です。</p>
+
+<p>それぞれの <a href="cordova_media_capture_capture.md.html#MediaFile">MediaFile</a> オブジェクトはキャプチャーされたメディアファイルを表します。</p>
+
+<h2>
+<a name="CaptureCB_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// capture コールバック関数
+function captureSuccess(mediaFiles) {
+    var i, path, len;
+    for (i = 0, len = mediaFiles.length; i &lt; len; i += 1) {
+        path = mediaFiles[i].fullPath;
+        // ファイルを使用した処理
+    }
+};
+</code></pre>
+
+<hr>
+<h1><a name="CaptureErrorCB">CaptureErrorCB</a></h1>
+
+<blockquote>
+  <p>メディアキャプチャー操作中にエラーが発生した場合に呼び出されます。</p>
+</blockquote>
+
+<pre class="prettyprint"><code>function captureError( <a href="cordova_media_capture_capture.md.html#CaptureError">CaptureError</a> error ) { ... };
+</code></pre>
+
+<h2>
+<a name="CaptureErrorCB_">概要</a>
+</h2>
+
+<p>この関数は、もしメディアキャプチャーアプリを起動しようとして、アプリがビジー状態であってエラーが発生した場合、もしキャプチャー操作実行中にエラーが発生した場合、もしユーザーによってメディアファイルがキャプチャーされる前にキャプチャー操作がキャンセルされた場合などに呼び出されます。</p>
+
+<p>この関数は適切なエラーコードが含まれた <a href="cordova_media_capture_capture.md.html#CaptureError">CaptureError</a> オブジェクトを伴って呼び出されます。</p>
+
+<h2>
+<a name="CaptureErrorCB_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// capture エラーコールバック関数
+var captureError = function(error) {
+    navigator.<a href="cordova_notification_notification.md.html#notification.alert">notification.alert</a>('Error code: ' + error.code, null, '<a href="cordova_media_capture_capture.md.html#Capture">Capture</a> Error');
+};
+</code></pre>
+
+<hr>
+<h1><a name="ConfigurationData">ConfigurationData</a></h1>
+
+<blockquote>
+  <p>デバイスがサポートしているメディアキャプチャーのパラメーターのセットをカプセル化します。</p>
+</blockquote>
+
+<h2>
+<a name="ConfigurationData_">概要</a>
+</h2>
+
+<p>このオブジェクトは、デバイスによってサポートされているメディアキャプチャーのモードを表すために使われています。設定データは MIME type とビデオまたはイメージキャプチャーのためのサイズ情報を含んでいます。</p>
+
+<p>MIME type は <a class="external" href="http://www.ietf.org/rfc/rfc2046.txt">RFC2046</a> に従っています。 例:</p>
+
+<ul>
+<li>video/3gpp</li>
+<li>video/quicktime</li>
+<li>image/jpeg</li>
+<li>audio/amr</li>
+<li>audio/wav </li>
+</ul>
+<h2>
+<a name="ConfigurationData_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>type:</strong> ASCII エンコードされた小文字の文字列でメディアタイプを表します。 (DOMString)</li>
+<li>
+<strong>height:</strong> 画像またはビデオの高さをピクセルで表します。 オーディオの場合は、0に設定されます。 (Number)</li>
+<li>
+<strong>width:</strong> 画像またはビデオの幅をピクセルで表します。 オーディオの場合は、0に設定されます。 (Number)</li>
+</ul>
+<h2>
+<a name="ConfigurationData_">使用例</a>
+</h2>
+
+<pre class="prettyprint"><code>// サポートされている画像のモードを取得
+var imageModes = navigator.device.capture.supportedImageModes;
+
+// 幅が一番高い解像度を持つモードを選択
+var width = 0;
+var selectedmode;
+for each (var mode in imageModes) {
+    if (mode.width &gt; width) {
+        width = mode.width;
+        selectedmode = mode;
+    }
+}
+</code></pre>
+
+<p>どのプラットフォームからもサポートされていません。全ての設定データは空となっています。</p>
+
+<hr>
+<h1><a name="MediaFile">MediaFile</a></h1>
+
+<blockquote>
+  <p>メディアキャプチャーファイルのプロパティーをカプセル化します。</p>
+</blockquote>
+
+<h2>
+<a name="MediaFile_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>name:</strong> パス情報を含まないファイルの名前を表します。 (DOMString)</li>
+<li>
+<strong>fullPath:</strong> ファイルの名前を含むフルパスを表します。 (DOMString)</li>
+<li>
+<strong>type:</strong> ファイルの mime type を表します。 (DOMString)</li>
+<li>
+<strong>lastModifiedDate:</strong> ファイルの最終更新日時を表します。 (Date)</li>
+<li>
+<strong>size:</strong> ファイルのサイズをバイトで表します。 (Number)</li>
+</ul>
+<h2>
+<a name="MediaFile_">メソッド</a>
+</h2>
+
+<ul>
+<li>
+<strong><a href="cordova_media_capture_capture.md.html#MediaFile.getFormatData">MediaFile.getFormatData</a>:</strong> メディアファイルのフォーマット情報を取得します。</li>
+</ul>
+<hr>
+<h1><a name="MediaFile.getFormatData">MediaFile.getFormatData</a></h1>
+
+<blockquote>
+  <p>メディアキャプチャーファイルのフォーマット情報を取得します。</p>
+</blockquote>
+
+<pre class="prettyprint"><code>mediaFile.getFormatData(
+    MediaFileDataSuccessCB successCallback,
+    [MediaFileDataErrorCB errorCallback]
+);
+</code></pre>
+
+<h2>
+<a name="MediaFile.getFormatData_">概要</a>
+</h2>
+
+<p>この関数は、メディアファイルのフォーマット情報の取得を非同期で試みます。もし成功すれば、 <a href="cordova_media_capture_capture.md.html#MediaFileData">MediaFileData</a> オブジェクトを伴った MediaFileDataSuccessCB コールバック関数を呼び出します。もし失敗すれば、 MediaFileDataErrorCB コールバック関数を呼び出します。</p>
+
+<h2>
+<a name="MediaFile.getFormatData_">サポートされているプラットフォーム</a>
+</h2>
+
+<ul>
+<li>Android</li>
+<li>BlackBerry WebWorks (OS 5.0 以上)</li>
+<li>iOS</li>
+<li>Windows Phone 7 (Mango)</li>
+</ul>
+<h2>
+<a name="MediaFile.getFormatData_blackberry_webworks">BlackBerry WebWorks に関する注意点</a>
+</h2>
+
+<p>メディアファイルのフォーマット情報を提供する API はありません。従って、全ての <a href="cordova_media_capture_capture.md.html#MediaFileData">MediaFileData</a> オブジェクトはデフォルト値で返されます。詳しくは <a href="cordova_media_capture_capture.md.html#MediaFileData">MediaFileData</a> のドキュメントをご覧ください。</p>
+
+<h2>
+<a name="MediaFile.getFormatData_android">Android に関する注意点</a>
+</h2>
+
+<p>メディアファイルのフォーマット情報を取得する API は限定されています。従って、全ての <a href="cordova_media_capture_capture.md.html#MediaFileData">MediaFileData</a> のプロパティーがサポートされている訳ではありません。詳しくは <a href="cordova_media_capture_capture.md.html#MediaFileData">MediaFileData</a> のドキュメントをご覧ください。</p>
+
+<h2>
+<a name="MediaFile.getFormatData_ios">iOS に関する注意点</a>
+</h2>
+
+<p>メディアファイルのフォーマット情報を取得する API は限定されています。従って、全ての <a href="cordova_media_capture_capture.md.html#MediaFileData">MediaFileData</a> のプロパティーがサポートされている訳ではありません。詳しくは <a href="cordova_media_capture_capture.md.html#MediaFileData">MediaFileData</a> のドキュメントをご覧ください。</p>
+
+<hr>
+<h1><a name="MediaFileData">MediaFileData</a></h1>
+
+<blockquote>
+  <p>メディアファイルのフォーマット情報をカプセル化します。</p>
+</blockquote>
+
+<h2>
+<a name="MediaFileData_">プロパティー</a>
+</h2>
+
+<ul>
+<li>
+<strong>codecs:</strong> オーディオやビデオの実際のフォーマットを表します。 (DOMString)</li>
+<li>
+<strong>bitrate:</strong> ファイルの平均ビットレートを表します。画像の場合は、0に設定されます。 (Number)</li>
+<li>
+<strong>height:</strong> 画像またはビデオの高さをピクセルで表します。オーディオの場合は、0に設定されます。 (Number)</li>
+<li>
+<strong>width:</strong> 画像またはビデオの幅をピクセルで表します。オーディオの場合は、0に設定されます。 (Number)</li>
+<li>
+<strong>duration:</strong> ビデオまたはオーディオの長さを秒で表します。画像の場合は、0に設定されます。 (Number)</li>
+</ul>
+<h2>
+<a name="MediaFileData_blackberry_webworks">BlackBerry WebWorks に関する注意点</a>
+</h2>
+
+<p>メディアファイルのフォーマット情報を提供する API はありません。 <a href="cordova_media_capture_capture.md.html#MediaFileData">MediaFileData</a> オブジェクトは、 <a href="cordova_media_capture_capture.md.html#MediaFile.getFormatData">MediaFile.getFormatData</a> 関数によって返され、以下のようなデフォルト値を持ちます:</p>
+
+<ul>
+<li>
+<strong>codecs:</strong> サポートされていません。この属性は常に null となります。</li>
+<li>
+<strong>bitrate:</strong> サポートされていません。この属性は常に0となります。</li>
+<li>
+<strong>height:</strong> サポートされていません。この属性は常に0となります。</li>
+<li>
+<strong>width:</strong> サポートされていません。この属性は常に0となります。</li>
+<li>
+<strong>duration:</strong> サポートされていません。この属性は常に0となります。</li>
+</ul>
+<h2>
+<a name="MediaFileData_android">Android に関する注意点</a>
+</h2>
+
+<p><a href="cordova_media_capture_capture.md.html#MediaFileData">MediaFileData</a> プロパティーへのサポートは以下のとおりです:</p>
+
+<ul>
+<li>
+<strong>codecs:</strong> サポートされていません。この属性は常に null となります。</li>
+<li>
+<strong>bitrate:</strong> サポートされていません。この属性は常に0となります。</li>
+<li>
+<strong>height:</strong> サポートされています。 (画像及びビデオに限る) 。</li>
+<li>
+<strong>width:</strong> サポートされています。 (画像及びビデオに限る) 。</li>
+<li>
+<strong>duration:</strong> サポートされています。 (オーディオ及びビデオに限る) 。</li>
+</ul>
+<h2>
+<a name="MediaFileData_ios">iOS に関する注意点</a>
+</h2>
+
+<p><a href="cordova_media_capture_capture.md.html#MediaFileData">MediaFileData</a> プロパティーへのサポートは以下のとおりです:</p>
+
+<ul>
+<li>
+<strong>codecs:</strong> サポートされていません。この属性は常に null となります。</li>
+<li>
+<strong>bitrate:</strong> iOS4 のデバイスにおいて、オーディオのみサポートされています。この属性は、画像とビデオについては常に0となります。</li>
+<li>
+<strong>height:</strong> サポートされています。 (画像及びビデオに限る) 。</li>
+<li>
+<strong>width:</strong> サポートされています。 (画像及びビデオに限る) 。</li>
+<li>
+<strong>duration:</strong> サポートされています。 (オーディオ及びビデオに限る) 。</li>
+</ul>
+</div>
+        </div>
+
+        <!-- Functionality and Syntax Highlighting -->
+        <script type="text/javascript" src="index.js"></script><script type="text/javascript" src="prettify/prettify.js"></script>
+</body>
+</html>
