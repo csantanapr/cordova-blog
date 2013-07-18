@@ -1,0 +1,51 @@
+<a class="scroll-point" name="links"></a>
+<hr/>
+
+<div class="wrap quick-links-pane">
+    <h2 class="icon icon-quick-links">Quick Links</h2>
+    <br/>
+    <ul class="quick-links-header">
+        <li>General</li>
+        <li>Development</li>
+        <li class="last">Apache Software Foundation</li>
+    </ul>
+    <div class="clear"></div>
+</div>
+
+<div class="grid">
+    <div class="wrap">
+        <div class="list-container">
+            <ul class="list quick-links">
+                <li class="corner"></li>
+                <li><a href="{{ site.baseurl }}{{ site.sitemap.about.url }}">{{ site.sitemap.about.title }}<span></span></a></li>
+
+                {% for links in site.sitemap.general %}
+                <li><a href="{{ links.url }}">{{ links.title }}<span></span></a></li>
+                {% endfor %}
+
+                <li><a href="{{ site.baseurl }}{{ site.sitemap.artwork.url }}">{{ site.sitemap.artwork.title }}<span></span></a></li>
+            </ul>
+
+            <ul class="list quick-links">
+                <li class="corner"></li>
+                <li><a href="{{ site.baseurl }}{{ site.sitemap.download.url }}">{{ site.sitemap.download.title }}<span></span></a></li>
+                <li><a href="{{ site.sitemap.docs.url }}">{{ site.sitemap.docs.title }}<span></span></a></li>
+
+                {% for links in site.sitemap.dev %}
+                <li><a href="{{ links.url }}">{{ links.title }}<span></span></a></li>
+                {% endfor %}
+
+                <li><a href="{{ site.baseurl }}{{ site.sitemap.mailing-list.url }}">{{ site.sitemap.mailing-list.title }}<span></span></a></li>
+            </ul>
+
+            <ul class="list quick-links last">
+                <li class="corner"></li>
+                {% for links in site.sitemap.asf %}
+                <li><a href="{{ links.url }}">{{ links.title }}<span></span></a></li>
+                {% endfor %}
+            </ul>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,172 @@
+{
+    "releases": [
+        {
+        "version":  "2.9.0",
+        "file":     "https://www.apache.org/dist/cordova/",
+        "note":     "Apache Cordova 2.9.0"
+        }
+    ],
+
+    "repos": {
+        "platforms": [
+        {
+            "name": "Android",
+            "github": "https://github.com/apache/cordova-android",
+            "apache": "https://git-wip-us.apache.org/repos/asf?p=cordova-android.git;a=summary"
+        },
+        {
+            "name": "Bada",
+            "github": "https://github.com/apache/cordova-bada",
+            "apache": "https://git-wip-us.apache.org/repos/asf?p=cordova-bada.git;a=summary"
+        },
+        {
+            "name": "Blackberry",
+            "github": "https://github.com/apache/cordova-blackberry",
+            "apache": "https://git-wip-us.apache.org/repos/asf?p=cordova-blackberry.git;a=summary"
+        },
+        {
+            "name": "iOS",
+            "github": "https://github.com/apache/cordova-ios",
+            "apache": "https://git-wip-us.apache.org/repos/asf?p=cordova-ios.git;a=summary"
+        },
+        {
+            "name": "Mac OS X",
+            "github": "https://github.com/apache/cordova-osx",
+            "apache": "https://git-wip-us.apache.org/repos/asf?p=cordova-osx.git;a=summary"
+        },
+        {
+            "name": "QT",
+            "github": "https://github.com/apache/cordova-qt",
+            "apache": "https://git-wip-us.apache.org/repos/asf?p=cordova-qt.git;a=summary"
+        },
+        {
+            "name": "Tizen",
+            "github": "https://github.com/apache/cordova-tizen",
+            "apache": "https://git-wip-us.apache.org/repos/asf?p=cordova-tizen.git;a=summary"
+        },
+        {
+            "name": "WebOS",
+            "github": "https://github.com/apache/cordova-webos",
+            "apache": "https://git-wip-us.apache.org/repos/asf?p=cordova-webos.git;a=summary"
+        },
+        {
+            "name": "Windows (desktop)",
+            "github": "https://github.com/apache/cordova-windows",
+            "apache": "https://git-wip-us.apache.org/repos/asf?p=cordova-windows.git;a=summary"
+        },
+        {
+            "name": "Windows Phone 7",
+            "github": "https://github.com/apache/cordova-wp7",
+            "apache": "https://git-wip-us.apache.org/repos/asf?p=cordova-wp7.git;a=summary"
+        },
+        {
+            "name": "Windows Phone 8",
+            "github": "https://github.com/apache/cordova-wp8",
+            "apache": "https://git-wip-us.apache.org/repos/asf?p=cordova-wp8.git;a=summary"
+        }
+        ],
+
+        "other": [
+        {
+            "name": "Cordova Docs",
+            "github": "https://github.com/apache/cordova-docs",
+            "apache": "https://git-wip-us.apache.org/repos/asf?p=cordova-docs.git;a=summary"
+        },
+        {
+            "name": "Cordova JS (JavaScript API)",
+            "github": "https://github.com/apache/cordova-js",
+            "apache": "https://git-wip-us.apache.org/repos/asf?p=cordova-js.git;a=summary"
+        },
+        {
+            "name": "Cordova CLI",
+            "github": "https://github.com/apache/cordova-cli",
+            "apache": "https://git-wip-us.apache.org/repos/asf?p=cordova-cli.git;a=summary"
+        },
+        {
+            "name": "Cordova Mobile Spec (Test Suite)",
+            "github": "https://github.com/apache/cordova-mobile-spec",
+            "apache": "https://git-wip-us.apache.org/repos/asf?p=cordova-mobile-spec.git;a=summary"
+        },
+        {
+            "name": "Weinre (Web Inspector Remote)",
+            "github": "https://github.com/apache/cordova-weinre",
+            "apache": "https://git-wip-us.apache.org/repos/asf?p=cordova-weinre.git;a=summary"
+        },
+        {
+            "name": "Cordova Hello World (Sample App)",
+            "github": "https://github.com/apache/cordova-app-hello-world",
+            "apache": "https://git-wip-us.apache.org/repos/asf?p=cordova-app-hello-world.git;a=summary"
+        },
+        {
+            "name": "Cordova Coho (Release Tool)",
+            "github": "https://github.com/apache/cordova-coho",
+            "apache": "https://git-wip-us.apache.org/repos/asf?p=cordova-coho.git;a=summary"
+        }
+        ]
+    },
+
+    "sitemap": {
+        "general": [
+        {
+            "title": "About Cordova",
+            "url": "index.html#about"
+        },
+        {
+            "title": "Apache Project Page",
+            "url": "http://projects.apache.org/projects/cordova.html"
+        },
+        {
+            "title": "License",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+            "title": "Artwork",
+            "url": "artwork.html"
+        }
+        ],
+        "dev": [
+        {
+            "title": "Download",
+            "url": "index.html#download"
+        },
+        {
+            "title": "Source Code",
+            "url": "https://git-wip-us.apache.org/repos/asf"
+        },
+        {
+            "title": "Documentation",
+            "url": "http://cordova.apache.org/docs/en/2.9.0/"
+        },
+        {
+            "title": "Mailing List",
+            "url": "index.html#mailing-list"
+        },
+        {
+            "title": "Issue Tracker",
+            "url": "https://issues.apache.org/jira/browse/CB"
+        },
+        {
+            "title": "Wiki",
+            "url": "http://wiki.apache.org/cordova/"
+        }
+        ],
+        "asf": [
+        {
+            "title": "About ASF",
+            "url": "http://www.apache.org/"
+        },
+        {
+            "title": "Thanks",
+            "url": "http://www.apache.org/foundation/thanks.html"
+        },
+        {
+            "title": "Become a Sponsor",
+            "url": "http://www.apache.org/foundation/sponsorship.html"
+        },
+        {
+            "title": "Security",
+            "url": "http://www.apache.org/security/"
+        }
+        ]
+    }
+}

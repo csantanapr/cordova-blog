@@ -1,0 +1,27 @@
+<a class="scroll-point pt-top" name="top">
+</a>
+<div id="header">
+    <div class="wrap">
+        <a class="logo" href="{{ site.baseurl }}/#top"></a>
+        <div class="menu">
+            <a href="{{ site.baseurl }}/#about">About</a>
+            <a href="{{ site.baseurl }}/#news">News</a>
+            <a href="{{ site.baseurl }}/#contribute">Contribute</a>
+            <a href="{{ site.baseurl }}/#mailing-list">Mailing List</a>
+            <a href="{{ site.baseurl }}/#download">Download</a>
+            <a href="{{ site.baseurl }}/#links">Quick Links</a>
+        </div>
+        <form class="menu-dropdown">
+            <select onchange="location = this.options[this.selectedIndex].value;">
+                <option value="{{ site.baseurl }}/#about">About</option>
+                <option value="{{ site.baseurl }}/#news">News</option>
+                <option value="{{ site.baseurl }}/#contribute">Contribute</option>
+                <option value="{{ site.baseurl }}/#mailing-list">Mailing List</option>
+                <option value="{{ site.baseurl }}/#download">Download</option>
+                <option value="{{ site.baseurl }}/#links">Quick Links</option>
+            </select>
+        </form>
+    </div>
+    <div class="shadow"></div>
+</div> <!-- /header -->
+<div class="header-placeholder"></div>
